@@ -17,7 +17,7 @@ This is the github project: [One Channel Hub](https://github.com/Lora-net/one_ch
 
 ## Flash Firmware
 
-The firmware is prepared for installation. Simply download from [bin library](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262/bin).
+The firmware is prepared for installation. Simply download from [bin library](https://github.com/Lora-net/one_channel_hub/tree/master/bin).
 
 If you don't use the complete ESP-IDF environment, it is also possible to flash the provided binary files using the **esptool** utility.
 
@@ -280,7 +280,7 @@ All are set down. Now we can connect the Wio-SX1262 with XIAO ESP32S3 lora kit t
 ## Resource
 
 * [One Channel Hub Firmware for Wio SX1262 with XIAO ESP32S3 Kit](https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/seeed_xiao_esp32s3_one_chanel_hub_20241016.zip)
-* [Github Repository](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262)
+* [Github Repository](https://github.com/Lora-net/one_channel_hub)
 
 ## Tech Support & Product Discussion
 
