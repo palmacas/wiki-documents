@@ -1,6 +1,6 @@
 ---
 description: Lorawan based on Wio SX1262 with XIAO esp32s3 module
-title: Get Started for Lora
+title: Get Started for LoRa
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
 slug: /wio_sx1262_xiao_esp32s3_for_lora_get_started
 last_update:
