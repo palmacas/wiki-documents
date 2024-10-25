@@ -3084,6 +3084,7 @@ const sidebars = {
               id: 'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_intro',
             },
             items: [
+              'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_pcn',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_flash_os',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_assembly_guide',
