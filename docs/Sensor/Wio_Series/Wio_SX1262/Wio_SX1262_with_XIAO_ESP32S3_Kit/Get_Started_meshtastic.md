@@ -11,17 +11,6 @@ last_update:
 Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. Wio-SX1262 with XIAO ESP32S3 kit is flexible solution for meshtastic developer and maker.
 
 
-## Flash Firmware
-
-**Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.
-
-**Step 2**: Then, use a suitable USB cable to connect the device to the PC. You may need to turn off, then **press and hold the BOOT button** while plugging in the USB cable.
-
-**Step 3**: Follow the following instruction provided to perform the subsequent flashing operations. Select the Device as "**Seeed XIAO S3**", Firmware as **the lastest** one, and then click "**Flash**". Don't forget to tick "Full Erase and Install" if you want to cover previous firmware.
-
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div></td>
-
-
 ## Software Overview
 
 Meshtastic provides multiple platform softwares for users to choose from, including Android app, Apple app, web client. It also provides Python CLI, Linux Native and integration methods for developers to use.
@@ -51,13 +40,13 @@ After flashing firmware and downloading Meshtastic app, Expansion board would be
 
  Step 3: Once selected correctly, enter the code showing on OLED display. 
 
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.gif" style={{width:700, height:'auto'}}/></div></td>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.gif" style={{width:700, height:'auto'}}/></div>
 
 Step 4: Set the Lora region, then the device will reboot.
 
 Step 5: Finish reboot, the device status can be checked on Meshtastic app and OLED display.
 
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/1.gif" style={{width:700, height:'auto'}}/></div></td>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/1.gif" style={{width:700, height:'auto'}}/></div>
 
 
 
@@ -65,12 +54,91 @@ Step 5: Finish reboot, the device status can be checked on Meshtastic app and OL
 Select a serial port debugging tool you like. I will take Comtool on mac as an example below. Select the **serial** connection, choose **the corresponding port**, configure the baud rate as **115200**, and turn on **RTS and DTR**. Open the connection and you can see the connection data.
 Search for "**nodenum**" to find the corresponding node ID. Its default **password is 123456**.
 
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/11.png" style={{width:700, height:'auto'}}/></div></td>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/11.png" style={{width:700, height:'auto'}}/></div>
 
 :::tip
 The last four digits of nodenum are the device number ID discovered by the meshtastic app. For example, "nodenum 0x9e20d02c" is "Meshtastic_d02c" in meshtastic.
 :::
  
+## Communicate with Wio Tracker T1000-E
+
+**Step 1**. Connect Wio Tracker T1000-E following [wiki](https://wiki.seeedstudio.com/sensecap_t1000_e/#get-started-1).
+
+**Step 2**. Make sure the following setting is same as your configuration on XIAO ESP32S3 for Meshatastic. 
+
+1. Device activation and setup
+- Ensure that both devices are turned on and in normal working condition.
+- The wireless communication function of the device (such as Bluetooth, LoRa, etc.) should be enabled. Check the relevant settings to ensure that it is not accidentally turned off or restricted.
+
+2. Distance and signal strength
+- The distance between the two devices cannot be too far. After initail testing, the communication distance of XIAO ESP32S3 for Meshtastic with 2 dbm IPEX antenna is over 2.5 km. Generally speaking, in a more open environment, can be over 20 km.
+
+3. Network Settings
+- Ensure that the devices are in the same network mode or channel setting. Easily set to same 'lora region' and 'Modem preset' using Meshtastic APP.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/12.png" style={{width:350, height:'auto'}}/></div>
+
+
+**Step 3**. Communicate with Wio Tracker T1000-E
+
+Once connected, you can start sending and receiving messages through the Meshtastic network. Messages can be text-based or may support additional features depending on the capabilities of the devices and the app. You can also monitor the network activity and see which devices are currently connected and active.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/3.gif" style={{width:350, height:'auto'}}/></div>
+
+## Sensor Connection
+
+In the meshtastic application, the Wio SX1262 with XIAO esp32s3 kit is capable of supporting a wide range of sensors. When used in conjunction with the XIAO expansion board, it can support numerous grove sensors, please check [here](https://github.com/meshtastic/firmware/blob/3f1c86f9535279fd17eaaab6e10a06f09915b7e4/src/detect/ScanI2C.h#L10). Additionally, when combined with the GNSS add on module, it forms the smallest module within meshtastic that has GPS functionality.
+
+### Temperature and Humidity Sensor
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+      <th>DHT20 Temperature & Humidity Sensor</th>
+    </tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Sensor/Tem-humidity-sensor1.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+
+**Step 1**: Connect the Grove DHT20 sensor of the XIAO Expansion Board
+
+**Step 2**: Enable `Detection Sensor` in Meshtastic APP
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/13.PNG" style={{width:350, height:'auto'}}/></div>
+
+
+### GNSS Sensor
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+      <th>DHT20 Temperature & Humidity Sensor</th>
+    </tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/GPS_Module/L76K/1-L76K-GNSS-Module-for-Seeed-Studio-XIAO-45font.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/L76K-GNSS-Module-for-Seeed-Studio-XIAO-p-5864.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+
+
 ## Initial Configuration
 
 :::note
@@ -114,31 +182,16 @@ Modules are included in the firmware and allow users to extend the functionality
 | [Telemetry](https://meshtastic.org/docs/configuration/module/telemetry/) | Attach sensors to the device and transmit readings on a regular interval to the mesh. |
 | [Traceroute](https://meshtastic.org/docs/configuration/module/traceroute/) | Track which nodes are used to hop a message to a certain destination. |
 
-## Communicate with Wio Tracker T1000-E
 
-**Step 1**. Connect Wio Tracker T1000-E following [wiki](https://wiki.seeedstudio.com/sensecap_t1000_e/#get-started-1).
+## Flash Firmware
 
-**Step 2**. Make sure the following setting is same as your configuration on XIAO ESP32S3 for Meshatastic. 
+**Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.
 
-1. Device activation and setup
-- Ensure that both devices are turned on and in normal working condition.
-- The wireless communication function of the device (such as Bluetooth, LoRa, etc.) should be enabled. Check the relevant settings to ensure that it is not accidentally turned off or restricted.
+**Step 2**: Then, use a suitable USB cable to connect the device to the PC. You may need to turn off, then **press and hold the BOOT button** while plugging in the USB cable.
 
-2. Distance and signal strength
-- The distance between the two devices cannot be too far. After initail testing, the communication distance of XIAO ESP32S3 for Meshtastic with 2 dbm IPEX antenna is over 2.5 km. Generally speaking, in a more open environment, can be over 20 km.
+**Step 3**: Follow the following instruction provided to perform the subsequent flashing operations. Select the Device as "**Seeed XIAO S3**", Firmware as **the lastest** one, and then click "**Flash**". Don't forget to tick "**Full Erase and Install**" if you want to cover previous firmware.
 
-3. Network Settings
-- Ensure that the devices are in the same network mode or channel setting. Easily set to same 'lora region' and 'Modem preset' using Meshtastic APP.
-
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/12.png" style={{width:350, height:'auto'}}/></div></td>
-
-
-**Step 3**. Communicate with Wio Tracker T1000-E
-
-Once connected, you can start sending and receiving messages through the Meshtastic network. Messages can be text-based or may support additional features depending on the capabilities of the devices and the app. You can also monitor the network activity and see which devices are currently connected and active.
-
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/3.gif" style={{width:350, height:'auto'}}/></div></td>
-
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div>
 
 ## Tech Support & Product Discussion
 

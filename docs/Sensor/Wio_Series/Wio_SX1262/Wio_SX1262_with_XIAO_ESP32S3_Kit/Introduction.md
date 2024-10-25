@@ -24,8 +24,8 @@ The XIAO ESP32S3 with Wio-SX1262 is a single-channel LoRaWAN LoRa module with a 
 
 Seeed provides 3 applications for this Wio SX1262 XIAO ESP32S3 kit. 
 - Using Meshtastic for network communication
-- Configuring as Lora/Lorawan node
-- Configuring as Lora/Lorawan gateway
+- Configuring as LoRawan node
+- Configuring as LoRawan gateway
 
 ## Features
 
@@ -104,22 +104,22 @@ Compatible with XIAO Expansion Board for adding screens and sensors, and add Gro
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/10.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
 	<tr>
-	    <th>XIAO ESP32S3/XIAO ESP32S3 Sense front indication diagram</th>
+	    <th>XIAO ESP32S3 front indication diagram</th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/front-indication.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
     <tr>
-	    <th>XIAO ESP32S3/XIAO ESP32S3 Sense back indication diagram</th>
+	    <th>XIAO ESP32S3 back indication diagram</th>
 	</tr>
     <tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/back-indication.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
     <tr>
-	    <th>XIAO ESP32S3/XIAO ESP32S3 Sense Pin List</th>
+	    <th>XIAO ESP32S3 Pin List</th>
 	</tr>
     <tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/2.jpg" style={{width:700, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/13.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
 </table>
 

@@ -1,23 +1,26 @@
 ---
 description: Lorawan based on Wio SX1262 with XIAO esp32s3 module
-title: Get Started for Lora
+title: Single Channel LoRaWAN Gateway
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
-slug: /wio_sx1262_xiao_esp32s3_for_lora_get_started
+slug: /wio_sx1262_xiao_esp32s3_for_single_channel_gateway
 last_update:
   date: 10/09/2024
   author: Evelyn Chen
 ---
 
+# **Configuring Wio-SX1262 with XIAO ESP32S3 as Single Chanel LoRaWAN Gateway**
+
 Single channel gateways(called One-Channel Hub) are low-cost tools that enable users to begin exploring the LoRa realm. These gateways can receive LoRa packets on a specific spreading factor and channel and facilitate the exchange of these packets with the network. Due to their affordability, many users have embarked on building their own single-channel gateways to experiment with LoRa.
 
 
-The XIAO ESP32S3 as host MCU and Wio SX1262 LoRa radio kit can be configured to function as single channel gateway for connecting to The Things Network. This kit offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
+The XIAO ESP32S3 as host MCU and Wio SX1262 LoRa radio kit can be configured to function as single channel gateway. This kit offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
 
 This is the github project: [One Channel Hub](https://github.com/Lora-net/one_channel_hub).
 
+
 ## Flash Firmware
 
-The firmware is prepared for installation. Simply download from [bin library](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262/bin).
+The firmware is prepared for installation. Simply download from [bin library](https://github.com/Lora-net/one_channel_hub/tree/master/bin).
 
 If you don't use the complete ESP-IDF environment, it is also possible to flash the provided binary files using the **esptool** utility.
 
@@ -132,13 +135,13 @@ The default setting of Lora radio type is `sx1262`.
 
 Don't forget to disable the OLED Display.
 
- <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/21.png" alt="pir" width={600} height="auto" /></p>
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/21.png" alt="pir" width={800} height="auto" /></p>
 
 (2) Set flash size:
 
 `Serial flasher config` -> `Flash size` -> for XIAO ESP32S3 is `8MB`.
 
- <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/22.png" alt="pir" width={600} height="auto" /></p>
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/22.png" alt="pir" width={800} height="auto" /></p>
 
 Build the project:
 
@@ -273,14 +276,14 @@ Note that the configuration written in flash memory is only taken into account o
 
 All are set down. Now we can connect the Wio-SX1262 with XIAO ESP32S3 lora kit to Lora Network Server like TTN(The things network) and Chirpstack.
 
-* Connect to TTN
-* Connect to Chirpstack
+* [Connect to TTN](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_TTN/)
+* [Connect to Chirpstack](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_Chirpstack/)
 
 
 ## Resource
 
 * [One Channel Hub Firmware for Wio SX1262 with XIAO ESP32S3 Kit](https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/seeed_xiao_esp32s3_one_chanel_hub_20241016.zip)
-* [Github Repository](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262)
+* [Github Repository](https://github.com/Lora-net/one_channel_hub)
 
 ## Tech Support & Product Discussion
 
