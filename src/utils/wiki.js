@@ -29,23 +29,23 @@ const docList = [
   ],
   [
     {
-      "path": "/watcher_price",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/price_month_simpler.png",
-      "title": "Price and Benefits",
-      "date": "10/18/2024"
-    },
-    {
       "path": "/sensecap_app_introduction",
       "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/30.png",
       "title": "SenseCraft APP Introduction",
+      "date": "10/18/2024"
+    },
+    {
+      "path": "/watcher_local_deploy",
+      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/87.png",
+      "title": "Deploy Watcher's AI capabilities locally",
       "date": "10/18/2024"
     }
   ],
   [
     {
-      "path": "/watcher_local_deploy",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/87.png",
-      "title": "Deploy Watcher's AI capabilities locally",
+      "path": "/watcher_price",
+      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/price_month_simpler.png",
+      "title": "Price and Benefits",
       "date": "10/18/2024"
     },
     {

@@ -1762,7 +1762,7 @@ const sidebars = {
         'Sensor/ReSpeaker_Lite/reSpeaker_lite_introduction',
         {
           type: 'category',
-          label: 'ReSpeaker Lite Voice Assistant Kit',
+          label: 'ReSpeaker Lite with XIAO ESP32S3',
           link: {
             type: "doc",
             id: 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/xiao_respeaker',
@@ -3084,6 +3084,7 @@ const sidebars = {
               id: 'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_intro',
             },
             items: [
+              'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_pcn',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_flash_os',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_assembly_guide',
