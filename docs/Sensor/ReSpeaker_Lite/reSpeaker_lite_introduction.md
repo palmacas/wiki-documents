@@ -30,7 +30,7 @@ Powered by XMOS XU316 AI Sound and Audio chipset, this dev board excels in audio
 ## Features
 
 * **Dual Microphone Array for Far-Field Voice Capture**: The 2 high performance digital microphones capture and extract far-field speech and voice (up to 3 meters) even in noisy environments as it cancels point noise using two microphone input.
-* **Onboard AI NLU Algorithms**: Powered by XMOS XU-316 AI sound and audio chip, the kit includes Natural Language Understanding algorithms for Interference Cancellation (IC) , Acoustic Echo Cancellation, Noise Suppression, Voice-to-Noise Ratio (VNR), and Automatic Gain Control (AGC), enabling high quality voice capture.
+* **Onboard AI ASR Algorithms**: Powered by XMOS XU-316 AI sound and audio chip, the kit includes Natural Language Understanding algorithms for Interference Cancellation (IC) , Acoustic Echo Cancellation, Noise Suppression, Voice-to-Noise Ratio (VNR), and Automatic Gain Control (AGC), enabling high quality voice capture.
 * **Embracing Open Source**：This board is compatible with popular hardware platforms (XIAO ESP32S3 (Sense), Adafruit QT Py) via I2S, and compatible with Raspberry Pi, PC via USB (Audio Class 2.0 (UAC2)).
 * **Onboard RGB LED**: the board features a programmable WS2812 RGB LED, supporting custom effects and offering a visual interface for your applications.
 * **External Power Supply Support**: this board supports external 5V power supply, which can be flexibly applied in different scenarios.
@@ -350,3 +350,4 @@ dfu-util -l
 
 [ReSpeaker Lite XMOS Firmware](https://github.com/respeaker/ReSpeaker_Lite/tree/master/xmos_firmwares)
 
+[ReSpeaker Lite Github](https://github.com/respeaker/ReSpeaker_Lite/)
