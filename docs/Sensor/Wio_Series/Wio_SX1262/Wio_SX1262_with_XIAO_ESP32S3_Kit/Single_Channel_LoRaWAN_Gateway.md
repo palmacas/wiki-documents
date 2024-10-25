@@ -1,12 +1,14 @@
 ---
 description: Lorawan based on Wio SX1262 with XIAO esp32s3 module
-title: Get Started for LoRa
+title: Single Channel LoRaWAN Gateway
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
-slug: /wio_sx1262_xiao_esp32s3_for_lora_get_started
+slug: /wio_sx1262_xiao_esp32s3_for_single_channel_gateway
 last_update:
   date: 10/09/2024
   author: Evelyn Chen
 ---
+
+# **Configuring Wio-SX1262 with XIAO ESP32S3 as Single Chanel LoRaWAN Gateway**
 
 Single channel gateways(called One-Channel Hub) are low-cost tools that enable users to begin exploring the LoRa realm. These gateways can receive LoRa packets on a specific spreading factor and channel and facilitate the exchange of these packets with the network. Due to their affordability, many users have embarked on building their own single-channel gateways to experiment with LoRa.
 
@@ -14,6 +16,7 @@ Single channel gateways(called One-Channel Hub) are low-cost tools that enable u
 The XIAO ESP32S3 as host MCU and Wio SX1262 LoRa radio kit can be configured to function as single channel gateway. This kit offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
 
 This is the github project: [One Channel Hub](https://github.com/Lora-net/one_channel_hub).
+
 
 ## Flash Firmware
 
