@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /reComputer_r1000_use_bacnet_mstp
 last_update:
-  date: 07/8/2024
+  date: 10/25/2024
   author: ShuishengPeng
 ---
 
@@ -43,7 +43,7 @@ Before you start this project, you may need to prepare your hardware and softwar
     </div>
 
 ### Software
-* Since bacnet MS/TP uses the RS485 physical layer, you can refer to this [wiki](https://wiki.seeedstudio.com/reComputer_r1000_use_rs485_modbus_rtu/) on how to use the RS485 function on reComputer R1000 normally.
+* Since bacnet MS/TP uses the RS485 physical layer, you can refer to this [wiki](https://wiki.seeedstudio.com/reComputer_r1000_use_rs485_modbus_rtu/) on how to use the RS485 function on reComputer R1000 V1.0 normally.
 * We simulate a server with the help of the `bacnet-stack` library application, so you need to enter the following command to download it:
   ```shell
   git clone https://github.com/bacnet-stack/bacnet-stack.git
