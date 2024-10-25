@@ -147,7 +147,7 @@ You do not need to install the Mosquitto broker on the reComputer.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/tb17.png" style={{width:600}}/></div> 
 
 - Resize the widget and apply the changes.
-  
+
 You can explore additional dashboard widgets [here](https://thingsboard.io/docs/user-guide/dashboards/).
 
 
