@@ -24,8 +24,8 @@ The XIAO ESP32S3 with Wio-SX1262 is a single-channel LoRaWAN LoRa module with a 
 
 Seeed provides 3 applications for this Wio SX1262 XIAO ESP32S3 kit. 
 - Using Meshtastic for network communication
-- Configuring as LoRawan node
-- Configuring as LoRawan gateway
+- Configuring as LoRaWAN node
+- Configuring as LoRaWAN gateway
 
 ## Features
 
@@ -93,6 +93,10 @@ Compatible with XIAO Expansion Board for adding screens and sensors, and add Gro
     </tr>
   </table>
 </div>
+
+We also supply two kinds of antennas for this kit to support multifunctional applications.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/37.png" style={{width:600, height:'auto'}}/></div>
 
 ## Hardware Overview
 
