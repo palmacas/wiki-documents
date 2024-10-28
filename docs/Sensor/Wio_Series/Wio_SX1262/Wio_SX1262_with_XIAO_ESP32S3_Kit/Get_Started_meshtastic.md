@@ -122,7 +122,7 @@ In the meshtastic application, the Wio SX1262 with XIAO esp32s3 kit is capable o
 <div class="table-center">
   <table align="center">
     <tr>
-      <th>DHT20 Temperature & Humidity Sensor</th>
+      <th>L76K GNSS Module for XIAO</th>
     </tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/GPS_Module/L76K/1-L76K-GNSS-Module-for-Seeed-Studio-XIAO-45font.jpg" style={{width:250, height:'auto'}}/></div></td>
