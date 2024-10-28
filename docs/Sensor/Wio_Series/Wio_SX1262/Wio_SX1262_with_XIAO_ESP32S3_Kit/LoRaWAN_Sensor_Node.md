@@ -72,7 +72,9 @@ This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO 
 
 ## Video Instructure
 
-<div style={{textAlign:'center'}}><iframe width="700" height="440" src="https://youtu.be/7NptcHkVcpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="table-center">
+<iframe width="100%" height="315" src="https://youtu.be/7NptcHkVcpk?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
 ## Register & Setup on TTN
 
