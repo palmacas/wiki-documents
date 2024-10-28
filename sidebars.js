@@ -3164,6 +3164,7 @@ const sidebars = {
                                   label: 'ThingsBoard',
                                   items: [
                                      'Edge/Raspberry_Pi_Devices/reComputer_R1000/Applications/tb/recomputer_r1000_thingsboard_ce',
+                                     'Edge/Raspberry_Pi_Devices/reComputer_R1000/Applications/tb/recomputer_r1000_thingsboard_dashboard',
                                     ],
                                   },
    
