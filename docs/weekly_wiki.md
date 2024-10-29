@@ -6,7 +6,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 slug: /weekly_wiki
 last_update:
-  date: 10/21/2024
+  date: 10/28/2024
   author: Frank
 ---
 
@@ -18,64 +18,29 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is October 21th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is October 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Enclosure Installation Guide with ReSpeaker Lite](https://wiki.seeedstudio.com/respeaker_enclosure/) 
+### [Enclosure Installation Guide with ReSpeaker Lite](https://wiki.seeedstudio.com/respeaker_enclosure/)
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/tTrhbSSWpeg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.gif" style={{width:600}}/></div>
 
-This wiki will provide you with a detailed, easy-to-follow guide for enclosure installation, helping you safely assemble the [ReSpeaker Lite voice kit](https://www.seeedstudio.com/ReSpeaker-Lite-Voice-Assistant-Kit-Full-Kit-of-2-Mic-Array-pre-soldered-XIAO-ESP32S3-Mono-Enclosed-Speaker-and-Enclosure.html) setup.
+The [ThingsBoard Community Edition](https://thingsboard.io/), an open-source platform, offers powerful features for creating interactive dashboards that stand out among other open-source IoT solutions. With a variety of graphical tools, ThingsBoard allows users to easily visualize and monitor data collected from IoT devices, making it ideal for managing and analyzing real-time data. Whether for industrial automation, smart city projects, or environmental monitoring, ThingsBoard provides a versatile and user-friendly way to track and respond to IoT data insights.
 
-### [SenseCAP Watcher Quick Start Guide](https://wiki.seeedstudio.com/getting_started_with_watcher/) 
+### [reComputer R1000 V1.1 Product Change Description](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/)
 
-SenseCAP Watcher is an AI watcher to help you monitor anomalies within a space and then take actions. Simply speak to Watcher to give commands, and it will execute your desired tasks when the event occurs.
+We found that some users have trouble with DE pin control when using the modbus function of reComputer R1000 V1.0. For better user experience, we modified the pin assignment to make RS485 more usable.And made some adjustments to the overall product.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.jpg" style={{width:1000, height:'auto'}}/></div>
+### [Configuring Wio-SX1262 with XIAO ESP32S3 kit as LoRaWAN Sensor Node](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_lora_sensor_node/)
 
-As a new comer for smart building / smart home system, SenseCAP Watcher is far more intelligent compared to current sensors and actuators. It understands what is happening within the space and then takes actions accordingly.
-
-### [Hardware components of the SenseCAP Watcher](https://wiki.seeedstudio.com/watcher_hardware_overview/) 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/hardware_overview.jpg" style={{width:1000, height:'auto'}}/></div>
-
-In this section of the Wiki, we will focus on the hardware components of the SenseCAP Watcher, its construction and the use of additional accessories.
-
-### [Operation guideline of the SenseCAP Watcher](https://wiki.seeedstudio.com/watcher_operation_guideline/) 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/0.JPG" style={{width:800, height:'auto'}}/></div>
-
-Inside this section of the Wiki, we will provide you with information on the SenseCAP Watcher's operating logic, tasking, and the use of the device's features.
-
-### [Connect to Chirpstack with Wio-SX1262 with XIAO ESP32S3 Kit](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_Chirpstack/) 
-
-LoRaWAN is a low-power, wide-area networking protocol built on top of the LoRa technique. It wirelessly connects devices to the internet and manages communication between end-node devices and network gateways. Followed the Get Started for Lora, we configured Wio-SX1262 with XIAO ESP32S3 as one channel hub lora gateway.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/51.png" alt="pir" width={900} height="auto" /></p>
-
-This wiki page explains how set up LoraWAN based on Wio-SX1262 with XIAO ESP32S3 kit as single channel gateway exchange data. And also connect the Sensecap S210x lora sensor node to Wio-SX1262 with XIAO ESP32S3 kit and transmit the sensor data to Chirpstack.
-
-### [Connect to TTN with Wio-SX1262 with XIAO ESP32S3 Kit](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_TTN/) 
-
-LoRaWAN is a low-power, wide-area networking protocol built on top of the LoRa technique. It wirelessly connects devices to the internet and manages communication between end-node devices and network gateways. Followed the Get Started for Lora, we configured Wio-SX1262 with XIAO ESP32S3 as one channel hub lora gateway.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/40.png" alt="pir" width={900} height="auto" /></p>
-
-This wiki page explains how set up LoraWAN based on Wio-SX1262 with XIAO ESP32S3 kit as single channel gateway exchange data with TTN. And also connect the Sensecap S210x lora sensor node to Wio-SX1262 with XIAO ESP32S3 kit and transmit the sensor data to TTN(The Things Network).
-
-### [Lorawan Based on Wio SX1262 with XIAO ESP32S3 Module](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_lora_get_started/#flash-firmware) 
-
-The XIAO ESP32S3 as host MCU and Wio SX1262 LoRa radio kit can be configured to function as single channel gateway for connecting to The Things Network. This kit offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
-
-
+This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO ESP32S3 to act as a LoRaWAN sensor node, connecting a DHT20 temperature and humidity sensor, adding an M2 LoRaWAN gateway, and sending data to the The Things Network LNS platform. It also covers the configuration of a format decoder.
 
 ## Existing Wiki Updated
 
-### [Wio-SX1262 Introduction](https://wiki.seeedstudio.com/wio_sx1262/#resource)
+### [Getting Started with reServer Industrial](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/)
 
-We provide a [link](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Wio-SX1262_symbol_and_package_file.zip) for Wio SX1262 symbol and package file.
-
+We provided an [operational demonstration](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#binding-physical-network-ports-to-eth-numbers) for reServer on binding physical network ports to eth numbers.
 
 ## The Efforts of Contributor
 
@@ -97,11 +62,8 @@ FreeRTOS is a collection of C libraries comprised of a real-time kernel and a se
 
 This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). With the assistance of this guide you will be able to utilize the feature set available to the board.     -->
 
-
-
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
-- We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us! 
-
+- We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
 
 ## Past Weekly wiki
 
@@ -184,6 +146,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.9.30th](/Seeed_Elderly/weekly_wiki/wiki240930)
 - [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
 - [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
+- [weekly wiki on 2024.10.21th](/Seeed_Elderly/weekly_wiki/wiki241021)
 
 </details>
-
