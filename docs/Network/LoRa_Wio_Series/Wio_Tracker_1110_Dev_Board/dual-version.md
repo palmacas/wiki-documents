@@ -8,7 +8,8 @@ keywords:
 - LoRaWAN
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /wio_tracker_dual_stack
-unlisted: true
+sidebar_position: 8
+sidebar_class_name: hidden
 last_update:
   date: 3/4/2024
   author: Jessie

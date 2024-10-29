@@ -6,7 +6,8 @@ keywords:
 - Wio
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /development_tutorial_for_Wio-trakcer
-unlisted: true
+sidebar_position: 2
+sidebar_class_name: hidden
 last_update:
   date: 9/4/2023
   author: Jessie
