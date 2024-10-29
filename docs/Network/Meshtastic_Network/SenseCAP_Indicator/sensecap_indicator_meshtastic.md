@@ -48,17 +48,18 @@ Enable the `Full Erase and Install`, and click `Erase Flash and Install`.
 
 
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/connect11.png" alt="pir" width={800} height="auto" /></p>
-
-
-
 There will show 2 ports, select the `USB serial port` and click `Connect`.
 
 :::caution note
 Please select the `USB Serial` one, not the INDICATOR RP2040.
 :::
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/connect-serial.png" alt="pir" width={800} height="auto" /></p>
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/connect11.png" alt="pir" width={800} height="auto" /></p>
+
+
+
 
 
 
