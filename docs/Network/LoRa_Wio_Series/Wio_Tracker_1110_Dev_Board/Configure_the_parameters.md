@@ -6,7 +6,8 @@ keywords:
 - Wio
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /configure_param_for_wio_tracker
-unlisted: true
+sidebar_position: 9
+sidebar_class_name: hidden
 last_update:
   date: 9/14/2023
   author: Jessie
