@@ -340,9 +340,7 @@ sudo apt install unzip
 sudo unzip A603-JP6.0.zip
 ```
 Then, copy the three folders `(bootloader, kernel, rootfs in A603-JP6.0.zip)` to Linux_for_Tegra folder.
-```sh
-cd A603_jp60/
-```
+
 
 **Step 5:** Apply the changes and install the necessary prerequisites
 
