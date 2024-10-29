@@ -14,6 +14,8 @@ last_update:
 
 This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO ESP32S3 to act as a LoRaWAN sensor node, connecting a DHT20 temperature and humidity sensor, adding an M2 LoRaWAN gateway, and sending data to the The Things Network LNS platform. It also covers the configuration of a format decoder.
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/67.png" style={{width:400, height:'auto'}}/></div>
+
 ## Prerequisites
 
 * Wio-SX1262 with XIAO ESP32S3 Kit
@@ -70,7 +72,9 @@ This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO 
 
 ## Video Instructure
 
-<div style={{textAlign:'center'}}><iframe width="700" height="440" src="https://youtu.be/7NptcHkVcpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="table-center">
+<iframe width="100%" height="315" src="https://youtu.be/7NptcHkVcpk?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
 ## Register & Setup on TTN
 

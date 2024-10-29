@@ -28,6 +28,10 @@ The Wio-SX1262 is a low-cost, ultra-low-power, and ultra-compact LoRa® Pure RF 
 - Frequency coverage from 868 MHz to 960 MHz.
 - With SPI interface.
 
+### Comparison with other modules
+
+<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/36.png" style={{width:500, height:'auto'}}/></div></td>
+
 ## Hardware Overview
 
 The Wio-SX1262 module is based on SX1262, making it ideal for designing various IoT nodes. It supports  both (G)FSK and LoRa® modulations, with a bandwidth range of 7.8 to 500 kHz in LoRa® mode. The  module provides the SPI interface for communication with an external MCU. Its power distribution scheme  supports two hardware options: DC-DC or a linear regulator LDO, and the Wio-SX1262 module utilizes  the DC-DC design. Additionally, it features a high-precision active TCXO as its internal RF reference  frequency, with DIO3 serving as the TCXO voltage power supply.

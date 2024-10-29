@@ -209,39 +209,29 @@ The AT command firmware contains a bootloader for DFU and the AT application. Th
 
 #### Basic AT Commands
 
-- AT+ID // Read all, DevAddr(ABP), DevEui(OTAA), AppEui(OTAA)
+| Command Format | Return | Description |
+| --- | --- | --- |
+| AT | +AT: OK | Test command |
+| AT+VER | +VER: $MAJOR.$MINOR.$PATCH <br></br> +VER: 4.0.11 | Check Firmware version |
+| AT+ID // Read all, DevAddr( ABP), DevEui( OTAA), AppEui( OTAA)<br></br>AT+ID = DevAddr // Read Device Address<br></br>AT+ID = DevEui // Read DevEui<br></br>AT+ID = AppEui // Read AppEui | +ID: DevAddr, xx: xx: xx:xx<br></br>+ID: DevEui, xx:xx:xx:xx:xx:xx:xx:xx<br></br>+ID: AppEui13, xx:xx:xx:xx:xx:xx:xx | Use to check the ID of the LoRaWAN module. ID is treated as big endian numbers. |
+| AT+ID = DevAddr, “01234567” // Set new DevAddr<br></br>AT+ID = DevEui, “0123456789ABCDEF” // Set new DevEui<br></br>AT+ID = AppEui, “0123456789ABCDEF” // Set new AppEui | +ID: DevAddr, 01:23:45:67<br></br>+ID: DevEui, 01:23:45:67:89:AB:CD:EF<br></br>+ID: AppEui, 01:23:45:67:89:AB:CD:EF | Change the ID |
+| AT+RESET | +RESET: OK | Reset the module |
+| AT+MSG=”Data to send” | +MSG: Start<br></br>+MSG: FPENDING // Downlink frame FPENDING flag is set<br></br>+MSG: Link 20, 1<br></br>+MSG: ACK Received // LinkCheckAns received<br></br>+ MSG: MULTICAST // Downlink frame is multi cast message<br></br>+MSG: PORT: 8; RX: "12345678" //Downlink message is received<br></br>+MSG: RXWIN2, RSSI -106, SNR 4 //Downlink frame signal strength<br></br>+MSG: Done | send string format frame which is no need to be confirmed by the server |
+| AT+PORT = “port”<br></br>eg: AT+PORT = 8 //Set port to 8 | + PORT: 8 | Set port number which will be used by MSG/CMSG/MSGHEX/CMSGHEX command to send message, port number should range from 1 to 255. |
+| AT+ADR=" state"<br></br>eg: AT+ADR=ON // Enable ADR function<br></br>AT+ ADR= OFF // Disable ADR function<br></br>AT+ADR=? // Check current ADR configuration | +ADR: ON  // ADR query/ set return | Set ADR function of LoRaWAN module |
+| AT+DR // Check current selected DataRate<br></br>AT+DR=drx // "drx" should range 0~15 | +DR: DR0<br></br>+DR: US915 DR0 SF10 BW12 | Use LoRaWAN defined DRx to set datarate of LoRaWAN AT modem. |
+| AT+ DR= band //" band" could be band names defined in Chapter3 Band Plans<br></br>AT+ DR= SCHEME // Check current band | (EU868) +DR: EU868<br></br>+DR: EU868 DR0 SF12 BW125K<br></br>+DR: EU868 DR1 SF11 BW125K<br></br>+DR: EU868 DR2 SF10 BW125K<br></br>+DR: EU868 DR3 SF9 BW125K<br></br>+DR: EU868 DR4 SF8 BW125K<br></br>+DR: EU868 DR5 SF7 BW125K<br></br>+DR: EU868 DR6 SF7 BW125K<br></br>+DR: EU868 DR7 FSK<br></br>+DR: EU868 DR8 RFU<br></br>+DR: EU868 DR9 RFU<br></br>+DR: EU868 DR10 RFU<br></br>+DR: EU868 DR11 RFU<br></br>+DR: EU868 DR12 RFU<br></br>+DR: EU868 DR13 RFU<br></br>+DR: EU868 DR14 RFU<br></br>+DR: EU868 DR15 RFU | Data rate scheme |
+| AT + CH // query all channels<br></br>AT + CH = ch // check single channel frequency |  | Query Channel Configuration |
+| AT+CH="chn", ["freq"], ["drmin"], ["drmax"]<br></br>// Change the chn channel frequency to "Freq"<br></br>// "freq" is in MHz.<br></br>// Available "drmin"/"drmax" range DR0 ~ DR15 | +CH: 3,433700000,DR0:DR5<br></br>+CH: 3,433700000,DR | Set channel parameter of LoRaWAN modem, Set frequency zero to delete one channel. |
+| AT+CH=chn,ON<br></br>AT+CH=chn, OFF |  | Enable or Disable Channel |
+| AT+ KEY= NWKSKEY, “ 16 bytes length key”<br></br>eg: AT+KEY=NWKSKEY, "2B7E151628AED2A6ABF7158809CF4F3C"<br></br>eg: AT+KEY=NWKSKEY, "2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C” | + KEY: NWKSKEY 2B7E151628AED2A6ABF7158809CF4F3C | Change network session key (NWKSKEY) |
+| AT+ KEY= APPSKEY, “ 16 bytes length key”<br></br>eg: AT+KEY=APPSKEY, "2B7E151628AED2A6ABF7158809CF4F3C"<br></br>eg: AT+KEY= APPSKEY, "2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 | + KEY: APPSKEY 2B7E151628AED2A6ABF7158809CF4F3C | Change application session key (APPSKEY) |
+| AT+ FDEFAULT<br></br>AT+ FDEFAULT= Seeed | +FDEFAULT: OK | Reset LoRaWAN AT modem to factory default configuration |
+| T+ DFU=" New state"<br></br>eg: AT+DFU=ON // Enable DFU function<br></br>eg: AT+DFU=OFF //Disable DFU function<br></br>AT+DFU=? // Check if DFU is enabled configuration | +DFU: ON<br></br>+DFU: OFF | Use to enter DFU mode |
+| T+MODE="mode"<br></br>eg: AT+MODE=TEST // Enter TEST mode<br></br>eg: AT+MODE= LWOTAA // Enter LWOTAA mode<br></br>eg: AT+MODE= LWABP // Enter LWABP mode | +MODE: LWABP // Enter TEST mode successfully<br></br>+MODE: LWOTAA // Enter LWOTAA mode successfully<br></br>+MODE: TEST // Enter TEST mode successfully | Use to select work mode |
+| AT + JOIN<br></br>AT + JOIN = FORCE | a) Join successfully +JOIN: Starting<br></br>+ JOIN: NORMAL<br></br>+JOIN: NetID 000024 DevAddr 48:00:00:01<br></br>+JOIN: Done<br></br>b) Join failed<br></br>+JOIN: Join failed<br></br>c) Join process is ongoing<br></br>+ JOIN: LoRaWAN modem is busy | When OTAA mode is enabled, JOIN command could use to join a known network |
 
-- AT+ID=DevAddr // Read DevAddr
-
-- AT+ID=DevEui // Read DevEui
-
-- AT+ID=AppEui // Read AppEui
-
-- AT+ID=DevAddr,"devaddr" // Set new DevAddr
-
-- AT+ID=DevEui,"deveui" // Set new DevEui
-
-- AT+ID=AppEui,"appeui" // Set new AppEui
-
-- AT+KEY=APPKEY,"16 bytes length key" // Change application session key
-
-- AT+DR=band // Change the Band Plans
-
-- AT+DR=SCHEME // Check current band
-
-- AT+CH=NUM, 0-7 // Enable channel 0~7
-
-- AT+MODE="mode" // Select work mode: LWOTAA, LWABP or TEST
-
-- AT+JOIN // Send JOIN request
-
-- AT+MSG="Data to send" // Use to send string format frame which is no need to be confirmed by the server
-
-- AT+CMSG="Data to send" // Use to send string format frame which must be confirmed by the server
-
-- AT+MSGHEX="xx xx xx xx" // Use to send hex format frame which is no need to be confirmed by the server
-
-- AT+CMSGHEX="xx xx xx xx" // Use to send hex format frame which must be confirmed by the server
+For more information, refer to [the Command Specification](https://files.seeedstudio.com/products/317990687/res/LoRa-E5%20AT%20Command%20Specification_V1.0%20.pdf).
 
 #### Connect and send data to The Things Network
 
