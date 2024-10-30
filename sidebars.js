@@ -2356,6 +2356,13 @@ const sidebars = {
 
               ],
             },
+            {
+              type: 'category',
+              label: 'SenseCAP Indicator for Meshtastic',
+              items: [
+                'Network/Meshtastic_Network/SenseCAP_Indicator/sensecap_indicator_meshtastic',
+              ],
+            },
           ],
     },
     {
