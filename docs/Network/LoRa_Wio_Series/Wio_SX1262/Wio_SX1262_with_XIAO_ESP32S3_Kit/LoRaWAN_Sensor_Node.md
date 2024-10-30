@@ -1,7 +1,7 @@
 ---
 description: Lorawan sensor node based on Wio SX1262 with XIAO esp32s3 module
 title: LoRaWAN Sensor Node
-image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
+image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/67_1.png
 slug: /wio_sx1262_xiao_esp32s3_for_lora_sensor_node
 sidebar_position: 4
 last_update:

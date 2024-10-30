@@ -9,7 +9,7 @@ keywords:
   - Industrial 
   - Thingsboard
   - Edge Computing
-image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.png
 slug: /recomputer_r1000_thingsboard_dashboard
 last_update:
   date: 10/25/2024
