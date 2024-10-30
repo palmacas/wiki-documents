@@ -1,7 +1,7 @@
 ---
 description: You will gain a solid foundation in understanding the different types of tasks that Watcher can perform and how they are organized within the SenseCraft ecosystem.
 title: Task Assignment Guideline
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/85.png
+image: https://files.seeedstudio.com/wiki/watcher_getting_started/85_1.png
 slug: /getting_started_with_watcher_task
 sidebar_position: 3
 last_update:
