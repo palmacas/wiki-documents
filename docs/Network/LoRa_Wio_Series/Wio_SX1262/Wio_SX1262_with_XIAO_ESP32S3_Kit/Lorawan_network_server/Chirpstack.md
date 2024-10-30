@@ -9,6 +9,8 @@ last_update:
   author: Evelyn Chen
 ---
 
+# Wio-SX1262 with XIAO ESP32S3 Kit Connect to Chirpstack
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/51.png" alt="pir" width={900} height="auto" /></p>
 
 

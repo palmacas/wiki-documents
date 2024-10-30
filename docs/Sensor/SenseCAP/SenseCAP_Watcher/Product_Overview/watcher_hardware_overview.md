@@ -1,6 +1,6 @@
 ---
 description: Hardware components of the SenseCAP Watcher.
-title: Hardware overview
+title: Hardware Overview
 image: https://files.seeedstudio.com/wiki/watcher_getting_started/hardware_overview.jpg
 slug: /watcher_hardware_overview
 sidebar_position: 1
@@ -8,6 +8,8 @@ last_update:
   date: 10/18/2024
   author: Citric, Djair
 ---
+
+# SenseCAP Watcher Hardware Overview
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/hardware_overview.jpg" style={{width:1000, height:'auto'}}/></div>
 

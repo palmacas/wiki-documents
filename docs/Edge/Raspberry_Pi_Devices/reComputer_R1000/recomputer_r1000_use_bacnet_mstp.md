@@ -13,6 +13,8 @@ last_update:
   author: ShuishengPeng
 ---
 
+# reComputer R1000 use bacnet MS/TP
+
 ## Introduction
 BACnet MS/TP (Master-Slave/Token Passing) is a communication protocol for building automation and control networks. It is part of the BACnet (Building Automation and Control Networks) protocol suite. MS/TP usually uses the RS-485 physical layer and bus topology. All devices are connected to the same twisted pair cable. There are master stations and slave stations in the MS/TP network. The master is responsible for generating and delivering the token, while the slave only responds when a request is received. The master device determines which device can send data by passing the token. The token passing mechanism ensures that communication on the bus is orderly and conflict-free
 
