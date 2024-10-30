@@ -10,7 +10,7 @@ last_update:
 ---
 
 
-# Task Assignment Guideline
+# SenseCAP Watcher Task Assignment Guideline
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/85.png" style={{width:1000, height:'auto'}}/></div>
 

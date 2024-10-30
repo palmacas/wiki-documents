@@ -9,6 +9,8 @@ last_update:
   author: Citric
 ---
 
+# SenseCAP Watcher Operation Guideline
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/0.JPG" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>

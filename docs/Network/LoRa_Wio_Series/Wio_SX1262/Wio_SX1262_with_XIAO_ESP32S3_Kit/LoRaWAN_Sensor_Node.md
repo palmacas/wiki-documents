@@ -9,7 +9,7 @@ last_update:
   author: Evelyn Chen
 ---
 
-# **Configuring Wio-SX1262 with XIAO ESP32S3 kit as LoRaWAN Sensor Node**
+# Configuring Wio-SX1262 with XIAO ESP32S3 kit as LoRaWAN Sensor Node
 
 ## Introduction
 

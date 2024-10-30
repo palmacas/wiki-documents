@@ -6,12 +6,29 @@ const docsDirectory = path.join(__dirname, 'docs')
 const wikiFilePath = path.join(__dirname, '/src/utils/wiki.js')
 
 const docList = []
+const excludedPaths = [
+  path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // 排除的目录
+  path.join(docsDirectory, 'weekly_wiki.md') // 排除的文件
+];
 
 // 递归函数，用于遍历多层文件夹
 function processDirectory(directory) {
+
+  // 如果当前目录是要排除的路径，则跳过
+  if (excludedPaths.includes(directory)) {
+    return;
+  }
+
+
+
   fs.readdirSync(directory).forEach((file) => {
     const filePath = path.join(directory, file)
     const fileStats = fs.statSync(filePath)
+
+    // 如果文件或文件夹在排除列表中，则跳过
+    if (excludedPaths.includes(filePath)) {
+      return;
+    }
 
     if (fileStats.isDirectory()) {
       // 如果是文件夹，则递归处理
@@ -19,7 +36,11 @@ function processDirectory(directory) {
     } else if (fileStats.isFile() && path.extname(file) === '.md') {
       // 如果是 Markdown 文件
       const fileContents = fs.readFileSync(filePath, 'utf-8')
-      const { data } = matter(fileContents)
+      const { data, content } = matter(fileContents)
+
+      // 优先查找第一个一级标题（以 # 开头的行）
+      const titleMatch = content.match(/^#\s+(.*)/m);
+      const title = titleMatch ? titleMatch[1].trim() : (data.title || '');
 
       // 判断是否有 date 字段
       if (data.last_update && data.last_update.date) {
@@ -28,7 +49,7 @@ function processDirectory(directory) {
         docList.push({
           path: slug,
           image: data.image || '',
-          title: data.title || '',
+          title: title,
           date: data.last_update.date,
         })
       }
