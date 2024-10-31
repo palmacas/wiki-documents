@@ -40,7 +40,7 @@ Download and install the latest Arduino IDE from the official site: [Arduino Sof
     ```
 
     <div style={{ textAlign: 'center' }}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-url.png" style={{ width: 240, height: 'auto', "border-radius": '12.8px' }} />
+    <img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-url.png" style={{ width: 680, height: 'auto', "border-radius": '12.8px' }} />
     </div>
 
 3. Click **OK** to save your settings.
@@ -53,7 +53,7 @@ Ensure you install version 4.2.0 or later for full support of the XIAO RP2350 bo
 :::
 
 <div style={{ textAlign: 'center' }}>
-<img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-board-option.png" style={{ width: 240, height: 'auto', "border-radius": '12.8px' }} />
+<img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-board-option.png" style={{ width: 680, height: 'auto', "border-radius": '12.8px' }} />
 </div>
 
 ### 3. Uploading a Sketch
@@ -79,7 +79,7 @@ Before uploading a sketch, place your XIAO RP2350 into BOOT mode. Use one of the
 3. Go to **Tools** > **Port** and select the port where your RP2350 is connected.
 
 <div style={{ textAlign: 'center' }}>
-<img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-firmware-upload.png" style={{ width: 240, height: 'auto', "border-radius": '12.8px' }} />
+<img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-firmware-upload.png" style={{ width: 680, height: 'auto', "border-radius": '12.8px' }} />
 </div>
 
 ## Additional Resources
@@ -92,11 +92,11 @@ Before uploading a sketch, place your XIAO RP2350 into BOOT mode. Use one of the
 Thank you for using Seeed products! We offer multiple channels for support and community discussion:
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum">Forum</a>
-<a href="https://www.seeedstudio.com/contacts" class="button_email">Contact Support</a>
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/kpY74apCWj" class="button_discord">Discord</a>
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion">GitHub Discussion</a>
+<a href="https://discord.gg/kpY74apCWj" class="button_discord"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
