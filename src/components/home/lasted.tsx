@@ -23,7 +23,7 @@ function IndexLatestedViki() {
     // 按日期排序，假设每个文档都有 `date` 属性
     const sortedDocs = flattenedDocs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-    // 截取前 10 个文档
+    // 截取前 12 个文档
     const topDocs = sortedDocs.slice(0, 12);
 
     // 将文档按每两个分成一组
@@ -96,7 +96,7 @@ function IndexLatestedViki() {
               <div className={css.wiki_group}>
                 {group.map((doc, subIndex) => (
                   <a className={css.wiki_item} href={doc.path} key={subIndex}>
-                    <img src={doc.image} alt={doc.title} />
+                    <img src={doc.image} alt={doc.title} style={{ maxWidth: '210px', height: '160px' }} />
                     <div className={css.wiki_name}>{doc.title}</div>
                   </a>
                 ))}
