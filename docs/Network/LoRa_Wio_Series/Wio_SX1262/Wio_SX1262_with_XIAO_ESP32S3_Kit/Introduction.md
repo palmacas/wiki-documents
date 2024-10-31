@@ -99,6 +99,10 @@ We also supply two kinds of antennas for this kit to support multifunctional app
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/37.png" style={{width:600, height:'auto'}}/></div>
 
+:::note
+Original FPC Antenna: Only for **testing**. For reliable requirments, please purchase Antenna 2 additionally.
+:::
+
 ## Hardware Overview
 
 <table align="center">
