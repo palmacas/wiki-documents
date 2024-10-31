@@ -30,26 +30,29 @@ For specific information, please refer to [the official website of Meshtastic](h
 
 Before using Meshtastic, the device needs to be connected first. There are two connection methods. The first one is to use an expansion board, and the corresponding information will be displayed on the display. Then, the configuration can be carried out on the corresponding platform according to the reflected information. The second one is to connect the XIAO and the Wio SX1262 module, and use a serial port tool to obtain the node ID and password. 
 
+
 ### Method 1: Connected to Expansion board
 
 After flashing firmware and downloading Meshtastic app, Expansion board would be a good tool
  for connection and additional application such as adding grove sensors and modules easily.
 
- Step 1: Ensure that the device to be connected (such as "device") is turned on and in a discoverable state. And open the Meshtastic app on your mobile phone.
+**Step 1**: Ensure that the device to be connected (such as "device") is turned on and in a discoverable state. And open the Meshtastic app on your mobile phone.
 
- Step 2: In the Meshtastic app, there is an "+" icon on bottom right. Click it to let the app start scanning for nearby connectable devices. Then select the corresponding device ID showing on OLED display.
+**Step 2**: In the Meshtastic app, there is an "+" icon on bottom right. Click it to let the app start scanning for nearby connectable devices. Then select the corresponding device ID showing on OLED display.
 
- Step 3: Once selected correctly, enter the code showing on OLED display. 
+**Step 3**: Once selected correctly, enter the code showing on OLED display. Press the botton to switch display.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.gif" style={{width:700, height:'auto'}}/></div>
+**Button Functions:**
 
-Step 4: Set the Lora region, then the device will reboot.
+* Press once to switch the screen.
+* Press twice to broadcast.
+* Press three times to switch the GPS mode.
 
-Step 5: Finish reboot, the device status can be checked on Meshtastic app and OLED display.
+**Step 4**: Set the Lora region, then the device will reboot.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/1.gif" style={{width:700, height:'auto'}}/></div>
+**Step 5**: Finish reboot, the device status can be checked on Meshtastic app and OLED display.
 
-
+<iframe class="youtube-video-r" src="https://www.youtube.com/embed/dzqx32lBJso" title="Configuring Wio-SX1262 with XIAO ESP32S3 kit as Meshtastic device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Method 2: Serial port tool
 Select a serial port debugging tool you like. I will take Comtool on mac as an example below. Select the **serial** connection, choose **the corresponding port**, configure the baud rate as **115200**, and turn on **RTS and DTR**. Open the connection and you can see the connection data.
@@ -85,6 +88,8 @@ The last four digits of nodenum are the device number ID discovered by the mesht
 Once connected, you can start sending and receiving messages through the Meshtastic network. Messages can be text-based or may support additional features depending on the capabilities of the devices and the app. You can also monitor the network activity and see which devices are currently connected and active.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/3.gif" style={{width:350, height:'auto'}}/></div>
+
+<iframe class="youtube-video-r" src="https://www.youtube.com/embed/vJN_4A8s4z0" title="Configuring Wio-SX1262 with XIAO ESP32S3 kit as Meshtastic device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Sensor Connection
 
