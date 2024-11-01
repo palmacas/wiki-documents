@@ -4,8 +4,9 @@ title: Weekly Wiki
 keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
+slug: /weekly_wiki
 last_update:
-  date: 10/14/2024
+  date: 10/28/2024
   author: Frank
 ---
 
@@ -17,94 +18,33 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is October 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is October 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Clip Application on Raspberry Pi with AI Kit](https://wiki.seeedstudio.com/clip_application_on_rpi5_with_ai_kit/) 
+### [Enclosure Installation Guide with ReSpeaker Lite](https://wiki.seeedstudio.com/respeaker_enclosure/)
 
-[CLIP](https://github.com/openai/CLIP)(Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3. We found CLIP matches the performance of the original ResNet50 on ImageNet “zero-shot” without using any of the original 1.28M labeled examples, overcoming several major challenges in computer vision.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.gif" style={{width:600}}/></div>
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/JMHtqSmAGCA" title="CLIP Zero Shot Classification" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ maxWidth: '100%', width: '800px', height: '400px' }} />
+The [ThingsBoard Community Edition](https://thingsboard.io/), an open-source platform, offers powerful features for creating interactive dashboards that stand out among other open-source IoT solutions. With a variety of graphical tools, ThingsBoard allows users to easily visualize and monitor data collected from IoT devices, making it ideal for managing and analyzing real-time data. Whether for industrial automation, smart city projects, or environmental monitoring, ThingsBoard provides a versatile and user-friendly way to track and respond to IoT data insights.
 
+### [reComputer R1000 V1.1 Product Change Description](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/)
 
-This wiki will teach you how to deploy the clip application on a [Raspberry Pi5](https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html) or [Recomputer r1000](https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html), clip will inference on [AI kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html).
+We found that some users have trouble with DE pin control when using the modbus function of reComputer R1000 V1.0. For better user experience, we modified the pin assignment to make RS485 more usable.And made some adjustments to the overall product.
 
+### [Configuring Wio-SX1262 with XIAO ESP32S3 kit as LoRaWAN Sensor Node](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_lora_sensor_node/)
 
-### [reCamera Getting Started](https://wiki.seeedstudio.com/recamera_getting_started/) 
-
-reCamera is a combination of a **processor** and a camera **sensor**.
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/001.jpg" /></div>
-
-This combination makes reCamera a standalone system that can handle basic detection and control tasks on its own.
-
-### [How to install CODESYS for reComputer R1000](https://wiki.seeedstudio.com/reComputer_r1000_install_codesys/) 
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/1.png" /></div>
-
-CODESYS is a popular automation software development platform widely used in industrial control and automation systems. Its full name is Controller Development System, which was first developed by the German company 3S-Smart Software Solutions.
-This article mainly introduces how to download and install CODESYS, and finally deploy the CODESYS project to reComputer R1000
-
-### [How to use CODESYS to configure the Modbus rtu function of R1000](https://wiki.seeedstudio.com/recomputer_r1000_use_modbus_rtu_with_codesys/) 
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/deploy/5.png" /></div>
-
-This article mainly introduces how to use the modbus rtu function of reComputer R1000 based on CODESYS. We will use the two rs485 ports of reComputer R1000, one port is used for Modbus master and the other port is used for Modbus slave. This article will detail how to configure Modbus master and Modbus slave on CODESYS and show how to deploy them on reComputer R1000.
-
-### [SenseCraft Deploy your AI Model on Watcher](https://wiki.seeedstudio.com/sensecraft_ai_for_watcher/) 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_Watcher/website/top3.png" style={{width:1000, height:'auto'}}/></div>
-
-This WiKi article will teach you how to use our SenseCraft to train your own AI model and deploy it on our Watcher. It will be a very interesting process. If you still don't know what SenseCraft is, please click [here](https://sensecraft.seeed.cc/). This is a platform that allows us to deploy various open-source AI models on Seeed Studio devices.
-
-### [Wio-SX1262 Introduction](https://wiki.seeedstudio.com/wio_sx1262/) 
-
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/33.png" style={{width:900, height:'auto'}}/></div></td>
-
-The Wio-SX1262 is a low-cost, ultra-low-power, and ultra-compact LoRa® Pure RF module based on the high-performance Semtech SX1262 LoRa® wireless communication IC, supporting LoRa & LoRaWAN frequency from 868 to 915 MHz and up tp +22 dBm highly efficient transmitted power. Equipped with an onboard IPEX antenna connector and high-quality oscillator of the TCXO(Temperature Compensate Crystal Oscillator), it ensures stable operation at the high and low temperature environment of industry. It is designed for wireless  sensor networks and other IoT devices, especially those requiring battery-powered, low-power  consumption, and long-range connectivity. Ideal for applications such as wireless meter reading,  agriculture sensor, LoRaWAN single channel gateway etc.
-
-### [Wio-SX1262 with XIAO ESP32S3 Kit Introduction](https://wiki.seeedstudio.com/wio_sx1262_with_xiao_esp32s3_kit/) 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png" style={{width:600, height:'auto'}}/></div>
-
-This thumb-sized LoRa development kit, which consists of the XIAO ESP32S3 and the Wio-SX1262 LoRa module, is an ideal starter kit for Meshtastic and LoRa/LoRaWAN projects. Supporting WiFi, BLE, and LoRa, it includes a built-in power management chip and can be extended via IIC, UART, and other GPIO interfaces, and is compatible with Arduino development. The XIAO ESP32S3 with Wio-SX1262 is a single-channel LoRaWAN LoRa module with a low price and high cost performance. It is suitable for application scenarios with long distance, low power consumption, and small data volume. It supports more than 30 node devices (depending on upload interval, data payload, etc.).
-
-### [Get Started for Meshtastic](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_meshtastic/) 
-
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div></td>
-
-Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. Wio-SX1262 with XIAO ESP32S3 kit is flexible solution for meshtastic developer and maker.
-
-### [How to Use Orbbec Depth Cameras on reComputer with ROS](https://wiki.seeedstudio.com/orbbec_depth_camera_on_ros/) 
-
-<div style={{textAlign:'center'}}><img src="https://i.imgur.com/0gAng8s.jpg" style={{width:600, height:'auto'}}/></div>
-
-This tutorial provides a step-by-step guide on how to use Orbbec Depth Camera through ROS on  [reComputer J30/J40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) series devices. We will take Orbbec Gemini 2 as an example, obtain topic data of depth images and point clouds, and visualize them on rviz.
-
-### [Getting Started ThingsBoard With reComputer R1000](https://wiki.seeedstudio.com/recomputer_r1000_thingsboard_ce/) 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/openingwindow.PNG" style={{width:600, height:'auto'}}/></div>
-
-[ThingsBoard](https://thingsboard.io/) is an open-source IoT platform designed for rapid development, management, and scaling of IoT projects. It offers an out-of-the-box solution for both cloud and on-premises IoT infrastructure, enabling you to provision devices, manage assets, collect and visualize data, and analyze telemetry with ease. In this guide, we will walk through the installation of ThingsBoard Community Edition on a reComputer, providing a robust foundation for your IoT applications.
-
-
+This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO ESP32S3 to act as a LoRaWAN sensor node, connecting a DHT20 temperature and humidity sensor, adding an M2 LoRaWAN gateway, and sending data to the The Things Network LNS platform. It also covers the configuration of a format decoder.
 
 ## Existing Wiki Updated
 
-### [Watcher to Node-RED Quick Start](https://wiki.seeedstudio.com/watcher_to_node_red/)
+### [Getting Started with reServer Industrial](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/)
 
-We provide a [method](https://wiki.seeedstudio.com/watcher_to_node_red/#method-2-use-http-potocol) for Watcher to send messages to Node-RED using the HTTP protocol.
-
-### [Usage of Seeed Studio XIAO ESP32S3 microphone](https://wiki.seeedstudio.com/xiao_esp32s3_sense_mic/#getting-started)
-
-We provide an [example](https://wiki.seeedstudio.com/xiao_esp32s3_sense_mic/#save-recorded-sound-to-microsd-card) of saving recorded sound to a microSD card in the ESP32 version 3.0.x.
-
-
+We provided an [operational demonstration](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#binding-physical-network-ports-to-eth-numbers) for reServer on binding physical network ports to eth numbers.
 
 ## The Efforts of Contributor
 
-<!-- ### ### [Seeed Studio XIAO RP2040 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-rp2040-with-nuttx/) 
+<!-- ### [Seeed Studio XIAO RP2040 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-rp2040-with-nuttx/) 
 
 [NuttX](https://nuttx.apache.org/) is a mature real-time operating system (RTOS) widely recognized for its standards compliance and small footprint. One of NuttX's main features is its scalability, which allows it to be used in environments ranging from 8-bit microcontrollers to 64-bit systems. This flexibility is achieved through adherence to POSIX and ANSI standards, enabling you to experiment with similar NuttX features across a wide range of chips from different architectures, families, and semiconductor vendors.
 
@@ -122,11 +62,8 @@ FreeRTOS is a collection of C libraries comprised of a real-time kernel and a se
 
 This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). With the assistance of this guide you will be able to utilize the feature set available to the board.     -->
 
-
-
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
-- We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us! 
-
+- We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
 
 ## Past Weekly wiki
 
@@ -208,6 +145,7 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.9.23th](/Seeed_Elderly/weekly_wiki/wiki240923)
 - [weekly wiki on 2024.9.30th](/Seeed_Elderly/weekly_wiki/wiki240930)
 - [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
+- [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
+- [weekly wiki on 2024.10.21th](/Seeed_Elderly/weekly_wiki/wiki241021)
 
 </details>
-
