@@ -1,5 +1,5 @@
 ---
-description: Build a simple mouse with Seeed Studio XIAO RA4M1.
+description: 使用Seeed Studio XIAO RA4M1构建一个简单的鼠标。
 title: XIAO RA4M1 鼠标
 keywords:
 - ra4m1
