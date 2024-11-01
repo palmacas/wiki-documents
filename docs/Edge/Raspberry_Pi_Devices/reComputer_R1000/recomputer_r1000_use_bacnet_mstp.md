@@ -6,7 +6,7 @@ keywords:
   - reComputer R1000
   - Modbus RTU
   - rs485
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/wirshark_capture.png
 slug: /reComputer_r1000_use_bacnet_mstp
 last_update:
   date: 10/25/2024

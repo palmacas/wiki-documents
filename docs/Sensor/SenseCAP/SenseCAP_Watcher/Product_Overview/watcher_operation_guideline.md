@@ -1,7 +1,7 @@
 ---
 description: Operation guideline of the SenseCAP Watcher.
 title: Operation Guideline
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/0.JPG
+image: https://files.seeedstudio.com/wiki/watcher_getting_started/0_1.png
 slug: /watcher_operation_guideline
 sidebar_position: 2
 last_update:

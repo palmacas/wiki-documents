@@ -25,7 +25,9 @@ last_update:
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/li6DTOeXK3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Part 4: Troubleshooting Instruction
 
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/iWahTuXwYnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Get Started
@@ -343,7 +345,7 @@ Copy UF2 file to the DFU drive. Firmware should be flashed after the file is dow
 
 ## Troubleshooting
 
-### 
+
 
 ### Device never turns on
 
@@ -352,12 +354,24 @@ Copy UF2 file to the DFU drive. Firmware should be flashed after the file is dow
 * Change the charging cable
 
 
-### Device not responding
+### Device stuck in boot loop
+
+
+The device restarts repeatedly, and the serial port connects and disconnects repeatedly.
+
+**Solution:**
+
+
+[Erase the flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase) and then [flash the firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware) again.
+
+
+### Device bricked
 
 Device not responding, no LED, can not pair with your App.
 
 
 * 1) Device can still enter the DFU mode, then try to **flash the bootloader**.
+
 
 #### Flash the Bootloader
 
@@ -488,12 +502,7 @@ When you have completed the above steps, then you can follow this [step](https:/
 
  Check if the port is correct, or try another port.
 
-### Serial port connection is unstable
 
- 
- * Long press the button for 9s to power off the device, and then press it once to power on the device.
-
- 
 
 
 
