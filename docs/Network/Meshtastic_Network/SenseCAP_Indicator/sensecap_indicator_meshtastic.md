@@ -21,8 +21,10 @@ last_update:
 </div>
 
 
-[SenseCAP Indicator](https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator) is a 4-inch touch screen driven by ESP32-S3 and RP2040 Dual-MCU, it supports Meshtastic network now! 
+SenseCAP Indicator is a 4-inch touch screen driven by ESP32-S3 and RP2040 Dual-MCU. With the compatibility with Meshtastic, SenseCAP Indicator can be another game changer as your Meshtastic phone or you name it.
 
+
+The **[SenseCAP Indicator D1L](https://www.seeedstudio.com/SenseCAP-Indicator-D1L-p-5646.html)** and **[D1Pro](https://www.seeedstudio.com/SenseCAP-Indicator-D1Pro-p-5644.html)**  supports Meshtastic network now! 
 
 
 
@@ -169,3 +171,4 @@ Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/regi
 
 
 Now that you have set the LoRa region on your device, you can continue with configuring any [LoRa Configs](https://meshtastic.org/docs/configuration/radio/lora/) to suit your needs.
+
