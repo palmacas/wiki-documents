@@ -4,7 +4,7 @@ title: Get Started with Indicator for Meshtastic
 keywords:
 - Meshtastic
 - Indicator
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/indicator-page_1.png
 slug: /sensecap_indicator_meshtastic
 last_update:
   date: 10/29/2024
