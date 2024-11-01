@@ -26,6 +26,14 @@ last_update:
     </a>
 </div>
 
+## Quick Starter Guide Vedio
+
+This is SenseCAP Watcher Quick Starter Guide which will help you unbox and get hands-on the device for the first time.
+
+<div class="table-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yufEUFEB0Ic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Introduction
 
 SenseCAP Watcher is an AI watcher to help you monitor anomalies within a space and then take actions. Simply speak to Watcher to give commands, and it will execute your desired tasks when the event occurs. 
