@@ -6,7 +6,7 @@ keywords:
 - LoRaWAN
 - ESP32S3
 - Single Channel Gateway
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61_1.png
 slug: /SenseCAP_Indicator_Single_Channel_Gateway
 toc_max_heading_level: 4
 sidebar_position: 5
