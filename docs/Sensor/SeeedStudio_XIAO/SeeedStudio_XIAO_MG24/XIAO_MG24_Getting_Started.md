@@ -129,7 +129,7 @@ sidebar_position: 0
 	    <th>XIAO MG24/XIAO ESP32MG24(Sense) indication diagram</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/4.jpg" style={{width:700, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/66.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
     <tr>
 	    <th>XIAO MG24/  XIAO ESP32 MG24(Sense) Pin List</th>
