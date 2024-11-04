@@ -12,7 +12,7 @@ last_update:
 sidebar_position: 0
 ---
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/top.jpg" style={{width:900, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/top.jpg" style={{width:600, height:'auto'}}/></div>
 <br />
 
 
@@ -25,8 +25,8 @@ sidebar_position: 0
 			<th>Seeed Studio XIAO MG24 Sense</th>
 		</tr>
 		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop0.jpg" style={{width:300, height:'auto'}}/></div></td>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop.jpg" style={{width:300, height:'auto'}}/></div></td>
+			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop0.jpg" style={{width:250, height:'auto'}}/></div></td>
+			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop.jpg" style={{width:250, height:'auto'}}/></div></td>
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -158,7 +158,7 @@ We pre-program each new XIAO MG24 and XIAO MG24 Sense with a simple factory prog
 
 The factory program preset in the regular version is Blink Light. When you power up the XIAO,the orange user indicator will light up.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/3.gif" style={{width:200, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/99.gif" style={{width:500, height:'auto'}}/></div>
 
 ### Hardware Preparation
 
@@ -265,6 +265,40 @@ Please be careful not to short-circuit the positive and negative terminals and b
 3. The XIAO MG24 will not have any LED on when it is battery powered (unless you have written a specific program), please do not judge whether the XIAO MG24 is working or not by the condition of the LED, please judge it reasonably by your program.
 4. Sorry, we currently have no way to help you check the remaining battery level through software (because there are no more chip pins available), you need to charge the battery regularly or use a multimeter to check the battery level.
 
+## Test current and voltage
+
+```cpp
+/*
+  AnalogReadSerial
+
+  Reads an analog input on pin 0, prints the result to the Serial Monitor.
+  Graphical representation is available using Serial Plotter (Tools > Serial Plotter menu).
+  Attach the center pin of a potentiometer to pin A0, and the outside pins to +5V and ground.
+
+  This example code is in the public domain.
+
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial
+*/
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(115200);
+  pinMode(PD3, OUTPUT);
+  digitalWrite(PD3,HIGH);
+
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(PD4);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(1000);  // delay in between reads for stability
+}
+
+```
 ## Deep Sleep and Sleep Example
 
 #### Demo1 : Sleep Mode and wake-up
