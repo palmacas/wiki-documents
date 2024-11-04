@@ -1,5 +1,5 @@
 ---
-description: MicroPython for XIAO ESP32C6 Sense
+description: MicroPython for XIAO ESP32C6
 title: XIAO ESP32C6 with MicroPython
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /xiao_esp32c6_micropython
@@ -8,17 +8,17 @@ last_update:
   author: Hendra
 ---
 
-# Micropython for XIAO ESP32C6 Sense(Camera, Wi-Fi)
+# Micropython for XIAO ESP32C6
 
 MicroPython is a lean and efficient implementation of the Python 3 programming language that includes a small subset of the Python standard library and is optimised to run on microcontrollers and in constrained environments.
 
 Since its first launch in 2014, micropython has supported many microcontrollers, including the ESP32 series, but currently does not officially support the ESP32C6 chip. This firmware is self compiled, and the official firmware is already on its way. Please be patient.
 
-In this page I will guide on how to use the the Xiao ESP32S6 capability using the simple and easy syntax from micropython
+In this page, we will guide on how to use the the XIAO ESP32C6 capability using the simple and easy syntax from micropython.
 
 ## Hardware Preparation
 
-I am using Seeed Studio XIAO ESPS3 Sense board here.
+I am using Seeed Studio XIAO ESP32C6 board here.
 
 <div class="table-center">
   <table align="center">
@@ -67,7 +67,7 @@ In this guide I will be using **windows 10** alongside with Thonny IDE and espto
 
 ### 👍 Greatly Thanks
 
-<strong><font color={'8DC215'} size={"3"}>The firmware designed for XIAO ESP32C6 Sense board, using in this wiki is made by our friend: Zhishuo Song, whom we are really greatful for.</font></strong>
+<strong><font color={'8DC215'} size={"3"}>The firmware designed for XIAO ESP32C6 board, using in this wiki is made by our friend: Zhishuo Song, whom we are really greatful for.</font></strong>
 
 
 ## Getting Started
@@ -100,7 +100,7 @@ pip install esptool
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/S3-MicroPy/esptool_install.jpg" alt="pir" width={600} height="auto" /></p>
 
-Erase the flash memory on the Xiao ESP32C6 using this command
+Erase the flash memory on the XIAO ESP32C6 using this command
 
 ```cpp
 esptool.py --port COMXX --chip esp32c6 erase_flash
@@ -121,7 +121,7 @@ change the COMXX with port COM number on your PC
 
 ### Step 2. Upload the example code
 
-Now we will upload the example code to Xiao ESP32C6 sense internal flash memory.
+Now we will upload the example code to XIAO ESP32C6 internal flash memory.
 
 For this part I am using thonny IDE first I configure the port
 
@@ -143,7 +143,7 @@ run `blinker.py` example program
 
 ### step3: run code
 
-When running the program, you can see in the shell window that the Xiao is connected to the specified wifi and get the NTP network time.
+When running the program, you can see in the shell window that the XIAO is connected to the specified wifi and get the NTP network time.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220808948.png" alt="pir" width={600} height="auto" /></p>
 
