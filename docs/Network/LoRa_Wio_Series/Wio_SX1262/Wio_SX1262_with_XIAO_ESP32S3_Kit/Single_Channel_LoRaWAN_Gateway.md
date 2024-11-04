@@ -1,6 +1,7 @@
 ---
-description: Lorawan based on Wio SX1262 with XIAO esp32s3 module
+description: Single Channel LoraWAN Gateway based on Wio SX1262 with XIAO esp32s3 module
 title: Single Channel LoRaWAN Gateway
+keywords: ["XIAO ESP32S3", "LoRa", "Wio SX1262", "Single Channel Gateway"]
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
 slug: /wio_sx1262_xiao_esp32s3_for_single_channel_gateway
 sidebar_position: 3
@@ -24,6 +25,8 @@ This is the github project: [One Channel Hub](https://github.com/Lora-net/one_ch
 The firmware is prepared for installation. Simply download from [bin library](https://github.com/Lora-net/one_channel_hub/tree/master/bin).
 
 If you don't use the complete ESP-IDF environment, it is also possible to flash the provided binary files using the **esptool** utility.
+
+Click to download the firmware:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/seeed_xiao_esp32s3_one_chanel_hub_20241016.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
@@ -185,7 +188,24 @@ idf.py -p port monitor
 
 ### Flash with esptool
 
-If not using the complete ESP-IDF environment, can just download the provided binary files following [the first section](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_lora_get_started/#flash-firmware). 
+If not using the complete ESP-IDF environment, can just download the provided binary files following [the first section](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#flash-firmware). 
+
+### Flash with esptool-JS
+
+[Online esptool](https://espressif.github.io/esptool-js/) is recommended for flashing. 
+
+**Step1**: Set Baud rate to 115200 and connect to correct port.
+
+**Step2**: Choose bin file and fill in coresponding flash address.
+
+
+|**Flash Address**|**File**|
+|----|----|
+|0x0|seeed_xiao_esp32s3_devkit_bootloader.bin|
+|0x10000|seeed_xiao_esp32s3_devkit_lorahub.bin|
+|0x8000|seeed_xiao_esp32s3_devkit_partition-table.bin|
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/70.png" alt="pir" width={600} height="auto" /></p>
 
 
 ## Wi-Fi Configuration
@@ -222,7 +242,7 @@ Press the `RST` button on the board, and then press the `BOOT` button, the LED w
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/26.png" alt="pir" width={500} height="auto" /></p>
 
 
-Step 4: Click 'Provison Device' on ESP BLE prov app
+**Step 4**: Click 'Provison Device' on ESP BLE prov app
 
 Once connected successfully, The wifi connection information and lora gateway ID will show up on terminal. 
 

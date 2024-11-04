@@ -4,9 +4,8 @@ title: Weekly Wiki
 keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
-slug: /weekly_wiki
 last_update:
-  date: 10/28/2024
+  date: 11/04/2024
   author: Frank
 ---
 
@@ -18,43 +17,46 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is October 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is November 4th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Enclosure Installation Guide with ReSpeaker Lite](https://wiki.seeedstudio.com/respeaker_enclosure/)
+### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.gif" style={{width:600}}/></div>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/indicator-page.png" alt="pir" width={800} height="auto" /></p>
 
-The [ThingsBoard Community Edition](https://thingsboard.io/), an open-source platform, offers powerful features for creating interactive dashboards that stand out among other open-source IoT solutions. With a variety of graphical tools, ThingsBoard allows users to easily visualize and monitor data collected from IoT devices, making it ideal for managing and analyzing real-time data. Whether for industrial automation, smart city projects, or environmental monitoring, ThingsBoard provides a versatile and user-friendly way to track and respond to IoT data insights.
+[SenseCAP Indicator](https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator) is a 4-inch touch screen driven by ESP32-S3 and RP2040 Dual-MCU. With the compatibility with Meshtastic, SenseCAP Indicator can be another game changer as your Meshtastic phone or you name it.
 
-### [reComputer R1000 V1.1 Product Change Description](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/)
+### [Seeed Studio XIAO RP2350 with Arduino](https://wiki.seeedstudio.com/xiao_rp2350_arduino/)
 
-We found that some users have trouble with DE pin control when using the modbus function of reComputer R1000 V1.0. For better user experience, we modified the pin assignment to make RS485 more usable.And made some adjustments to the overall product.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-firmware-upload.png" alt="pir" width={800} height="auto" /></p>
 
-### [Configuring Wio-SX1262 with XIAO ESP32S3 kit as LoRaWAN Sensor Node](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_lora_sensor_node/)
+The Seeed Studio XIAO RP2350 board now supports programming via Arduino, thanks to the [arduino-pico core](https://github.com/earlephilhower/arduino-pico). This guide will help you set up and begin using Arduino on your RP2350 board.
 
-This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO ESP32S3 to act as a LoRaWAN sensor node, connecting a DHT20 temperature and humidity sensor, adding an M2 LoRaWAN gateway, and sending data to the The Things Network LNS platform. It also covers the configuration of a format decoder.
+### [Single Channel Gateway - SenseCAP Indicator](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.png" style={{width:800, height:'auto'}}/></div>
+
+
+This project demonstrates how to implement a single channel LoRa gateway (LoRaHub) using SenseCAP Indicator which use XIAO ESP32S3 as host MCU and SX1262 LoRa radio and build up a LoRaWAN application on The Things Network(TTN). Upgrading the firmware offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
 
 ## Existing Wiki Updated
 
-### [Getting Started with reServer Industrial](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/)
+### [Getting Started with Seeed Studio Round Display for XIAO](https://wiki.seeedstudio.com/get_start_round_display/)
 
-We provided an [operational demonstration](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#binding-physical-network-ports-to-eth-numbers) for reServer on binding physical network ports to eth numbers.
+We have updated the [list](https://wiki.seeedstudio.com/get_start_round_display/#hardware-preparation) of supported hardware for Round Display for XIAO.
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio XIAO RP2040 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-rp2040-with-nuttx/) 
+### [Seeed Studio XIAO ESP32C6 with MicroPython](https://wiki.seeedstudio.com/xiao_esp32c6_micropython/)
 
-[NuttX](https://nuttx.apache.org/) is a mature real-time operating system (RTOS) widely recognized for its standards compliance and small footprint. One of NuttX's main features is its scalability, which allows it to be used in environments ranging from 8-bit microcontrollers to 64-bit systems. This flexibility is achieved through adherence to POSIX and ANSI standards, enabling you to experiment with similar NuttX features across a wide range of chips from different architectures, families, and semiconductor vendors.
+MicroPython is a lean and efficient implementation of the Python 3 programming language that includes a small subset of the Python standard library and is optimised to run on microcontrollers and in constrained environments. Since its first launch in 2014, micropython has supported many microcontrollers, including the ESP32 series, but currently does not officially support the ESP32C6 chip. This firmware is self compiled, and the official firmware is already on its way. Please be patient.
 
-<div align="center"><img width ="{200}" src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/NuttX/nuttx.svg"/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220808948.png" style={{width:800, height:'auto'}}/></div>
 
-Additionally, NuttX offers many advanced and useful features, such as USB, Ethernet, Audio, and Graphics subsystems. These characteristics make NuttX an attractive choice for developers seeking a versatile, robust RTOS capable of operating on various types of hardware.
+In this page, we will guide on how to use the the XIAO ESP32C6 capability using the simple and easy syntax from micropython.
 
-NuttX supports a vast and continually expanding number of boards. [The official documentation](https://nuttx.apache.org/docs/latest/platforms/) provides a comprehensive list of supported boards, organized by architecture and System-on-Chip (SoC) series. For instance, the [Seeed Studio Xiao RP2040](https://nuttx.apache.org/docs/latest/platforms/arm/rp2040/boards/seeed-xiao-rp2040/index.html) page in the NuttX documentation offers detailed descriptions of each supported feature and instructions on how to utilize them.
-
-[IAO ESP32S3(Sense) With FreeRTOS](https://wiki.seeedstudio.com/xiao-esp32s3-freertos/)
+<!-- [IAO ESP32S3(Sense) With FreeRTOS](https://wiki.seeedstudio.com/xiao-esp32s3-freertos/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/1.png" alt="pir" width={600} height="auto" /></p>
 
@@ -147,5 +149,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
 - [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
 - [weekly wiki on 2024.10.21th](/Seeed_Elderly/weekly_wiki/wiki241021)
+- [weekly wiki on 2024.10.28th](/Seeed_Elderly/weekly_wiki/wiki241028)
 
 </details>
