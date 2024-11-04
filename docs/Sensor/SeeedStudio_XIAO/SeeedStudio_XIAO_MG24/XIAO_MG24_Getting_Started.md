@@ -65,12 +65,12 @@ sidebar_position: 0
 	</tr>
 	<tr>
 	    <th>Wireless</th>
-	    <td align="center" colspan="2">Complete 2.4GHz Wi-Fi subsystem <br></br> BLE: Bluetooth 5.0, Bluetooth mesh</td>
+	    <td align="center" colspan="2">Complete 2.4GHz Wi-Fi subsystem <br></br> BLE: Bluetooth 5.3, Bluetooth mesh</td>
 	</tr>
     <tr>
 	    <th>Built-in Sensors</th>
 	    <td align="center"> - </td>
-        <td align="center">6-Axis IMU <br></br>Analog Microphone</td>
+        <td align="center">6-Axis IMU(LSM6DS3TR-C) <br></br>Analog Microphone(MSM381ACT001)</td>
 	</tr>
     <tr>
 	    <th>Memory</th>
@@ -126,18 +126,28 @@ sidebar_position: 0
 
 <table align="center">
 	<tr>
-	    <th>XIAO MG24/XIAO ESP32MG24(Sense) indication diagram</th>
+	    <th>XIAO MG24 Sense indication diagram</th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/MG24Sense.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
+  	<tr>
+	    <th>XIAO MG24 indication diagram</th>
+	</tr>
+	<tr>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/MG24.png" style={{width:700, height:'auto'}}/></div></td>
+	</tr>
     <tr>
-	    <th>XIAO MG24/  XIAO ESP32 MG24(Sense) Pin List</th>
+	    <th>XIAO MG24/ XIAO ESP32 MG24(Sense) Pin List</th>
 	</tr>
     <tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/77.png" style={{width:1000, height:'auto'}}/></div></td>
 	</tr>
 </table>
+
+:::tip
+  The difference between the two development boards is that MG24 Sense has a microphone sensor and a six axis acceleration sensor, while MG24 does not have one.
+:::
 
 - 5V - This is 5v out from the USB port. You can also use this as a voltage input but you must have some sort of diode (schottky, signal, power) between your external power source and this pin with anode to battery, cathode to 5V pin.
 - 3V3 - This is the regulated output from the onboard regulator.
@@ -154,9 +164,15 @@ To enable you to get started with the XIAO MG24 faster, please read the hardware
 
 We pre-program each new XIAO MG24 and XIAO MG24 Sense with a simple factory program.
 
-1. **XIAO MG24(Sense)**
+1. **XIAO MG24**
 
 The factory program preset in the regular version is Blink Light. When you power up the XIAO,the orange user indicator will light up.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/00.gif" style={{width:500, height:'auto'}}/></div>
+
+2. **XIAO MG24 Sense**
+
+The factory program preset in the regular version is The louder you shout, the brighter the light will be.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/99.gif" style={{width:500, height:'auto'}}/></div>
 
@@ -225,7 +241,7 @@ Now enjoy coding ✨.
 
 - **Step 2.** Navigate to **File > Examples > 01.Basics > Blink**, open the program.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/12(1).png" style={{width:700, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/12(1).png" style={{width:1000, height:'auto'}}/></div>
 
 - **Step 3.** Select the board model to **XIAO MG24**, and select the correct port number to upload the program.
 
@@ -252,7 +268,7 @@ Once the program is successfully uploaded, you will see the following output mes
 
 The XIAO MG24 is capable of using a 3.7V lithium battery as the power supply input. You can refer to the following diagram for the wiring method.
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/222.png" alt="pir" width="800" height="auto"/></div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/4444.png" alt="pir" width="800" height="auto"/></div>
 
 :::caution
 Please be careful not to short-circuit the positive and negative terminals and burn the battery and equipment when soldering.
@@ -265,8 +281,8 @@ Please be careful not to short-circuit the positive and negative terminals and b
 3. The XIAO MG24 will not have any LED on when it is battery powered (unless you have written a specific program), please do not judge whether the XIAO MG24 is working or not by the condition of the LED, please judge it reasonably by your program.
 4. Sorry, we currently have no way to help you check the remaining battery level through software (because there are no more chip pins available), you need to charge the battery regularly or use a multimeter to check the battery level.
 
-## Test current and voltage
-
+## Test voltage
+### Software code
 ```cpp
 /*
   AnalogReadSerial
@@ -282,23 +298,25 @@ Please be careful not to short-circuit the positive and negative terminals and b
 
 // the setup routine runs once when you press reset:
 void setup() {
-  // initialize serial communication at 9600 bits per second:
   Serial.begin(115200);
   pinMode(PD3, OUTPUT);
-  digitalWrite(PD3,HIGH);
-
+  digitalWrite(PD3, HIGH);
 }
 
-// the loop routine runs over and over again forever:
 void loop() {
-  // read the input on analog pin 0:
-  int sensorValue = analogRead(PD4);
-  // print out the value you read:
-  Serial.println(sensorValue);
+  int voltageValue = analogRead(PD4);
+  float voltage = voltageValue * (5.0 / 4095.0);
+  
+  Serial.print("Voltage: ");
+  Serial.print(voltage, 2);
+  Serial.println(" V");
   delay(1000);  // delay in between reads for stability
 }
-
 ```
+### Display Result
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/55.png" alt="pir" width="800" height="auto"/></div>
+
 ## Deep Sleep and Sleep Example
 
 #### Demo1 : Sleep Mode and wake-up
