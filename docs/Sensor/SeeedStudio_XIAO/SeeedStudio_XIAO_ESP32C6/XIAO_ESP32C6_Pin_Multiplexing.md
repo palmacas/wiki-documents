@@ -137,12 +137,14 @@ This example uses the hardware UART0 (Serial0) for communication. It initializes
 
 #### Serial1 Usage
 
-According to the above XIAO ESP32C6 Pin diagrams for specific parameters,we can observe that there are TX pin and RX pin,This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added,So nex,we will use the pins led out by the chip for serial communication
+According to the above XIAO ESP32C6 Pin diagrams for specific parameters, we can observe that there are TX pin and RX pin. 
+This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added. 
+So next, we will use the pins led out by the chip for serial communication.
 
 Core Function that need to be include:
 
 - `Serial1.begin(BAUD,SERIAL_8N1,RX_PIN,TX_PIN);` -- enalbe Serial1,the function prototype : `<Serial.Type>.begin(unsigned long baud, uint32_t config, int8_t rxPin, int8_t txPin);`
-  - `baud`  :badu rate
+  - `baud`  :baud rate
   - `config`:Configuration bit
   - `rxPin` :Receive Pin
   - `txPin` :Send Pin

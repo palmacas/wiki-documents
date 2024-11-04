@@ -316,7 +316,9 @@ If all goes well, you will see data messages on the serial monitor.
 
 ### Serial1 Usage
 
-According to the above XIAO ESP32C3 Pin diagrams for specific parameters,we can observe that there are TX pin and RX pin,This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added,So nex,we will use the pins led out by the chip for serial communication
+According to the above XIAO ESP32C3 Pin diagrams for specific parameters, we can observe that there are TX pin and RX pin. 
+This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added. 
+So next, we will use the pins led out by the chip for serial communication.
 
 Core Function that need to be include:
 
