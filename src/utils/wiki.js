@@ -1,6 +1,20 @@
 const docList = [
   [
     {
+      "path": "/xiao_rp2350_arduino",
+      "image": "https://files.seeedstudio.com/wiki/XIAO-RP2350/img/2-102010550_XIAO_RP2350-45font_1.png",
+      "title": "Seeed Studio XIAO RP2350 with Arduino",
+      "date": "2024-10-30T01:39:16.136Z"
+    },
+    {
+      "path": "/sensecap_indicator_meshtastic",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/indicator-page_1.png",
+      "title": "Get Started with Indicator for Meshtastic",
+      "date": "10/29/2024"
+    }
+  ],
+  [
+    {
       "path": "/recomputer_r1000_thingsboard_dashboard",
       "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.png",
       "title": "Create Dynamic IoT Dashboards with ThingsBoard and reComputer R1000",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/sensecraft_app.png",
       "title": "SenseCraft APP Guideline",
       "date": "10/18/2024"
-    }
-  ],
-  [
-    {
-      "path": "/watcher_local_deploy",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/watcherAI.png",
-      "title": "Deploy Watcher's AI capabilities locally",
-      "date": "10/18/2024"
-    },
-    {
-      "path": "/wio_sx1262_xiao_esp32s3_LNS_Chirpstack",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/51_1.png",
-      "title": "Wio-SX1262 with XIAO ESP32S3 Kit Connect to Chirpstack",
-      "date": "10/17/2024"
     }
   ]
 ];

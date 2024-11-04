@@ -1256,6 +1256,7 @@ const sidebars = {
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO_ESP32C6_Embedded_Swift',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO_ESP32C6_with_CircuitPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO_ESP32C6_with_MicroPython',
               ],
             },
             {
