@@ -154,7 +154,7 @@ If the program cannot be burned, please try using the BOOT button and RST button
 ## ✨ Contributor Project
 
 - This project is supported by the Seeed Studio [Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479).
-- Thanks [Hendra and shariltumin efforts](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35979545) and your work will be [exhibited](https://wiki.seeedstudio.com/Honorary-Contributors/).
+- Thanks [Hendra and shariltumin efforts](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117) and your work will be [exhibited](https://wiki.seeedstudio.com/contributors/).
 
 ## Tech Support & Product Discussion
 
