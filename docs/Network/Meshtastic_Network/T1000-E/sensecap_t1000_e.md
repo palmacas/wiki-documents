@@ -357,29 +357,47 @@ Copy UF2 file to the DFU drive. Firmware should be flashed after the file is dow
 ### Device stuck in boot loop
 
 
-The device restarts repeatedly, and the serial port connects and disconnects repeatedly.
+**Description:**
+
+The device will restart repeatedly, and the serial port connects and disconnects repeatedly.
 
 **Solution:**
 
+* Try to enter DFU mode manually: press and hold the device button, then **quickly** connect the charging cable twice, the green LED will be solid on.
 
-[Erase the flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase) and then [flash the firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware) again.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu-mode2.gif" alt="pir" width={600} height="auto" /></p>
+
+* [Erase the flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase).
+
+* [flash the firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware).
+
+
 
 
 ### Device bricked
 
-Device not responding, no LED, can not pair with your App.
+**Description:**
+
+The device not responding, no LED, can not pair with your App.
 
 
-* 1) Device can still enter the DFU mode, then try to **flash the bootloader**.
+**1) Device can still enter the DFU mode, then try to flash the bootloader**.
 
 
 #### Flash the Bootloader
 
+
+
+
+* [Bootloader download](https://files.seeedstudio.com/wiki/SenseCAP/lorahub/t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip)
+
+<div class="table-center">
+<iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash%20bootloader.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
 :::danger note
 When you are flashing the bootloader, please make sure the cable connection is stable and **DO NOT** disconnect it during the flash process.
 :::
-
-* [Bootloader download](https://files.seeedstudio.com/wiki/SenseCAP/lorahub/t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip)
 
 **Step1: Adafruit-nrfutil Installation**
 
@@ -453,9 +471,16 @@ Copy or move it elsewhere for your convenience, such as directory in your %PATH%
 </Tabs>
 
 
-**Step2: Flash the bootloader**
+**Step2: Check your port number**
 
-Enable the DFU mode of your device and connect it to your PC, run the following command:
+Connect your device to your PC, and check the port number.
+
+Example:
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/usb-port.png" alt="pir" width={600} height="auto" /></p>
+
+**Step3: Flash the bootloader**
+
+In the terminal or command prompt, navigate to the directory where you downloaded the bootloader zip package and execute the following command, replacing the correct port for your device:
 
 * **For Windows**: 
 ```
@@ -467,9 +492,6 @@ adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g4887
 adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g488711a_s140_7.3.0.zip -p /dev/tty.SLAB_USBtoUART -b 115200 --singlebank --touch 1200
 ```
 
-Replace the serial port with your device port. Example:
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/usb-port.png" alt="pir" width={600} height="auto" /></p>
 
 
 
@@ -478,11 +500,24 @@ Replace the serial port with your device port. Example:
 
 
 
-When you have completed the above steps, then you can follow this [step](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-application-firmware) to flash the application firmware.
+When you have completed the above steps, then you can follow this [step](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-application-firmware) to flash the application firmware. 
 
 
 
-* 2) Device can not enter DFU mode and no serial port display, please contact the tech support: support@sensecapmx.com
+**2) Device can not enter DFU mode, but the serial port can be detected**.
+
+* Open a serial port tool
+
+* Set the baud rate to `1200`.
+
+* Connect the device.
+   The light will flash briefly when you connect it. Keep trying this until the light stays on, means the device can back to DFU mode, then [flash bootloader](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-bootloader) -> [Erase flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase) -> [flash the firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware).
+
+<div class="table-center">
+<iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/reset%20via%20serial%20tool.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+**3) Device can not enter DFU mode and no serial port display, please contact the tech support: support@sensecapmx.com**
 
 
 ### Firmware flashing failed
