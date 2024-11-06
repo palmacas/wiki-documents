@@ -494,7 +494,7 @@ void loop()
 ### For Seeed Studio XIAO MG24 Sense
 
 - 📄 **[PDF]** [MG24 datasheet](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24-group-datasheet.PDF)
-- 📄 **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SCH.pdf)
+- 📄 **[PDF]** [Seeed Studio XIAO MG24 Sense Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SCH.pdf)
 - 📄 **[PDF]** [MG24 Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 📄 **[Kicad]** [MG24 FootOut](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SMD.kicad_mod)
 
