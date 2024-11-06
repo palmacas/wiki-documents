@@ -1,7 +1,7 @@
 ---
 description: Using Arduino on your XIAO RP2350 board
 title: Getting Started with Seeed Studio XIAO RP2350(Arduino)
-image: https://files.seeedstudio.com/wiki/XIAO-RP2350/img/2-102010550_XIAO_RP2350-45font_1.png
+image: https://files.seeedstudio.com/wiki/XIAO-RP2350/img/2-102010550_XIAO_RP2350-45font_1.webp
 slug: /xiao_rp2350_arduino
 sidebar_position: 1
 last_update:
