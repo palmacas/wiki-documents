@@ -15,7 +15,7 @@ last_update:
   author: Evelyn Chen
 ---
 
-# **Single Channel Gateway - SenseCAP Indicator**
+# **Single Channel LoRaWAN Gateway - SenseCAP Indicator**
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.png" style={{width:800, height:'auto'}}/></div>
 
@@ -35,7 +35,7 @@ If you don't use the complete ESP-IDF environment, it is also possible to flash 
 Click to download the firmware:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241031.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
     </a>
 </div>
 
