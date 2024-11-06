@@ -1,7 +1,7 @@
 ---
 description: This article describes Watcher's charging plan on using SenseCraft AI.
 title: Price and Benefits
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/price_month_simpler_1.png
+image: https://files.seeedstudio.com/wiki/watcher_getting_started/price_month_simpler_1.webp
 slug: /watcher_price
 sidebar_position: 3
 last_update:

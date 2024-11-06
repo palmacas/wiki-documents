@@ -17,41 +17,41 @@ function IndexLatestedViki(props) {
       docList: [
         {
           "path": "/xiao_esp32s3_getting_started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/xiaoesp32s3sense.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/xiaoesp32s3sense.webp",
           "title": "Seeed Studio XIAO ESP32S3 (Sense)",
         },
         {
           "path": "/XIAO_BLE",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/XIAO-nRF52840-Sense-45font.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/XIAO-nRF52840-Sense-45font.webp",
           "title": "Seeed Studio XIAO nRF52840 (Sense)",
         },
         {
           "path": "/XIAO_ESP32C3_Getting_Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/xiao-esp32c3.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/xiao-esp32c3.webp",
           "title": "Seeed Studio XIAO ESP32C3",
         },
         {
           "path": "/xiao_esp32c6_getting_started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/xiaoc6.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/xiaoc6.webp",
           "title": "Seeed Studio XIAO ESP32C6",
         }, 
         {
           "path": "/Seeeduino-XIAO",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/Seeeduino-XIAO-preview-1.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/Seeeduino-XIAO-preview-1.webp",
           "title": "Seeed Studio XIAO SAMD21",
         },
         {
           "path": "/Grove-Beginner-Kit-For-Arduino",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/grove-beginner-kit-for-arduino.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/grove-beginner-kit-for-arduino.webp",
           "title": "Grove Beginner Kit For Arduino",
         },
         {
           "path": "/Wio-Terminal-Getting-Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/wio.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/wio.webp",
           "title": "Wio Terminal",
         }, {
           "path": "/Edgebox-ESP-100-Arduino",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/EdgeBox-ESP-100.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/EdgeBox-ESP-100.webp",
           "title": "EdgeBox-ESP-100",
         }
       ]
@@ -62,42 +62,42 @@ function IndexLatestedViki(props) {
       docList: [
         {
           "path": "/reTerminal",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reTerminal.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reTerminal.webp",
           "title": "Getting Started with reTerminal",
         },
         {
           "path": "/recomputer_r1000_flash_OS",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reComputer_R1025.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reComputer_R1025.webp",
           "title": "reComputer R1000 Raspbian OS to eMMC",
         },
         {
           "path": "/Edge_Box_introduction",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/EdgeBox_RPi_200.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/EdgeBox_RPi_200.webp",
           "title": "Getting Started Edge Box RPI-200",
         }, 
         {
           "path": "/reTerminal-hardware-interfaces-usage",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/HW_overview.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/HW_overview.webp",
           "title": "Hardware and Interfaces Usage",
         },
         {
           "path": "/pose_based_light_control_with_nodered_and_rpi_with_aikit",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/Node-Red.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/Node-Red.webp",
           "title": "Pose-Based Light Control with Node-Red and Raspberry Pi with AIkit",
         },
         {
           "path": "/Edgebox-rpi-200-codesys",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/new_project.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/new_project.webp",
           "title": "Codesys for Edge Box RPi 200",
         },
         {
           "path": "/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/yolov8_result.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/yolov8_result.webp",
           "title": "AI Kit with Raspberry Pi 5 about YOLOv8n object detection",
         }, 
         {
           "path": "/reTerminal-DM_intro_FUXA",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/fuxa-editor.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/fuxa-editor.webp",
           "title": "Getting Start with FUXA - Web Based SCADA Tool",
         }
       ]
@@ -110,42 +110,42 @@ function IndexLatestedViki(props) {
       docList: [
         {
           "path": "/reServer_Industrial_Getting_Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reserver.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reserver.webp",
           "title": "Getting Started with reServer Industrial",
         },
         {
           "path": "/reComputer_Industrial_Getting_Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reComputerheadline.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reComputerheadline.webp",
           "title": "Getting Started with reComputer Industrial",
         },
         {
           "path": "/reserver_j501_getting_started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reServer_J501.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/reServer_J501.webp",
           "title": "Getting Started with reServer J501",
         },
         {
           "path": "/reComputer_J4012_Flash_Jetpack",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/recomputer-j401.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/recomputer-j401.webp",
           "title": "Flash JetPack OS to J401 Carrier Board",
         },
         {
           "path": "/reComputer_Jetson_Series_Initiation",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/rekaiji6.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/rekaiji6.webp",
           "title": "reComputer for Jetson Initiation",
         },
         {
           "path": "/deploy_frigate_on_jetson",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/frigate.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/frigate.webp",
           "title": "Deploy Frigate On NVIDIA Jetson device",
         },
         {
-          "path": "/J101_Enable_SD_Card",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/fix01.png",
-          "title": "J101 Enable SD Card",
+          "path": "/reComputer_Jetson_Memory_Expansion",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/jetson_memory_expansion.webp",
+          "title": "reComputer for Jetson Memory Expansion",
         },
         {
           "path": "/YOLOv8-DeepStream-TRT-Jetson",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/yolov8_car.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/yolov8_car.webp",
           "title": "YOLOv8 on Jetson with TensorRT and DeepStream",
         }
       ]
@@ -156,42 +156,42 @@ function IndexLatestedViki(props) {
       docList: [
         {
           "path": "/home_assistant_sensecap",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/config_11.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/config_11.webp",
           "title": "SenseCAP Integration for Home Assistant",
         },
         {
           "path": "/xiao-esp32c3-esphome",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/c3_accesses_ha.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/c3_accesses_ha.webp",
           "title": "XIAO ESP32C3 accesses Home Assistant via ESPHome service",
         },
         {
           "path": "/home_assistant_with_sensecap_lorawan_sensors",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/ha_sensecap.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/ha_sensecap.webp",
           "title": "Tango with Home Assistant and SenseCAP Sensors",
         },
                 {
           "path": "/sensecraft_homeassistant_userguide",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/SenseCraft-HomeAssistantimage50.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/SenseCraft-HomeAssistantimage50.webp",
           "title": "SenseCraft-HomeAssistant User Manual",
         },
         {
           "path": "/SenseCAP_Indicator_Application_Matter",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/indicator-matter-7.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/indicator-matter-7.webp",
           "title": "SenseCAP Indicator - Matter Application Development",
         },
         {
           "path": "/ha_xiao_esp32",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/ha-xiao5.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/ha-xiao5.webp",
           "title": "XIAO ESP32S3 for Home Assistant",
         },
         {
           "path": "/Connect-Grove-to-Home-Assistant-ESPHome",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/grove_to_esphome.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/grove_to_esphome.webp",
           "title": "Connect Grove Modules to Home Assistant using ESPHome",
         },
         {
           "path": "/reterminal-DM-Frigate",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/frigate_with_reterminal.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/frigate_with_reterminal.webp",
           "title": "Frigate intergrating with reTerminal DM",
         }, 
       ]
@@ -202,41 +202,41 @@ function IndexLatestedViki(props) {
       docList: [
         {
           "path": "/Real%20Time%20Subtitle%20Recoder%20on%20Nvidia%20Jetson",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/speech_subtitle.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/speech_subtitle.webp",
           "title": "Speech Subtitle Generation on Nvidia Jetson",
         },
         {
           "path": "/Edge/NVIDIA_Jetson/Application/Generative_AI/Whisper_on_Jetson_for_Real_Time_Speech_to_Text",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/real_time_speech.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/real_time_speech.webp",
           "title": "Deploy Whisper on NVIDIA Jetson Orin for Real time Speech to Text",
         },
         {
           "path": "https://wiki.seeedstudio.com/How_to_run_local_llm_text_to_image_on_reComputer/",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/local_llm_text_to_image.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/local_llm_text_to_image.webp",
           "title": "Run a Local LLM Text-to-Image on reComputer",
         },
         {
           "path": "/alwaysAI-Jetson-Getting-Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_alwaysai.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_alwaysai.webp",
           "title": "Object Detection with AlwaysAI",
         }
         , {
           "path": "/YOLOv8-TRT-Jetson",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_yolov8.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_yolov8.webp",
           "title": "Object Detection with Yolov8",
         },
         {
           "path": "/Lumeo-Jetson-Getting-Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_lumeo.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_lumeo.webp",
           "title": "Object Detection with Lumeo",
         }, {
           "path": "/No-code-Edge-AI-Tool",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/no_code_edge_ai_tool.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/no_code_edge_ai_tool.webp",
           "title": "No code Edge AI Tool",
         },
         {
           "path": "/Jetson-Nano-MaskCam",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/maskcam.png",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/maskcam.webp",
           "title": "Maskcam - Crowd Face Mask Usage Monitoring based on Jetson Nano",
         }
       ]
