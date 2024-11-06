@@ -11,6 +11,19 @@ last_update:
 
 Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. Wio-SX1262 with XIAO ESP32S3 kit is flexible solution for meshtastic developer and maker.
 
+## Flash Firmware
+
+：：：note
+Please flash the firmware before using Meshtastic.
+:::
+
+**Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.
+
+**Step 2**: Then, use a suitable USB cable to connect the device to the PC. You may need to turn off, then **press and hold the BOOT button** while plugging in the USB cable.
+
+**Step 3**: Follow the following instruction provided to perform the subsequent flashing operations. Select the Device as "**Seeed XIAO S3**", Firmware as **the lastest** one, and then click "**Flash**". Don't forget to tick "**Full Erase and Install**" if you want to cover previous firmware.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div>
 
 ## Software Overview
 
@@ -188,16 +201,6 @@ Modules are included in the firmware and allow users to extend the functionality
 | [Telemetry](https://meshtastic.org/docs/configuration/module/telemetry/) | Attach sensors to the device and transmit readings on a regular interval to the mesh. |
 | [Traceroute](https://meshtastic.org/docs/configuration/module/traceroute/) | Track which nodes are used to hop a message to a certain destination. |
 
-
-## Flash Firmware
-
-**Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.
-
-**Step 2**: Then, use a suitable USB cable to connect the device to the PC. You may need to turn off, then **press and hold the BOOT button** while plugging in the USB cable.
-
-**Step 3**: Follow the following instruction provided to perform the subsequent flashing operations. Select the Device as "**Seeed XIAO S3**", Firmware as **the lastest** one, and then click "**Flash**". Don't forget to tick "**Full Erase and Install**" if you want to cover previous firmware.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div>
 
 ## Tech Support & Product Discussion
 
