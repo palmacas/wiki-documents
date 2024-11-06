@@ -218,7 +218,7 @@ To install the XIAO MG24 board, follow these steps:
 https://siliconlabs.github.io/arduino/package_arduinosilabs_index.json 
 ```
 
-1. Add the above board manager URL to the preferences of your Arduino IDE, which is taken from the [Installing - Silicon Labs](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html#installing-using-arduino-ide).
+1. Add the above board manager URL to the preferences of your Arduino IDE.
 
 <div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/13(1).png" style={{width: 'auto', height: 'auto'}}/></div>
 
@@ -494,13 +494,13 @@ void loop()
 ### For Seeed Studio XIAO MG24 Sense
 
 - 📄 **[PDF]** [MG24 datasheet](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24-group-datasheet.PDF)
-- 📄 **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_v1_0_SCH_PDF.pdf)
+- 📄 **[PDF]** [Seeed Studio XIAO MG24 Sense Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SCH.pdf)
 - 📄 **[PDF]** [MG24 Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 📄 **[Kicad]** [MG24 FootOut](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SMD.kicad_mod)
 
 ### For Seeed Studio XIAO MG24
 - 📄 **[PDF]** [MG24 datasheet](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24-group-datasheet.PDF)
-- 📄 **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_v1_0_SCH_PDF.pdf)
+- 📄 **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SCH.pdf)
 - 📄 **[PDF]** [MG24 Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 📄 **[Kicad]** [MG24 FootOut](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_SMD.kicad_mod)
 
