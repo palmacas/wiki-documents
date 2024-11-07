@@ -30,6 +30,10 @@ This is the github project: [SenseCAP Indicator LoRaHub Demonstration](https://g
 
 The firmware is prepared for installation. Simply download from [bin library](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/tree/main/examples/indicator_lorahub/firmware).
 
+:::tip
+We also provide a merged version of firmware in GitHub. The following instruction is based on the separated version for easier understanding for the beginner. If you want to directly burn [the merged version](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/blob/main/examples/indicator_lorahub/firmware/sensecap_indicator_esp32_v1.0.0.bin), set the flashing address to 0x0.
+:::
+
 If you don't use the complete ESP-IDF environment, it is also possible to flash the provided binary files using the **esptool** utility.
 
 Click to download the firmware:
