@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reComputer R1000
   - Flash OS
-image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.webp
 slug: /recomputer_r1000_flash_OS
 last_update:
   date: 10/25/2024
@@ -444,8 +444,8 @@ For reComputer R1000 V1.0, it need to change the `/boot/firmware/config.txt` fil
 ```
 Modify the final content of the file to:
 ```shell
-  enable uart=1
-  dtoverlay=dwc2,dr mode=host
+  enable_uart=1
+  dtoverlay=dwc2,dr_mode=host
   dtoverlay=vc4-kms-v3d
   dtoverlay=reComputer-R100x,uart2
 ```
