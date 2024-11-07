@@ -11,13 +11,13 @@ last_update:
 
 ## Introduction
 
-Matter is an open standard developed to enable interoperability across smart home accessories, supporting native compatibility with multiple ecosystems such as Apple HomeKit, Google Home, and Amazon Alexa. By establishing a standardized protocol for communication, Matter simplifies the integration process for smart devices, enhancing both usability and flexibility within smart home setups. For further insights into Matter, refer to the [official Matter documentation](https://project-chip.github.io/connectedhomeip-doc/index.html).
+Matter is an **open-source, unified standard** for smart home technology that promotes interoperability across devices and ecosystems. Developed by the Connectivity Standards Alliance (CSA), it enables seamless communication between devices from various manufacturers without requiring internet connectivity. Matter supports native compatibility with platforms such as Apple HomeKit, Google Home, and Amazon Alexa, making it easier to integrate devices across smart home setups. For a deeper understanding of Matter, refer to the [official Matter documentation](https://project-chip.github.io/connectedhomeip-doc/index.html).
 
-> In 2024[^1], Silicon Labs and Arduino partnered to simplify Matter adoption by creating a user-friendly development path through the Arduino ecosystem. This collaboration aims to streamline Matter development for Arduino enthusiasts, helping them to overcome the typical challenges and steep learning curve associated with Matter applications.
+> In 2024[^1], Silicon Labs and Arduino joined forces to lower barriers to Matter adoption, providing a development path that simplifies using Matter with the Arduino ecosystem. This collaboration aims to make Matter development more accessible, helping Arduino developers overcome typical challenges and adopt Matter seamlessly.
 
 [^1]: [Silicon Labs and Arduino Partner to Democratize Matter - Feb 6, 2024](https://news.silabs.com/2024-02-06-Silicon-Labs-and-Arduino-Partner-to-Democratize-Matter)
 
-With Matter, device functionality is not reliant on internet connectivity and can operate reliably and swiftly over local networks, further enhancing security and performance.
+Matter operates efficiently over local networks, offering reliable, low-latency communication without needing internet access. This feature significantly improves both security and device performance.
 
 This documentation will guide you through the steps to develop a Matter application on the XIAO MG24, using Arduino.
 
@@ -163,7 +163,7 @@ After scanning the QR code, the Matter controller(HomeKit) will prompt you to co
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/matter-device-online.png" style={{width:480, height: 'auto', "border-radius": '12.8px'}}/></div>
 
-<!-- <iframe class="youtube-video-r" src="https://www.youtube.com/embed/oqJz6zKfc4A?si=glzTFfR7m392eITb" title="Set Up the ESP-IDF Toolchain for SenseCAP Indicator on Windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe class="youtube-video-r" src="https://youtube.com/embed/tmCpIWuRojQ" title="MG24 Matter Lightbulb Example" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Reference & Resources
 
