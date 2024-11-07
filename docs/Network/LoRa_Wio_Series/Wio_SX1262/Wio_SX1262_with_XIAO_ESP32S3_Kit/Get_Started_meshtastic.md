@@ -13,7 +13,7 @@ Meshtastic is an open source, off-grid, decentralized, mesh network built to run
 
 ## Flash Firmware
 
-：：：note
+:::note
 Please flash the firmware before using Meshtastic.
 :::
 
