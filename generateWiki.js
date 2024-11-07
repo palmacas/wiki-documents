@@ -7,8 +7,9 @@ const wikiFilePath = path.join(__dirname, '/src/utils/wiki.js')
 
 const docList = []
 const excludedPaths = [
-  path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // 排除的目录
-  path.join(docsDirectory, 'weekly_wiki.md') // 排除的文件
+  path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
+  path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
+  path.join(docsDirectory, 'weekly_wiki.md') // 排除 weekly wiki 的文件
 ];
 
 // 递归函数，用于遍历多层文件夹
