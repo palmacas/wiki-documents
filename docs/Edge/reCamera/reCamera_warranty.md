@@ -6,7 +6,7 @@ keywords:
   - reCamera
   - recamera
 image: https://files.seeedstudio.com/wiki/wiki-platform/S.webp
-slug: /reCamera_warranty
+slug: /recamera_warranty
 last_update:
   date: 11/8/2024
   author: Parker Hu
