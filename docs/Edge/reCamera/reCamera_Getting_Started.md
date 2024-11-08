@@ -23,7 +23,7 @@ This combination makes reCamera a standalone system that can handle basic detect
 ### USB NET setup 
 To use USB networking, we enabled UsbNcm and DHCP by default on the system.
 UsbNcm is driver-free on Linux, macOS, and the latest Windows systems. You can log in to 
-recamera's terminal directly using `ssh recamrea@192.168.42.1` ,`passwd = recamera` .
+recamera's terminal directly using `ssh recamera@192.168.42.1` ,`passwd = recamera` .
 
 - [Windows](#jump1)
 - [Linux](#jump2)
@@ -57,15 +57,22 @@ Select `Let me pick from a list of available drivers on my computer`
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/005.png" /></div>
 
-**step4**:Selet `Microsoft` -> `UsbNcm Host Device` then click Next.
+**step4:**:
+Select `Network adapters` and then click `next`
+
+<br />
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/014.png" /></div>
+
+**step5**:Selet `Microsoft` -> `UsbNcm Host Device` then click Next.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/006.png" /></div>
 
-**step5**:When the alert bar pops up, select `Yes`
+**step6**:When the alert bar pops up, select `Yes`
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/007.png" /></div>
 
-**step6**:Enter ping 192.168.42.1 in a terminal window.
+**step7**:Enter ping 192.168.42.1 in a terminal window.
 <br />
 The following output shows that you have successfully connected to the reCamera.
 
@@ -85,6 +92,7 @@ Check the usb network adapter in System Settings -> Network. The ip of the devic
 
 ### Computer network error
 
+#### windows
 
 If your Windows 10 System computer has network access issues after using the USB network of reCamera.
 Press `win+x` click Control Panel. Select All Control Panel Items -> Network Connections. 
@@ -96,9 +104,37 @@ Right mouse click UsbNcm Host Device. Select `Properties` -> `TCP/IPv4` -> `Prop
 Then your network is back up.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/011.png" /></div>
 
+#### MAC
+
 If your computer is running MacOS. You only need to set the priority of the computer network card UsbNcm network card last
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/012.png" /></div>
+
+The specific Settings are as follows:
+
+**step1**: Select `System Settings`
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/015.png" /></div>
+
+**step2**: You will see this order, and we are about to change it.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/016.png" /></div>
+
+**step3**: Drag all the way to the bottom, and click it.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/017.png" /></div>
+
+**step4**: Select `Set Service Order`
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/018.png" /></div>
+
+**step5**: Drag NCM below Wi-Fi and then click `ok`
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/019.png" /></div>
+
+**step6**: Finally, you should see the Settings shown
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/020.png" /></div>
 
 
 ## System update and upgrade
