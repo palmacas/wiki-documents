@@ -15,7 +15,7 @@ last_update:
   author: Evelyn Chen
 ---
 
-# **Single Channel Gateway - SenseCAP Indicator**
+# **Single Channel LoRaWAN Gateway - SenseCAP Indicator**
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.png" style={{width:800, height:'auto'}}/></div>
 
@@ -30,12 +30,16 @@ This is the github project: [SenseCAP Indicator LoRaHub Demonstration](https://g
 
 The firmware is prepared for installation. Simply download from [bin library](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/tree/main/examples/indicator_lorahub/firmware).
 
+:::tip
+We also provide a merged version of firmware in GitHub. The following instruction is based on the separated version for easier understanding for the beginner. If you want to directly burn [the merged version](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/releases/tag/v1.0.3-beta-lorahub-demo), set the flashing address to 0x0.
+:::
+
 If you don't use the complete ESP-IDF environment, it is also possible to flash the provided binary files using the **esptool** utility.
 
 Click to download the firmware:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241031.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
     </a>
 </div>
 

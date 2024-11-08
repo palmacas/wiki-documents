@@ -1,6 +1,34 @@
 const docList = [
   [
     {
+      "path": "/watcher_software_framework",
+      "image": "https://files.seeedstudio.com/wiki/watcher_software_framework/architecture_1.webp",
+      "title": "Software Architecture",
+      "date": "11/5/2024"
+    },
+    {
+      "path": "/watcher_function_module_development_guide",
+      "image": "https://files.seeedstudio.com/wiki/watcher_software_framework/watcher_function_module.webp",
+      "title": "Watcher Function Module Development Guide",
+      "date": "11/5/2024"
+    }
+  ],
+  [
+    {
+      "path": "/build_watcher_development_environment",
+      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/64.webp",
+      "title": "Build the Watcher Development Environment",
+      "date": "11/5/2024"
+    },
+    {
+      "path": "/watcher_ui_integration_guide",
+      "image": "https://files.seeedstudio.com/wiki/watcher_software_framework/ui_framework.webp",
+      "title": "UI Integration Guide",
+      "date": "11/5/2024"
+    }
+  ],
+  [
+    {
       "path": "/xiao_rp2350_arduino",
       "image": "https://files.seeedstudio.com/wiki/XIAO-RP2350/img/2-102010550_XIAO_RP2350-45font_1.webp",
       "title": "Seeed Studio XIAO RP2350 with Arduino",
@@ -52,34 +80,6 @@ const docList = [
       "path": "/getting_started_with_watcher_task",
       "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/85_1.webp",
       "title": "SenseCAP Watcher Task Assignment Guideline",
-      "date": "10/18/2024"
-    }
-  ],
-  [
-    {
-      "path": "/watcher_hardware_overview",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/hardware_overview_1.webp",
-      "title": "SenseCAP Watcher Hardware Overview",
-      "date": "10/18/2024"
-    },
-    {
-      "path": "/watcher_operation_guideline",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/0_1.webp",
-      "title": "SenseCAP Watcher Operation Guideline",
-      "date": "10/18/2024"
-    }
-  ],
-  [
-    {
-      "path": "/watcher_price",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/price_month_simpler_1.webp",
-      "title": "SenseCraft AI for Watcher Plans and Benefits",
-      "date": "10/18/2024"
-    },
-    {
-      "path": "/sensecap_app_introduction",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/sensecraft_app.webp",
-      "title": "SenseCraft APP Guideline",
       "date": "10/18/2024"
     }
   ]
