@@ -213,7 +213,7 @@ Next , We will choose two sensors to reflect the characteristics of ADC .
 ### Software Implementation
 
 ``` cpp
-#define ADC_Bit_Fourteen 14ues .
+#define ADC_Bit_Fourteen 14
 #define ADC_Bit_Twelve 12
 #define ADC_Bit_Ten 10
 
