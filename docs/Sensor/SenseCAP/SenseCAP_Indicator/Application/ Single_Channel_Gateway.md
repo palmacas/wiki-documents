@@ -11,7 +11,7 @@ slug: /SenseCAP_Indicator_Single_Channel_Gateway
 toc_max_heading_level: 4
 sidebar_position: 5
 last_update:
-  date: 10/30/2023
+  date: 10/30/2024
   author: Evelyn Chen
 ---
 
@@ -20,7 +20,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.png" style={{width:800, height:'auto'}}/></div>
 
 
-This project demonstrates how to implement a single channel LoRa gateway (LoRaHub) using SenseCAP Indicator which use XIAO ESP32S3 as host MCU and SX1262 LoRa radio and build up a LoRaWAN application on The Things Network(TTN). Upgrading the firmware offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
+This project demonstrates how to implement a single channel LoRaWAN gateway (LoRaHub) using SenseCAP Indicator which use XIAO ESP32S3 as host MCU and SX1262 LoRa radio and build up a LoRaWAN application on The Things Network(TTN). Upgrading the firmware offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
 
 For single channel gateways(called One-Channel Hub), which are low-cost tools that enable users to begin exploring the LoRa realm. These gateways can receive LoRa packets on a specific spreading factor and channel and facilitate the exchange of these packets with the network. Due to their affordability, many users have embarked on building their own single-channel gateways to experiment with LoRa.
 
