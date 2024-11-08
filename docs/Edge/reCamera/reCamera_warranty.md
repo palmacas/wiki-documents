@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reCamera
   - recamera
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/wiki-platform/S.webp
 slug: /reCamera_warranty
 last_update:
   date: 11/8/2024
