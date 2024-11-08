@@ -20,9 +20,41 @@ Before connecting to Helium, you need to configure the basic parameters of your 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/heliumdevice.png" alt="pir" width={300} height="auto" /></p>
 
+## ChirpStack LNS
 
-## Helium Configuration
+To receive the data from a device on the Helium network it must be associated with an LNS (LoraWAN Network Server).
+New users typically use one of the [public LNSs](https://docs.helium.com/iot/find-a-lns-provider/), many of which use
+ChirpStack, but it is also possible to connect one's own LNS to Helium.
+The following steps are taken from the on-boarding of a T1000 to the MeteoScientific public LNS but should be easy to adapt
+to other LNSs on Helium.
 
+### Add device profile
+
+The first step is to add a device profile for the T1000 to your ChirpStack LNS.
+This tells the LNS how to decode the packets it receives from a T1000 as well as a number of other settings.
+
+In the ChirpStack dashboard select the device profiles (green circle in the image below) and then add a device profile
+(red circle).
+
+![image](https://github.com/user-attachments/assets/7e6984e2-178b-446e-afda-29dd033c662f)
+
+One the general tab, enter a device profile name you will recognize and select the appropriate region parameters.
+The LoRaWAN MAC version should be 1.0.4.
+The expected uplink interval can be set too, the main thing it controls is when the LNS user interface shows the device
+as active vs. inactive. It has no effect on the delivery of packets through the LNS.
+
+![image](https://github.com/user-attachments/assets/bb83141f-a447-437b-a29d-27e16a20ce7a)
+
+On the Codec tab select "JavaScript functions" and enter the codec TBD.
+
+
+
+
+## Helium Console Configuration
+
+The Helium console is no longer open for new accounts. The description for how to connect a T1000 to the Helium Console
+remains here for users that already have an account. For new users, please refer to the ChirpStack LNA steps above or determine
+the necessary steps for your particular LNA based on the two existing examples here.
 
 ### Add New Device
 
