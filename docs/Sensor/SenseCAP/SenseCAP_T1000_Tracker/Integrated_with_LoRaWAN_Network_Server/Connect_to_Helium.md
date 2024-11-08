@@ -61,9 +61,9 @@ Then add a device to the application and enter the devEUI as captured in the Sen
 
 ![image](https://github.com/user-attachments/assets/93febc5b-bc8f-430b-83e0-55d89690355c)
 
-On the variables tab add a variable called `app_eui` with sixteen (16) zeros as value:
+On the variables tab add a variable called `app_eui` with the AppEUI from the Sense Craft app as value:
 
-![image](https://github.com/user-attachments/assets/e00873a6-a2aa-4506-b558-c30e5e222812)
+![image](https://github.com/user-attachments/assets/90e529d7-811b-49cd-902d-85e36b2f6313)
 
 Hitting submit will bring up a page asking for the AppKey, again as captured earlier using the Sense Craft app:
 
@@ -71,8 +71,19 @@ Hitting submit will bring up a page asking for the AppKey, again as captured ear
 
 ### Watch your T1000 connect
 
+On the LoRaWAN frames tab you will see a spinner and then packets show up as they are received/sent.
+Press the button your T1000 to cause it to take a measurement and send a join request to connect with the LNS.
+Once this happens, you should see something like this:
 
+![image](https://github.com/user-attachments/assets/060873cb-c1d8-40bd-9ad3-7333966d3558)
 
+Once the join process has been performed the T1000 sends data. The LNS responds back with some information about the network
+frequencies and such, but subsequent to that there should only be uplinks with data.
+
+The actual data as decoded by the codec can be seen on the events tab, except that the codec in the Seeed github repo doesn't work
+so an error is shown. (To be fixed...)
+
+![image](https://github.com/user-attachments/assets/3faa4609-6c5c-46c2-87c6-b8401e52fc62)
 
 ## Helium Console Configuration
 
