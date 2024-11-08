@@ -85,9 +85,12 @@ Once the join process has been performed the T1000 sends data. The LNS responds 
 frequencies and such, but subsequent to that there should only be uplinks with data.
 
 The actual data as decoded by the codec can be seen on the events tab, except that the codec in the Seeed github repo doesn't work
-so an error is shown. (To be fixed...)
+so an error is shown (see the red circle). Using the TTN codec works (it's ChirpStack compatible) and one can see the actual data
+values by clicking on the `+up` button (green circle).
 
-![image](https://github.com/user-attachments/assets/3faa4609-6c5c-46c2-87c6-b8401e52fc62)
+![image](https://github.com/user-attachments/assets/a12d8a4c-5e8d-47b4-b1f5-1cfaea36f227)
+
+
 
 ## Helium Console Configuration
 
