@@ -42,7 +42,7 @@ In the ChirpStack dashboard select the device profiles (green circle in the imag
 
 ![image](https://github.com/user-attachments/assets/7e6984e2-178b-446e-afda-29dd033c662f)
 
-One the general tab, enter a device profile name you will recognize and select the appropriate region parameters.
+On the general tab, enter a device profile name you will recognize and select the appropriate region parameters.
 The LoRaWAN MAC version should be 1.0.4.
 The expected uplink interval can be set too, the main thing it controls is when the LNS user interface shows the device
 as active vs. inactive. It has no effect on the delivery of packets through the LNS.
