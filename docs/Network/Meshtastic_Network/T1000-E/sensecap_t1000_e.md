@@ -251,6 +251,9 @@ The following firmware will brick your device：
 
 ### Flash the Application Firmware
 
+<div class="table-center">
+<iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Flash%20Firmware.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
 #### Step 1: Enter DFU mode
 
@@ -290,7 +293,7 @@ Connect the USB cable to your PC, press and hold the device button, then **quick
 
 
 
-#### Step 2: Flash erase
+#### Step 2: Flash Erase
 
 
 :::caution note
@@ -309,7 +312,7 @@ Download the erase firmware and copy to the driver.
 This process may take some time, wait for the drive to disappear, then open a serial monitor to complete the erase process.
 
 
-#### Step 3: Flash firmware
+#### Step 3: Flash Firmware
 
 
 
@@ -331,17 +334,20 @@ Copy UF2 file to the DFU drive. Firmware should be flashed after the file is dow
 
  Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).<br/>
 
- Select device: `T1000-E Tracker Card`<br/>
- <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/device-name1.png" alt="pir" width={800} height="auto" /></p>
+
+
 
 
  Click `Open Serial Monitor`, connect the device to your PC, check the serial log, keyword `using nodenum`.
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/monitor2.png" alt="pir" width={800} height="auto" /></p>
 
  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/device-name3.png" alt="pir" width={800} height="auto" /></p>
 
 * **How to reboot the device?**
 
  Press and hold the button, then connect the charging cable.
+
 
 ## Troubleshooting
 
@@ -363,13 +369,17 @@ The device will restart repeatedly, and the serial port connects and disconnects
 
 **Solution:**
 
-* Try to enter DFU mode manually: press and hold the device button, then **quickly** connect the charging cable twice, the green LED will be solid on.
+* Step 1: Try to enter DFU mode manually: press and hold the device button, then **quickly** connect the charging cable twice, the green LED will be solid on.
+
+:::note
+To successfully enter the DFU mode, you need to perform this operation quickly. You may need to try multiple times.
+:::
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu-mode2.gif" alt="pir" width={600} height="auto" /></p>
 
-* [Erase the flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase).
+* Step 2: [Erase Flash](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase).
 
-* [flash the firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware).
+* Step 3: [Flash Firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware).
 
 
 
