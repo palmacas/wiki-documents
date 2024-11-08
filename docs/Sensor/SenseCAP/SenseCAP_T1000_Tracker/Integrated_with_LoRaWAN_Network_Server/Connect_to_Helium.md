@@ -28,6 +28,10 @@ ChirpStack, but it is also possible to connect one's own LNS to Helium.
 The following steps are taken from the on-boarding of a T1000 to the MeteoScientific public LNS but should be easy to adapt
 to other LNSs on Helium.
 
+For those familiar with the general process the TL;DR; is:
+- create an device profile with the appropriate region and the codec (see source below)
+- create device with devEUI, appKey, and a `app_eui` variable with the AppEUI, all three values coming from the Sense Craft app
+
 ### Add device profile
 
 The first step is to add a device profile for the T1000 to your ChirpStack LNS.
