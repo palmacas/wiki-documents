@@ -50,7 +50,9 @@ as active vs. inactive. It has no effect on the delivery of packets through the 
 ![image](https://github.com/user-attachments/assets/bb83141f-a447-437b-a29d-27e16a20ce7a)
 
 On the Codec tab select "JavaScript functions" and enter the codec from the
-[Seeed github repo](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/ChirpStack/SenseCAP_T1000_ChirpStackV3_Decoder.js)
+[Seeed github repo](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/TTN/SenseCAP_T1000_TTN_Decoder.js)
+(this is the TTN codec, which is compatible with ChirpStack V4, there is a ChirpStack V3 codec in the same repo in case
+you are using an old version).
 
 ![image](https://github.com/user-attachments/assets/bc572786-9853-4b29-baf1-d6f4349b4aa5)
 
@@ -84,13 +86,11 @@ Once this happens, you should see something like this:
 Once the join process has been performed the T1000 sends data. The LNS responds back with some information about the network
 frequencies and such, but subsequent to that there should only be uplinks with data.
 
-The actual data as decoded by the codec can be seen on the events tab, except that the codec in the Seeed github repo doesn't work
-so an error is shown (see the red circle). Using the TTN codec works (it's ChirpStack compatible) and one can see the actual data
-values by clicking on the `+up` button (green circle).
+The actual data as decoded by the codec can be seen on the events tab, except that initially the ChirpStack V3 codec was used 
+for this device so an error is shown (see the red circle).
+Using the TTN codec works and one can see the actual data values by clicking on the `+up` button (green circle).
 
 ![image](https://github.com/user-attachments/assets/a12d8a4c-5e8d-47b4-b1f5-1cfaea36f227)
-
-
 
 ## Helium Console Configuration
 
