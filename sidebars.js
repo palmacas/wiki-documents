@@ -3782,6 +3782,7 @@ const sidebars = {
           label: 'reCamera sg200x',
           items: [
             'Edge/reCamera/reCamera_Getting_Started',
+            'Edge/reCamera/reCamera_warranty',
           ],
         },
       ]
