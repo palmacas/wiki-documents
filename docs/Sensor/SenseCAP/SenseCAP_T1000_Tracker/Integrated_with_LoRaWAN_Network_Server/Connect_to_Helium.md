@@ -45,7 +45,31 @@ as active vs. inactive. It has no effect on the delivery of packets through the 
 
 ![image](https://github.com/user-attachments/assets/bb83141f-a447-437b-a29d-27e16a20ce7a)
 
-On the Codec tab select "JavaScript functions" and enter the codec TBD.
+On the Codec tab select "JavaScript functions" and enter the codec from the
+[Seeed github repo](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/ChirpStack/SenseCAP_T1000_ChirpStackV3_Decoder.js)
+
+![image](https://github.com/user-attachments/assets/bc572786-9853-4b29-baf1-d6f4349b4aa5)
+
+### Add Application and first Device
+
+The next step is to create an application and add actual devices to it.
+Go to the applications section and add a new application.
+
+![image](https://github.com/user-attachments/assets/5dc700c6-7faa-4d65-9d94-aa2543f06254)
+
+Then add a device to the application and enter the devEUI as captured in the Sense Craft app earlier.
+
+![image](https://github.com/user-attachments/assets/93febc5b-bc8f-430b-83e0-55d89690355c)
+
+On the variables tab add a variable called `app_eui` with sixteen (16) zeros as value:
+
+![image](https://github.com/user-attachments/assets/e00873a6-a2aa-4506-b558-c30e5e222812)
+
+Hitting submit will bring up a page asking for the AppKey, again as captured earlier using the Sense Craft app:
+
+![image](https://github.com/user-attachments/assets/db33a84c-c31f-402f-b9b1-53fa47fc497d)
+
+### Watch your T1000 connect
 
 
 
