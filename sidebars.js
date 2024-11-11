@@ -2283,9 +2283,15 @@ const sidebars = {
         
         {
           type: 'category',
-          label: 'Seeed Iot Botton Connect To ESPHome',
+          label: 'Seeed Studio Iot Botton',
           items: [
-            'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                'Sensor/Seeed_Studio_Iot_Button/IOT_BOTTON_FOR_ESPHOME',
+              ],
+            },
           ],
         },
 
