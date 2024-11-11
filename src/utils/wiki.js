@@ -58,8 +58,8 @@ const docList = [
   [
     {
       "path": "/SenseCAP_Indicator_Single_Channel_Gateway",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61_1.png",
-      "title": "**Single Channel LoRaWAN Gateway - SenseCAP Indicator**",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.webp",
+      "title": "Single Channel LoRaWAN Gateway - SenseCAP Indicator",
       "date": "10/30/2024"
     },
     {
