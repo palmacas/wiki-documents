@@ -2,7 +2,7 @@
 description: Seeed Studio Iot Botton Connect To ESPHome
 title: Seeed Studio Iot Botton Connect To ESPHome
 keywords:
-- ESPHOME
+  - ESPHOME
 image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
 slug: /seeed_iot_botton_connect_to_esphome
 last_update:
@@ -13,7 +13,6 @@ last_update:
 ## Getting Started
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.jpg" style={{width:600, height:'auto'}}/></div>
-
 
 In this example, we will introduce how to connect the Iot Button to the home assistant and use the Iot Button to control the buzzer on and off.
 
@@ -65,16 +64,13 @@ A powerful functional expansion board for Seeed Studio XIAO,  with its rich peri
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/2.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 3**. Click **INSTALL**, then click **START**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/3.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 4**. Successful installation
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/4.png" style={{width:1000, height:'auto'}}/></div>
-
 
 ## Adding the Iot button to ESPHome
 
@@ -82,11 +78,9 @@ A powerful functional expansion board for Seeed Studio XIAO,  with its rich peri
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/5.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 6**. Click **NEXT** and give your device a name of your choice.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/6.png" style={{width:800, height:'auto'}}/></div>
-
 
 **Step 7**. Select your device type
 
@@ -94,11 +88,9 @@ Here we choose the first one for now, because ESPHome doesn't support ESP32C6 at
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/7.png" style={{width:580, height:'auto'}}/></div>
 
-
 **Step 8**. Add device successfully, finally click **SKIP**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/8.png" style={{width:780, height:'auto'}}/></div>
-
 
 ## Configuring the IOT BUTTON
 
@@ -108,11 +100,9 @@ Here we choose the first one for now, because ESPHome doesn't support ESP32C6 at
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/9.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 10**. After entering the editing interface you need to configure the **ESP32**, you can copy the code directly.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/10.png" style={{width:1000, height:'auto'}}/></div>
-
 
 ```yaml
 esp32:
@@ -141,7 +131,6 @@ The WIFI ssid and password configuration should be the same as the server, to en
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/11.png" style={{width:1000, height:'auto'}}/></div>
 
-
 ```yaml
 binary_sensor:
   - platform: gpio
@@ -156,7 +145,6 @@ binary_sensor:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/12.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 13**. Then please be patient, after the waiting time is over, click **Download project**, select **Factory format** to download the project file, and then click **Open ESPHome Web**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.png" style={{width:1000, height:'auto'}}/></div>
@@ -165,18 +153,15 @@ binary_sensor:
 
 **Step 14**. At this point you need to connect the Iot Botton to the computer via usb, and then click **CONNECT** to select the **correct serial port**!
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.3.png" style={{width:1000, height:'auto'}}/></div>
 
 **Step 15**. To get the **factory file** of your ESPHome project.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/15.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 16**. If all goes well, you will be able to see the following image.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/16.png" style={{width:1000, height:'auto'}}/></div>
-
 
 ### Adding Iot Button to the dashboard
 
@@ -184,18 +169,15 @@ binary_sensor:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/17.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 18**. Select the corresponding device.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/18.png" style={{width:1000, height:'auto'}}/></div>
-
 
 **Step 19**. Select the Iot Button to add, you can select the region for the device and click **FINISH**! The Iot Button appears in the **dashboard** on the homepage!
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/19.png" style={{width:1000, height:'auto'}}/></div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/20.png" style={{width:1000, height:'auto'}}/></div>
-
 
 ## Iot Button control Buzzer
 
@@ -266,19 +248,15 @@ switch:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/21.png" style={{width:1000, height:'auto'}}/></div>
 
-
 **Step 21**. Click **CREATE AUTOMATION**, create new automation.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/22.png" style={{width:1000, height:'auto'}}/></div>
-
 
 **Step 22**. You can refer to the following configuration to create your own automation.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/23.png" style={{width:1000, height:'auto'}}/></div>
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/24.png" style={{width:1000, height:'auto'}}/></div>
-
 
 If you have successfully completed the above steps, when you press the button, the buzzer will successfully sound and last for two seconds.
 
