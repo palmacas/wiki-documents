@@ -77,6 +77,10 @@ There are two methods for serial communication with the XIAO ESP32C6: `software 
 
 To use software serial, install the [EspSoftwareSerial](https://github.com/plerup/espsoftwareserial) library.
 
+:::tip
+Currently we recommend version **7.0.0** of the EspSoftwareSerial library. Other versions may have varying degrees of problems that prevent the soft serial port from working properly.
+:::
+
 ```cpp
 #include <SoftwareSerial.h>
 

@@ -6,21 +6,45 @@ keywords:
 - LoRaWAN
 - ESP32S3
 - Single Channel Gateway
-image: https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61_1.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.webp
 slug: /SenseCAP_Indicator_Single_Channel_Gateway
 toc_max_heading_level: 4
 sidebar_position: 5
 last_update:
-  date: 10/30/2023
+  date: 10/30/2024
   author: Evelyn Chen
 ---
 
-# **Single Channel LoRaWAN Gateway - SenseCAP Indicator**
+# Single Channel LoRaWAN Gateway - SenseCAP Indicator
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.png" style={{width:800, height:'auto'}}/></div>
 
+<div class="table-center">
+  <table align="center">
+    <tr>
+      <th>SenseCAP Indicator D1Pro</th>
+      <th>SenseCAP Indicator D1L</th>
+    </tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_1.png" style={{width:250, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_1.png" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1Pro-p-5644.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1L-p-5646.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
 
-This project demonstrates how to implement a single channel LoRa gateway (LoRaHub) using SenseCAP Indicator which use XIAO ESP32S3 as host MCU and SX1262 LoRa radio and build up a LoRaWAN application on The Things Network(TTN). Upgrading the firmware offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
+This project demonstrates how to implement a single channel LoRaWAN gateway (LoRaHub) using SenseCAP Indicator which use XIAO ESP32S3 as host MCU and SX1262 LoRa radio and build up a LoRaWAN application on The Things Network(TTN). Upgrading the firmware offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
 
 For single channel gateways(called One-Channel Hub), which are low-cost tools that enable users to begin exploring the LoRa realm. These gateways can receive LoRa packets on a specific spreading factor and channel and facilitate the exchange of these packets with the network. Due to their affordability, many users have embarked on building their own single-channel gateways to experiment with LoRa.
 
@@ -28,7 +52,7 @@ This is the github project: [SenseCAP Indicator LoRaHub Demonstration](https://g
 
 ## Flash Firmware
 
-The firmware is prepared for installation. Simply download from [bin library](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/tree/main/examples/indicator_lorahub/firmware).
+The firmware is prepared for installation. Simply download the latest version from [bin library](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/releases/tag/v1.0.3-beta-lorahub-demo).
 
 :::tip
 We also provide a merged version of firmware in GitHub. The following instruction is based on the separated version for easier understanding for the beginner. If you want to directly burn [the merged version](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/releases/tag/v1.0.3-beta-lorahub-demo), set the flashing address to 0x0.
@@ -170,13 +194,19 @@ provided binary files using the `esptool` utility.
 
 https://docs.espressif.com/projects/esptool/en/latest/esp32/
 
-```console
+```cpp
+// Merged version
+esptool.py --chip esp32s3 -p port -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 Indicator_Lorahub_v1.0.0.bin
+// Seperated version
 esptool.py --chip esp32s3 -p port -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader.bin 0x10000 indicator_lorahub.bin 0x8000 partition-table.bin
 ```
 
 On a Windows setup the esptool command for flashing would be:
 
-```console
+```cpp
+// Merged version
+py -m esptool --chip esp32s3 -p COM -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 Indicator_Lorahub_v1.0.0.bin
+// Seperated version
 py -m esptool --chip esp32s3 -p COM -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader.bin 0x10000 indicator_lorahub.bin 0x8000 partition-table.bin
 ```
 
@@ -191,10 +221,18 @@ Replace `port` and `COM` with the name of used serial port. If connection fails,
 
 **Step2**: Choose bin file and fill in coresponding flash address.
 
+- Merged version:
+
+|**Flash Address**|**File**|
+|----|----|
+|0x0|Indicator_Lorahub_v1.0.0.bin|
+
+- Seperated version:
+
 |**Flash Address**|**File**|
 |----|----|
 |0x0|bootloader.bin|
-|0x10000|indicator_lorahub.bin.bin|
+|0x10000|indicator_lorahub.bin|
 |0x8000|partition-table.bin|
 
 ## Indicator Configuration
@@ -243,14 +281,12 @@ Replace `port` and `COM` with the name of used serial port. If connection fails,
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-<div class="table-center">
-  <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
 
-  <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
