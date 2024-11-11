@@ -318,7 +318,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Download1
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1%2Fmfi%5Freserver%2Dorin%2Dnx%2D16g%2Dindustrial%2D5%2E1%2D35%2E3%2E1%2D2023%2D08%2D05%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1" target="_blank" rel="noopener noreferrer">Download1
           </a>
         </td>
         <td>
@@ -329,7 +329,7 @@ import TabItem from '@theme/TabItem';
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EV0nlnSfW3NEmcDq4l3u1M4BrzThb0-y44qa4hGXk-XfWg?e=G9ub1C" target="_blank" rel="noopener noreferrer">Download1</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0%2Fmfi%5Freserver%2Dindustrial%2Dorin%2Dnx%2D16g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D03%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdCn0yi0ArRKivHb3mKLrwcBmBEKXlGKLCnNkRQNzyylAw?e=QTnhQa" target="_blank" rel="noopener noreferrer">Download2</a>
@@ -340,7 +340,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Download1
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1%2Fmfi%5Freserver%2Dorin%2Dnx%2D8g%2Dindustrial%2D5%2E1%2D35%2E3%2E1%2D2023%2D08%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1" target="_blank" rel="noopener noreferrer">Download1
           </a>
         </td>
         <td>
@@ -351,7 +351,7 @@ import TabItem from '@theme/TabItem';
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Download1
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0%2Fmfi%5Freserver%2Dindustrial%2Dorin%2Dnx%2D8g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D03%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0" target="_blank" rel="noopener noreferrer">Download1
           </a>
         </td>
         <td>
@@ -363,7 +363,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Download1
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1%2Fmfi%5Freserver%2Dorin%2Dnano%2D8g%2Dindustrial%2D5%2E1%2D35%2E3%2E1%2D2023%2D08%2D05%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1" target="_blank" rel="noopener noreferrer">Download1
           </a>
         </td>
         <td>
@@ -374,10 +374,10 @@ import TabItem from '@theme/TabItem';
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY0cen9MPIhJpM2LBfm2edEBZtw53n2C9PwqsY2XaiSH_w?e=LWQren" target="_blank" rel="noopener noreferrer">Download1</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0%2Fmfi%5Freserver%2Dindustrial%2Dorin%2Dnano%2D8g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D03%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0" target="_blank" rel="noopener noreferrer">Download</a>
         </td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdqRMLVCzHtIkHUShgZ91xoBK367uzXyC_mTGQOzlfJhyQ?e=wgOhwj" target="_blank" rel="noopener noreferrer">Download2</a>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdqRMLVCzHtIkHUShgZ91xoBK367uzXyC_mTGQOzlfJhyQ?e=wgOhwj" target="_blank" rel="noopener noreferrer">Download</a>
         </td>
       </tr>
       <tr>
@@ -385,29 +385,26 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeCYmkCdhqRGrh2idfcueV0B4btw0JAzCt8i7ePWZwSeng?e=XH9HDx" target="_blank" rel="noopener noreferrer">Download1</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1%2Fmfi%5Freserver%2Dorin%2Dnano%2D4g%2Dindustrial%2D5%2E1%2D35%2E3%2E1%2D2023%2D08%2D05%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack5%2E1" target="_blank" rel="noopener noreferrer">Download</a>
         </td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download2</a>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download</a>
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQgrBDUICyZCnKBI_qVeupoBYqQJ1dP7_lcxUwxUphg6Qw?e=ObUzPI" target="_blank" rel="noopener noreferrer">Download1</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0%2Fmfi%5Freserver%2Dindustrial%2Dorin%2Dnano%2D4g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D03%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreServer%2DIndustrial%2DJ30J40%2FJetpack6%2E0" target="_blank" rel="noopener noreferrer">Download</a>
         </td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EXxmIAk7sGdOnPcaZHvz7ykB36pGkNwZscpdu3ZytrfD0Q?e=ElJ2bb" target="_blank" rel="noopener noreferrer">Download2</a>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EXxmIAk7sGdOnPcaZHvz7ykB36pGkNwZscpdu3ZytrfD0Q?e=ElJ2bb" target="_blank" rel="noopener noreferrer">Download</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
-  * The image files from both Download1 and Download2 are the same. You can choose the link with the faster download speed.
-</p>
 
 <!-- The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra) -->
 

@@ -481,7 +481,6 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <th>Jetson Module</th>
       <th>Download Link</th>
-      <th>Alternative Image Link</th>
       <th>JetPack Version</th>
       <th>L4T Version</th>
     </tr>
@@ -490,10 +489,9 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <td>Jetson Orin NX 16GB</td>
       <td>
-        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EavQHXoSEg9PuLs4vuujXLcB0-GW6Ti1zHGL2UHzgS6TWg?e=J7oRrf" target="_blank" rel="noopener noreferrer">Download1
+        <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnx%2D16g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
         </a>
-        </td>
-        <td>
+        <br />or<br />
         <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EbEZRxHDtgBDjBrHK_7ltfEB6JBa3VGXLx3meNc0OJUL_g?e=8MNsTg" target="_blank" rel="noopener noreferrer">Download2</a>
       </td>
       <td rowSpan={4}>6.0</td>
@@ -502,30 +500,27 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <td>Jetson Orin NX 8GB</td>
       <td>
-      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcfUdbmSiOBFo_Po-Cui3jkBDORKexZ4S43Jde5XApqdeQ?e=zqealW" target="_blank" rel="noopener noreferrer">Download1
+      <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnx%2D8g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
       </a>
-      </td>
-      <td>
+      <br />or<br />
       <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQawJy3jmKBAmJgHght-vVUBHbsC3vtlvMsYfW7vsie3LQ?e=vor3t3" target="_blank" rel="noopener noreferrer">Download2</a>
       </td>
     </tr>
     <tr>
       <td>Jetson Orin Nano 8GB</td>
       <td>
-      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EauK-aXvruxHsC1-bAmTwZkBNB0PsvPX6S6oV4Q1UrAUFw?e=rytWvU" target="_blank" rel="noopener noreferrer">Download1
+      <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnano%2D8g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
       </a>
-      </td>
-      <td>
+      <br />or<br />
       <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EeJP8SNF76BKiJg2e-FKNd4BhJwlWiMbLcT6Y286tRO7JQ?e=ct6qLf" target="_blank" rel="noopener noreferrer">Download2</a>
       </td>
     </tr>
     <tr>
       <td>Jetson Orin Nano 4GB</td>
       <td>
-      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcHfrgY9GxVNiwGh6YTB50cBCc5QcKgnGpTZQfv94x4VNw?e=Rl73Zh" target="_blank" rel="noopener noreferrer">Download1
+      <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnano%2D4g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
       </a>
-      </td>
-      <td>
+      <br />or<br />
       <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERQJluPq9X1LmpLXTSGZVMwBVg9ikWw8veG2aOdHv504Gw?e=hujab4" target="_blank" rel="noopener noreferrer">Download2</a>
       </td>
     </tr>
@@ -533,8 +528,8 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
 </table>
 </div>
 
-<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
-  * The image files from both Download1 and Download2 are the same. You can choose the link with the faster download speed.
+<p style={{ fontSize: '0.9em', color: 'gray' }}>
+        * Both 'Download1' and Download2 point to the same image file. Download1 is a new OneDrive link.
 </p>
 
 **Step 2:** Extract the downloaded image file:

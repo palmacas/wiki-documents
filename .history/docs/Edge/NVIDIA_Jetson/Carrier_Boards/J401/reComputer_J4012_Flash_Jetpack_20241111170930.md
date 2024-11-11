@@ -490,7 +490,7 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <td>Jetson Orin NX 16GB</td>
       <td>
-        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EavQHXoSEg9PuLs4vuujXLcB0-GW6Ti1zHGL2UHzgS6TWg?e=J7oRrf" target="_blank" rel="noopener noreferrer">Download1
+        <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnx%2D16g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
         </a>
         </td>
         <td>
@@ -502,7 +502,7 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <td>Jetson Orin NX 8GB</td>
       <td>
-      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcfUdbmSiOBFo_Po-Cui3jkBDORKexZ4S43Jde5XApqdeQ?e=zqealW" target="_blank" rel="noopener noreferrer">Download1
+      <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnx%2D8g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
       </a>
       </td>
       <td>
@@ -512,7 +512,7 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <td>Jetson Orin Nano 8GB</td>
       <td>
-      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EauK-aXvruxHsC1-bAmTwZkBNB0PsvPX6S6oV4Q1UrAUFw?e=rytWvU" target="_blank" rel="noopener noreferrer">Download1
+      <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnano%2D8g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
       </a>
       </td>
       <td>
@@ -522,7 +522,7 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
     <tr>
       <td>Jetson Orin Nano 4GB</td>
       <td>
-      <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcHfrgY9GxVNiwGh6YTB50cBCc5QcKgnGpTZQfv94x4VNw?e=Rl73Zh" target="_blank" rel="noopener noreferrer">Download1
+      <a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0%2Fmfi%5Frecomputer%2Dorin%2Dnano%2D4g%2Dj401%2D6%2E0%2D36%2E3%2E0%2D2024%2D07%2D04%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FreComputer%2DJ401%2Fjp6%2E0" target="_blank" rel="noopener noreferrer">Download1
       </a>
       </td>
       <td>
