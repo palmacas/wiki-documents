@@ -28,7 +28,7 @@ This is the github project: [SenseCAP Indicator LoRaHub Demonstration](https://g
 
 ## Flash Firmware
 
-The firmware is prepared for installation. Simply download from [bin library](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/tree/main/examples/indicator_lorahub/firmware).
+The firmware is prepared for installation. Simply download the latest version from [bin library](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/releases/tag/v1.0.3-beta-lorahub-demo).
 
 :::tip
 We also provide a merged version of firmware in GitHub. The following instruction is based on the separated version for easier understanding for the beginner. If you want to directly burn [the merged version](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/releases/tag/v1.0.3-beta-lorahub-demo), set the flashing address to 0x0.
@@ -170,13 +170,19 @@ provided binary files using the `esptool` utility.
 
 https://docs.espressif.com/projects/esptool/en/latest/esp32/
 
-```console
+```cpp
+// Merged version
+esptool.py --chip esp32s3 -p port -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 Indicator_Lorahub_v1.0.0.bin
+// Seperated version
 esptool.py --chip esp32s3 -p port -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader.bin 0x10000 indicator_lorahub.bin 0x8000 partition-table.bin
 ```
 
 On a Windows setup the esptool command for flashing would be:
 
-```console
+```cpp
+// Merged version
+py -m esptool --chip esp32s3 -p COM -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 Indicator_Lorahub_v1.0.0.bin
+// Seperated version
 py -m esptool --chip esp32s3 -p COM -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader.bin 0x10000 indicator_lorahub.bin 0x8000 partition-table.bin
 ```
 
@@ -191,10 +197,18 @@ Replace `port` and `COM` with the name of used serial port. If connection fails,
 
 **Step2**: Choose bin file and fill in coresponding flash address.
 
+- Merged version:
+
+|**Flash Address**|**File**|
+|----|----|
+|0x0|Indicator_Lorahub_v1.0.0.bin|
+
+- Seperated version:
+
 |**Flash Address**|**File**|
 |----|----|
 |0x0|bootloader.bin|
-|0x10000|indicator_lorahub.bin.bin|
+|0x10000|indicator_lorahub.bin|
 |0x8000|partition-table.bin|
 
 ## Indicator Configuration
