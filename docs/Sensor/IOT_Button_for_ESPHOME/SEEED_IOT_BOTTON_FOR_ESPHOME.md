@@ -1,10 +1,10 @@
 ---
-description: Seeed Iot Botton Connect To ESPHome
-title: Seeed Iot Botton Connect To ESPHome
+description: Seeed Studio Iot Botton Connect To ESPHome
+title: Seeed Studio Iot Botton Connect To ESPHome
 keywords:
-- _ESPHOME
+- ESPHOME
 image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
-slug: /Seeed_Iot_Botton_Connect_To_ESPHome
+slug: /seeed_iot_botton_connect_to_esphome
 last_update:
   date: 6/11/2024
   author: qiuyu wei
@@ -33,7 +33,7 @@ In this example, we will introduce how to connect the Iot Button to the home ass
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://files.seeedstudio.com/Seeed_Iot_Botton_Connect_To_ESPHome">
+        <a class="get_one_now_item" href="https://files.seeedstudio.com/seeed_iot_botton_connect_to_esphome">
         <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
