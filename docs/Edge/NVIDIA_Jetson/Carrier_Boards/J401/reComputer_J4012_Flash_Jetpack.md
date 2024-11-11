@@ -4,7 +4,7 @@ title: Flash Jetpack
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_J4012_Flash_Jetpack
+slug: /recomputer_j4012_flash_jetpack
 last_update:
   date: 6/12/2024
   author: Lakshantha/Youjiang
