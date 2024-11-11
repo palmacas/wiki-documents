@@ -4,7 +4,7 @@ title: NVIDIA® Jetson AGX Orin 32GB H01 Kit
 tags:
   - NVIDIA Jetson H01
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Jetson_AGX_Orin_32GB_H01_Flash_Jetpack
+slug: /jetson_agx_orin_32gb_h01_flash_jetpack
 last_update:
   date: 3/30/2023
   author: Lakshantha
