@@ -188,9 +188,6 @@ If you are using the factory firmware of the Seeed Studio XIAO nRF52840 or have 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528403.png" alt="pir" width={800} height="auto" /></p>
 
-<<<<<<< HEAD
-- **Step 3.** Upload the [Low Power demo](https://files.seeedstudio.com/wiki/XIAO-BLE/PowerTests.zip) here and run it with **Arduino**
-=======
 - **Step 3.** Upload the deep_sleep demo here and run it with **Arduino**
 
 ```cpp
