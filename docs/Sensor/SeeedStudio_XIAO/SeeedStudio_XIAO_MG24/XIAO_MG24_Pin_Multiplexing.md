@@ -1,7 +1,7 @@
 ---
 title: Pin Multiplexing with Seeed Studio XIAO MG24
 description: Pin multiplexing with Seeed Studio XIAO MG24(Sense).
-image: https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/top.png
+image: https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/top.webp
 slug: /xiao_mg24_pin_multiplexing
 keywords:
   - XIAO
@@ -294,7 +294,6 @@ This is different from serial communication, but the usage is also very similar,
 So next, we will use the pins led out by the chip for serial communication.
 
 ```c
-
 #define BAUD 115200
 
 void setup() {
@@ -311,48 +310,6 @@ void loop() {
   delay(1000);
 }
 ```
-
-### Usage of Software Serial
-
-```c
-#include <SoftwareSerial.h>
-
-SoftwareSerial mySerial(2, 3); // RX, TX
-
-void setup() {
-  // initialize serial communication
-  Serial.begin(9600);
-  while (!Serial);
-
-  // initialize software serial
-  mySerial.begin(9600);
-}
-
-void loop() {
-  // read data from software serial
-  if (mySerial.available()) {
-    char data = mySerial.read();
-    Serial.print("Received data: ");
-    Serial.println(data);
-  }
-
-  // write data to software serial
-  mySerial.print("Hello World!");
-
-  // wait for a second before repeating the loop
-  delay(1000);
-}
-```
-
-In this program, we first include the `SoftwareSerial.h` library to use software serial. Then, we create a new SoftwareSerial object called mySerial using pins 2 and 3 as RX and TX, respectively.
-
-In the `setup()` function, we initialize both the hardware serial (`Serial.begin()`) and the software serial (`mySerial.begin()`).
-
-In the `loop()` function, we use the `mySerial.available()` function to check if there is any data available to be read from the software serial. If there is, we read the incoming byte using the `mySerial.read()` function and store it in a variable called data. We then use the `Serial.print()` and `Serial.println()` functions to print "Received data: " followed by the value of data to the hardware serial.
-
-We also use the `mySerial.print()` function to write "Hello World!" to the software serial. This will send the data from the XIAO to the device connected to the software serial port.
-
-Finally, we add a `delay()` function to wait for one second before repeating the loop.
 
 ## IIC
 
