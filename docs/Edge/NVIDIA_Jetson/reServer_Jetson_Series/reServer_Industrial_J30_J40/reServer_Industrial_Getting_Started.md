@@ -4,7 +4,7 @@ title: reServer Industrial
 keywords:
 - reServer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reServer_Industrial_Getting_Started
+slug: /reserver_industrial_getting_started
 last_update:
   date: 09/22/2023
   author: Lakshantha
