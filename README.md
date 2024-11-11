@@ -9,7 +9,7 @@ This is the Github source files for Seeed Studio.
 *Due to previous content, we have a problem with the whole file being too large and we recommend pull the latest one(just around 30M):*
 
 ```
-git clone --no-checkout --depth 1 https://github.com/{your repo}}/wiki-documents.git
+git clone --depth 1 https://github.com/{your repo}}/wiki-documents.git
 ```
 
 ## What does this Wiki Platform Cover?
