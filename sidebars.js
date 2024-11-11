@@ -2280,6 +2280,14 @@ const sidebars = {
             'Sensor/Azure Sphere MT3620/MT3620_Grove_Breakout',
           ],
         },
+        
+        {
+          type: 'category',
+          label: 'Seeed Iot Botton Connect To ESPHome',
+          items: [
+            'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
+          ],
+        },
 
         {
           type: 'category',
