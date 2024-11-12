@@ -2282,6 +2282,20 @@ const sidebars = {
             'Sensor/Azure Sphere MT3620/MT3620_Grove_Breakout',
           ],
         },
+        
+        {
+          type: 'category',
+          label: 'Seeed Studio Iot Botton',
+          items: [
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                'Sensor/Seeed_Studio_Iot_Button/IOT_BOTTON_FOR_ESPHOME',
+              ],
+            },
+          ],
+        },
 
         {
           type: 'category',
@@ -3783,7 +3797,18 @@ const sidebars = {
           type: 'category',
           label: 'reCamera sg200x',
           items: [
-            'Edge/reCamera/reCamera_Getting_Started',
+            'Edge/reCamera/reCamera_get_start',
+            'Edge/reCamera/reCamera_flash_os',
+            'Edge/reCamera/reCamera_model_conversion',
+            'Edge/reCamera/reCamera_hardware_interface',
+            'Edge/reCamera/reCamera_network_connection',
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                'Edge/reCamera/reCamera_get_start',
+              ],
+            },
             'Edge/reCamera/reCamera_warranty',
           ],
         },
