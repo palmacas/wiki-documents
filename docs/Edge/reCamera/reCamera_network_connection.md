@@ -1,6 +1,6 @@
 ---
 description: reCamera Getting Started 
-title: reCamera
+title: Network Connection
 keywords:
   - Edge
   - reCamera
@@ -11,8 +11,15 @@ last_update:
   author: Parker Hu
 ---
 
-# reCamera Getting Started
+# reCamera Network Connection
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/001.jpg" /></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reCamera-2002w-8GB-p-6250.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
+
 
 reCamera is a combination of a **processor** and a camera **sensor**.
 
@@ -23,7 +30,7 @@ This combination makes reCamera a standalone system that can handle basic detect
 ### USB NET setup 
 To use USB networking, we enabled UsbNcm and DHCP by default on the system.
 UsbNcm is driver-free on Linux, macOS, and the latest Windows systems. You can log in to 
-recamera's terminal directly using `ssh recamrea@192.168.42.1` ,`passwd = recamera` .
+recamera's terminal directly using `ssh recamera@192.168.42.1` ,`passwd = recamera` .
 
 - [Windows](#jump1)
 - [Linux](#jump2)
@@ -57,15 +64,22 @@ Select `Let me pick from a list of available drivers on my computer`
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/005.png" /></div>
 
-**step4**:Selet `Microsoft` -> `UsbNcm Host Device` then click Next.
+**step4:**:
+Select `Network adapters` and then click `next`
+
+<br />
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/014.png" /></div>
+
+**step5**:Selet `Microsoft` -> `UsbNcm Host Device` then click Next.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/006.png" /></div>
 
-**step5**:When the alert bar pops up, select `Yes`
+**step6**:When the alert bar pops up, select `Yes`
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/007.png" /></div>
 
-**step6**:Enter ping 192.168.42.1 in a terminal window.
+**step7**:Enter ping 192.168.42.1 in a terminal window.
 <br />
 The following output shows that you have successfully connected to the reCamera.
 
@@ -85,6 +99,7 @@ Check the usb network adapter in System Settings -> Network. The ip of the devic
 
 ### Computer network error
 
+#### windows
 
 If your Windows 10 System computer has network access issues after using the USB network of reCamera.
 Press `win+x` click Control Panel. Select All Control Panel Items -> Network Connections. 
@@ -96,42 +111,38 @@ Right mouse click UsbNcm Host Device. Select `Properties` -> `TCP/IPv4` -> `Prop
 Then your network is back up.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/011.png" /></div>
 
+#### MAC
+
 If your computer is running MacOS. You only need to set the priority of the computer network card UsbNcm network card last
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/012.png" /></div>
 
+The specific Settings are as follows:
 
-## System update and upgrade
+**step1**: Select `System Settings`
 
-You can check out the latest version of the [reCamera OS here.](https://github.com/Seeed-Studio/reCamera-OS)
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/015.png" /></div>
 
-Manually update the latest OTA firmware:
-```bash
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/latest 
+**step2**: You will see this order, and we are about to change it.
 
-/mnt/system/upgrade.sh start
-```
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/016.png" /></div>
 
-Manually update the specified version of OTA firmware. You can also update the system version in your branch.
+**step3**: Drag all the way to the bottom, and click it.
 
-```bash
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/download/0.0.5/sg2002_reccamera_emmc_md5sum.txt #Replace it with your branch link
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/017.png" /></div>
 
-/mnt/system/upgrade.sh start
-```
+**step4**: Select `Set Service Order`
 
-Update the firmware manually using the local ota package.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/018.png" /></div>
 
-```bash
-/mnt/system/upgrade.sh start sg2002_reCamera_0.0.5_emmc_ota.zip
-```
-You can change system files to be readable or writable by typing `rootfs_rw on/off`.
+**step5**: Drag NCM below Wi-Fi and then click `ok`
 
-Manually restore factory Settings.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/019.png" /></div>
 
-```bash
-/mnt/system/upgrade.sh recovery
-```
+**step6**: Finally, you should see the Settings shown
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/020.png" /></div>
+
 
 ## Resources
 

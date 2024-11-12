@@ -1,7 +1,7 @@
 ---
 description: Introducing the SenseCAP Watcher software framework.
 title: Watcher Software Framework
-image: https://files.seeedstudio.com/wiki/watcher_software_framework/architecture.png
+image: https://files.seeedstudio.com/wiki/watcher_software_framework/architecture_1.webp
 slug: /watcher_software_framework
 sidebar_position: 2
 last_update:
