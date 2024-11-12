@@ -97,8 +97,8 @@ sidebar_position: 0
 	</tr>
     <tr>
         <th>Low Power Consumption Model</th>
-        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Model: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Model: <strong>3.7V/4.66μA</strong></td>
-        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Model: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Model: <strong>3.7V/4.66μA</strong></td>
+        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Model: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Model: <strong>3.7V/1.95μA</strong></td>
+        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Model: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Model: <strong>3.7V/1.95μA</strong></td>
     </tr>
     <tr>
         <th>Working Temperature</th>
@@ -489,6 +489,9 @@ void loop()
 }
 
 ```
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/100.png" style={{width:1000, height:'auto'}}/></div>
+
 ## Resources
 
 ### For Seeed Studio XIAO MG24 Sense
