@@ -116,7 +116,7 @@ First of all, you need to install the peripheral drivers for this board. These a
       <td>Jetson Orin NX 8GB/ 16GB,<br />Jetson Orin Nano 4GB/ 8GB</td>
       <td>6.0</td>
       <td>36.3</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ETxjipIRoW9BgrCPJpNAFlEBw2tsEcgPkWbkGuRHdPffiA?e=05zYWk">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY0H4iNmfUxPjCfiwfi59NEBCoQ9dyhWARNE1VWTTlSoJw?e=B0WgB1">Download</a></td>
     </tr>
 
   </tbody>
