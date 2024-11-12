@@ -3,8 +3,8 @@ description:  Grove - Color Sensor V3.0 - I2C interface - VEML6040 based
 title:  Grove-Color Sensor V3.0 - I2C interface 
 keywords:
 - Grove
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png 
-slug: /grove_color_sensor_v3_0_IIC
+image: https://files.seeedstudio.com/wiki/Grove_Color/top.jpg 
+slug: /grove_color_sensor_v3_0_iic
 last_update:
   date: 10/12/2024
   author: Jason
@@ -40,8 +40,10 @@ It is a sensor to measure the color chromaticity of ambient light or the color o
 | Selectable maximum detection range |515.4, 1031, 2062, 4124, 8248, or 16 496  lux with highest sensitivity 0.007865 lux/step| 
 
 
-
 ## Getting Started
+
+### indication diagram
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Grove_Color/11.png" /></div>
 
 ### Hardware
 
@@ -128,7 +130,7 @@ void loop() {
 
 When I placed the color sensor on the white area of our viewer, we opened the serial port and found that the value of WHITE was the highest
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Grove_Color/2.jpg" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Grove_Color/12.png" /></div>
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Grove_Color/4.png" /></div>
 

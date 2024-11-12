@@ -3,8 +3,8 @@ description:  Grove - Follower V3.0
 title:  Grove-IR Line Follower Sensor V3.0 
 keywords:
 - Grove
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png 
-slug: /Grove-Line_Follower
+image: https://files.seeedstudio.com/wiki/Grove_Line_Finder/images/top.jpg
+slug: /grove_line_follower
 last_update:
   date: 10/12/2024
   author: Jason
@@ -37,6 +37,9 @@ It is designed for use with line-follower robots. It has 2 IR LEDs and 2 IR sens
 
 
 ## Getting Started
+
+### indication diagram
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Grove_Line_Finder/images/10.png" /></div>
 
 ### Hardware
 
@@ -75,7 +78,6 @@ Two different combinations, but using the same code.
 #define RIGHT 2
 
 void setup() {
-  // 初始化串口和引脚
   Serial.begin(9600);
   pinMode(LEFT, INPUT);
   pinMode(RIGHT, INPUT);
