@@ -5168,6 +5168,27 @@ const sidebars = {
     {
 
       type: 'category',
+      label: 'XIAO RA4M1',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: "zh-CN/Sensor/SeeedStudio_XIAO/SeedStudio_XIAO_RA4M1/CN_XIAO_RA4M1_Getting_started"
+      },
+      items: [
+        {
+          type: 'category',
+          label: '实用教程',
+          items: [
+           'zh-CN/Sensor/SeeedStudio_XIAO/SeedStudio_XIAO_RA4M1/CN_XIAO_RA4M1_Mouse',
+          ],
+        },
+        'zh-CN/Sensor/SeeedStudio_XIAO/SeedStudio_XIAO_RA4M1/CN_XIAO_RA4M1_Pin_Multiplexing',
+      ]
+    },
+    {
+
+      type: 'category',
       label: 'XIAO RP2040',
       collapsed: true,
       collapsible: true,
@@ -5184,8 +5205,10 @@ const sidebars = {
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/CN_XIAO-RP2040-with-Arduino',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/CN_XIAO-RP2040-with-MicroPython',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/CN_XIAO-RP2040-with-CircuitPython',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/CN_XIAO-RP2040-with-NuttX-RTOS'
           ],
         },
+        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/CN_XIAO-RP2040-Zephyr-RTOS',
         {
           type: 'category',
           label: '嵌入式机器学习',
@@ -5206,6 +5229,7 @@ const sidebars = {
       },
       items: [
         'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/CN_XIAO-nRF52840-Zephyr-RTOS',
+        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/CN_XIAO-nRF52840_PlatformIO',
         {
           type: 'category',
           label: '编程语言',
@@ -5278,9 +5302,12 @@ const sidebars = {
           type: 'category',
           label: '实用教程',
           items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_XIAO-ESP32C3-for-ESPHome-Support',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiao-esp32c3-esphome',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiao-esp32c3-prism-display',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiaoesp32c3-chatgpt',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_ESP32C3_Smart_Thermostat',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiaoesp32c3-flash-storage',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_XIAO-ESP32C3-for-ESPHome-Support',
             // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiaoesp32c3-chatgpt',
           ],
         },
