@@ -354,9 +354,11 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Light/Grove-Luminance_Sensor',
                 'Sensor/Grove/Grove_Sensors/Light/Grove-Infrared_Receiver',
                 'Sensor/Grove/Grove_Sensors/Light/Grove-Line_Finder',
+                'Sensor/Grove/Grove_Sensors/Light/Grove-IR_Line_Follower_Sensor',
                 'Sensor/Grove/Grove_Sensors/Light/Grove-Flame_Sensor',
                 'Sensor/Grove/Grove_Sensors/Light/Grove-Infrared_Reflective_Sensor',
                 'Sensor/Grove/Grove_Sensors/Light/Grove-I2C_Color_Sensor',
+                'Sensor/Grove/Grove_Sensors/Light/Grove_Color_Sensor'
               ],
             },
             {
