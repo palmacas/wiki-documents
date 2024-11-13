@@ -4,7 +4,7 @@ title: NVIDIA® Jetson AGX Orin 32GB H01 Kit
 tags:
   - NVIDIA Jetson H01
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /jetson_agx_orin_32gb_h01_flash_jetpack
+slug: /Jetson_AGX_Orin_32GB_H01_Flash_Jetpack
 last_update:
   date: 3/30/2023
   author: Lakshantha
@@ -65,7 +65,7 @@ First of all, you need to install the peripheral drivers for this board. These a
     <tr>
       <td>6.0</td>
       <td>36.3</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfdaZCD6wMZPrW_LtMm3eQgBXnPq_8ri8WmKw3nsxXVf1Q?e=uvKRhE" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Ed8fVBfupt1Locb8RG9IvCUB5AsQ06SI9x_FJbJ7Batytw?e=Z8gTcZ" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
   </tbody>
 </table>
