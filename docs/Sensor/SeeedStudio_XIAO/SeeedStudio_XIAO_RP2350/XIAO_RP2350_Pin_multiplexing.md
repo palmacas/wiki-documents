@@ -226,7 +226,7 @@ If everything goes smoothly, after uploading the program, you should see the fol
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/xiao_rp2350_pins/V2/5.png" style={{width:800, height:'auto'}}/></div>
 
-## Serial
+## UART
 
 When working with Arduino IDE, Serial communication is an essential part of many projects. To 
 use Serial in Arduino IDE, you need to start by opening the Serial Monitor window. This can be done by clicking on the **Serial Monitor** icon in the toolbar or by pressing the **Ctrl+Shift+M** shortcut key.
@@ -311,7 +311,7 @@ If everything goes smoothly, after uploading the program, you should see the fol
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/xiao_rp2350_pins/V2/1.png" style={{width:500, height:'auto'}}/></div>
 
-## IIC
+## I2C
 
 XIAO RP2350 has an I2C interface that can be used for data transmission and parsing of many sensors, as well as for using some OLED screens.
 
@@ -536,7 +536,7 @@ Overall, this code demonstrates how to use the U8g2 library to control an OLED d
 
 
 ## Finish up
-You have learned the basic functions of the XIAO MG24 (Sense) pins. Now, let's further explore the built-in sensors.
+You have learned the basic functions of the XIAO RP2350 pins. Now, let's have fun with it~
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/6.png" style={{width:1000, height:'auto'}}/></div>
 
 
