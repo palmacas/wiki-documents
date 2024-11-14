@@ -1,11 +1,11 @@
 ---
 description: reCamera Warranty
-title: reCamera Warranty
+title: Warranty
 keywords:
   - Edge
   - reCamera
   - recamera
-image: https://files.seeedstudio.com/wiki/wiki-platform/S.webp
+image: https://files.seeedstudio.com/wiki/reCamera/001.webp
 slug: /recamera_warranty
 last_update:
   date: 11/8/2024
