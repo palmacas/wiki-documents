@@ -199,77 +199,67 @@ Paste the following code into it and click **Import** button.
 ```
 [
     {
-        "id": "c467e3e4e56d1d02",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "150e7b4abd714e24",
+        "id": "ae13bbcd03f719ce",
         "type": "http in",
-        "z": "c467e3e4e56d1d02",
-        "name": "watcher message",
-        "url": "/",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "url": "/v1/notification/event",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 230,
-        "y": 280,
+        "x": 280,
+        "y": 360,
         "wires": [
             [
-                "9dee08ae69fa7a80"
+                "139364fe839c4715"
             ]
         ]
     },
     {
-        "id": "9dee08ae69fa7a80",
-        "type": "function",
-        "z": "c467e3e4e56d1d02",
+        "id": "93011c7c05cd8352",
+        "type": "http response",
+        "z": "f6f2187d.f17ca8",
         "name": "",
-        "func": "// process data in here,for example, get alert message:\n// msg.payload = {\n//     alertMsg: msg.payload.events.text\n// }\n msg.payload = {\n    code: 200,\n    msg:\"ok\",\n    data: msg.payload\n}\nreturn msg;",
+        "statusCode": "200",
+        "headers": {},
+        "x": 660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "139364fe839c4715",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "func": "// 在这个地方处理数据\n// 例如下面的，提取了报警信息\n// msg.payload = {\n//     alertMsg: msg.payload.events.text\n// }\n msg.payload = {\n    code: 200,\n    msg:\"ok\",\n    data: msg.payload\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 280,
+        "x": 480,
+        "y": 360,
         "wires": [
             [
-                "ee52b368d8b7a1ba",
-                "2fca38184da8b0f6"
+                "93011c7c05cd8352",
+                "356cfd540bad72dd"
             ]
         ]
     },
     {
-        "id": "2fca38184da8b0f6",
+        "id": "356cfd540bad72dd",
         "type": "debug",
-        "z": "c467e3e4e56d1d02",
+        "z": "f6f2187d.f17ca8",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "ee52b368d8b7a1ba",
-        "type": "http response",
-        "z": "c467e3e4e56d1d02",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 660,
-        "y": 260,
+        "x": 670,
+        "y": 420,
         "wires": []
     }
 ]

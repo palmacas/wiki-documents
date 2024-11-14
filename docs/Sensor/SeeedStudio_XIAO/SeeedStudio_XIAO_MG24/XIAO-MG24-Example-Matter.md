@@ -163,7 +163,14 @@ After scanning the QR code, the Matter controller(HomeKit) will prompt you to co
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/matter-device-online.png" style={{width:480, height: 'auto', "border-radius": '12.8px'}}/></div>
 
-<iframe class="youtube-video-r" src="https://youtube.com/embed/tmCpIWuRojQ" title="MG24 Matter Lightbulb Example" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe
+  className="youtube-video-r"
+  src="https://youtube.com/embed/tmCpIWuRojQ"
+  title="MG24 Matter Lightbulb Example"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  style={{ width: '380px', height: '640px' }}
+></iframe>
 
 ## Reference & Resources
 
