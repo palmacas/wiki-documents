@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /recomputer_a608_flash_system
+slug: /reComputer_A608_Flash_System
 last_update:
   date: 01/19/2024
   author: Youjiang
