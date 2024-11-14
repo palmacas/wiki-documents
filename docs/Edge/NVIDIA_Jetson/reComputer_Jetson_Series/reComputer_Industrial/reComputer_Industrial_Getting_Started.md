@@ -4,7 +4,7 @@ title: Getting Started with reComputer Industrial
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /recomputer_industrial_getting_started
+slug: /reComputer_Industrial_Getting_Started
 last_update:
   date: 05/16/2023
   author: Lakshantha

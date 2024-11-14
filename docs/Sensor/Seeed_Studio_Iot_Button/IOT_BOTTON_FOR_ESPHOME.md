@@ -1,6 +1,6 @@
 ---
-description: Seeed Studio Iot Botton Connect To ESPHome
-title: Iot Botton Connect To ESPHome
+description: Seeed Studio Iot Button Connect To ESPHome
+title: Iot Button Connect To ESPHome
 keywords:
   - ESPHOME
 image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
@@ -151,7 +151,7 @@ binary_sensor:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.2.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 14**. At this point you need to connect the Iot Botton to the computer via usb, and then click **CONNECT** to select the **correct serial port**!
+**Step 14**. At this point you need to connect the Iot Button to the computer via usb, and then click **CONNECT** to select the **correct serial port**!
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.3.png" style={{width:1000, height:'auto'}}/></div>
 
