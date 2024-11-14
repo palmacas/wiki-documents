@@ -533,7 +533,7 @@ Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the reComputer
 </table>
 </div>
 
-<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
+<p style={{ fontSize: '0.9em', color: 'green' , textAlign: 'center'}}>
   * The image files from both Download1 and Download2 are the same. You can choose the link with the faster download speed.
 </p>
 
