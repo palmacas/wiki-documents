@@ -6,7 +6,7 @@ keywords:
 - xiao
 - pin multiple
 image: https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/1-102010551-Seeed-Studio-XIAO-RA4M1.jpg
-side_position: 1
+sidebar_position: 1
 slug: /xiao_ra4m1_pin_multiplexing
 last_update:
   date: 08/15/2024
@@ -161,7 +161,7 @@ If the program runs successfully, you will see the following running effect.
 
 ## Analog
 
-XIAO RA4M1 Development Board  Having up to 14 bit ADC for high-resolution reading of analog sensor values , it can help us to read more accurate values . The analog-to-digital converter(ADC) on an XIAO RA4M1 Development board . By Default , the resolution is set 10-bit , which can be to both 12-bit and 14-bit resolution for improved accuracy on analog readings
+XIAO RA4M1 Development Board  Having up to 14 bit ADC for high-resolution reading of analog sensor values , it can help us to read more accurate val The analog-to-digital converter(ADC) on an XIAO RA4M1 Development board . By Default , the resolution is set 10-bit , which can be to both 12-bit and 14-bit resolution for improved accuracy on analog readings
 
 Detail Datas by ADC accuracy
 - 10-bit :  0~1024
@@ -177,12 +177,12 @@ Next , We will choose two sensors to reflect the characteristics of ADC .
 	    <th>Seeed Studio XIAO RA4M1</th>
       <th>Grove-Variable Color LED</th>
 	    <th>Grove-Rotary Angle Sensor </th>
-	    <th>Grove-Rotary Angle Sensor </th>
+	    <th>Seeed Studio Grove Base for XIAO </th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/2-102010551-Seeed-Studio-XIAO-RA4M1-45font.jpg" style={{width:500, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Variable_Color_LED/img/Variable_Color_LED1.jpg" style={{width:500, height:'auto'}}/></div></td>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Variable_Color_LED/img/Variable_Color_LED1.jpg" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
 	</tr>
     <tr>
@@ -306,7 +306,9 @@ void loop() {
 
 ### Usage of Serial1
 
-According to the above XIAO RA4M1 Pin diagrams for specific parameters,we can observe that there are TX pin and RX pin,This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added,So nex,we will use the pins led out by the chip for serial communication
+According to the above XIAO RA4M1 Pin diagrams for specific parameters, we can observe that there are TX pin and RX pin. 
+This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added. 
+So next, we will use the pins led out by the chip for serial communication.
 
 ```c
 
