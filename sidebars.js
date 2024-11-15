@@ -5287,6 +5287,7 @@ const sidebars = {
       },
       items: [
         'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/CN_XIAO-ESP32C3-Zephyr',
+        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/CN_XIAO_ESP32C3_with_CircuitPython',
         'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/CN_XIAO_ESP32C3_MicroPython',
         'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/CN_XIAO_ESP32C3_Pin_Multiplexing',
 
@@ -5309,6 +5310,37 @@ const sidebars = {
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiaoesp32c3-flash-storage',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_XIAO-ESP32C3-for-ESPHome-Support',
             // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/CN_xiaoesp32c3-chatgpt',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'XIAO ESP32C6',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_Getting_Started',
+      },
+      items: [
+        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_Pin_Multiplexing',
+
+        {
+          type: 'category',
+          label: '无线通讯功能',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_WiFi_Usage',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_Bluetooth_Usage',
+          ],
+        },
+        {
+          type: 'category',
+          label: '编程语言',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_Embedded_Swift',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_with_CircuitPython',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/CN_XIAO_ESP32C6_with_MicroPython',
           ],
         },
       ],
