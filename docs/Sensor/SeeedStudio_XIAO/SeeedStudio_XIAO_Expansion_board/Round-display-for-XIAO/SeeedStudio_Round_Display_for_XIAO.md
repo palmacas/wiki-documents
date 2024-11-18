@@ -97,6 +97,10 @@ Before we start, we can refer to the following pictures to understand the pin de
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/round-pinout.png" style={{width:800, height:'auto'}}/></div>
 
+Since April 7, 2023, the revamped Round Display adds a 2-bit Switch to control the screen backlight and battery voltage readout. For the user to freely choose whether to use the pin or release it. Click [here](https://wiki.seeedstudio.com/seeedstudio_round_display_usage/#ke-button--gpio) to read more details.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/round-display-v1.1-pinout.png" style={{width:800, height:'auto'}}/></div>
+
 ## Getting Started
 
 ### Hardware Preparation

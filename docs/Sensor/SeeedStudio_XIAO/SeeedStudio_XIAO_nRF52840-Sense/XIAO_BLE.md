@@ -188,9 +188,6 @@ If you are using the factory firmware of the Seeed Studio XIAO nRF52840 or have 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528403.png" alt="pir" width={800} height="auto" /></p>
 
-<<<<<<< HEAD
-- **Step 3.** Upload the [Low Power demo](https://files.seeedstudio.com/wiki/XIAO-BLE/PowerTests.zip) here and run it with **Arduino**
-=======
 - **Step 3.** Upload the deep_sleep demo here and run it with **Arduino**
 
 ```cpp
@@ -370,11 +367,11 @@ Currently for this issue, we recommend that users do not turn off the ADC functi
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/14.png" alt="pir" width={800} height="auto" /></p>
 
-### Q4: How does the red light behave when powered on?
+### Q4: How does the green light behave when powered on?
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/nRF_RGB.png" alt="nRF52840 RGB Schematic" width="120" height="auto" /></p>
 
-The `P0.17` pin is used to control the red indicator light behavior, indicating the charging status:
+The `P0.17` pin is used to control the green indicator light behavior, indicating the charging status:
 
 - Low level: when **charging** is in progress.
 - High level: when the battery is either **not charging** or **fully charged**.
