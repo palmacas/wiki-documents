@@ -12,14 +12,6 @@ last_update:
 ---
 
 # reCamera Network Connection
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/001.jpg" /></div>
-
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reCamera-2002w-8GB-p-6250.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
-</div>
-
 
 reCamera is a combination of a **processor** and a camera **sensor**.
 
