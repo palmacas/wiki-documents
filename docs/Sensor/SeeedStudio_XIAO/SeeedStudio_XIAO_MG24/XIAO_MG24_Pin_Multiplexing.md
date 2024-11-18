@@ -409,7 +409,6 @@ void smeil_display() {
         delay(delays[i]); 
     }
 }
-}
 ```
 
 ### Result graph
