@@ -5,7 +5,7 @@ keywords:
 - ra4m1
 - xiao
 - clokc
-image: https://files.seeedstudio.com/wiki/RA4M1_Application/top.png
+image: https://files.seeedstudio.com/wiki/RA4M1_Application/top.webp
 side_position: 2
 slug: /xiao_ra4m1_clock
 last_update:
