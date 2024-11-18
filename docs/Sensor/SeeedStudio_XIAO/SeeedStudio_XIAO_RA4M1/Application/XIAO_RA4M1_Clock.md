@@ -1,6 +1,6 @@
 ---
 description: Build a simplp Clock with Seeed Studio XIAO RA4M1.
-title: XIAO RA4M1 Demo for Clock
+title: Hollow Clock Powered by Seeed Studio XIAO RA4M1
 keywords:
 - ra4m1
 - xiao
@@ -14,12 +14,15 @@ last_update:
 ---
 
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RA4M1_Application/top2.png" style={{width:600, height:'auto'}}/></div>
+<div class="table-center">
+<iframe width="800" height="500" src="https://files.seeedstudio.com/wiki/RA4M1_Application/1.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
 
 ## Inspiration arises
 
-This project gained significant popularity on YouTube some time ago. It featured a compact box that housed a development board, a motor, and a motor driver board—an impressive feat of space management. Coincidentally, our XIAO series boasts a very small form factor. Imagine the possibilities if we combined the smallest development board with the smallest motor driver board! Join me on this exciting journey of Clock Demos 😀!
+[Hollow Clock](https://www.youtube.com/watch?v=jvoOgxK4EvI&ab_channel=TheWrench) gained significant popularity on YouTube some time ago.
+But we have smaller development boards and smaller motor driver boards, so let's get our hands dirty and build a XIAO RA4M1 Hollow Clock!
 
 ## Hadware Overview
 
@@ -28,7 +31,7 @@ This project gained significant popularity on YouTube some time ago. It featured
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>Seeed Studio XIAO MG24</th>
+			<th>Seeed Studio XIAO RA4M1</th>
 		</tr>
 		<tr>
 			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/2-102010551-Seeed-Studio-XIAO-RA4M1-45font.jpg" style={{width:300, height:'auto'}}/></div></td>
@@ -49,6 +52,9 @@ This project gained significant popularity on YouTube some time ago. It featured
 With the same volume as XIAO, simply weld the mother seat and insert XIAO and the motor into it to operate.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RA4M1_Application/2.png" style={{width:500, height:'auto'}}/></div>
+
+
+Specific information is in the resource at the end.
 
 :::tip
 Both motors and components need to be purchased by oneself.
@@ -177,20 +183,13 @@ rotate(int step): Controls the motor to rotate a specified number of steps. You 
 - During testing, monitor the operation of the motor to ensure it functions as expected and make adjustments as needed.
 :::
 
-## Demos video
-
-
-<div class="table-center">
-<iframe width="800" height="500" src="https://files.seeedstudio.com/wiki/RA4M1_Application/1.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
-
 
 If you have more ideas and modifications, feel free to showcase them using the XIAO series!
 
 ## Resouce
 
-- 📄 **[SCH]** [Circuit Board](https://files.seeedstudio.com/wiki/RA4M1_Application/2.zip)
-- 📄 **[PCB]** [Circuit Board](https://files.seeedstudio.com/wiki/RA4M1_Application/xiao.pcb)
+- 📄 **[SCH]** [Motor Driver Board](https://files.seeedstudio.com/wiki/RA4M1_Application/4.zip)
+- 📄 **[PCB]** [Motor Driver Board](https://files.seeedstudio.com/wiki/RA4M1_Application/xiao.pcb)
 - 📄 **[3D]** [Clock 3D Modeling](https://files.seeedstudio.com/wiki/RA4M1_Application/clock.zip)
 
 
