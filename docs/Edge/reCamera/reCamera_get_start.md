@@ -11,7 +11,7 @@ last_update:
   author: Parker Hu
 ---
 
-# Getting Started
+# Getting Started with reCamera
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.png" /></div>
 

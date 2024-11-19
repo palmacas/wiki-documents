@@ -1,7 +1,7 @@
 ---
 title: Pin Multiplexing with Seeed Studio XIAO MG24
 description: Pin multiplexing with Seeed Studio XIAO MG24(Sense).
-image: https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/top.webp
+image: https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/2.webp
 slug: /xiao_mg24_pin_multiplexing
 keywords:
   - XIAO

@@ -9,7 +9,10 @@ const docList = []
 const excludedPaths = [
   path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
   path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
-  path.join(docsDirectory, 'weekly_wiki.md') // 排除 weekly wiki 的文件
+  path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
+  
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera_model_conversion.md'), // 排除指定文档
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera_warranty.md') // 排除指定文档
 ];
 
 // 递归函数，用于遍历多层文件夹
@@ -39,8 +42,15 @@ function processDirectory(directory) {
       const fileContents = fs.readFileSync(filePath, 'utf-8')
       const { data, content } = matter(fileContents)
 
+      // 1. 去除 YAML 头部
+      const markdownWithoutYaml = content.replace(/^---[\s\S]+?---\s*/, '');
+
+      // 2. 去除所有代码块（包括以 ``` 开头的块）
+      const markdownWithoutCodeBlocks = markdownWithoutYaml.replace(/```[\s\S]*?```/g, '');
+
+
       // 优先查找第一个一级标题（以 # 开头的行）
-      const titleMatch = content.match(/^#\s+(.*)/m);
+      const titleMatch = markdownWithoutCodeBlocks.match(/^#\s+(.*)/m);
       const title = titleMatch ? titleMatch[1].trim() : (data.title || '');
 
       // 判断是否有 date 字段
