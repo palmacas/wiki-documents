@@ -5243,6 +5243,7 @@ const sidebars = {
           items: [
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/CN_XIAO-BLE-sidewalk',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/CN_XIAO_BLE_HA',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/CN_XIAO_BLE_Sense_Head_Tracker'
           ],
         },
       ],

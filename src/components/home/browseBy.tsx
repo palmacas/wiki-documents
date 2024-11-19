@@ -174,12 +174,7 @@ function IndexLatestedViki(props) {
           "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/frigate_with_reterminal.webp",
           "title": "Frigate intergrating with reTerminal DM",
         }, 
-        {
-          "path": "/sensecraft_homeassistant_userguide",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/SenseCraft-HomeAssistantimage50.webp",
-          "title": "SenseCraft-HomeAssistant User Manual",
-        },
-        {
+                {
           "path": "/Connect-Grove-to-Home-Assistant-ESPHome",
           "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/grove_to_esphome.webp",
           "title": "Connect Grove Modules to Home Assistant using ESPHome",
@@ -188,6 +183,11 @@ function IndexLatestedViki(props) {
           "path": "/home_assistant_sensecap",
           "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/config_11.webp",
           "title": "SenseCAP Integration for Home Assistant",
+        },
+        {
+          "path": "/sensecraft_homeassistant_userguide",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/SenseCraft-HomeAssistantimage50.webp",
+          "title": "SenseCraft-HomeAssistant User Manual",
         },
         {
           "path": "/ha_xiao_esp32",
