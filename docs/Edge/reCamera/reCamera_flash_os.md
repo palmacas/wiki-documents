@@ -4,14 +4,14 @@ title: System update & upgrade
 keywords:
   - Edge
   - reCamera
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reCamera/001.webp
 slug: /recamera_flash_os
 last_update:
   date: 11/6/2024
   author: Parker Hu
 ---
 
-# System update & upgrade
+# reCamera System update & upgrade
 
 You can check out the latest version of the [reCamera OS here.](https://github.com/Seeed-Studio/reCamera-OS)
 
