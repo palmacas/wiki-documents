@@ -16,7 +16,7 @@ const docList = [
   [
     {
       "path": "/recamera_get_start",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.png",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
       "title": "Getting Started with reCamera",
       "date": "11/11/2024"
     },
