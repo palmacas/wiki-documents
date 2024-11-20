@@ -39,7 +39,7 @@ It is designed for use with line-follower robots. It has 2 IR LEDs and 2 IR sens
 ## Getting Started
 
 ### indication diagram
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Grove_Line_Finder/images/10.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Grove_Line_Finder/img/111111.png"/></div>
 
 ### Hardware
 
