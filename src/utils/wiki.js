@@ -9,7 +9,7 @@ const docList = [
     {
       "path": "/xiao_ra4m1_clock",
       "image": "https://files.seeedstudio.com/wiki/RA4M1_Application/top.webp",
-      "title": "XIAO RA4M1 Demo for Clock",
+      "title": "Hollow Clock Powered by Seeed Studio XIAO RA4M1",
       "date": "11/12/2024"
     }
   ],
