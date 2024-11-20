@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 11/04/2024
+  date: 11/11/2024
   author: Frank
 ---
 
@@ -17,44 +17,68 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is November 4th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is November 11th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
+### [Start running with ESP-NOW protocol on XIAO Series](https://wiki.seeedstudio.com/xiao_espnow/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/indicator-page.png" alt="pir" width={800} height="auto" /></p>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/126.png" style={{width:1100, height:'auto'}}/></div>
+<br />
 
-[SenseCAP Indicator](https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator) is a 4-inch touch screen driven by ESP32-S3 and RP2040 Dual-MCU. With the compatibility with Meshtastic, SenseCAP Indicator can be another game changer as your Meshtastic phone or you name it.
+This Wiki will tell you what the ESP-NOW protocol is,and tech you how to use XIAO ESP32 Series to communicate using this protocol,the process will be very simple,In order to enable everyone to utilize the ESP-NOW protocol in the XIAO ESP32 series,we prepare thress XIAO ESP32 types C6/C3/S3 to comuncate,so let's start this journey!
 
-### [Seeed Studio XIAO RP2350 with Arduino](https://wiki.seeedstudio.com/xiao_rp2350_arduino/)
+### [Build the Watcher Development Environment](https://wiki.seeedstudio.com/build_watcher_development_environment/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/arduino-firmware-upload.png" alt="pir" width={800} height="auto" /></p>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/64.jpg" style={{width:1100, height:'auto'}}/></div>
+<br />
 
-The Seeed Studio XIAO RP2350 board now supports programming via Arduino, thanks to the [arduino-pico core](https://github.com/earlephilhower/arduino-pico). This guide will help you set up and begin using Arduino on your RP2350 board.
+This wiki will introduce how to download the Watcher open-source repository and set up an IDF environment.
 
-### [Single Channel Gateway - SenseCAP Indicator](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/)
+### [Watcher Software Architecture](https://wiki.seeedstudio.com/watcher_software_framework/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.png" style={{width:800, height:'auto'}}/></div>
+The software architecture of SenseCAP Watcher is shown in the figure below, mainly divided into three parts: APP applications, UI and interaction, task flow.
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_software_framework/architecture.png" style={{width:800, height:'auto'}}/></div>
 
-This project demonstrates how to implement a single channel LoRa gateway (LoRaHub) using SenseCAP Indicator which use XIAO ESP32S3 as host MCU and SX1262 LoRa radio and build up a LoRaWAN application on The Things Network(TTN). Upgrading the firmware offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
+- **APP applications**: Mainly some applications, such as WiFi connection, Bluetooth configuration, communication with the platform, OTA, etc., which also generate some data for UI display.
+- **UI and interaction**: Mainly the implementation of the UI interface and UI interaction.
+- **Task flow**: Mainly the implementation of the task flow engine and various task flow function modules.
+
+### [Watcher Function Module Development Guide](https://wiki.seeedstudio.com/watcher_function_module_development_guide/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_software_framework/watcher_function_module.webp" style={{width:800, height:'auto'}}/></div>
+
+In this documentation we're gonna show a step-by-step guide on how to develop a new function module. We're gonna take the `UART Alarm` module as an example.
+
+### [Watcher UI Integration Guide](https://wiki.seeedstudio.com/watcher_ui_integration_guide/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_software_framework/ui_framework.png" style={{width:600, height:'auto'}}/></div>
+
+In this tutorial, you will learn how to integrate your own UI design and related logic functions into the `view` directory. All UI designs and logic functions will be placed in the `view` directory, which contains the `ui` and `ui_manager` subdirectories. Additionally, the `view` directory includes `view.c`, `view_alarm.c`, `view_image_preview.c`, `view_pages.c`, and corresponding `.h` header files.
+
+### [Seeed Studio XIAO MG24 Example - Matter](https://wiki.seeedstudio.com/xiao_mg24_matter/)
+
+Matter is an **open-source, unified standard** for smart home technology that promotes interoperability across devices and ecosystems. Developed by the Connectivity Standards Alliance (CSA), it enables seamless communication between devices from various manufacturers without requiring internet connectivity. Matter supports native compatibility with platforms such as Apple HomeKit, Google Home, and Amazon Alexa, making it easier to integrate devices across smart home setups. For a deeper understanding of Matter, refer to the [official Matter documentation](https://project-chip.github.io/connectedhomeip-doc/index.html).
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/matter-qr-url.png" style={{width:600, height:'auto'}}/></div>
+
+Matter operates efficiently over local networks, offering reliable, low-latency communication without needing internet access. This feature significantly improves both security and device performance. This documentation will guide you through the steps to develop a Matter application on the XIAO MG24, using Arduino.
+
+### [Pin Multiplexing with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/top.png" style={{width:700, height:'auto'}}/></div>
+
+***The XIAO MG24*** features up to ***22 regular pins***, ***18 analog pins***, ***18 digital pins***, ***2 SPI***, ***2 UART***, ***2 I2C***, and supports ***all PWM***. It offers a rich variety of pins available for our use. In this wiki, we will teach you how to drive these pins, enabling us to utilize them effectively!
+
 
 ## Existing Wiki Updated
 
-### [Getting Started with Seeed Studio Round Display for XIAO](https://wiki.seeedstudio.com/get_start_round_display/)
+### [reCamera Getting Started](https://wiki.seeedstudio.com/recamera_getting_started/)
 
-We have updated the [list](https://wiki.seeedstudio.com/get_start_round_display/#hardware-preparation) of supported hardware for Round Display for XIAO.
+We have added [solutions](https://wiki.seeedstudio.com/recamera_getting_started/#mac) for MAC users experiencing Computer network errors.
 
 ## The Efforts of Contributor
-
-### [Seeed Studio XIAO ESP32C6 with MicroPython](https://wiki.seeedstudio.com/xiao_esp32c6_micropython/)
-
-MicroPython is a lean and efficient implementation of the Python 3 programming language that includes a small subset of the Python standard library and is optimised to run on microcontrollers and in constrained environments. Since its first launch in 2014, micropython has supported many microcontrollers, including the ESP32 series, but currently does not officially support the ESP32C6 chip. This firmware is self compiled, and the official firmware is already on its way. Please be patient.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220808948.png" style={{width:800, height:'auto'}}/></div>
-
-In this page, we will guide on how to use the the XIAO ESP32C6 capability using the simple and easy syntax from micropython.
 
 <!-- [IAO ESP32S3(Sense) With FreeRTOS](https://wiki.seeedstudio.com/xiao-esp32s3-freertos/)
 
@@ -150,5 +174,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
 - [weekly wiki on 2024.10.21th](/Seeed_Elderly/weekly_wiki/wiki241021)
 - [weekly wiki on 2024.10.28th](/Seeed_Elderly/weekly_wiki/wiki241028)
+- [weekly wiki on 2024.11.04th](/Seeed_Elderly/weekly_wiki/wiki241104)
 
 </details>

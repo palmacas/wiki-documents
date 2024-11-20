@@ -561,6 +561,10 @@ For ESP32 series chip products, if you need to use the soft serial port, you nee
     </a>
 </div><br />
 
+:::tip
+Currently we recommend version 7.0.0 of the EspSoftwareSerial library. Other versions may have varying degrees of problems that prevent the soft serial port from working properly.
+:::
+
 Since you have downloaded the zip Library, open your Arduino IDE, click on **Sketch > Include Library > Add .ZIP Library**. Choose the zip file you just downloaded，and if the library install correct, you will see **Library added to your libraries** in the notice window. Which means the library is installed successfully.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Get_Started_With_Arduino/img/Add_Zip.png" style={{width:800, height:'auto'}}/></div>
