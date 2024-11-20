@@ -405,6 +405,9 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 
 - **[ZIP]** [Seeed Studio XIAO nRF52840 Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Certification.zip)
 
+- 🔗 **[Kicad]** [Seeed Studio XIAO nRF52840 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
+
 ### Seeed Studio XIAO nRF52840 Sense
 
 - **[PDF]** [nRF52840 datasheet](https://files.seeedstudio.com/wiki/XIAO-BLE/nRF52840_PS_v1.5.pdf)
@@ -424,6 +427,8 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 - **[STEP]** [Seeed Studio XIAO nRF52840 Sense 3D Model](https://files.seeedstudio.com/wiki/XIAO-BLE/seeed-studio-xiao-nrf52840-3d-model.zip)
 
 - **[ZIP]** [Seeed Studio XIAO nRF52840 Sense Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-Certification.zip)
+
+- 🔗 **[Kicad]** [Seeed Studio XIAO nRF52840 Sense FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
 ## Course Resources
 
