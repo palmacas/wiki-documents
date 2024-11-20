@@ -180,16 +180,22 @@ export const Highlight = ({children, color}) => (
  </tr>
 </table>
 
-:::tip
-GPIO14 is used to select between using the built-in antenna or an external antenna. Before that, you need to set GPIO3 low level to turn on this function. If GPIO14 is set low level, it uses the built-in antenna; if it set to high level, it uses the external antenna. Default is low level. If you want to set it high, you can refer the code below.
+:::tip RF Switch
+
+The **RF Switch** feature allows you to toggle between the built-in ceramic antenna and an external antenna by configuring `GPIO14`. To enable this function, *you must first set `GPIO3` to a low level*, as this activates the RF switch control.  
+
+- **GPIO14 Low Level (Default Setting)**: The device uses the built-in ceramic antenna.
+- **GPIO14 High Level**: The device switches to the external antenna.  
+
+By default, `GPIO14` is set to a low level, enabling the built-in antenna. To use an external antenna, set `GPIO14` to a high level. Refer to the example code below for guidance on configuring `GPIO3` and `GPIO14` to activate the external antenna:
 
 ```cpp
 void setup() {
   pinMode(3, OUTPUT);
-  digitalWrite(3, LOW);//turn on this function
+  digitalWrite(3, LOW); // Activate RF switch control
   delay(100);
-  pinMode(14, OUTPUT); 
-  digitalWrite(14, HIGH);//use external antenna
+  pinMode(14, OUTPUT);
+  digitalWrite(14, HIGH); // Use external antenna
 }
 ```
 
