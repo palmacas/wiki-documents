@@ -554,7 +554,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="tensorflow_lite"><strong><a href="Google's high-performance runtime for on-device AI">TensorFlow Lite</a></strong></span>, Google's high-performance runtime for on-device AI.
+<span id="tensorflow_lite"><strong><a href="https://ai.google.dev/edge/litert">TensorFlow Lite</a></strong></span>, Google's high-performance runtime for on-device AI.
 
 <div class="table-center">
 	<table align="center">
