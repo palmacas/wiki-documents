@@ -11,6 +11,53 @@ function IndexLatestedViki(props) {
   const [theme, setTheme] = useState(props.theme);
   const wikiList = [
     {
+      key: 'edgeAi',
+      image: 'edgeAi',
+      moreLink:'https://wiki.seeedstudio.com/edge_ai_topic/',
+      docList: [
+        {
+          "path": "/Real%20Time%20Subtitle%20Recoder%20on%20Nvidia%20Jetson",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/speech_subtitle.gif",
+          "title": "Speech Subtitle Generation on Nvidia Jetson",
+        },
+                {
+          "path": "/alwaysAI-Jetson-Getting-Started",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_alwaysai.gif",
+          "title": "Object Detection with AlwaysAI",
+        }
+        , {
+          "path": "/YOLOv8-TRT-Jetson",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_yolov8.gif",
+          "title": "Deploy YOLOv8 on NVIDIA Jetson using TensorRT",
+        },
+        {
+          "path": "/Lumeo-Jetson-Getting-Started",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_lumeo.gif",
+          "title": "Object Detection with Lumeo",
+        },
+        {
+          "path": "/a_loam",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/fig0.gif",
+          "title": "How to run A-LOAM 3D SLAM on reComputer",
+        },
+        {
+          "path": "/CVEDIA-Jetson-Getting-Started",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/CVEDIA-RT.gif",
+          "title": "Getting Started with CVEDIA-RT on NVIDIA® Jetson Devices",
+        },
+        {
+          "path": "/No-code-Edge-AI-Tool",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/no_code_edge_ai_tool.webp",
+          "title": "No code Edge AI Tool",
+        },
+        {
+          "path": "https://wiki.seeedstudio.com/How_to_run_local_llm_text_to_image_on_reComputer/",
+          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/local_llm_text_to_image.webp",
+          "title": "Run a Local LLM Text-to-Image on reComputer",
+        }
+      ]
+    },
+    {
       key: 'arduino',
       image: 'arduino',
       moreLink:'https://wiki.seeedstudio.com/Arduino/',
@@ -193,52 +240,6 @@ function IndexLatestedViki(props) {
           "path": "/ha_xiao_esp32",
           "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/ha-xiao5.webp",
           "title": "XIAO ESP32S3 for Home Assistant",
-        }
-      ]
-    }, {
-      key: 'edgeAi',
-      image: 'edgeAi',
-      moreLink:'https://wiki.seeedstudio.com/edge_ai_topic/',
-      docList: [
-        {
-          "path": "/Real%20Time%20Subtitle%20Recoder%20on%20Nvidia%20Jetson",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/speech_subtitle.gif",
-          "title": "Speech Subtitle Generation on Nvidia Jetson",
-        },
-                {
-          "path": "/alwaysAI-Jetson-Getting-Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_alwaysai.gif",
-          "title": "Object Detection with AlwaysAI",
-        }
-        , {
-          "path": "/YOLOv8-TRT-Jetson",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_yolov8.gif",
-          "title": "Deploy YOLOv8 on NVIDIA Jetson using TensorRT",
-        },
-        {
-          "path": "/Lumeo-Jetson-Getting-Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/object_detection_lumeo.gif",
-          "title": "Object Detection with Lumeo",
-        },
-        {
-          "path": "/a_loam",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/fig0.gif",
-          "title": "How to run A-LOAM 3D SLAM on reComputer",
-        },
-        {
-          "path": "/CVEDIA-Jetson-Getting-Started",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/CVEDIA-RT.gif",
-          "title": "Getting Started with CVEDIA-RT on NVIDIA® Jetson Devices",
-        },
-        {
-          "path": "/No-code-Edge-AI-Tool",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/no_code_edge_ai_tool.webp",
-          "title": "No code Edge AI Tool",
-        },
-        {
-          "path": "https://wiki.seeedstudio.com/How_to_run_local_llm_text_to_image_on_reComputer/",
-          "image": "https://files.seeedstudio.com/wiki/Homepage_browseby/local_llm_text_to_image.webp",
-          "title": "Run a Local LLM Text-to-Image on reComputer",
         }
       ]
     }
