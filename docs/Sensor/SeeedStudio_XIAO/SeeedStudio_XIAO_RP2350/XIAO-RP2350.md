@@ -528,6 +528,7 @@ The XIAO RP2350 harnesses the power of the Raspberry Pi RP2350, leveraging a wea
 - 📄 **[PDF]** [Getting Started with Raspberry Pi Pico-series](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf): A comprehensive guide to setting up and programming Raspberry Pi Pico boards, ideal for beginners looking to learn MicroPython or C/C++.
 - 📄 **[PDF]** [Raspberry Pi Pico-series Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf) the book which documents the MicroPython setup tutorials and APIs
 - 📄 **[PDF]** [Raspberry Pi Pico-series C/C++SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) the book which documents the Pico C/C++ SDK APIs
+- 🔗 **[Kicad]** [Seeed Studio XIAO RP2350 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
 ### Expansion and Applications
 
