@@ -532,7 +532,6 @@ sudo apt install nvidia-jetpack -y
     <tr>
       <th>Device</th>
       <th>Image Link</th>
-      <th>Alternative Image Link</th>
       <th>JetPack Version</th>
       <th>L4T Version</th>
     </tr>
@@ -540,25 +539,21 @@ sudo apt install nvidia-jetpack -y
   <tbody>
     <tr>
       <td>reComputer Industrial J4012</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXopAQnjF29DozvHQhGGxLEBdRIxBYareqkqqwawX00SaA?e=fXM2Qm" target="_blank" rel="noopener noreferrer">Download1</a></td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfJqxgk9wHVEjvu6W0qOe5YBjqKtnimUodCivWsMMzrcxA?e=ijoe7Z" target="_blank" rel="noopener noreferrer">Download2</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcQJulAOt3ZJlnG-xr0lzdcB_d-yLXxEpicXuHr8sIca1w?e=dUWeYw" target="_blank" rel="noopener noreferrer">Download1</a></td>
       <td rowSpan={6}>6.0</td>
       <td rowSpan={6}>36.3.0</td>
     </tr>
     <tr>
       <td>reComputer Industrial J4011</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcdcfofJezJPpIoMzI0VuA4B1TohJAHY2dusK9d3cODAcw?e=CFmmIG" target="_blank" rel="noopener noreferrer">Download1</a></td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ETCtbIlpQKRBvcFKPDSF7j4BNIUPZdS7RP6J9c0Zk9-zlQ?e=sTSh1W" target="_blank" rel="noopener noreferrer">Download2</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERWRQ6mJe2hIoSwsatwN68IBF0prjvm7XX1aHFmsTd25fQ?e=x06NFw" target="_blank" rel="noopener noreferrer">Download1</a></td>
     </tr>
     <tr>
       <td>reComputer Industrial J3011</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EesvH6PFCN5EuepeV3unhDsBdeeeeKcTVVN0NSD1oiHkkA?e=vdoNgt" target="_blank" rel="noopener noreferrer">Download1</a></td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EeGh5q1ztmBLrWfC5pbwsEcBbopBGR4M614-xi-ePlla8w?e=YFPGII" target="_blank" rel="noopener noreferrer">Download2</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcSZGn8G8QRKqJc1yV8wErsBhCgy_E2UmCX5O9utZtj4ug?e=uel2DE" target="_blank" rel="noopener noreferrer">Download1</a></td>
     </tr>
     <tr>
       <td>reComputer Industrial J3010</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfsQ14ftxN9Mq9600cEK9nYBdIsS6ZAMn0xYxYvPdr_KAw?e=oIYleH" target="_blank" rel="noopener noreferrer">Download1</a></td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ETRks_NJG45HrCP514NlI_4BKna6iH3B4zAQQdwMbGS04g?e=UYihom" target="_blank" rel="noopener noreferrer">Download2</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Eaj1r69kX5hNjzgb0xcOun0BWtd9sjq318O4FFi8bMKHvQ?e=n8wrM1" target="_blank" rel="noopener noreferrer">Download1</a></td>
     </tr>
   </tbody>
   </table> 
