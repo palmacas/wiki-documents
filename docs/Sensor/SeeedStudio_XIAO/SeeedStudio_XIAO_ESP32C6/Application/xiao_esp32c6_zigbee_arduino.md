@@ -17,7 +17,7 @@ Zigbee is a widely adopted wireless communication protocol that finds extensive 
 Throughout this tutorial, we will cover the following key aspects:
 
 1. **Development Environment**: Setting up the development environment for XIAO ESP32C6 and ESP Zigbee SDK via Arduino.
-2. **Code Structure**: Analyzing the code structure and organization of the Zigbee_Light_Buld and Zigbee_Light_Switch examples.
+2. **Code Structure**: Analyzing the code structure and organization of the `Zigbee_Light_Bulb` and `Zigbee_Light_Switch` examples.
 3. **Zigbee Device Data Models**: Understanding the Zigbee device data models and how they are defined within the code.
 4. **Zigbee Handling Mechanisms**: Exploring the initialization process and event handling mechanisms in Zigbee devices.
 5. **Communication Patterns**: Examining the communication patterns and message exchanges between Zigbee devices.
@@ -29,55 +29,56 @@ So, let's embark on this exciting journey of Zigbee development with the XIAO ES
 In this tutorial we will use **two** XIAO ESP32C6s as examples to explain Zigbee. you can jump and buy it through the link below. One as a **Zigbee End Device** and one as a **Zigbee Coordinator**.
 
 <div class="table-center">
-	<table>
-		<tr>
-			<th>Seeed Studio XIAO ESP32C6</th>
-			<th>Grove Shield For XIAO</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
-			<td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/x/i/xiao_-preview-25.png" style={{width:250, height:'auto'}}/></div></td>
-		</tr>
-		<tr>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
+ <table>
+  <tr>
+   <th>Seeed Studio XIAO ESP32C6</th>
+   <th>Grove Shield For XIAO</th>
+  </tr>
+  <tr>
+   <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
+   <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/x/i/xiao_-preview-25.png" style={{width:250, height:'auto'}}/></div></td>
+  </tr>
+  <tr>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
         ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html
         ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-		</tr>
-		<tr>
-			<th>Seeed Studio Grove Red LED</th>
-			<th>Seeed Studio Grove Button</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/h/t/httpsstatics3.seeedstudio.comseeedfile2018-09bazaar939479_1040300054.jpg" style={{width:250, height:'auto'}}/></div></td>
-			<td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/p/e/perspectiive.jpg" style={{width:250, height:'auto'}}/></div></td>
-		</tr>
-		<tr>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+  </tr>
+  <tr>
+   <th>Seeed Studio Grove Red LED</th>
+   <th>Seeed Studio Grove Button</th>
+  </tr>
+  <tr>
+   <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/h/t/httpsstatics3.seeedstudio.comseeedfile2018-09bazaar939479_1040300054.jpg" style={{width:250, height:'auto'}}/></div></td>
+   <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/p/e/perspectiive.jpg" style={{width:250, height:'auto'}}/></div></td>
+  </tr>
+  <tr>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html
         ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html
         ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-		</tr>
-	</table>
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+  </tr>
+ </table>
 </div>
 
-## Part 2.Enviroment Prepatation
+## Part 2. Environment Preparation
+
 **Step 1.** Launch the Arduino application.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
@@ -111,60 +112,57 @@ Before diving into the code, it's essential to grasp the key concepts of the Zig
 
 Now, let's examine the HA On/Off Light example code and see how it maps to the Zigbee data model.
 
-
 1. Creating the Endpoint
 
-In the example code, the `esp_zb_on_off_light_ep_create()` function is used to create a HA on/off light endpoint. This function defines the endpoint ID, device ID, and the associated clusters.
+    In the example code, the `esp_zb_on_off_light_ep_create()` function is used to create a HA on/off light endpoint. This function defines the endpoint ID, device ID, and the associated clusters.
 
-```cpp
-static void esp_zb_task(void *pvParameters)
-{
-    esp_zb_cfg_t zb_nwk_cfg = ESP_ZB_ZED_CONFIG();
-    esp_zb_init(&zb_nwk_cfg);
-    esp_zb_on_off_light_cfg_t light_cfg = ESP_ZB_DEFAULT_ON_OFF_LIGHT_CONFIG();
-    esp_zb_ep_list_t *esp_zb_on_off_light_ep = esp_zb_on_off_light_ep_create(HA_ESP_LIGHT_ENDPOINT, &light_cfg);
-    esp_zb_device_register(esp_zb_on_off_light_ep);
-    esp_zb_core_action_handler_register(zb_action_handler);
-    esp_zb_set_primary_network_channel_set(ESP_ZB_PRIMARY_CHANNEL_MASK);
+    ```cpp
+    static void esp_zb_task(void *pvParameters)
+    {
+        esp_zb_cfg_t zb_nwk_cfg = ESP_ZB_ZED_CONFIG();
+        esp_zb_init(&zb_nwk_cfg);
+        esp_zb_on_off_light_cfg_t light_cfg = ESP_ZB_DEFAULT_ON_OFF_LIGHT_CONFIG();
+        esp_zb_ep_list_t *esp_zb_on_off_light_ep = esp_zb_on_off_light_ep_create(HA_ESP_LIGHT_ENDPOINT, &light_cfg);
+        esp_zb_device_register(esp_zb_on_off_light_ep);
+        esp_zb_core_action_handler_register(zb_action_handler);
+        esp_zb_set_primary_network_channel_set(ESP_ZB_PRIMARY_CHANNEL_MASK);
 
-    //Erase NVRAM before creating connection to new Coordinator
-    //esp_zb_nvram_erase_at_start(true); //Comment out this line to erase NVRAM data if you are conneting to new Coordinator
+        //Erase NVRAM before creating connection to new Coordinator
+        //esp_zb_nvram_erase_at_start(true); //Comment out this line to erase NVRAM data if you are conneting to new Coordinator
 
-    ESP_ERROR_CHECK(esp_zb_start(false));
-    esp_zb_main_loop_iteration();
-}
-```
+        ESP_ERROR_CHECK(esp_zb_start(false));
+        esp_zb_main_loop_iteration();
+    }
+    ```
 
 2. Registering the Device
 
-After creating the endpoint, the `esp_zb_device_register()` function is called to register the Zigbee device with the created endpoint.
+    After creating the endpoint, the `esp_zb_device_register()` function is called to register the Zigbee device with the created endpoint.
 
-```cpp
-esp_zb_device_register(esp_zb_on_off_light_ep);
-```
+    ```cpp
+    esp_zb_device_register(esp_zb_on_off_light_ep);
+    ```
 
 3. Attribute Callback
 
-The example code registers an attribute change callback using `esp_zb_core_action_handler_register()`. This callback is invoked when certain attributes are modified, allowing you to handle attribute changes based on your application logic.
+    The example code registers an attribute change callback using `esp_zb_core_action_handler_register()`. This callback is invoked when certain attributes are modified, allowing you to handle attribute changes based on your application logic.
 
-```cpp
-esp_zb_core_action_handler_register(zb_action_handler);
-```
+    ```cpp
+    esp_zb_core_action_handler_register(zb_action_handler);
+    ```
 
-In the `zb_action_handler` function, you can implement the desired behavior when the on/off attribute changes, such as controlling the LED light.
-
+    In the `zb_action_handler` function, you can implement the desired behavior when the on/off attribute changes, such as controlling the LED light.
 4. Zigbee Stack Configuration and Starting
 
-The example code configures the Zigbee end-device using `ESP_ZB_ZED_CONFIG()` and initializes the Zigbee stack using `esp_zb_init()`. The stack is then started with `esp_zb_start()`, and the main loop is handled by `esp_zb_main_loop_iteration()`.
+    The example code configures the Zigbee end-device using `ESP_ZB_ZED_CONFIG()` and initializes the Zigbee stack using `esp_zb_init()`. The stack is then started with `esp_zb_start()`, and the main loop is handled by `esp_zb_main_loop_iteration()`.
 
-
-```cpp
-esp_zb_cfg_t zb_nwk_cfg = ESP_ZB_ZED_CONFIG();
-esp_zb_init(&zb_nwk_cfg);
-...
-ESP_ERROR_CHECK(esp_zb_start(false));
-esp_zb_main_loop_iteration();
-```
+    ```cpp
+    esp_zb_cfg_t zb_nwk_cfg = ESP_ZB_ZED_CONFIG();
+    esp_zb_init(&zb_nwk_cfg);
+    ...
+    ESP_ERROR_CHECK(esp_zb_start(false));
+    esp_zb_main_loop_iteration();
+    ```
 
 The `esp_zb_app_signal_handler` function is responsible for handling various signals from the Zigbee application layer.
 
@@ -326,7 +324,6 @@ Overall, this code handles various Zigbee-related events and performs actions su
 
 The rest of the example is addressing the logic for keystroke stabilisation and keystroke interrupts. If you are interested, you can read and understand it by yourself.
 
-
 ## Part 4.Zigbee Light Effect
 
 This section we will connect the devices and upload the codes to two peices of XIAO ESP32C6 and see the effect.
@@ -334,16 +331,16 @@ This section we will connect the devices and upload the codes to two peices of X
 ### Step 1.Hardware Connection
 
 <div class="table-center">
-	<table>
-		<tr>
-			<th>XIAO ESP32C6 connect to bulb via D9</th>
-			<th>XIAO ESP32C6 connect to switch via D0</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/light.jpg" style={{width:500, height:'auto'}}/></div></td>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/switch.jpg" style={{width:500, height:'auto'}}/></div></td>
-		</tr>
-	</table>
+ <table>
+  <tr>
+   <th>XIAO ESP32C6 connect to bulb via D9</th>
+   <th>XIAO ESP32C6 connect to switch via D0</th>
+  </tr>
+  <tr>
+   <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/light.jpg" style={{width:500, height:'auto'}}/></div></td>
+   <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/switch.jpg" style={{width:500, height:'auto'}}/></div></td>
+  </tr>
+ </table>
 </div>
 
 ### Step 2.Set Arduino Serial Port to Debug Level
@@ -535,7 +532,6 @@ void loop() {
 ### Step 4.Upload Light Switch Codes
 
 ```cpp
-
 #ifndef ZIGBEE_MODE_ZCZR
 #error "Zigbee coordinator mode is not selected in Tools->Zigbee mode"
 #endif
@@ -818,20 +814,20 @@ void loop() {
 After upload the codes to 2 pieces of XIAO ESP32C6(light bulb and light switch), you can see some message from serial port like below image. When you click the switch, the bulb will turn on or off.
 
 :::tip
-If the message from serial port not like below image, you can click the reset button on XIAO ESP32C6 or replug to reboot it.
+If the message from serial port not like below image, you can click the reset button on XIAO ESP32C6 or re-plug to reboot it.
 :::
 
 <div class="table-center">
-	<table>
-		<tr>
-			<th>Zigbee bulb</th>
-			<th>Zigbee switch</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/2.png" style={{width:500, height:'auto'}}/></div></td>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/3.png" style={{width:500, height:'auto'}}/></div></td>
-		</tr>
-	</table>
+ <table>
+  <tr>
+   <th>Zigbee bulb</th>
+   <th>Zigbee switch</th>
+  </tr>
+  <tr>
+   <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/2.png" style={{width:500, height:'auto'}}/></div></td>
+   <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/3.png" style={{width:500, height:'auto'}}/></div></td>
+  </tr>
+ </table>
 </div>
 
 Here is the final effect. You can use switch to control the bulb via Zigbee.
@@ -848,12 +844,12 @@ Thank you for choosing our products! We are here to provide you with different s
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>

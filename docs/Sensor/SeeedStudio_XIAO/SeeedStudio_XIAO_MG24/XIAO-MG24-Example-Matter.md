@@ -5,7 +5,7 @@ image: https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/top.jpg
 slug: /xiao_mg24_matter
 sidebar_position: 2
 last_update:
-  date: 2024-11-07T14:43:35+08:00
+  date: 11/07/2024
   author: Spencer
 ---
 

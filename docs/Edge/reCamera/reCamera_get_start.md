@@ -4,14 +4,14 @@ title: Getting Started
 keywords:
   - Edge
   - reCamera
-image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.png
+image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
 slug: /recamera_get_start
 last_update:
   date: 11/11/2024
   author: Parker Hu
 ---
 
-# Getting Started
+# Getting Started with reCamera
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.png" /></div>
 

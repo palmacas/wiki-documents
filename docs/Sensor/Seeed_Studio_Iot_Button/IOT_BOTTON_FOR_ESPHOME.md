@@ -3,12 +3,14 @@ description: Seeed Studio Iot Button Connect To ESPHome
 title: Iot Button Connect To ESPHome
 keywords:
   - ESPHOME
-image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
+image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.jpg
 slug: /iot_botton_connect_to_esphome
 last_update:
   date: 11/11/2024
   author: qiuyu wei
 ---
+
+
 
 ## Getting Started
 
