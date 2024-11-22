@@ -384,8 +384,7 @@ We can't do it without the love, contribution that we get from the community, an
 </div>
 
 <br></br>
-<div><a href="
-https://www.rust-lang.org/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/rust.png" style={{width:'auto', height:50}} /></a></div>
+<div><a href="https://www.rust-lang.org/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/rust.png" style={{width:'auto', height:50}} /></a></div>
 
 <span id="rust"><strong><a href="https://www.rust-lang.org/">Rust</a></strong></span>, a language empowering everyone to build reliable and efficient software.
 <br></br>
@@ -443,8 +442,7 @@ https://www.rust-lang.org/"><img src="https://files.seeedstudio.com/wiki/xiao_to
 </div>
 
 <br></br>
-<div><a href="
-https://www.freertos.org/"><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/1.png" style={{width:'auto', height:50}} /></a></div>
+<div><a href="https://www.freertos.org/"><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/1.png" style={{width:'auto', height:50}} /></a></div>
 
 <span id="freertos"><strong><a href="https://www.freertos.org/">FreeRTOS</a></strong></span>,  real-time operating system for microcontrollers and small microprocessors.
 <br></br>
@@ -531,8 +529,7 @@ https://www.freertos.org/"><img src="https://files.seeedstudio.com/wiki/wiki-ran
 </div>
 
 <br></br>
-<div><a href="
-https://www.espressif.com/en/solutions/low-power-solutions/esp-now"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/espnow.png" style={{width:'auto', height:50}} /></a></div>
+<div><a href="https://www.espressif.com/en/solutions/low-power-solutions/esp-now"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/espnow.png" style={{width:'auto', height:50}} /></a></div>
 
 <span id="espnow"><strong><a href="https://www.espressif.com/en/solutions/low-power-solutions/esp-now">ESP-NOW</a></strong></span>, a wireless communication protocol for quick responses and low-power, which widely used in smart-home appliances, remote controlling and sensors.
 <br></br>
@@ -880,8 +877,7 @@ https://www.espressif.com/en/solutions/low-power-solutions/esp-now"><img src="ht
 </div>
 
 <br></br>
-<div><a href="
-https://wokwi.com/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/wokwi.png" style={{width:'auto', height:50}} /></a></div>
+<div><a href="https://wokwi.com/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/wokwi.png" style={{width:'auto', height:50}} /></a></div>
 
 <span id="wokwi"><strong><a href="https://wokwi.com/">Wokwi</a></strong></span>, World's most advanced ESP32 Simulator.
 <br></br>
