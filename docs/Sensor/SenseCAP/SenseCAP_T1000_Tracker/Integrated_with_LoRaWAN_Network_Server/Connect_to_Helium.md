@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /SenseCAP_T1000_tracker_Helium
 last_update:
-  date: 10/24/2023
+  date: 11/22/2024
   author: Jessie
 ---
 
@@ -19,78 +19,6 @@ Before connecting to Helium, you need to configure the basic parameters of your 
 * Set the platform to `Helium`, and then copy the `Device EUI`/`APP EUI`/`APP Key`.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/heliumdevice.png" alt="pir" width={300} height="auto" /></p>
-
-## ChirpStack LNS
-
-To receive the data from a device on the Helium network it must be associated with an LNS (LoraWAN Network Server).
-New users typically use one of the [public LNSs](https://docs.helium.com/iot/find-a-lns-provider/), many of which use
-ChirpStack, but it is also possible to connect one's own LNS to Helium.
-The following steps are taken from the on-boarding of a T1000 to the MeteoScientific public LNS but should be easy to adapt
-to other LNSs on Helium.
-
-For those familiar with the general process the TL;DR; is:
-- create an device profile with the appropriate region and the codec (see source below)
-- create device with devEUI, appKey, and a `app_eui` variable with the AppEUI, all three values coming from the Sense Craft app
-
-### Add device profile
-
-The first step is to add a device profile for the T1000 to your ChirpStack LNS.
-This tells the LNS how to decode the packets it receives from a T1000 as well as a number of other settings.
-
-In the ChirpStack dashboard select the device profiles (green circle in the image below) and then add a device profile
-(red circle).
-
-![image](https://github.com/user-attachments/assets/7e6984e2-178b-446e-afda-29dd033c662f)
-
-On the general tab, enter a device profile name you will recognize and select the appropriate region parameters.
-The LoRaWAN MAC version should be 1.0.4.
-The expected uplink interval can be set too, the main thing it controls is when the LNS user interface shows the device
-as active vs. inactive. It has no effect on the delivery of packets through the LNS.
-
-![image](https://github.com/user-attachments/assets/bb83141f-a447-437b-a29d-27e16a20ce7a)
-
-On the Codec tab select "JavaScript functions" and enter the codec from the
-[Seeed github repo](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/TTN/SenseCAP_T1000_TTN_Decoder.js)
-(this is the TTN codec, which is compatible with ChirpStack V4, there is a ChirpStack V3 codec in the same repo in case
-you are using an old version).
-
-![image](https://github.com/user-attachments/assets/bc572786-9853-4b29-baf1-d6f4349b4aa5)
-
-### Add Application and first Device
-
-The next step is to create an application and add actual devices to it.
-Go to the applications section and add a new application.
-
-![image](https://github.com/user-attachments/assets/5dc700c6-7faa-4d65-9d94-aa2543f06254)
-
-Then add a device to the application and enter the devEUI as captured in the Sense Craft app earlier.
-
-![image](https://github.com/user-attachments/assets/93febc5b-bc8f-430b-83e0-55d89690355c)
-
-On the variables tab add a variable called `app_eui` with the AppEUI from the Sense Craft app as value:
-
-![image](https://github.com/user-attachments/assets/90e529d7-811b-49cd-902d-85e36b2f6313)
-
-Hitting submit will bring up a page asking for the AppKey, again as captured earlier using the Sense Craft app:
-
-![image](https://github.com/user-attachments/assets/db33a84c-c31f-402f-b9b1-53fa47fc497d)
-
-### Watch your T1000 connect
-
-On the LoRaWAN frames tab you will see a spinner and then packets show up as they are received/sent.
-Press the button your T1000 to cause it to take a measurement and send a join request to connect with the LNS.
-Once this happens, you should see something like this:
-
-![image](https://github.com/user-attachments/assets/060873cb-c1d8-40bd-9ad3-7333966d3558)
-
-Once the join process has been performed the T1000 sends data. The LNS responds back with some information about the network
-frequencies and such, but subsequent to that there should only be uplinks with data.
-
-The actual data as decoded by the codec can be seen on the events tab, except that initially the ChirpStack V3 codec was used 
-for this device so an error is shown (see the red circle).
-Using the TTN codec works and one can see the actual data values by clicking on the `+up` button (green circle).
-
-![image](https://github.com/user-attachments/assets/a12d8a4c-5e8d-47b4-b1f5-1cfaea36f227)
 
 ## Helium Console Configuration
 
@@ -999,6 +927,79 @@ So if the upload interval you set is less than 4 minutes, real-time data will be
 
 
 
+## ChirpStack LNS
+
+
+For new users, to receive the data from a device on the Helium network it must be associated with an LNS (LoraWAN Network Server), typically use one of the [public LNSs](https://docs.helium.com/iot/find-a-lns-provider/), many of which use
+**ChirpStack**, but it's also possible to connect one's own LNS to Helium.
+
+
+For those familiar with the general process the TL;DR; is:
+
+- create an device profile with the appropriate region and the codec (see source below)<br/>
+- create device with `devEUI`, `appKey`, and a `app_eui` variable with the AppEUI, all three values coming from the `SenseCraft` App
+
+### Add device profile
+
+The first step is to add a device profile for the T1000 Tracker to your ChirpStack LNS.
+This tells the LNS how to decode the packets it receives from a T1000 as well as a number of other settings.
+
+In the ChirpStack dashboard select the `Device Profiles`  and click `Add device profile`.
+
+![image](https://github.com/user-attachments/assets/7e6984e2-178b-446e-afda-29dd033c662f)
+
+On the general tab, enter a device profile name you will recognize and select the appropriate region parameters.
+
+LoRaWAN MAC version: `1.0.4`<br/>
+
+The expected uplink interval can be set too, the main thing it controls is when the LNS user interface shows the device
+as active vs. inactive. It has no effect on the delivery of packets through the LNS.
+
+![image](https://github.com/user-attachments/assets/bb83141f-a447-437b-a29d-27e16a20ce7a)
+
+On the Codec tab select `JavaScript functions` and enter the codec:
+
+:::tip
+There are 2 versions of ChirpStack, select the appropriate one:
+
+[Decoder for ChirpStack V4](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/TTN/SenseCAP_T1000_TTN_Decoder.js)
+
+[Decoder for ChirpStack V3](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/ChirpStack/SenseCAP_T1000_ChirpStackV3_Decoder.js)
+:::
+
+![image](https://github.com/user-attachments/assets/bc572786-9853-4b29-baf1-d6f4349b4aa5)
+
+### Add Application and your Device
+
+The next step is to create an application and add actual devices to it.
+
+Go to the `Applications` section and add a new application.
+
+![image](https://github.com/user-attachments/assets/5dc700c6-7faa-4d65-9d94-aa2543f06254)
+
+Then add a device to the application and enter the `devEUI` as captured in the SenseCraft App earlier.
+
+![image](https://github.com/user-attachments/assets/93febc5b-bc8f-430b-83e0-55d89690355c)
+
+On the variables tab add a variable called `app_eui` with the `AppEUI` from the SenseCraft app as value:
+
+![image](https://github.com/user-attachments/assets/90e529d7-811b-49cd-902d-85e36b2f6313)
+
+Hitting submit will bring up a page asking for the `AppKey`, again as captured earlier using the SenseCraft app:
+
+![image](https://github.com/user-attachments/assets/db33a84c-c31f-402f-b9b1-53fa47fc497d)
+
+### View the device connection
+
+On the `LoRaWAN frames` tab you will see a spinner and then packets show up as they are received/sent.
+
+Press the button of your T1000 Tracker to cause it to take a measurement and send a `join request` to connect with the LNS.
+Once this happens, you should see something like this:
+
+![image](https://github.com/user-attachments/assets/060873cb-c1d8-40bd-9ad3-7333966d3558)
+
+Once the join process has been performed the T1000 sends data. The LNS responds back with some information about the network
+frequencies and such, but subsequent to that there should only be uplinks with data.
 
 
 
