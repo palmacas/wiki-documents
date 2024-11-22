@@ -273,6 +273,23 @@ Now, when watcher detect people, it will send message to Node-RED automatically~
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_nodered_setup/23.png" style={{width:800, height:'auto'}}/></div>
 
+## Part 5. Preview image
+
+If you want to preview the image from Watcher, you need to install a library in Node-RED. 
+
+If not, you can ignore this part.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_nodered_setup/n1.png" style={{width:800, height:'auto'}}/></div>
+
+After installation, you can find it in **output part**, drag it to where you want to previwe image and connect.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_nodered_setup/n3.png" style={{width:800, height:'auto'}}/></div>
+
+This step is very important. You need to **double click image preview node** and **fill out base64 url in this node**. Don't forget to **click Done and Depley button** on right upper corner. After that, we will preview the image when Watcher message come again~
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_nodered_setup/n2.png" style={{width:800, height:'auto'}}/></div>
+
+
 
 
 
