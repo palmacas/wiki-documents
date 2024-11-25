@@ -4,13 +4,14 @@ title: Connect to Helium
 keywords:
 - SenseCAP_T1000_tracker
 - Helium
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker.webp
 slug: /SenseCAP_T1000_tracker_Helium
 last_update:
   date: 11/22/2024
   author: Jessie
 ---
 
+# Connecting SenseCAP T1000 to Helium
 
 ## Device Configuration
 

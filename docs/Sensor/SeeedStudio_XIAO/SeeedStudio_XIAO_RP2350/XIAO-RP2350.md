@@ -2,7 +2,7 @@
 title: Getting Started with Seeed Studio XIAO RP2350(MicroPython)
 description: |
   XIAO RP2350, a cutting-edge microcontroller from Seeed Studio. It features a dual-core processor, increased SRAM and flash memory, and enhanced connectivity.
-image: https://files.seeedstudio.com/wiki/XIAO-RP2350/img/RP2350-thumbnail.png
+image: https://files.seeedstudio.com/wiki/XIAO-RP2350/img/RP2350-thumbnail.webp
 slug: /getting-started-xiao-rp2350
 keywords:
   - xiao
