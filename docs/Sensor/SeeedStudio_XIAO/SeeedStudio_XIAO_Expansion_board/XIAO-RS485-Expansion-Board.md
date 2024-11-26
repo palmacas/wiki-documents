@@ -16,7 +16,6 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/top.jpg" style={{width:600, height:'auto'}}/></div>
 
 
-
 ## Hardware Overview
 
 ### prepared material
@@ -120,6 +119,10 @@ void loop() {
   delay(1000); // Delay for 1 second
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e77f061bb093dba09fc8f7823d1baaeafe1a12eb
 ```
 
 ### Receiver Code

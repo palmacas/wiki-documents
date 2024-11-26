@@ -1,6 +1,20 @@
 const docList = [
   [
     {
+      "path": "/getting-started-xiao-rp2350",
+      "image": "https://files.seeedstudio.com/wiki/XIAO-RP2350/img/RP2350-thumbnail.webp",
+      "title": "Getting Started with Seeed Studio XIAO RP2350(MicroPython)",
+      "date": "2024-11-22T05:59:15.764Z"
+    },
+    {
+      "path": "/SenseCAP_T1000_tracker_Helium",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker.webp",
+      "title": "Connecting SenseCAP T1000 to Helium",
+      "date": "11/22/2024"
+    }
+  ],
+  [
+    {
       "path": "/recomputer_r1000_use_rs485_modbus_rtu",
       "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/r1000_connection_1.webp",
       "title": "How to use rs485 and modbus with reComputer R1000",
@@ -15,7 +29,7 @@ const docList = [
   ],
   [
     {
-      "path": "/recamera_get_start",
+      "path": "/recamera_getting_started",
       "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
       "title": "Getting Started with reCamera",
       "date": "11/11/2024"
@@ -66,20 +80,6 @@ const docList = [
       "path": "/watcher_function_module_development_guide",
       "image": "https://files.seeedstudio.com/wiki/watcher_software_framework/watcher_function_module.webp",
       "title": "Watcher Function Module Development Guide",
-      "date": "11/5/2024"
-    }
-  ],
-  [
-    {
-      "path": "/build_watcher_development_environment",
-      "image": "https://files.seeedstudio.com/wiki/watcher_getting_started/64.webp",
-      "title": "Build the Watcher Development Environment",
-      "date": "11/5/2024"
-    },
-    {
-      "path": "/watcher_ui_integration_guide",
-      "image": "https://files.seeedstudio.com/wiki/watcher_software_framework/ui_framework.webp",
-      "title": "Watcher UI Integration Guide",
       "date": "11/5/2024"
     }
   ]

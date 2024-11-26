@@ -43,7 +43,7 @@ It is a sensor to measure the color chromaticity of ambient light or the color o
 ## Getting Started
 
 ### indication diagram
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Grove_Color/11.png" /></div>
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Grove_Color/22222.png" /></div>
 
 ### Hardware
 

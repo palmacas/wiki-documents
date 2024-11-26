@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reCamera
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /recamera_getting_started
+slug: /recamera_network_connection
 last_update:
   date: 09/29/2024
   author: Parker Hu

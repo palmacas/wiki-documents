@@ -1006,14 +1006,6 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'MR24HPC1 mmWave kit',
-          items: [
-            'Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/mr24hpc1-mmwave_human_kit',
-            'Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/mr24hpc1-mmWave_Kit_And_Grove_Connect_To_ESPHome',
-          ],
-        },
-        {
-          type: 'category',
           label: 'MR60FDA2 mmWave kit',
           items: [
             'Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/getting_started_with_mr60fda2',
@@ -1026,6 +1018,14 @@ const sidebars = {
           items: [
             'Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/getting_started_with_mr60bha2',
             'Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/ha_with_mr60bha2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR24HPC1 mmWave kit',
+          items: [
+            'Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/mr24hpc1-mmwave_human_kit',
+            'Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/mr24hpc1-mmWave_Kit_And_Grove_Connect_To_ESPHome',
           ],
         },
         'Sensor/mmWave_radar_sensor/Radar_MR24HPC1',
@@ -2354,20 +2354,6 @@ const sidebars = {
         id: 'Network/Meshtastic_Network/meshtastic_intro',
       },
       items: [
-
-            {
-              type: 'category',
-              label: 'Wio Tracker 1110 Meshtastic Kit',
-              items: [
-                'Network/Meshtastic_Network/wio_tracker_kit/meshtastic_kit_wio_tracker_1110',
-                {
-                  type: 'doc', 
-                  id:'Network/Meshtastic_Network/wio_tracker_kit/flash_meshtastic_kit',
-                  label: 'Flash Firmware', 
-                },
-
-              ],
-            },
             {
               type: 'category',
               label: 'T1000-E Tracker',
@@ -2386,6 +2372,19 @@ const sidebars = {
               label: 'SenseCAP Indicator for Meshtastic',
               items: [
                 'Network/Meshtastic_Network/SenseCAP_Indicator/sensecap_indicator_meshtastic',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Tracker 1110 Meshtastic Kit',
+              items: [
+                'Network/Meshtastic_Network/wio_tracker_kit/meshtastic_kit_wio_tracker_1110',
+                {
+                  type: 'doc', 
+                  id:'Network/Meshtastic_Network/wio_tracker_kit/flash_meshtastic_kit',
+                  label: 'Flash Firmware', 
+                },
+
               ],
             },
           ],
