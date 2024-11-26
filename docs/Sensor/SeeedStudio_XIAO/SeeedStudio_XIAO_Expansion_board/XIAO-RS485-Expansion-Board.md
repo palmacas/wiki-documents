@@ -120,7 +120,6 @@ void loop() {
   delay(1000); // Delay for 1 second
 }
 
-
 ```
 
 ### Receiver Code
