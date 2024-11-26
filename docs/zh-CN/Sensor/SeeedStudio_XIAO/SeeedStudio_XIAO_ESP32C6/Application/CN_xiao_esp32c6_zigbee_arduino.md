@@ -1,6 +1,6 @@
 ---
-description: In this tutorial, we will embark on a journey to explore Zigbee application development using the XIAO ESP32C6 development board. The XIAO ESP32C6 is a compact yet powerful board that features the ESP32-C6 chip, which offers integrated Wi-Fi and Bluetooth Low Energy (BLE) connectivity. By leveraging the ESP Zigbee SDK, we can harness the full potential of the XIAO ESP32C6 and extend its capabilities to include Zigbee functionality.
-title: Quick start with Zigbee on XIAO ESP32C6 by Arduino
+description: 在本教程中，我们将踏上探索使用 XIAO ESP32C6 开发板进行 Zigbee 应用程序开发的旅程。XIAO ESP32C6 是一款紧凑而强大的开发板，采用 ESP32-C6 芯片，提供集成的 Wi-Fi 和低功耗蓝牙 （BLE） 连接。通过利用 ESP Zigbee SDK，我们可以充分利用 XIAO ESP32C6 的潜力，并扩展其功能以包括 Zigbee 功能。
+title: 在 XIAO ESP32C6 上使用 Zigbee 快速入门（通过 Arduino）
 image: https://files.seeedstudio.com/wiki/xiaoc6_zigbee/3.jpg
 slug: /cn/xiao_esp32c6_zigbee_arduino
 last_update:
@@ -8,25 +8,25 @@ last_update:
   author: Allen
 ---
 
-# Quick start with Zigbee on XIAO ESP32C6 by Arduino
+# 在 XIAO ESP32C6 上使用 Zigbee 快速入门（通过 Arduino）
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee/0.png" style={{width:800, height:'auto'}}/></div>
 
-Zigbee is a widely adopted wireless communication protocol that finds extensive use in home automation, smart energy management, and Internet of Things (IoT) applications. Known for its low power consumption, reliable data transmission, and mesh network capabilities, Zigbee is an excellent choice for building scalable and efficient wireless networks.
+Zigbee 是一种广泛采用的无线通信协议，广泛应用于家庭自动化、智能能源管理和物联网（IoT）应用。Zigbee 以其低功耗、可靠的数据传输和网状网络功能而闻名，是构建可扩展和高效无线网络的理想选择。
 
-Throughout this tutorial, we will cover the following key aspects:
+在本教程中，我们将涵盖以下关键内容：
 
-1. **Development Environment**: Setting up the development environment for XIAO ESP32C6 and ESP Zigbee SDK via Arduino.
-2. **Code Structure**: Analyzing the code structure and organization of the Zigbee_Light_Buld and Zigbee_Light_Switch examples.
-3. **Zigbee Device Data Models**: Understanding the Zigbee device data models and how they are defined within the code.
-4. **Zigbee Handling Mechanisms**: Exploring the initialization process and event handling mechanisms in Zigbee devices.
-5. **Communication Patterns**: Examining the communication patterns and message exchanges between Zigbee devices.
+1. **开发环境**：通过 Arduino 设置 XIAO ESP32C6 和 ESP Zigbee SDK 的开发环境。
+2. **代码结构**：分析 Zigbee_Light_Buld 和 Zigbee_Light_Switch 示例的代码结构和组织。
+3. **Zigbee 设备数据模型**：理解 Zigbee 设备数据模型及其在代码中的定义。
+4. **Zigbee 处理机制**：探索 Zigbee 设备的初始化过程和事件处理机制。
+5. **通信模式**：检查 Zigbee 设备之间的通信模式和消息交换。
 
-So, let's embark on this exciting journey of Zigbee development with the XIAO ESP32C6 and unlock the full potential of this powerful wireless communication protocol!
+让我们开始这段充满挑战的 Zigbee 开发旅程，充分发挥 XIAO ESP32C6 的强大无线通信协议的潜力吧！
 
-## Part 1.Hardware Preparation
+## 第1部分：硬件准备
 
-In this tutorial we will use **two** XIAO ESP32C6s as examples to explain Zigbee. you can jump and buy it through the link below. One as a **Zigbee End Device** and one as a **Zigbee Coordinator**.
+在本教程中，我们将使用 **两台** XIAO ESP32C6 作为示例来讲解 Zigbee。您可以通过下面的链接进行购买。一个作为 **Zigbee 终端设备**，另一个作为 **Zigbee 协调器**。
 
 <div class="table-center">
 	<table>
@@ -40,21 +40,19 @@ In this tutorial we will use **two** XIAO ESP32C6s as examples to explain Zigbee
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
-        ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html
-        ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
 		</tr>
 		<tr>
-			<th>Seeed Studio Grove Red LED</th>
-			<th>Seeed Studio Grove Button</th>
+			<th>Seeed Studio Grove 红色 LED</th>
+			<th>Seeed Studio Grove 按钮</th>
 		</tr>
 		<tr>
 			<td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/h/t/httpsstatics3.seeedstudio.comseeedfile2018-09bazaar939479_1040300054.jpg" style={{width:250, height:'auto'}}/></div></td>
@@ -62,59 +60,58 @@ In this tutorial we will use **two** XIAO ESP32C6s as examples to explain Zigbee
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html
-        ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html
-        ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
 		</tr>
 	</table>
 </div>
 
-## Part 2.Enviroment Prepatation
-**Step 1.** Launch the Arduino application.
+## 第2部分：环境准备
+
+**步骤 1.** 启动 Arduino 应用程序。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
     </a>
 </div>
 
-**Step 2.** Select your development board model and add it to the Arduino IDE.
+**步骤 2.** 选择您的开发板型号并将其添加到 Arduino IDE 中。
 
-- If you want to use **Seeed Studio XIAO ESP32C6** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)** to finish adding.
+- 如果您想使用 **Seeed Studio XIAO ESP32C6** 进行后续操作，请参考 **[本教程](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)** 完成添加。
 
-## Part 3.Program Structure
+## 第3部分：程序结构
 
-### Zigbee Light Bulb
+### Zigbee 智能灯泡
 
-In this section, we will explore how the Zigbee HA On/Off Light example code is structured based on the Zigbee data model. By understanding the relationship between the code and the data model, you will gain insights into how to interpret and modify the code according to your specific requirements.
+在本节中，我们将探讨 Zigbee HA 开关灯示例代码是如何基于 Zigbee 数据模型进行结构化的。通过理解代码与数据模型之间的关系，您将了解如何根据特定需求解读和修改代码。
 
-Before diving into the code, it's essential to grasp the key concepts of the Zigbee data model:
+在深入了解代码之前，了解 Zigbee 数据模型的关键概念至关重要：
 
-- **Node**: A node represents a single ESP32-H2 based product and a network node in the Zigbee network. A node can have multiple endpoints.
-
-- **Endpoint**: An endpoint, identified by a number between 1 and 240, defines an application running on a Zigbee node. A node can have multiple endpoints, each serving a different purpose or representing a separate device.
-
-- **Cluster**: A cluster, identified by a 16-bit number, is an application object that defines the functionality and data associated with an endpoint. Clusters contain attributes and commands.
-
-- **Attribute**: An attribute, identified by a 16-bit number, represents the current state or a physical quantity within a cluster.
+- **节点（Node）**：一个节点代表基于 ESP32-H2 的单个产品和 Zigbee 网络中的一个网络节点。一个节点可以有多个端点。
+  
+- **端点（Endpoint）**：端点由 1 到 240 之间的数字表示，定义了运行在 Zigbee 节点上的应用程序。一个节点可以有多个端点，每个端点可能有不同的用途或代表不同的设备。
+  
+- **集群（Cluster）**：集群由一个 16 位数字标识，是定义与端点相关的功能和数据的应用对象。集群包含属性和命令。
+  
+- **属性（Attribute）**：属性由一个 16 位数字标识，表示集群中的当前状态或物理量。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee/datamodel.png" style={{width:800, height:'auto'}}/></div>
 
-Now, let's examine the HA On/Off Light example code and see how it maps to the Zigbee data model.
+现在，让我们查看 HA 开关灯的示例代码，看看它是如何映射到 Zigbee 数据模型的。
 
 
-1. Creating the Endpoint
+1. 创建端点
 
-In the example code, the `esp_zb_on_off_light_ep_create()` function is used to create a HA on/off light endpoint. This function defines the endpoint ID, device ID, and the associated clusters.
+在示例代码中，`esp_zb_on_off_light_ep_create()` 函数用于创建一个 HA 开关灯端点。此函数定义了端点 ID、设备 ID 和关联的集群。
 
 ```cpp
 static void esp_zb_task(void *pvParameters)
@@ -127,35 +124,35 @@ static void esp_zb_task(void *pvParameters)
     esp_zb_core_action_handler_register(zb_action_handler);
     esp_zb_set_primary_network_channel_set(ESP_ZB_PRIMARY_CHANNEL_MASK);
 
-    //Erase NVRAM before creating connection to new Coordinator
-    //esp_zb_nvram_erase_at_start(true); //Comment out this line to erase NVRAM data if you are conneting to new Coordinator
+    // 在创建连接到新协调器之前擦除 NVRAM
+    //esp_zb_nvram_erase_at_start(true); // 如果您要连接到新的协调器，请取消注释此行以擦除 NVRAM 数据
 
     ESP_ERROR_CHECK(esp_zb_start(false));
     esp_zb_main_loop_iteration();
 }
 ```
 
-2. Registering the Device
+2. 注册设备
 
-After creating the endpoint, the `esp_zb_device_register()` function is called to register the Zigbee device with the created endpoint.
+在创建端点之后，调用 `esp_zb_device_register()` 函数将 Zigbee 设备与创建的端点注册。
 
 ```cpp
 esp_zb_device_register(esp_zb_on_off_light_ep);
 ```
 
-3. Attribute Callback
+3. 属性回调
 
-The example code registers an attribute change callback using `esp_zb_core_action_handler_register()`. This callback is invoked when certain attributes are modified, allowing you to handle attribute changes based on your application logic.
+示例代码使用 `esp_zb_core_action_handler_register()` 注册了一个属性变化的回调。当某些属性被修改时，此回调将被调用，允许您根据应用程序逻辑处理属性变化。
 
 ```cpp
 esp_zb_core_action_handler_register(zb_action_handler);
 ```
 
-In the `zb_action_handler` function, you can implement the desired behavior when the on/off attribute changes, such as controlling the LED light.
+在 `zb_action_handler` 函数中，您可以实现当开关属性变化时的期望行为，例如控制 LED 灯。
 
-4. Zigbee Stack Configuration and Starting
+4. Zigbee 栈配置和启动
 
-The example code configures the Zigbee end-device using `ESP_ZB_ZED_CONFIG()` and initializes the Zigbee stack using `esp_zb_init()`. The stack is then started with `esp_zb_start()`, and the main loop is handled by `esp_zb_main_loop_iteration()`.
+示例代码使用 `ESP_ZB_ZED_CONFIG()` 配置 Zigbee 终端设备，并通过 `esp_zb_init()` 初始化 Zigbee 栈。然后，使用 `esp_zb_start()` 启动栈，并通过 `esp_zb_main_loop_iteration()` 处理主循环。
 
 
 ```cpp
@@ -166,7 +163,7 @@ ESP_ERROR_CHECK(esp_zb_start(false));
 esp_zb_main_loop_iteration();
 ```
 
-The `esp_zb_app_signal_handler` function is responsible for handling various signals from the Zigbee application layer.
+`esp_zb_app_signal_handler` 函数负责处理来自 Zigbee 应用层的各种信号。
 
 ```cpp
 void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct)
@@ -176,59 +173,59 @@ void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct)
     esp_zb_app_signal_type_t sig_type = (esp_zb_app_signal_type_t)*p_sg_p;
     switch (sig_type) {
     case ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP:
-        log_i("Zigbee stack initialized");
+        log_i("Zigbee 栈初始化完成");
         esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_INITIALIZATION);
         break;
     case ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START:
     case ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT:
         if (err_status == ESP_OK) {
-            log_i("Start network steering");
+            log_i("开始网络引导");
             esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_STEERING);
         } else {
-            /* commissioning failed */
-            log_w("Failed to initialize Zigbee stack (status: %s)", esp_err_to_name(err_status));
+            /* 委托失败 */
+            log_w("Zigbee 栈初始化失败 (状态: %s)", esp_err_to_name(err_status));
         }
         break;
     case ESP_ZB_BDB_SIGNAL_STEERING:
         if (err_status == ESP_OK) {
             esp_zb_ieee_addr_t extended_pan_id;
             esp_zb_get_extended_pan_id(extended_pan_id);
-            log_i("Joined network successfully (Extended PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, Channel:%d, Short Address: 0x%04hx)",
+            log_i("成功加入网络 (扩展 PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, 信道: %d, 短地址: 0x%04hx)",
                      extended_pan_id[7], extended_pan_id[6], extended_pan_id[5], extended_pan_id[4],
                      extended_pan_id[3], extended_pan_id[2], extended_pan_id[1], extended_pan_id[0],
                      esp_zb_get_pan_id(), esp_zb_get_current_channel(), esp_zb_get_short_address());
         } else {
-            log_i("Network steering was not successful (status: %s)", esp_err_to_name(err_status));
+            log_i("网络引导未成功 (状态: %s)", esp_err_to_name(err_status));
             esp_zb_scheduler_alarm((esp_zb_callback_t)bdb_start_top_level_commissioning_cb, ESP_ZB_BDB_MODE_NETWORK_STEERING, 1000);
         }
         break;
     default:
-        log_i("ZDO signal: %s (0x%x), status: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
+        log_i("ZDO 信号: %s (0x%x), 状态: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
                  esp_err_to_name(err_status));
         break;
     }
 }
 ```
 
-1. First, the function retrieves the signal type `sig_type` and error status `err_status` from the passed `esp_zb_app_signal_t` structure.
+1. 首先，函数从传入的 `esp_zb_app_signal_t` 结构体中获取信号类型 `sig_type` 和错误状态 `err_status`。
 
-2. Then, it uses a switch statement to perform different actions based on the signal type:
+2. 然后，使用 `switch` 语句根据信号类型执行不同的操作：
 
-   - `ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP`: This signal indicates skipping the startup of the Zigbee stack. In this case, we initialize the Zigbee stack and then call the `esp_zb_bdb_start_top_level_commissioning` function to start the top-level commissioning process with the mode set to `ESP_ZB_BDB_MODE_INITIALIZATION`.
+   - `ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP`：该信号表示跳过 Zigbee 栈的启动。在这种情况下，我们初始化 Zigbee 栈，然后调用 `esp_zb_bdb_start_top_level_commissioning` 函数，使用 `ESP_ZB_BDB_MODE_INITIALIZATION` 模式开始顶层初始化过程。
 
-   - `ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START` and `ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT`: These signals indicate the first start or reboot of the device. If the error status is `ESP_OK`, we perform some initialization tasks, such as deferred driver initialization. Then, we check if the device is in the factory new state. If it is, we start the network steering process; otherwise, we output a message indicating that the device has rebooted. If the error status is not `ESP_OK`, we output a message indicating that the Zigbee stack initialization failed.
+   - `ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START` 和 `ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT`：这些信号表示设备的首次启动或重启。如果错误状态为 `ESP_OK`，我们执行一些初始化任务，例如延迟驱动程序初始化。然后，我们检查设备是否处于出厂状态。如果是，则开始网络引导过程；否则，我们输出设备重启的消息。如果错误状态不是 `ESP_OK`，则输出 Zigbee 栈初始化失败的消息。
 
-   - `ESP_ZB_BDB_SIGNAL_STEERING`: This signal indicates the result of the network steering process. If the error status is `ESP_OK`, it means the device successfully joined the network. In this case, we output some network information, such as the PAN ID, channel number, and short address. If the error status is not `ESP_OK`, it means the network steering failed, and we output an error message. Then, we use the `esp_zb_scheduler_alarm` function to set a timer to restart the network steering process after a 1-second delay.
+   - `ESP_ZB_BDB_SIGNAL_STEERING`：该信号表示网络引导过程的结果。如果错误状态为 `ESP_OK`，则表示设备成功加入网络。在这种情况下，我们输出一些网络信息，如 PAN ID、信道号和短地址。如果错误状态不是 `ESP_OK`，则表示网络引导失败，并输出错误消息。然后，我们使用 `esp_zb_scheduler_alarm` 函数设置一个定时器，在 1 秒后重新启动网络引导过程。
 
-   - Other signals: We simply output the signal name, type, and error status.
+   - 其他信号：我们简单地输出信号名称、类型和错误状态。
 
-The purpose of this function is to perform appropriate actions based on different Zigbee application layer signals. It is one of the core parts of a Zigbee application. It handles critical processes such as device startup, initialization, and network joining.
+该函数的目的是根据不同的 Zigbee 应用层信号执行适当的操作。它是 Zigbee 应用程序的核心部分之一，处理设备启动、初始化和网络加入等关键过程。
 
-### Zigbee Light Switch
+### Zigbee 开关
 
-For the Zigbee Coordinator device(Light Switch), its initialisation and RTOS tasks are similar to the End Device, except that in the RTOS tasks, there is less step of registering the callback function.
+对于 Zigbee 协调器设备（开关），其初始化和 RTOS 任务与终端设备相似，唯一不同的是，在 RTOS 任务中，少了一步注册回调函数的过程。
 
-So for Zigbee Coordinator, the most critical part is to search and match the corresponding device, and issue control commands to the device.
+因此，对于 Zigbee 协调器，最关键的部分是搜索和匹配相应的设备，并向设备发出控制命令。
 
 ```cpp
 void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct)
@@ -239,105 +236,104 @@ void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct)
     esp_zb_zdo_signal_device_annce_params_t *dev_annce_params = NULL;
     switch (sig_type) {
     case ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP:
-        log_i("Zigbee stack initialized");
+        log_i("Zigbee 栈已初始化");
         esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_INITIALIZATION);
         break;
     case ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START:
     case ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT:
         if (err_status == ESP_OK) {
-            log_i("Start network formation");
+            log_i("开始网络组建");
             esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_FORMATION);
         } else {
-            log_e("Failed to initialize Zigbee stack (status: %s)", esp_err_to_name(err_status));
+            log_e("Zigbee 栈初始化失败（状态: %s）", esp_err_to_name(err_status));
         }
         break;
     case ESP_ZB_BDB_SIGNAL_FORMATION:
         if (err_status == ESP_OK) {
             esp_zb_ieee_addr_t extended_pan_id;
             esp_zb_get_extended_pan_id(extended_pan_id);
-            log_i("Formed network successfully (Extended PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, Channel:%d, Short Address: 0x%04hx)",
+            log_i("网络组建成功（扩展 PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, 信道: %d, 短地址: 0x%04hx）",
                      extended_pan_id[7], extended_pan_id[6], extended_pan_id[5], extended_pan_id[4],
                      extended_pan_id[3], extended_pan_id[2], extended_pan_id[1], extended_pan_id[0],
                      esp_zb_get_pan_id(), esp_zb_get_current_channel(), esp_zb_get_short_address());
             esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_STEERING);
         } else {
-            log_i("Restart network formation (status: %s)", esp_err_to_name(err_status));
+            log_i("重新启动网络组建（状态: %s）", esp_err_to_name(err_status));
             esp_zb_scheduler_alarm((esp_zb_callback_t)bdb_start_top_level_commissioning_cb, ESP_ZB_BDB_MODE_NETWORK_FORMATION, 1000);
         }
         break;
     case ESP_ZB_BDB_SIGNAL_STEERING:
         if (err_status == ESP_OK) {
-            log_i("Network steering started");
+            log_i("网络引导已开始");
         }
         break;
     case ESP_ZB_ZDO_SIGNAL_DEVICE_ANNCE:
         dev_annce_params = (esp_zb_zdo_signal_device_annce_params_t *)esp_zb_app_signal_get_params(p_sg_p);
-        log_i("New device commissioned or rejoined (short: 0x%04hx)", dev_annce_params->device_short_addr);
-        esp_zb_zdo_match_desc_req_param_t  cmd_req;
+        log_i("新设备已加入或重新加入（短地址: 0x%04hx）", dev_annce_params->device_short_addr);
+        esp_zb_zdo_zdo_match_desc_req_param_t  cmd_req;
         cmd_req.dst_nwk_addr = dev_annce_params->device_short_addr;
         cmd_req.addr_of_interest = dev_annce_params->device_short_addr;
         esp_zb_zdo_find_on_off_light(&cmd_req, user_find_cb, NULL);
         break;
     default:
-        log_i("ZDO signal: %s (0x%x), status: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
+        log_i("ZDO 信号: %s (0x%x), 状态: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
                  esp_err_to_name(err_status));
         break;
     }
 }
 ```
 
-Let's go through the different cases and their functionalities:
+让我们逐一讲解不同的信号类型及其功能：
 
-1. `ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP`:
-   - This signal indicates that the Zigbee stack initialization should be skipped.
-   - It logs a message indicating the initialization of the Zigbee stack.
-   - It starts the top-level commissioning process with the mode set to `ESP_ZB_BDB_MODE_INITIALIZATION`.
+1. `ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP`：
+   - 此信号表示应跳过 Zigbee 栈的初始化。
+   - 它记录一条消息，表示 Zigbee 栈已初始化。
+   - 它启动顶级委托过程，模式设置为 `ESP_ZB_BDB_MODE_INITIALIZATION`。
 
-2. `ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START` and `ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT`:
-   - These signals indicate that the device has started up for the first time or has rebooted.
-   - If the error status is `ESP_OK`, it logs messages about the deferred driver initialization status and whether the device started up in factory-reset mode or not.
-   - If the device is in factory-new mode, it starts the network formation process by calling `esp_zb_bdb_start_top_level_commissioning` with the mode set to `ESP_ZB_BDB_MODE_NETWORK_FORMATION`.
-   - If the device is not in factory-new mode, it logs a message indicating that the device has rebooted.
-   - If the error status is not `ESP_OK`, it logs an error message.
+2. `ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START` 和 `ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT`：
+   - 这些信号表示设备已首次启动或已重新启动。
+   - 如果错误状态为 `ESP_OK`，则记录关于延迟驱动程序初始化状态的消息，并检查设备是否处于出厂重置模式。
+   - 如果设备处于出厂新模式，则通过调用 `esp_zb_bdb_start_top_level_commissioning`，并将模式设置为 `ESP_ZB_BDB_MODE_NETWORK_FORMATION` 来启动网络组建过程。
+   - 如果设备不是出厂新模式，则记录一条消息，表示设备已重新启动。
+   - 如果错误状态不是 `ESP_OK`，则记录错误消息。
 
-3. `ESP_ZB_BDB_SIGNAL_FORMATION`:
-   - This signal indicates the status of the network formation process.
-   - If the error status is `ESP_OK`, it retrieves the extended PAN ID, logs information about the formed network (PAN ID, channel, short address), and starts the network steering process by calling `esp_zb_bdb_start_top_level_commissioning` with the mode set to `ESP_ZB_BDB_MODE_NETWORK_STEERING`.
-   - If the error status is not `ESP_OK`, it logs a message to restart the network formation and schedules an alarm to call `bdb_start_top_level_commissioning_cb` after a delay of 1000 milliseconds.
+3. `ESP_ZB_BDB_SIGNAL_FORMATION`：
+   - 此信号表示网络组建过程的状态。
+   - 如果错误状态为 `ESP_OK`，则获取扩展的 PAN ID，记录关于已组建网络的信息（包括 PAN ID、信道和短地址），并通过调用 `esp_zb_bdb_start_top_level_commissioning` 来启动网络引导过程，模式设置为 `ESP_ZB_BDB_MODE_NETWORK_STEERING`。
+   - 如果错误状态不是 `ESP_OK`，则记录一条消息，表示重新启动网络组建，并调度一个警报，在延迟 1000 毫秒后调用 `bdb_start_top_level_commissioning_cb`。
 
-4. `ESP_ZB_BDB_SIGNAL_STEERING`:
-   - This signal indicates the status of the network steering process.
-   - If the error status is `ESP_OK`, it logs a message indicating that network steering has started.
+4. `ESP_ZB_BDB_SIGNAL_STEERING`：
+   - 此信号表示网络引导过程的状态。
+   - 如果错误状态为 `ESP_OK`，则记录一条消息，表示网络引导已开始。
 
-5. `ESP_ZB_ZDO_SIGNAL_DEVICE_ANNCE`:
-   - This signal is triggered when a new device is commissioned or rejoins the network.
-   - It retrieves the device announcement parameters and logs a message with the short address of the new device.
-   - It prepares a match descriptor request (`esp_zb_zdo_match_desc_req_param_t`) with the destination and address of interest set to the new device's short address.
-   - It calls `esp_zb_zdo_find_color_dimmable_light` to find a color dimmable light device and specifies `user_find_cb` as the callback function.
+5. `ESP_ZB_ZDO_SIGNAL_DEVICE_ANNCE`：
+   - 当新设备被委托或重新加入网络时，会触发此信号。
+   - 它获取设备公告参数，并记录包含新设备短地址的消息。
+   - 它准备一个匹配描述符请求（`esp_zb_zdo_match_desc_req_param_t`），目标地址和感兴趣地址设置为新设备的短地址。
+   - 它调用 `esp_zb_zdo_find_color_dimmable_light` 来查找一个可调色温的灯设备，并指定 `user_find_cb` 作为回调函数。
 
-6. `ESP_ZB_NWK_SIGNAL_PERMIT_JOIN_STATUS`:
-   - This signal indicates the status of the network's permit join state.
-   - If the error status is `ESP_OK`, it logs a message indicating whether the network is open for joining and the duration for which it is open. If the network is closed, it logs a warning message.
+6. `ESP_ZB_NWK_SIGNAL_PERMIT_JOIN_STATUS`：
+   - 此信号表示网络的允许加入状态。
+   - 如果错误状态为 `ESP_OK`，则记录一条消息，表示网络是否开放加入，以及开放的时长。如果网络关闭，则记录一条警告消息。
 
-7. Default case:
-   - For any other signal types, it logs a general message with the signal type and error status.
+7. 默认情况：
+   - 对于任何其他信号类型，它会记录一个包含信号类型和错误状态的一般消息。
 
-Overall, this code handles various Zigbee-related events and performs actions such as initializing the Zigbee stack, forming a network, steering the network, handling device announcements, and finding color dimmable light devices.
+总的来说，这段代码处理了各种 Zigbee 相关的事件，并执行了初始化 Zigbee 栈、组建网络、引导网络、处理设备公告以及查找可调色温灯设备等操作。
 
-The rest of the example is addressing the logic for keystroke stabilisation and keystroke interrupts. If you are interested, you can read and understand it by yourself.
+其余的示例代码涉及按键稳定和按键中断的逻辑。如果你感兴趣，可以自行阅读并理解。
 
+## 第四部分：Zigbee 灯效
 
-## Part 4.Zigbee Light Effect
+本部分我们将连接设备并上传代码到两块 XIAO ESP32C6，看看效果。
 
-This section we will connect the devices and upload the codes to two peices of XIAO ESP32C6 and see the effect.
-
-### Step 1.Hardware Connection
+### 步骤 1：硬件连接
 
 <div class="table-center">
 	<table>
 		<tr>
-			<th>XIAO ESP32C6 connect to bulb via D9</th>
-			<th>XIAO ESP32C6 connect to switch via D0</th>
+			<th>XIAO ESP32C6 通过 D9 连接到灯泡</th>
+			<th>XIAO ESP32C6 通过 D0 连接到开关</th>
 		</tr>
 		<tr>
 			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/light.jpg" style={{width:500, height:'auto'}}/></div></td>
@@ -346,18 +342,18 @@ This section we will connect the devices and upload the codes to two peices of X
 	</table>
 </div>
 
-### Step 2.Set Arduino Serial Port to Debug Level
+### 步骤 2：设置 Arduino 串口为调试级别
 
-We need to set to debug level to see serial port message from Zigbee light and switch later.
+我们需要将串口设置为调试级别，以便稍后查看 Zigbee 灯泡和开关的串口消息。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/1.png" style={{width:800, height:'auto'}}/></div>
 
-### Step 3.Upload Light Bulb Codes
+### 步骤 3：上传灯泡代码
 
 ```cpp
 
 #ifndef ZIGBEE_MODE_ED
-#error "Zigbee end device mode is not selected in Tools->Zigbee mode"
+#error "没有在 Tools->Zigbee 模式中选择 Zigbee 终端设备模式"
 #endif
 
 #include "esp_zigbee_core.h"
@@ -367,7 +363,7 @@ We need to set to debug level to see serial port message from Zigbee light and s
 
 #define LED_PIN D10
 
-/* Default End Device config */
+/* 默认终端设备配置 */
 #define ESP_ZB_ZED_CONFIG()                                     \
     {                                                           \
         .esp_zb_role = ESP_ZB_DEVICE_TYPE_ED,                   \
@@ -382,22 +378,22 @@ We need to set to debug level to see serial port message from Zigbee light and s
 
 #define ESP_ZB_DEFAULT_RADIO_CONFIG()                           \
     {                                                           \
-        .radio_mode = ZB_RADIO_MODE_NATIVE,                        \
+        .radio_mode = ZB_RADIO_MODE_NATIVE,                     \
     }
 
 #define ESP_ZB_DEFAULT_HOST_CONFIG()                            \
     {                                                           \
-        .host_connection_mode = ZB_HOST_CONNECTION_MODE_NONE,      \
+        .host_connection_mode = ZB_HOST_CONNECTION_MODE_NONE,  \
     }
 
-/* Zigbee configuration */
-#define INSTALLCODE_POLICY_ENABLE       false    /* enable the install code policy for security */
+/* Zigbee 配置 */
+#define INSTALLCODE_POLICY_ENABLE       false    /* 启用安装码策略以增强安全性 */
 #define ED_AGING_TIMEOUT                ESP_ZB_ED_AGING_TIMEOUT_64MIN
-#define ED_KEEP_ALIVE                   3000    /* 3000 millisecond */
-#define HA_ESP_LIGHT_ENDPOINT           10    /* esp light bulb device endpoint, used to process light controlling commands */
-#define ESP_ZB_PRIMARY_CHANNEL_MASK     ESP_ZB_TRANSCEIVER_ALL_CHANNELS_MASK  /* Zigbee primary channel mask use in the example */
+#define ED_KEEP_ALIVE                   3000    /* 3000 毫秒 */
+#define HA_ESP_LIGHT_ENDPOINT           10    /* esp 灯泡设备的端点，用于处理灯光控制命令 */
+#define ESP_ZB_PRIMARY_CHANNEL_MASK     ESP_ZB_TRANSCEIVER_ALL_CHANNELS_MASK  /* Zigbee 主通道掩码，示例中使用的通道 */
 
-/********************* Zigbee functions **************************/
+/********************* Zigbee 函数 **************************/
 static void bdb_start_top_level_commissioning_cb(uint8_t mode_mask)
 {
     ESP_ERROR_CHECK(esp_zb_bdb_start_top_level_commissioning(mode_mask));
@@ -410,34 +406,34 @@ void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct)
     esp_zb_app_signal_type_t sig_type = (esp_zb_app_signal_type_t)*p_sg_p;
     switch (sig_type) {
     case ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP:
-        log_i("Zigbee stack initialized");
+        log_i("Zigbee 栈已初始化");
         esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_INITIALIZATION);
         break;
     case ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START:
     case ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT:
         if (err_status == ESP_OK) {
-            log_i("Start network steering");
+            log_i("开始网络引导");
             esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_STEERING);
         } else {
-            /* commissioning failed */
-            log_w("Failed to initialize Zigbee stack (status: %s)", esp_err_to_name(err_status));
+            /* 委托失败 */
+            log_w("Zigbee 栈初始化失败 (状态: %s)", esp_err_to_name(err_status));
         }
         break;
     case ESP_ZB_BDB_SIGNAL_STEERING:
         if (err_status == ESP_OK) {
             esp_zb_ieee_addr_t extended_pan_id;
             esp_zb_get_extended_pan_id(extended_pan_id);
-            log_i("Joined network successfully (Extended PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, Channel:%d, Short Address: 0x%04hx)",
+            log_i("成功加入网络 (扩展 PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, 通道:%d, 短地址: 0x%04hx)",
                      extended_pan_id[7], extended_pan_id[6], extended_pan_id[5], extended_pan_id[4],
                      extended_pan_id[3], extended_pan_id[2], extended_pan_id[1], extended_pan_id[0],
                      esp_zb_get_pan_id(), esp_zb_get_current_channel(), esp_zb_get_short_address());
         } else {
-            log_i("Network steering was not successful (status: %s)", esp_err_to_name(err_status));
+            log_i("网络引导失败 (状态: %s)", esp_err_to_name(err_status));
             esp_zb_scheduler_alarm((esp_zb_callback_t)bdb_start_top_level_commissioning_cb, ESP_ZB_BDB_MODE_NETWORK_STEERING, 1000);
         }
         break;
     default:
-        log_i("ZDO signal: %s (0x%x), status: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
+        log_i("ZDO 信号: %s (0x%x), 状态: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
                  esp_err_to_name(err_status));
         break;
     }
@@ -451,7 +447,7 @@ static esp_err_t zb_action_handler(esp_zb_core_action_callback_id_t callback_id,
         ret = zb_attribute_handler((esp_zb_zcl_set_attr_value_message_t *)message);
         break;
     default:
-        log_w("Receive Zigbee action(0x%x) callback", callback_id);
+        log_w("接收到 Zigbee 动作回调 (0x%x)", callback_id);
         break;
     }
     return ret;
@@ -467,14 +463,14 @@ static void esp_zb_task(void *pvParameters)
     esp_zb_core_action_handler_register(zb_action_handler);
     esp_zb_set_primary_network_channel_set(ESP_ZB_PRIMARY_CHANNEL_MASK);
 
-    //Erase NVRAM before creating connection to new Coordinator
-    //esp_zb_nvram_erase_at_start(true); //Comment out this line to erase NVRAM data if you are conneting to new Coordinator
+    // 在连接到新的协调器之前擦除 NVRAM
+    //esp_zb_nvram_erase_at_start(true); // 如果你要连接到新协调器，请取消注释此行以擦除 NVRAM 数据
 
     ESP_ERROR_CHECK(esp_zb_start(false));
     esp_zb_main_loop_iteration();
 }
 
-/* Handle the light attribute */
+/* 处理灯光属性 */
 
 static esp_err_t zb_attribute_handler(const esp_zb_zcl_set_attr_value_message_t *message)
 {
@@ -482,20 +478,20 @@ static esp_err_t zb_attribute_handler(const esp_zb_zcl_set_attr_value_message_t 
     bool light_state = 0;
 
     if(!message){
-      log_e("Empty message");
+      log_e("空消息");
     }
     if(message->info.status != ESP_ZB_ZCL_STATUS_SUCCESS){
-      log_e("Received message: error status(%d)", message->info.status);
+      log_e("接收到的消息: 错误状态(%d)", message->info.status);
     }
 
-    log_i("Received message: endpoint(%d), cluster(0x%x), attribute(0x%x), data size(%d)", message->info.dst_endpoint, message->info.cluster,
+    log_i("接收到的消息: 端点(%d), 集群(0x%x), 属性(0x%x), 数据大小(%d)", message->info.dst_endpoint, message->info.cluster,
              message->attribute.id, message->attribute.data.size);
     if (message->info.dst_endpoint == HA_ESP_LIGHT_ENDPOINT) {
         if (message->info.cluster == ESP_ZB_ZCL_CLUSTER_ID_ON_OFF) {
             if (message->attribute.id == ESP_ZB_ZCL_ATTR_ON_OFF_ON_OFF_ID && message->attribute.data.type == ESP_ZB_ZCL_ATTR_TYPE_BOOL) {
                 light_state = message->attribute.data.value ? *(bool *)message->attribute.data.value : light_state;
-                log_i("Light sets to %s", light_state ? "On" : "Off");
-                // Here is the code to turn on/off your LED
+                log_i("灯光设置为 %s", light_state ? "开启" : "关闭");
+                // 在此处控制 LED 开关
                 if(light_state == 1){
                   digitalWrite(LED_PIN, HIGH);
                 }else{
@@ -508,36 +504,36 @@ static esp_err_t zb_attribute_handler(const esp_zb_zcl_set_attr_value_message_t 
     return ret;
 }
 
-/********************* Arduino functions **************************/
+/********************* Arduino 函数 **************************/
 void setup() {
-    // Init Zigbee
+    // 初始化 Zigbee
     esp_zb_platform_config_t config = {
         .radio_config = ESP_ZB_DEFAULT_RADIO_CONFIG(),
         .host_config = ESP_ZB_DEFAULT_HOST_CONFIG(),
     };
     ESP_ERROR_CHECK(esp_zb_platform_config(&config));
 
-    // initialize LED pin
+    // 初始化 LED 引脚
     pinMode(LED_PIN, OUTPUT);
     
-    // turn off LED
+    // 关闭 LED
     digitalWrite(LED_PIN, LOW);
 
-    // Start Zigbee task
+    // 启动 Zigbee 任务
     xTaskCreate(esp_zb_task, "Zigbee_main", 4096, NULL, 5, NULL);
 }
 
 void loop() {
-    //empty, zigbee running in task
+    // 空的，Zigbee 在任务中运行
 }
 ```
 
-### Step 4.Upload Light Switch Codes
+### 步骤 4：上传 Light Switch 代码
 
 ```cpp
 
 #ifndef ZIGBEE_MODE_ZCZR
-#error "Zigbee coordinator mode is not selected in Tools->Zigbee mode"
+#error "没有在工具->Zigbee模式中选择Zigbee协调器模式"
 #endif
 
 #include "esp_zigbee_core.h"
@@ -545,7 +541,7 @@ void loop() {
 #include "freertos/task.h"
 #include "ha/esp_zigbee_ha_standard.h"
 
-/* Switch configuration */
+/* 开关配置 */
 #define GPIO_INPUT_IO_TOGGLE_SWITCH  GPIO_NUM_9
 #define PAIR_SIZE(TYPE_STR_PAIR) (sizeof(TYPE_STR_PAIR) / sizeof(TYPE_STR_PAIR[0]))
 
@@ -576,7 +572,7 @@ static switch_func_pair_t button_func_pair[] = {
     {GPIO_INPUT_IO_TOGGLE_SWITCH, SWITCH_ONOFF_TOGGLE_CONTROL}
 };
 
-/* Default Coordinator config */
+/* 默认协调器配置 */
 #define ESP_ZB_ZC_CONFIG()                                      \
     {                                                           \
         .esp_zb_role = ESP_ZB_DEVICE_TYPE_COORDINATOR,          \
@@ -604,22 +600,22 @@ typedef struct light_bulb_device_params_s {
     uint16_t short_addr;
 } light_bulb_device_params_t;
 
-/* Zigbee configuration */
-#define MAX_CHILDREN                    10          /* the max amount of connected devices */
-#define INSTALLCODE_POLICY_ENABLE       false    /* enable the install code policy for security */
-#define HA_ONOFF_SWITCH_ENDPOINT        1          /* esp light switch device endpoint */
-#define ESP_ZB_PRIMARY_CHANNEL_MASK     ESP_ZB_TRANSCEIVER_ALL_CHANNELS_MASK  /* Zigbee primary channel mask use in the example */
+/* Zigbee 配置 */
+#define MAX_CHILDREN                    10          /* 最大连接设备数 */
+#define INSTALLCODE_POLICY_ENABLE       false    /* 启用安装代码策略以增加安全性 */
+#define HA_ONOFF_SWITCH_ENDPOINT        1          /* esp 灯开关设备端点 */
+#define ESP_ZB_PRIMARY_CHANNEL_MASK     ESP_ZB_TRANSCEIVER_ALL_CHANNELS_MASK  /* 使用的Zigbee主频道掩码 */
 
-/********************* Define functions **************************/
+/********************* 定义函数 **************************/
 static void esp_zb_buttons_handler(switch_func_pair_t *button_func_pair)
 {
     if (button_func_pair->func == SWITCH_ONOFF_TOGGLE_CONTROL) {
-        /* implemented light switch toggle functionality */
+        /* 实现灯开关的切换功能 */
         esp_zb_zcl_on_off_cmd_t cmd_req;
         cmd_req.zcl_basic_cmd.src_endpoint = HA_ONOFF_SWITCH_ENDPOINT;
         cmd_req.address_mode = ESP_ZB_APS_ADDR_MODE_DST_ADDR_ENDP_NOT_PRESENT;
         cmd_req.on_off_cmd_id = ESP_ZB_ZCL_CMD_ON_OFF_TOGGLE_ID;
-        log_i("Send 'on_off toggle' command");
+        log_i("发送'开关切换'命令");
         esp_zb_zcl_on_off_cmd_req(&cmd_req);
     }
 }
@@ -632,10 +628,10 @@ static void bdb_start_top_level_commissioning_cb(uint8_t mode_mask)
 static void bind_cb(esp_zb_zdp_status_t zdo_status, void *user_ctx)
 {
     if (zdo_status == ESP_ZB_ZDP_STATUS_SUCCESS) {
-        log_i("Bound successfully!");
+        log_i("绑定成功！");
         if (user_ctx) {
             light_bulb_device_params_t *light = (light_bulb_device_params_t *)user_ctx;
-            log_i("The light originating from address(0x%x) on endpoint(%d)", light->short_addr, light->endpoint);
+            log_i("来自地址(0x%x)的灯，端点(%d)", light->short_addr, light->endpoint);
             free(light);
         }
     }
@@ -644,7 +640,7 @@ static void bind_cb(esp_zb_zdp_status_t zdo_status, void *user_ctx)
 static void user_find_cb(esp_zb_zdp_status_t zdo_status, uint16_t addr, uint8_t endpoint, void *user_ctx)
 {
     if (zdo_status == ESP_ZB_ZDP_STATUS_SUCCESS) {
-        log_i("Found light");
+        log_i("找到灯具");
         esp_zb_zdo_bind_req_param_t bind_req;
         light_bulb_device_params_t *light = (light_bulb_device_params_t *)malloc(sizeof(light_bulb_device_params_t));
         light->endpoint = endpoint;
@@ -657,7 +653,7 @@ static void user_find_cb(esp_zb_zdp_status_t zdo_status, uint16_t addr, uint8_t 
         memcpy(bind_req.dst_address_u.addr_long, light->ieee_addr, sizeof(esp_zb_ieee_addr_t));
         bind_req.dst_endp = endpoint;
         bind_req.req_dst_addr = esp_zb_get_short_address();
-        log_i("Try to bind On/Off");
+        log_i("尝试绑定开/关");
         esp_zb_zdo_device_bind_req(&bind_req, bind_cb, (void *)light);
     }
 }
@@ -670,47 +666,47 @@ void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct)
     esp_zb_zdo_signal_device_annce_params_t *dev_annce_params = NULL;
     switch (sig_type) {
     case ESP_ZB_ZDO_SIGNAL_SKIP_STARTUP:
-        log_i("Zigbee stack initialized");
+        log_i("Zigbee 栈初始化完成");
         esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_INITIALIZATION);
         break;
     case ESP_ZB_BDB_SIGNAL_DEVICE_FIRST_START:
     case ESP_ZB_BDB_SIGNAL_DEVICE_REBOOT:
         if (err_status == ESP_OK) {
-            log_i("Start network formation");
+            log_i("开始网络组建");
             esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_FORMATION);
         } else {
-            log_e("Failed to initialize Zigbee stack (status: %s)", esp_err_to_name(err_status));
+            log_e("初始化 Zigbee 栈失败 (状态: %s)", esp_err_to_name(err_status));
         }
         break;
     case ESP_ZB_BDB_SIGNAL_FORMATION:
         if (err_status == ESP_OK) {
             esp_zb_ieee_addr_t extended_pan_id;
             esp_zb_get_extended_pan_id(extended_pan_id);
-            log_i("Formed network successfully (Extended PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, Channel:%d, Short Address: 0x%04hx)",
+            log_i("网络组建成功 (扩展 PAN ID: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x, PAN ID: 0x%04hx, 通道:%d, 短地址: 0x%04hx)",
                      extended_pan_id[7], extended_pan_id[6], extended_pan_id[5], extended_pan_id[4],
                      extended_pan_id[3], extended_pan_id[2], extended_pan_id[1], extended_pan_id[0],
                      esp_zb_get_pan_id(), esp_zb_get_current_channel(), esp_zb_get_short_address());
             esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_STEERING);
         } else {
-            log_i("Restart network formation (status: %s)", esp_err_to_name(err_status));
+            log_i("重新启动网络组建 (状态: %s)", esp_err_to_name(err_status));
             esp_zb_scheduler_alarm((esp_zb_callback_t)bdb_start_top_level_commissioning_cb, ESP_ZB_BDB_MODE_NETWORK_FORMATION, 1000);
         }
         break;
     case ESP_ZB_BDB_SIGNAL_STEERING:
         if (err_status == ESP_OK) {
-            log_i("Network steering started");
+            log_i("网络引导已启动");
         }
         break;
     case ESP_ZB_ZDO_SIGNAL_DEVICE_ANNCE:
         dev_annce_params = (esp_zb_zdo_signal_device_annce_params_t *)esp_zb_app_signal_get_params(p_sg_p);
-        log_i("New device commissioned or rejoined (short: 0x%04hx)", dev_annce_params->device_short_addr);
-        esp_zb_zdo_match_desc_req_param_t  cmd_req;
+        log_i("新设备已加入或重新加入网络 (短地址: 0x%04hx)", dev_annce_params->device_short_addr);
+        esp_zb_zdo_zdp_match_desc_req_param_t  cmd_req;
         cmd_req.dst_nwk_addr = dev_annce_params->device_short_addr;
         cmd_req.addr_of_interest = dev_annce_params->device_short_addr;
         esp_zb_zdo_find_on_off_light(&cmd_req, user_find_cb, NULL);
         break;
     default:
-        log_i("ZDO signal: %s (0x%x), status: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
+        log_i("ZDO 信号: %s (0x%x), 状态: %s", esp_zb_zdo_signal_to_string(sig_type), sig_type,
                  esp_err_to_name(err_status));
         break;
     }
@@ -728,7 +724,7 @@ static void esp_zb_task(void *pvParameters)
     esp_zb_main_loop_iteration();
 }
 
-/********************* GPIO functions **************************/
+/********************* GPIO函数 **************************/
 static QueueHandle_t gpio_evt_queue = NULL;
 
 static void IRAM_ATTR gpio_isr_handler(void *arg)
@@ -747,9 +743,9 @@ static void switch_gpios_intr_enabled(bool enabled)
     }
 }
 
-/********************* Arduino functions **************************/
+/********************* Arduino函数 **************************/
 void setup() {
-    // Init Zigbee
+    // 初始化Zigbee
     esp_zb_platform_config_t config = {
         .radio_config = ESP_ZB_DEFAULT_RADIO_CONFIG(),
         .host_config = ESP_ZB_DEFAULT_HOST_CONFIG(),
@@ -757,30 +753,30 @@ void setup() {
 
     ESP_ERROR_CHECK(esp_zb_platform_config(&config));
 
-    // Init button switch 
+    // 初始化按钮开关 
     for (int i = 0; i < PAIR_SIZE(button_func_pair); i++) {
         pinMode(button_func_pair[i].pin, INPUT_PULLUP);
-        /* create a queue to handle gpio event from isr */
+        /* 创建一个队列来处理来自ISR的GPIO事件 */
         gpio_evt_queue = xQueueCreate(10, sizeof(switch_func_pair_t));
         if ( gpio_evt_queue == 0) {
-            log_e("Queue was not created and must not be used");
+            log_e("队列未创建，不能使用");
             while(1);
         }
         attachInterruptArg(button_func_pair[i].pin, gpio_isr_handler, (void *) (button_func_pair + i), FALLING);
     }
 
-    // Start Zigbee task
+    // 启动Zigbee任务
     xTaskCreate(esp_zb_task, "Zigbee_main", 4096, NULL, 5, NULL);
 }
 
 void loop() {
-    // Handle button switch in loop()
+    // 在loop()中处理按钮开关
     uint8_t pin = 0;
     switch_func_pair_t button_func_pair;
     static switch_state_t switch_state = SWITCH_IDLE;
     bool evt_flag = false;
 
-    /* check if there is any queue received, if yes read out the button_func_pair */
+    /* 检查是否接收到队列，如果收到则读取按钮功能对 */
     if (xQueueReceive(gpio_evt_queue, &button_func_pair, portMAX_DELAY)) {
         pin =  button_func_pair.pin;
         switch_gpios_intr_enabled(false);
@@ -797,7 +793,7 @@ void loop() {
             break;
         case SWITCH_RELEASE_DETECTED:
             switch_state = SWITCH_IDLE;
-            /* callback to button_handler */
+            /* 调用按钮处理函数 */
             (*esp_zb_buttons_handler)(&button_func_pair);
             break;
         default:
@@ -813,19 +809,19 @@ void loop() {
 }
 ```
 
-### Step 5.Final Effect
+### 第5步：最终效果
 
-After upload the codes to 2 pieces of XIAO ESP32C6(light bulb and light switch), you can see some message from serial port like below image. When you click the switch, the bulb will turn on or off.
+将代码上传到两块XIAO ESP32C6（分别为灯泡和灯开关）后，您可以在串口看到类似下图的消息。当您点击开关时，灯泡会开或关。
 
 :::tip
-If the message from serial port not like below image, you can click the reset button on XIAO ESP32C6 or replug to reboot it.
+如果串口的消息与下图不一样，您可以按一下XIAO ESP32C6的重置按钮或重新插拔设备以重启。
 :::
 
 <div class="table-center">
 	<table>
 		<tr>
-			<th>Zigbee bulb</th>
-			<th>Zigbee switch</th>
+			<th>Zigbee灯泡</th>
+			<th>Zigbee开关</th>
 		</tr>
 		<tr>
 			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/2.png" style={{width:500, height:'auto'}}/></div></td>
@@ -834,17 +830,17 @@ If the message from serial port not like below image, you can click the reset bu
 	</table>
 </div>
 
-Here is the final effect. You can use switch to control the bulb via Zigbee.
+这里是最终效果。您可以通过开关控制灯泡，操作是通过Zigbee完成的。
 
 <div class="table-center">
 <iframe width="800" height="500" src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6_zigbee_arduino/video.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
-Congratulations on successfully completing your Zigbee-controlled lighting project! There are many more exciting Zigbee applications waiting for you to explore. Keep up the great work!
+恭喜您成功完成了Zigbee控制灯光的项目！还有许多令人兴奋的Zigbee应用等待您去探索。继续保持出色的工作！
 
-## Tech Support & Product Discussion
+## 技术支持与产品讨论
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+感谢您选择我们的产品！我们为您提供各种支持，确保您能够顺利使用我们的产品。我们提供了多个沟通渠道，以满足不同的需求和偏好。
 
 <div class="table-center">
   <div class="button_tech_support_container">
