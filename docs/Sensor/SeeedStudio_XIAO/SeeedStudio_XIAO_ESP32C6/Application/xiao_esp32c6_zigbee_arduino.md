@@ -104,16 +104,7 @@ Zigbee supports three primary network topologies, depending on the application r
 - Devices can dynamically reroute messages if a communication path is disrupted, ensuring high reliability.  
 - Ideal for large-scale networks requiring wide coverage and redundancy.  
 
-   ```mermaid
-   graph TD
-       Coordinator((Coordinator)) --- Router1((Router 1))
-       Coordinator --- Router2((Router 2))
-       Router1 --- EndDevice1((End Device 1))
-       Router1 --- Router3((Router 3))
-       Router2 --- Router3
-       Router2 --- EndDevice2((End Device 2))
-       Router3 --- EndDevice3((End Device 3))
-   ```
+  <div style={{textAlign:'center'}}><img src="https://mermaid.ink/svg/pako:eNptkcEOgjAQRH9lsydI5CDcuIo_oJ5MLxu6AlG6pLYmxvjvVlFSgj3NtG9nmvaBtWjGEgGgsTS0cKiUgXFtRKzuDDmxSRKZNIUsy2An3rFdJ8koYJ2m_0YjNp_YPGK_OR9ua3TFt67mEBs0jGYWHeOjLqbYYsHlMff3bKrMZ5XLGxZzvJjhoRlX2LPtqdPhPR_vYYWu5Z4VlkFqsmeFyjwDR97J_m5qLJ31vEIrvml_xg-aHFcdhQ_psTzR5Rp2BzJHkZ9_vgDkroUg" style={{width:380, height:'auto', "border-radius": '1px'}}/></div>
 
 - **Key Features**:  
   - Dynamic rerouting ensures high reliability.  
@@ -126,15 +117,7 @@ Zigbee supports three primary network topologies, depending on the application r
 - Each branch can have multiple End Devices or additional Routers, creating a tree-like structure.  
 - Communication depends on hierarchical paths, which introduces potential single points of failure.  
 
-   ```mermaid
-   graph TD
-       Coordinator((Coordinator)) --- Router1((Router 1))
-       Coordinator --- Router2((Router 2))
-       Router1 --- EndDevice1((End Device 1))
-       Router1 --- EndDevice2((End Device 2))
-       Router2 --- EndDevice3((End Device 3))
-       Router2 --- EndDevice4((End Device 4))
-   ```
+  <div style={{textAlign:'center'}}><img src="https://mermaid.ink/svg/pako:eNqF0MEKwjAMBuBXCTmt4A5OT7s6X0A9SS9hjW7omlFbQcR3tzqVFQV7yl--_IdcsRbDWCIA7B31DWwqbWF4CxFnWkteXJaNglKQ5zmsJHh20ywbBpgq9Wt1ZIuPLUb21fN0S2sqPrc1x9o4wxCS6p-8SPh3e5HyWcJn__g84XOlcIIdu45aE093fSxr9A13rLGMoyF30KjtLToKXtYXW2PpXeAJOgn7BssdHU8xhd6Q56qlePzu89uT3Yq88-0OO1R_gA" style={{width:600, height:'auto', "border-radius": '1px'}}/></div>
 
 - **Key Features**:  
   - Works well for structured environments.  
@@ -147,12 +130,7 @@ Zigbee supports three primary network topologies, depending on the application r
 - Simple to deploy, but the Coordinator is a single point of failure.  
 - Best suited for small networks where devices are located close to the Coordinator.  
 
-   ```mermaid
-   graph TD
-       Coordinator((Coordinator)) --- EndDevice1((End Device 1))
-       Coordinator --- EndDevice2((End Device 2))
-       Coordinator --- EndDevice3((End Device 3))
-   ```
+  <div style={{textAlign:'center'}}><img src="https://mermaid.ink/svg/pako:eNqNkMEKwjAMhl8l5LTCdth269X5BHqSXsIat6JtR20FGXt3K0Nx4MGc_i_kCyEz9l4zSgSAIdA0wrFTDtbaeR-0cRR9KIovEAKqqoK90x3fTc91UeQMK0AtxK8NW6XZKM0_SrtRWiGwRMvBktH5_vm1QGEc2bJCmaOmcFGo3JLnKEV_eLgeZQyJSww-DSPKM11vmdKkKXJnKH_AfroTuZP3b16etDldgQ" style={{width:480, height:'auto', "border-radius": '1px'}}/></div>
 
 - **Key Features**:  
   - Easy to set up and manage.  
@@ -349,6 +327,7 @@ Now, let's examine the HA On/Off Light example code and see how it maps to the Z
 Here, the XIAO ESP32C6 serves as the **Zigbee Coordinator**, responsible for controlling other Zigbee devices. Here, the **Zigbee Switch** represents the controller, which binds to a Zigbee light device and controls it through commands such as toggling the light on or off.
 
 ##### Include and Definitions
+
 ```cpp
 #include "Zigbee.h"
 
@@ -356,12 +335,15 @@ Here, the XIAO ESP32C6 serves as the **Zigbee Coordinator**, responsible for con
 #define GPIO_INPUT_IO_TOGGLE_SWITCH 9
 #define PAIR_SIZE(TYPE_STR_PAIR) (sizeof(TYPE_STR_PAIR) / sizeof(TYPE_STR_PAIR[0]))
 ```
+
 - `SWITCH_ENDPOINT_NUMBER` is defined as `5`. It represents the endpoint of the switch. Just like in the light bulb example, the endpoint number is used to define the specific function within a Zigbee device.
 - `GPIO_INPUT_IO_TOGGLE_SWITCH` refers to GPIO pin `9`, which acts as the switch button.
 - `PAIR_SIZE()` is a macro used to calculate the size of a given array, used here to handle button configurations.
 
 ##### Switch Configuration Types and Functions
+
 The code defines several enumerations and data structures related to switch functionality:
+
 ```cpp
 typedef enum {
   SWITCH_ON_CONTROL,
@@ -386,6 +368,7 @@ typedef enum {
   SWITCH_RELEASE_DETECTED,
 } SwitchState;
 ```
+
 - **`SwitchFunction`** enumerates different functions the switch can perform, such as turning the light on, off, toggling, adjusting brightness, etc.
 - **`SwitchData`** is a struct that pairs a GPIO pin with a specific function, which allows for better organization when adding multiple buttons with different functionalities.
 - **`SwitchState`** represents different states of the switch during user interaction (e.g., idle, pressed, released).
@@ -396,10 +379,12 @@ typedef enum {
 static SwitchData buttonFunctionPair[] = {{GPIO_INPUT_IO_TOGGLE_SWITCH, SWITCH_ONOFF_TOGGLE_CONTROL}};
 ZigbeeSwitch zbSwitch = ZigbeeSwitch(SWITCH_ENDPOINT_NUMBER);
 ```
+
 - **`buttonFunctionPair`** is an array defining the functions of the buttons. Here, the button connected to `GPIO 9` will be used for toggling the light on or off.
 - **`zbSwitch`** creates an instance of `ZigbeeSwitch`, with endpoint number `5`.
 
 ##### Zigbee Functions and GPIO Interrupt Handling
+
 ```cpp
 static void onZbButton(SwitchData *button_func_pair) {
   if (button_func_pair->func == SWITCH_ONOFF_TOGGLE_CONTROL) {
@@ -407,14 +392,17 @@ static void onZbButton(SwitchData *button_func_pair) {
   }
 }
 ```
+
 **`onZbButton()`** is called whenever a button is pressed. In this case, it sends a Zigbee command to toggle the light.
 
 ###### Handling GPIO Events
+
 ```cpp
 static void IRAM_ATTR onGpioInterrupt(void *arg) {
   xQueueSendFromISR(gpio_evt_queue, (SwitchData *)arg, NULL);
 }
 ```
+
 **`onGpioInterrupt()`** is the interrupt service routine (ISR) for handling GPIO pin interrupts. It places an event in a queue whenever the button is pressed.
 
 ```cpp
@@ -428,9 +416,11 @@ static void enableGpioInterrupt(bool enabled) {
   }
 }
 ```
+
 **`enableGpioInterrupt()`** enables or disables the GPIO interrupt, depending on whether the parameter `enabled` is `true` or `false`.
 
 ##### Setup Function
+
 ```cpp
 void setup() {
   Serial.begin(115200);
@@ -475,6 +465,7 @@ void setup() {
   Serial.println();
 }
 ```
+
 - **Serial Communication Initialization**: Initializes serial for debugging.
 - **Device Information**: Sets manufacturer and model, allows multiple devices to bind, and adds an endpoint to Zigbee core.
 - **Network Initialization**: Opens the Zigbee network for `180` seconds after reboot to allow devices to join.
@@ -482,6 +473,7 @@ void setup() {
 - **Wait for Binding**: The coordinator waits until it binds to a light device before proceeding. Once bound, it prints the bound device information.
 
 ##### Loop Function
+
 ```cpp
 void loop() {
   uint8_t pin = 0;
