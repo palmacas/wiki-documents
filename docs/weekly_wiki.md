@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 11/18/2024
+  date: 11/25/2024
   author: Frank
 ---
 
@@ -17,9 +17,9 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is November 18th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is November 25th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
-## Latest Wiki Launched
+<!-- ## Latest Wiki Launched
 
 ### [Getting Started with reCamera](https://wiki.seeedstudio.com/recamera_get_start/)
 
@@ -44,24 +44,19 @@ Seeed Studio XIAO RP2350 has rich interfaces. There are **19 digital I/O** that 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RA4M1_Application/top2.png" style={{width:600, height:'auto'}}/></div>
 
-This project gained significant popularity on YouTube some time ago. It featured a compact box that housed a development board, a motor, and a motor driver board—an impressive feat of space management. Coincidentally, our XIAO series boasts a very small form factor. Imagine the possibilities if we combined the smallest development board with the smallest motor driver board! Join me on this exciting journey of Clock Demos!
+This project gained significant popularity on YouTube some time ago. It featured a compact box that housed a development board, a motor, and a motor driver board—an impressive feat of space management. Coincidentally, our XIAO series boasts a very small form factor. Imagine the possibilities if we combined the smallest development board with the smallest motor driver board! Join me on this exciting journey of Clock Demos!  -->
 
 
 
 ## Existing Wiki Updated
 
-### [How to use rs485 and modbus with reComputer R1000](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/)
+### [Pin Multiplexing with Seeed Studio XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/)
 
-We have added [action](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/#action-required-for-recomputer-r1000-v10) required for reComputer R1000 v1.0.
+We have added an [example](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/#software-preparation) of software preparation for using CAN with XIAO RA4M1.
 
+### [Watcher to Node-RED Quick Start](https://wiki.seeedstudio.com/watcher_to_node_red/)
 
-### [Getting Started with reComputer Industrial](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
-
-We have added new [links](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/#flash-to-jetson) for the Jetson image.
-
-### [XIAO ESP32C3 Pin Multiplexing](https://wiki.seeedstudio.com/XIAO_ESP32C3_Pin_Multiplexing/)
-
-We have added [example](https://wiki.seeedstudio.com/XIAO_ESP32C3_Pin_Multiplexing/#software-serial) for Software Serial on the XIAO ESP32C3.
+We have added an [example](https://wiki.seeedstudio.com/watcher_to_node_red/#part-5-preview-image) demonstrating how to preview images from Watcher.
 
 
 ## The Efforts of Contributor
@@ -73,6 +68,16 @@ We have added [example](https://wiki.seeedstudio.com/XIAO_ESP32C3_Pin_Multiplexi
 FreeRTOS is a collection of C libraries comprised of a real-time kernel and a set of modular libraries that implement complementary functionality. The FreeRTOS kernel is a real-time kernel (or real-time scheduler) that enables applications built on FreeRTOS to meet their hard real-time requirements. It enables applications to be organized as a collection of independent threads of execution.
 
 This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). With the assistance of this guide you will be able to utilize the feature set available to the board.     -->
+
+### [使用 XIAO BLE SENSE 制作头部追踪设备（Head Tracker）](https://wiki.seeedstudio.com/cn/xiao_ble_sense_head_tracker/)
+
+[HeadTracker](https://headtracker.gitbook.io) 是一款开源头部追踪项目，可用于无人机控制、虚拟现实、游戏等领域。该设备通过感应头部的方向和运动，为用户提供实时的视角变化体验。
+
+<div style={{ textAlign: 'center' }}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE-Sense-Head-Tracker/1.png" alt="PCB" width="600" /></div>
+
+本文将逐步指导您使用 XIAO BLE SENSE 完成头部追踪设备（Head Tracker）的制作
+
+
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -162,5 +167,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.10.28th](/Seeed_Elderly/weekly_wiki/wiki241028)
 - [weekly wiki on 2024.11.04th](/Seeed_Elderly/weekly_wiki/wiki241104)
 - [weekly wiki on 2024.11.11th](/Seeed_Elderly/weekly_wiki/wiki241111)
+- [weekly wiki on 2024.11.18th](/Seeed_Elderly/weekly_wiki/wiki241118)
 
 </details>
