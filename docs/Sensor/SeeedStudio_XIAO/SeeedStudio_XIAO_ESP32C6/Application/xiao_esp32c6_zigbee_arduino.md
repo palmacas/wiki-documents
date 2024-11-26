@@ -98,7 +98,7 @@ A Zigbee network consists of three primary node types:
 
 Zigbee supports three primary network topologies, depending on the application requirements and environment:
 
-#### 1. **Mesh Topology**
+#### 1. Mesh Topology
 
 - A single Coordinator and multiple Routers form a self-healing, robust network.  
 - Devices can dynamically reroute messages if a communication path is disrupted, ensuring high reliability.  
@@ -120,7 +120,7 @@ Zigbee supports three primary network topologies, depending on the application r
   - Supports large networks with scalable coverage.  
   - Self-healing mechanisms increase fault tolerance.  
 
-#### 2. **Tree Topology**
+#### 2. Tree Topology
 
 - The Coordinator acts as the root of a hierarchical structure, with Routers forming branches.  
 - Each branch can have multiple End Devices or additional Routers, creating a tree-like structure.  
@@ -141,7 +141,7 @@ Zigbee supports three primary network topologies, depending on the application r
   - Easier to set up and manage than a mesh network.  
   - Vulnerable to branch failure, which can disconnect entire sub-networks.  
 
-#### 3. **Star Topology**
+#### 3. Star Topology
 
 - All devices communicate directly with the Coordinator.  
 - Simple to deploy, but the Coordinator is a single point of failure.  
@@ -694,14 +694,14 @@ void loop() {
 
 #### Demonstration
 
-<!-- <iframe
+<iframe
   className="youtube-video-r"
-  src="https://youtube.com/embed/xxxxx"
-  title="MG24 Matter Lightbulb Example"
+  src="https://www.youtube.com/embed/Z2NROYx7hcQ"
+  title="XIAO Zigbe Light bulb/switch Example"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   style={{ width: '380px', height: '640px' }}
-></iframe> -->
+></iframe>
 
 Congratulations on successfully completing your Zigbee-controlled lighting project! There are many more exciting Zigbee applications waiting for you to explore. Keep up the great work!
 
