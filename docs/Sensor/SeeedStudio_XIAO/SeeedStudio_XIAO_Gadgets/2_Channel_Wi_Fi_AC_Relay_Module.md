@@ -144,7 +144,7 @@ This way, you can connect the module to your Home Assistant network and let Home
 2. **Manual Configuration**:
    - If not automatically discovered, manually add the device by specifying its IP address.
 
-### Automation and Use Cases
+## Automation and Use Cases
 
 1. Basic Automation:
    - Create a time-based schedule to toggle the relay at specific times.
@@ -153,13 +153,13 @@ This way, you can connect the module to your Home Assistant network and let Home
 3. Notifications:
    - Set up Home Assistant to send notifications when the relay state changes or if the device goes offline.
 
-### Safety and Maintenance
+## Safety and Maintenance
 
 1. Periodically inspect wiring for wear and tear.
 2. Use proper circuit protection devices, such as fuses or breakers.
 3. Keep the device away from water and excessive heat.
 
-### FAQs
+## FAQs
 
 1. **What happens if the device is disconnected from Wi-Fi?**
    - The module will attempt to reconnect automatically. If it fails, it will enable its fallback access point for reconfiguration.
