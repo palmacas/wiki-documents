@@ -15,11 +15,8 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/top.jpg" style={{width:600, height:'auto'}}/></div>
 
-
-## Hardware Overview
-
-### prepared material
-
+kuangzhonglunhenshuai
+>>>>>>>>>>fjiweojfiwejfioewfjewjfewiof
 
 
 <div class="table-center">
