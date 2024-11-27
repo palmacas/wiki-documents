@@ -76,7 +76,7 @@ When it is used as an input mode, you need to turn the switch to IN, and if it i
         <th>Two RS485 expansion board connections</th>
     </tr>
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/connect.png" style={{width:700, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/connect1.png" style={{width:700, height:'auto'}}/></div></td>
     </tr>
   </table>
 </div>
