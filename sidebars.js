@@ -5520,15 +5520,6 @@ const sidebars = {
 
     'zh-CN/Sensor/SeeedStudio_XIAO/CN_XIAO_ESPNOW',
     'zh-CN/Sensor/SeeedStudio_XIAO/CN_PCB_Design_XIAO',
-
-    {
-      type: 'category',
-      label: '包含课程的工具包',
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/Kit_with_Courses/CN_XIAO-Kit-Courses',
-       ],
-    },
-
     
     {
       type: 'category',
