@@ -23,15 +23,47 @@ This guide provides a detailed walkthrough, including setup, integration, and ad
 
 ### Key Features and Specifications
 
-| **Feature**          | **Details**                                                  |
-| -------------------- | ------------------------------------------------------------ |
-| **Input Voltage**    | AC 100-240V, 50/60Hz                                         |
-| **Output Voltage**   | AC 100-240V, 50/60Hz                                         |
-| **Maximum Load**     | 10A per channel                                              |
-| **Channels**         | 2 (independent control for each channel)                     |
-| **Connection Type**  | Wi-Fi                                                        |
-| **Input Terminals**  | N (Neutral), L (Live)                                        |
-| **Output Terminals** | - **Channel 1**: N1 (Neutral), L1 (Live) - **Channel 2**: N2 (Neutral), L2 (Live)                     |
+<div class="table-center">
+<table align="center">
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Input Voltage</th>
+            <td>AC 100-240V, 50/60Hz</td>
+        </tr>
+        <tr>
+            <th>Output Voltage</th>
+            <td>AC 100-240V, 50/60Hz</td>
+        </tr>
+        <tr>
+            <th>Maximum Load</th>
+            <td>10A per channel</td>
+        </tr>
+        <tr>
+            <th>Channels</th>
+            <td>2 (independent control for each channel)</td>
+        </tr>
+        <tr>
+            <th>Connection Type</th>
+            <td>Wi-Fi</td>
+        </tr>
+        <tr>
+            <th>Input Terminals</th>
+            <td>N (Neutral), L (Live)</td>
+        </tr>
+        <tr>
+            <th rolspan="2">Output Terminals</th>
+            <td><b>Channel 1:</b> N1 (Neutral), L1 (Live) <br></br> <b>Channel 2:</b> N2 (Neutral), L2 (Live)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
 :::warning Safety Warning
 
 Always disconnect AC power before wiring the relay. Avoid using the USB port while the device is connected to AC power to prevent electrical hazards.
