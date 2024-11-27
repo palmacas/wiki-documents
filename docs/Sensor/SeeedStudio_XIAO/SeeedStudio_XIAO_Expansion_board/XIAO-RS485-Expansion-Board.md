@@ -67,6 +67,10 @@ last_update:
 
 - INT : Reserved interrupt port.
 
+:::tip
+When it is used as an input mode, you need to turn the switch to IN, and if it is used as an output mode, you need to turn the switch to OUT to prevent burning out.
+:::
+
 ### Connection Schematic
 <div class="table-center">
   <table align="center">
@@ -80,7 +84,6 @@ last_update:
 </div>
 
 ## Software Overview
-
 
 ### Sender Code
 
@@ -119,11 +122,24 @@ void loop() {
   delay(1000); // Delay for 1 second
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e77f061bb093dba09fc8f7823d1baaeafe1a12eb
 ```
+- **SoftwareSerial Library:** Allows the creation of additional serial ports on ESP32, typically used for communication with devices (such as sensors or modules).
+- `SoftwareSerial mySerial(D5, D4)`: Defines a SoftwareSerial object named mySerial, using D5 and D4 as the receive and transmit pins.
+- `#define enable_pin D2`: Defines an enable pin used to control the sending and receiving state of the RS485 module.
+
+- `setup()`：
+  - `while(!mySerial)`: Waits until the software serial is ready for communication.
+  - `while(!Serial)`: Waits until the hardware serial is ready for communication.
+  - `pinMode(enable_pin, OUTPUT)`: Configures the enable_pin as an output pin to control the RS485 module.
+  - `digitalWrite(enable_pin, HIGH)`: Sets the enable_pin to HIGH, configuring the RS485 module for sending mode.
+
+- `loop():`
+  - `if (mySerial.available())`: Checks if there is any data available to read from the software serial port.
+  - `char data = mySerial.read()`: Reads a single character from the software serial port and stores it in the variable data.
+  - `if(data != '\n' && data != '\r')`: Checks if the received data is not a newline (\n) or carriage return (\r) character.
+  - `Serial.println("send successfully")`: Print a success message.
+  - `mySerial.print("Master send information is: ")`: Send a prompt message to the software serial.
+  - `mySerial.println(data)` :Send the data you need to an RS485 expansion board.
 
 ### Receiver Code
 
@@ -160,6 +176,25 @@ void loop() {
 }
 
 ```
+
+- **SoftwareSerial Library:** Allows the creation of additional serial ports on ESP32, typically used for communication with devices (such as sensors or modules).
+- `SoftwareSerial mySerial(D5, D4)`: Defines a SoftwareSerial object named mySerial, using D5 as RX and D4 as TX.
+- `define enable_pin D2`: Defines an enable pin used to control the sending and receiving state of the RS485 module.
+
+- `setup()`:
+  - `Serial.begin(115200`: Initializes the hardware serial port with a baud rate of 115200.
+  - `mySerial.begin(115200)`: Initializes the software serial port with a baud rate of 115200.
+  - `while(!Serial)`: Waits until the hardware serial port is ready for communication.
+  - `while(!mySerial)`: Waits until the software serial port is ready for communication.
+  - `pinMode(enable_pin, OUTPUT)`: Configures the enable_pin as an output pin to control the RS485 module.
+  - `digitalWrite(enable_pin, LOW)`: Sets the enable_pin to low, configuring the RS485 module for receiving mode.
+
+- `loop()`:
+  - `if (mySerial.available())`: Checks if there is any data available to read from the software serial port.
+  - `char data = mySerial.read()`: Reads a single character from the software serial port and stores it in the variable data.
+  - `if(data != '\n' && data != '\r')`: Checks if the received data is not a newline (\n) or carriage return (\r) character.
+  - `Serial.println("receiver information")`: Prints a message to the hardware serial indicating that data has been received.
+  - `mySerial.println(data)`: Print the data sent to the receiver RS485.
 
 
 ## RS485 Transmission Result
