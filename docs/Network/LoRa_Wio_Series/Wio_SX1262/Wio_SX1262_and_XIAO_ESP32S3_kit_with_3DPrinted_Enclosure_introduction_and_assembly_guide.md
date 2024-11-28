@@ -1,7 +1,7 @@
 ---
 description: The introduction and assembly guide of Wio-SX1262 and XIAO ESP32S3 kit with 3D-printed enclosure
 title: Wio-SX1262 and XIAO ESP32S3 kit with 3D-printed enclosure
-image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/113110064/5.jpg
+image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/113110064/12.jpg
 slug: /wio_sx1262_and_XIAO_ESP32S3_kit_with_3DPrinted_Enclosure_introduction_and_assembly_guide
 sidebar_position: 3
 last_update:
@@ -89,6 +89,8 @@ This device is based on XIAO ESP32S3 and Wio-SX1262 LoRa module. Coupled with an
 | 20cm USB type C cable | x1 |
 
 ### Recommended accessories
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/113110064/10.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="table-center">
   <table align="center">
