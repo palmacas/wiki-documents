@@ -1,6 +1,6 @@
 ---
-description: Getting Started with Seeed Studio XIAO ESP32S3.
-title: Getting Started with Seeed Studio XIAO ESP32S3 (Sense)
+description: Getting Started with Seeed Studio XIAO ESP32S3 Series.
+title: Getting Started with Seeed Studio XIAO ESP32S3 Series
 keywords:
 - esp32s3
 - xiao
@@ -14,7 +14,7 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Getting Started with Seeed Studio XIAO ESP32S3 (Sense)
+# Getting Started with Seeed Studio XIAO ESP32S3 Series
 
 <div class="table-center">
 	<table align="center">
@@ -192,7 +192,7 @@ Before everything starts, it is quite essential to have some basic parameters of
 		" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
 	<tr>
-	<th>XIAO ESP32S3 Plus</th>
+	<th>XIAO ESP32S3 Plus Pin List</th>
 	</tr>
 	<tr>
 		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/plus_pinout.png

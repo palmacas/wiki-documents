@@ -1141,7 +1141,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'XIAO nRF52840 (Sense)',
+          label: 'XIAO nRF52840 Series',
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO_BLE',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-Zephyr-RTOS',
@@ -1282,7 +1282,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'XIAO ESP32S3 (Sense)',
+          label: 'XIAO ESP32S3 Series',
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Pin_Multiplexing',
