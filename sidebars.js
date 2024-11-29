@@ -3285,6 +3285,7 @@ const sidebars = {
         collapsed: true,
         collapsible: true,
         items: [
+          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/convert_model_to_edge_tpu_tflite_format_for_google_coral',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/install_m.2_coral_to_rpi5',
