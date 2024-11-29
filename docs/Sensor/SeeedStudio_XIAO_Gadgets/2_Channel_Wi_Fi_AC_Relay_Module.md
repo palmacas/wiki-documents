@@ -2,7 +2,7 @@
 title: 2-Channel Wi-Fi AC Relay Module In Home Assistant
 description: |
   XIAO RP2350, a cutting-edge microcontroller from Seeed Studio. It features a dual-core processor, increased SRAM and flash memory, and enhanced connectivity.
-image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/3-thumbnail.jpg
+image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/3-thumbnail.webp
 slug: /2_channel_wifi_ac_relay
 keywords:
   - XIAO
