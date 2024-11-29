@@ -2,7 +2,7 @@
 # 参见：https://docusaurus.io/zh-CN/docs/api/plugins/@docusaurus/plugin-content-docs
 description: This article is a brief introduction to the main page of SenseCraft AI.
 title: Overview
-image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/1.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/1.webp
 slug: /sensecraft_ai_overview
 sidebar_position: 2
 # sidebar_class_name: hidden # 有文件但是不显示在左侧目录
