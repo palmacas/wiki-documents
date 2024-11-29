@@ -1,7 +1,7 @@
 ---
 description: In this tutorial, we will embark on a journey to explore Zigbee application development using the XIAO ESP32C6 development board. The XIAO ESP32C6 is a compact yet powerful board that features the ESP32-C6 chip, which offers integrated Wi-Fi and Bluetooth Low Energy (BLE) connectivity. By leveraging the ESP Zigbee SDK, we can harness the full potential of the XIAO ESP32C6 and extend its capabilities to include Zigbee functionality.
 title: XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)
-image: https://files.seeedstudio.com/wiki/xiaoc6_zigbee/3.jpg
+image: https://files.seeedstudio.com/wiki/xiaoc6_zigbee/3.webp
 slug: /xiao_esp32c6_zigbee_arduino
 last_update:
   date: 11/25/2024
@@ -315,12 +315,6 @@ void loop() {
   delay(100);
 }
 ```
-
-**Zigbee End Device**
-
-In this section, we will explore how the Zigbee HA On/Off Light example code is structured based on the Zigbee data model. By understanding the relationship between the code and the data model, you will gain insights into how to interpret and modify the code according to your specific requirements.
-
-Now, let's examine the HA On/Off Light example code and see how it maps to the Zigbee data model.
 
 #### Zigbee Light Switch
 
@@ -699,6 +693,7 @@ Congratulations on successfully completing your Zigbee-controlled lighting proje
 
 ## Reference
 
+- [Zigbee Examples- Arduino](https://github.com/espressif/arduino-esp32/blob/master/libraries/Zigbee/examples)
 - [ESP Zigbee SDK](https://docs.espressif.com/projects/esp-zigbee-sdk/en/latest/esp32c6/introduction.html)
 - [Arduino Core for ESP32 gets a Zigbee wrapper library](https://www.cnx-software.com/2024/08/23/arduino-core-for-esp32-gets-a-zigbee-wrapper-library/)
 
