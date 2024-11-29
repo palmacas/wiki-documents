@@ -316,12 +316,6 @@ void loop() {
 }
 ```
 
-**Zigbee End Device**
-
-In this section, we will explore how the Zigbee HA On/Off Light example code is structured based on the Zigbee data model. By understanding the relationship between the code and the data model, you will gain insights into how to interpret and modify the code according to your specific requirements.
-
-Now, let's examine the HA On/Off Light example code and see how it maps to the Zigbee data model.
-
 #### Zigbee Light Switch
 
 Here, the XIAO ESP32C6 serves as the **Zigbee Coordinator**, responsible for controlling other Zigbee devices. Here, the **Zigbee Switch** represents the controller, which binds to a Zigbee light device and controls it through commands such as toggling the light on or off.
@@ -699,6 +693,7 @@ Congratulations on successfully completing your Zigbee-controlled lighting proje
 
 ## Reference
 
+- [Zigbee Examples- Arduino](https://github.com/espressif/arduino-esp32/blob/master/libraries/Zigbee/examples)
 - [ESP Zigbee SDK](https://docs.espressif.com/projects/esp-zigbee-sdk/en/latest/esp32c6/introduction.html)
 - [Arduino Core for ESP32 gets a Zigbee wrapper library](https://www.cnx-software.com/2024/08/23/arduino-core-for-esp32-gets-a-zigbee-wrapper-library/)
 
