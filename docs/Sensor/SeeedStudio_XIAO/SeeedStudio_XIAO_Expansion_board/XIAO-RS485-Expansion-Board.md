@@ -3,7 +3,7 @@ description: XIAO Communcate with RS485 Expansion Board
 title: RS485 Expansion Board for XIAO
 keywords:
 - xiao
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/top.webp
 slug: /XIAO-RS485-Expansion-Board
 last_update:
   date: 11/20/2024
