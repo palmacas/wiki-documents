@@ -118,9 +118,6 @@ This device is based on XIAO ESP32S3 and Wio-SX1262 LoRa module. Coupled with an
 - Using Meshtastic for network communication, please follow [the meshtastic instruction](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_meshtastic/)
 
 
-//## Assembly guide
-
-//TBD
 
 ## Resource
 
