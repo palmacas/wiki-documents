@@ -1,5 +1,5 @@
 ---
-description: XIAO Communcate with RS485 Expansion Board
+description: This guide will help you quickly set up the Seeed Studio XIAO RS485 Expansion Board and get started with RS485 communication.
 title: RS485 Expansion Board for XIAO
 keywords:
 - xiao
