@@ -1,7 +1,7 @@
 ---
 description: How to use Training(Classification)
 title: Classification
-image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/main_page.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/main_page.webp
 slug: /sensecraft_ai_Training_Classification
 sidebar_position: 1
 last_update:
