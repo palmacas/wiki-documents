@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 11/25/2024
+  date: 12/02/2024
   author: Frank
 ---
 
@@ -17,47 +17,67 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is November 25th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is December 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
-<!-- ## Latest Wiki Launched
+## Latest Wiki Launched
 
-### [Getting Started with reCamera](https://wiki.seeedstudio.com/recamera_get_start/)
+### [Getting Started with Seeed Studio XIAO-RS485-Expansion-Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/)
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.png" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/top.jpg" style={{width:800, height:'auto'}}/></div>
 
-Welcome to reCamera! This guide will help you quickly set up your device and start using it to unlock powerful AI-Vision features. Whether you're a beginner or an experienced user, this step-by-step walkthrough will guide you through the installation, configuration, and first use.
+This guide will help you quickly set up the Seeed Studio XIAO RS485 Expansion Board and get started with RS485 communication. Whether you're new to RS485 or already familiar with it, this step-by-step walkthrough will guide you through the hardware setup, wiring connections, and software configuration to get your system running smoothly. Unlock the potential of reliable, long-distance communication with ease!
 
-### [Hardware Interface of reCamera](https://wiki.seeedstudio.com/reCamera_hardware_interface/)
+### [2-Channel Wi-Fi AC Relay Module In Home Assistant](https://wiki.seeedstudio.com/2_channel_wifi_ac_relay/)
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/image.png" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/3-thumbnail.jpg" style={{width:800, height:'auto'}}/></div>
 
-In this wiki, we will introduce you to the various hardware interfaces of the reCamera.
+The **2-Channel Wi-Fi AC Relay Module** is a smart device from Seeed Studio designed to control AC-powered appliances wirelessly. Its dual-channel configuration supports independent control of two loads, making it an excellent choice for automating household appliances such as lights, fans, and other devices in a Home Assistant environment.
+This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
 
-### [XIAO RP2350 Pin Multiplexing](https://wiki.seeedstudio.com/XIAO_RP2350_Pin_Multiplexing/)
+### [SenseCraft AI Overview](https://wiki.seeedstudio.com/sensecraft_ai_overview/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/xiao_rp2350_pins/2350image.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/1.webp" style={{width:800, height:'auto'}}/></div>
 
-Seeed Studio XIAO RP2350 has rich interfaces. There are **19 digital I/O** that can be used as **PWM pins** and **3 analog inputs** that can be used as **ADC pins**. It supports four serial communication interfaces such as **UART, I2C and SPI**. This wiki will be helpful to learn about these interfaces and implement them in your next projects!
+SenseCraft AI is an all-in-one platform designed to empower developers and creators in building and deploying AI projects with ease. The website offers a wide range of tools and features to streamline the AI development process, making it accessible to users with varying levels of expertise. In this wiki, we will explore the main sections of the SenseCraft AI website, providing an overview of their key features and functionalities.
 
+### [SenseCraft AI - Classification Training](https://wiki.seeedstudio.com/sensecraft_ai_Training_Classification/)
 
-### [XIAO RA4M1 Demo for Clock](https://wiki.seeedstudio.com/xiao_ra4m1_clock/#tech-support--product-discussion)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/main_page.png" style={{width:800, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RA4M1_Application/top2.png" style={{width:600, height:'auto'}}/></div>
+**Classification** training is a machine learning method that learns the relationship between data and categories by giving the model sample data labelled with categories, ultimately enabling the model to classify new data into predefined categories.
+Next, we will show you how to train a classification model of your own. The model will recognise whether people are wearing masks or not.
 
-This project gained significant popularity on YouTube some time ago. It featured a compact box that housed a development board, a motor, and a motor driver board—an impressive feat of space management. Coincidentally, our XIAO series boasts a very small form factor. Imagine the possibilities if we combined the smallest development board with the smallest motor driver board! Join me on this exciting journey of Clock Demos!  -->
+### [SenseCraft AI - Object Detection](https://wiki.seeedstudio.com/sensecraft_ai_Training_Object_Detection/)
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/object%20detection/1.9.png" style={{width:800, height:'auto'}}/></div>
 
+This guide helps you quickly set up the Seeed SenseCraft AI platform for object detection. Choose between Quick Training for fast, single-class model creation or Image Collection Training for improved accuracy using custom images. Follow simple steps to train, deploy, and evaluate your model on devices like Grove Vision AI (V2).
+
+### [Benchmark of Multistream Inference on Raspberrypi 5 with Hailo8](https://wiki.seeedstudio.com/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8/)
+
+<div align="center">
+<iframe width="700" height="400" src="https://www.youtube.com/embed/CHxg7qWTMYw" title="Multistream Inference on Hailo8 with RPi5 AI Box" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+This wiki showcases benchmarking of YOLOv8m for object detection on Raspberry Pi 5 with hailo8. All tests utilize the same model (YOLOv8m), quantized to int8, with an input size of 640x640 resolution, batch size set to 8.
 
 ## Existing Wiki Updated
 
-### [Pin Multiplexing with Seeed Studio XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/)
+### [XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)](https://wiki.seeedstudio.com/xiao_esp32c6_zigbee_arduino/)
+
+We have refined the [XIAO ESP32C6 Zigbee example page](https://wiki.seeedstudio.com/xiao_esp32c6_zigbee_arduino/).
+
+### [XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/)
+
+We have updated the [Image Classification example for ESP32-S3 with Edge Impulse](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/).
+
+<!-- ### [Pin Multiplexing with Seeed Studio XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/)
 
 We have added an [example](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/#software-preparation) of software preparation for using CAN with XIAO RA4M1.
 
 ### [Watcher to Node-RED Quick Start](https://wiki.seeedstudio.com/watcher_to_node_red/)
 
-We have added an [example](https://wiki.seeedstudio.com/watcher_to_node_red/#part-5-preview-image) demonstrating how to preview images from Watcher.
-
+We have added an [example](https://wiki.seeedstudio.com/watcher_to_node_red/#part-5-preview-image) demonstrating how to preview images from Watcher.      -->
 
 ## The Efforts of Contributor
 
@@ -68,16 +88,6 @@ We have added an [example](https://wiki.seeedstudio.com/watcher_to_node_red/#par
 FreeRTOS is a collection of C libraries comprised of a real-time kernel and a set of modular libraries that implement complementary functionality. The FreeRTOS kernel is a real-time kernel (or real-time scheduler) that enables applications built on FreeRTOS to meet their hard real-time requirements. It enables applications to be organized as a collection of independent threads of execution.
 
 This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). With the assistance of this guide you will be able to utilize the feature set available to the board.     -->
-
-### [使用 XIAO BLE SENSE 制作头部追踪设备（Head Tracker）](https://wiki.seeedstudio.com/cn/xiao_ble_sense_head_tracker/)
-
-[HeadTracker](https://headtracker.gitbook.io) 是一款开源头部追踪项目，可用于无人机控制、虚拟现实、游戏等领域。该设备通过感应头部的方向和运动，为用户提供实时的视角变化体验。
-
-<div style={{ textAlign: 'center' }}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE-Sense-Head-Tracker/1.png" alt="PCB" width="600" /></div>
-
-本文将逐步指导您使用 XIAO BLE SENSE 完成头部追踪设备（Head Tracker）的制作
-
-
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -168,5 +178,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.11.04th](/Seeed_Elderly/weekly_wiki/wiki241104)
 - [weekly wiki on 2024.11.11th](/Seeed_Elderly/weekly_wiki/wiki241111)
 - [weekly wiki on 2024.11.18th](/Seeed_Elderly/weekly_wiki/wiki241118)
+- [weekly wiki on 2024.11.25th](/Seeed_Elderly/weekly_wiki/wiki241125)
 
 </details>
