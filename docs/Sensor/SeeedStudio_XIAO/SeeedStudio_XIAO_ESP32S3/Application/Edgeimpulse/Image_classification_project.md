@@ -3,22 +3,24 @@ description: Classify Dog and Cat from an image.
 title: Image classification
 keywords:
   - tinyml course
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/image_classification.webp
 slug: /tinyml_course_Image_classification_project
 last_update:
   date: 11/29/2024
   author: Salman
 ---
 
+# XIAO ESP32S3-Sense Image Classification
+
 Here we are going to build a tinyML project with XIAO ESP32S3-Sense to classify Dog and Cat in photo. Let's get started.
 
-### How it's working
+## How it's working
 
 We are running the machine learning model on our XIAO and feeding camera stream to it. Then the XIAO inference the result and predict with the help on onboard neiral network we implimented on. Let's build one.
 
 <div style={{textAlign:'center'}}><img src="https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/Image%20Recognition/src/img/digram.png?raw=true" style={{width:1000, height:'auto'}}/></div>
 
-#### Things needed
+### Things needed
 
 - XIAO ESP32-Sense
 - <32GB MicroSD card
@@ -98,7 +100,7 @@ Also, search for **xiao** in the development board on the left. select **XIAO_ES
 
 With this preparation, you can start writing programs for XIAO ESP32S3 to compile and upload.
 
-#### 1.2 Upload sketch that can take image and save to SD Card
+#### 1.1.3 Upload sketch that can take image and save to SD Card
 
 Download the sketch file from [here](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/take_photos_command.ino.zip), and unzip in your computer and click on the "take_photos_command.ino" to open the sketch. Then select correct port and board for XIAO for upload.
 
