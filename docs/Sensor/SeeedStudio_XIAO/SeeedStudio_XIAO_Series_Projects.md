@@ -23,8 +23,8 @@ We can't do it without the love, contribution that we get from the community, an
 ## Table of Contents
 
 
-<div align="center">
-	  <div style={{width: 800, height: 450, overflowY: 'scroll', border: '1px solid #ccc', padding: '10px', textAlign: 'left',}}>
+<div align="center" >
+	  <div style={{width: "auto", height: 450, overflowY: 'scroll', border: '1px solid #ccc', padding: '10px', textAlign: 'left',}}>
 	<ul>
 		<li><a href="#product_guides"><strong>Product Guides (Getting Started, Pin Usage and more)</strong></a></li>
 		<ul>
