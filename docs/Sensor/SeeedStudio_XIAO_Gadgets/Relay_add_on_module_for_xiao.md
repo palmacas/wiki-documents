@@ -1,9 +1,8 @@
 ---
 title: Relay Add On Module For XIAO
-description: |
-    The Relay Add On Module For XIAO is a smart module from Seeed Studio designed to control AC-powered appliances. It is characterized by the combination of XIAO, through the ESPHome access Home Assistant to control a variety of appliances, so that your home smarter!
+description: The Relay Add On Module For XIAO is a smart module from Seeed Studio designed to control AC-powered appliances. 
 image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/relay_module_for_xiao/relay_module.webp
-slug: /Relay_add_on_module_for_xiao
+slug: /relay_add_on_module_for_xiao
 keywords:
   - XIAO
   - Home Assistant
@@ -12,7 +11,7 @@ keywords:
 sidebar_position: 2
 last_update:
   author: Allen
-  date: 2024-12-2
+  date: 12/02/2024
 ---
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/relay_module_for_xiao/relay_module.jpg" /></div>
