@@ -3458,6 +3458,7 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Other_Devices',
           // },
           items: [
+            'Edge/NVIDIA_Jetson/Other_Devices/RTL8822CE_Wireless_Module_for_Jetson',
             'Edge/NVIDIA_Jetson/Other_Devices/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
             'Edge/NVIDIA_Jetson/Other_Devices/Jetson_Xavier_AGX_H01_Driver_Installation',
             'Edge/NVIDIA_Jetson/Other_Devices/Jetson-Mate',
