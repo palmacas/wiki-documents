@@ -9,8 +9,8 @@ keywords:
   - RP2350
 sidebar_position: 0
 last_update:
-  author: Agnes
-  date: 11/18/2024
+  author: Frank
+  date: 12/03/2024
 ---
 
 import Tabs from '@theme/Tabs';
@@ -135,7 +135,7 @@ XIAO RP2350 将 Raspberry Pi RP2350（双 Cortex-M33 核心，运行频率 150MH
 </table>
 </div>
 
-需要更多引脚图信息？请跳转到下方的 [资源与资料](#assets--resources)。
+需要更多引脚图信息？请跳转到下方的 [资源与资料](#资源与参考资料)。
 
 ## 支持的平台
 
@@ -164,10 +164,12 @@ XIAO RP2350 由 RP2350 提供支持，兼容 MicroPython 和 Raspberry Pi 提供
 本页面主要面向 MicroPython 用户。如果您有兴趣学习 SDK 编程，或者是高级用户，您可以从 [Raspberry Pi Pico 系列 C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) 开始。该指南将帮助您搭建环境并从示例代码开始。此外，您还可以访问 [XIAO RP2350 与 C/C++ SDK](/xiao-rp2350-c-cpp-sdk) 以获取更多关于 XIAO RP2350 的具体指导。
 :::
 
-:::note micropython is still not released
-截至 2024 年 8 月 9 日，XIAO RP2350 的稳定版 MicroPython 固件仍在等待 Raspberry Pi 的发布。在此期间，您可以使用 [RPI_PICO2 | MicroPython.org](https://micropython.org/download/RPI_PICO2/) 提供的预览版 MicroPython 固件。
+:::warning MicroPython固件问题
 
-有关最新文档，您可以随时参考 [Raspberry Pi Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf)。
+截至**2024年11月10日**，在[MicroPython.org for RPI_PICO2](https://micropython.org/download/RPI_PICO2/)下载的稳定版MicroPython固件版本**`1.24.0`**目前因闪存芯片的差异，**与某些设备不兼容**。
+
+**Seeed团队**正在与官方MicroPython维护者合作，积极解决此问题。与此同时，您可以使用MicroPython固件的**预览版**作为临时解决方案：[RP2350 MicroPython固件预览版](https://files.seeedstudio.com/wiki/XIAO-RP2350/res/RPI_PICO2-20240809-v1.24.0-preview.201.g269a0e0e1.uf2)
+
 :::
 
 ### 第一步：在 XIAO RP2350 上安装 MicroPython
@@ -262,68 +264,65 @@ Thonny IDE 是一个非常适合 MicroPython 开发的初学者友好型 Python 
 
 如果您的设备已经准备好运行 MicroPython，让我们从一个简单的项目开始：
 
-### 点亮一个 LED ✨
+### 让我们让LED闪烁吧！ ✨
 
-让开发板闪烁一个 LED 通常是大家运行的第一个程序。XIAO RP2350 也不例外。
+让开发板控制LED闪烁通常是每个初学者运行的第一个程序。XIAO RP2350也不例外。
 
 :::note
-根据电路图，XIAO RP2350 上的 `用户 LED`（黄色 LED）连接到 `GPIO25/D19`。  
-对于所有 XIAO 系列开发板，`用户 LED` 设置为 **低电平** 时会 **点亮**，设置为 **高电平** 时会 **熄灭**。
+根据电路图，XIAO RP2350上的**`USER LED`**（黄色LED）连接到**`GPIO25/D19`**引脚。
+对于所有XIAO系列板子，**`USER LED`**在设置为**低电平**时会**亮起**，在设置为**高电平**时会**熄灭**。
 :::
 
 <Tabs>
-  <TabItem value="blink" label="闪烁 LED" default>
+  <TabItem value="blink" label="闪烁" default>
 
 ```python showLineNumbers
-from machine import Pin # 从 machine 模块中导入 Pin 类
-from time import sleep  # 从 time 模块中导入 sleep 函数
+from machine import Pin # 从machine模块导入Pin类
+from time import sleep  # 从time模块导入sleep函数
 
-# 初始化 GPIO25 为输出引脚，控制用户 LED
+# 将GPIO25引脚初始化为输出模式，用于控制USER LED
 led = Pin(25, Pin.OUT) 
 
-# 初始化时关闭 LED
-led.value(1) # led.on() -> 高电平 -> 灯灭
-sleep(0.5) # 等待 0.5 秒
+# 初始时将LED关闭
+led.value(1) # led.on() -> 高电平 -> 熄灭
+sleep(0.5) # 等待0.5秒
 
-# 打开 LED
-led.value(0) # led.off() -> 低电平 -> 灯亮
-sleep(0.5) # 等待 0.5 秒
+# 打开LED
+led.value(0) # led.off() -> 低电平 -> 点亮
+sleep(0.5) # 等待0.5秒
 
-# 进入无限循环
+# 进入一个无限循环
 while True:
-    # 切换 LED 状态（从亮到灭或从灭到亮）
+    # 切换LED的状态（点亮或熄灭）
     led.toggle() 
-    # 打印当前 LED 的状态
-    print(f"LED {'亮' if led.value() == 0 else '灭'}")
-    sleep(0.5) # 等待 0.5 秒后切换
-    ```
+    # 打印LED当前的状态
+    print(f"LED {'ON' if led.value() == 0 else 'OFF'}")
+    sleep(0.5) # 等待0.5秒后再切换
+```
 
 <table>
-	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/tonny-blink-led.png" style={{width:680, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/rp2350-blink.gif" style={{width:400, height:'auto'}}/></div></td>
-	</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/tonny-blink-led.png" style={{width:680, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/rp2350-blink.gif" style={{width:400, height:'auto'}}/></div></td>
+ </tr>
 </table>
 
   </TabItem>
-  <TabItem value="pwm" label="Fading a LED" default>
+  <TabItem value="pwm" label="渐变效果" default>
 
 ```python title="examples/rp2/pwm_fade.py"
-# 使用 PWM 让 LED 实现渐亮和渐暗的示例。
-# 注意：此示例不适用于 Pico W，因为其使用 Pin(25) 控制 LED 输出。
-# 此示例代码来源：https://github.com/micropython/micropython
-# ruff: noqa: F821 - @asm_pio 装饰器会将名称添加到函数作用域中
+# 使用PWM控制LED渐变的示例。
 
 import time
 from machine import Pin, PWM
 
-# 创建 PWM 对象，将 LED 连接到 Pin(25)。
+# 创建PWM对象，连接在Pin(25)上的LED。
 pwm = PWM(Pin(25))
 
-# 设置 PWM 频率。
+# 设置PWM频率。
 pwm.freq(1000)
 
-# 让 LED 多次实现渐亮和渐暗效果。
+# 实现LED的渐变效果。
 duty = 0
 direction = 1
 for _ in range(8 * 256):
@@ -343,7 +342,7 @@ for _ in range(8 * 256):
   </TabItem>
 </Tabs>
 
-一旦你将代码复制到 Thonny IDE 中，如下图所示，只需点击 `运行当前脚本` 按钮或按下 `F5` 键。此操作将执行代码片段，你会看到 XIAO RP2350 上的 LED 开始闪烁。
+将代码复制到Thonny IDE后，如下图所示，点击`运行当前脚本`按钮或按`F5`键。执行该代码后，你将看到XIAO RP2350上的LED开始闪烁。
 
 ### 玩转 RGB LED
 
