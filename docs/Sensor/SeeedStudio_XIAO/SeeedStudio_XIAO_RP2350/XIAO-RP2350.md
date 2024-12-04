@@ -312,7 +312,7 @@ while True:
   </TabItem>
   <TabItem value="pwm" label="Fading a LED" default>
 
-```python title="examples/rp2/pwm_fade.py"
+```python title="examples/rp2/pwm_fade.py" showLineNumbers
 # Example using PWM to fade an LED.
 
 import time
@@ -350,10 +350,10 @@ Once you have copied the code into Thonny IDE, as shown in the image below, simp
 
 The XIAO RP2350 comes with a built-in RGB LED that you can control using MicroPython. Below is an example of how to cycle through different colors:
 
-```python
+```python showLineNumbers
 import array, time, random
 from machine import Pin
-import rp2`
+import rp2
 
 NUM_LEDS = 1
 LED_PIN = 22  # PICO_DEFAULT_WS2812_PIN
@@ -394,7 +394,7 @@ def random_color():
 
 def interpolate(color1, color2, factor):
     r1, g1, b1 = color1 & 255, (color1 >> 8) & 255, (color1 >> 16) & 255
-    r2, g2, b2 = color2 & 255, (color2 >> 8) & 255                                                                                                                                                                                                                                                                                                                                                               , (color2 >> 16) & 255
+    r2, g2, b2 = color2 & 255, (color2 >> 8) & 255, (color2 >> 16) & 255
     r = int(r1 + factor * (r2 - r1))
     g = int(g1 + factor * (g2 - g1))
     b = int(b1 + factor * (b2 - b1))
