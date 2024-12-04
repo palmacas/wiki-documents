@@ -1,7 +1,7 @@
 ---
 description: How to use a model for SenseCAP Watcher
 title: for SenseCAP Watcher
-image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/14.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/32.png
 slug: /sensecraft_ai_pretrained_models_for_watcher
 sidebar_position: 3
 last_update:
