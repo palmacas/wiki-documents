@@ -7,7 +7,7 @@ keywords:
   - Wifi
   - Bluetooth
   - Wireless 
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/rtl8822ce.webp
 slug: /rtl8822ce_wireless_module_for_jetson
 last_update:
   date: 12/3/2024
