@@ -21,7 +21,7 @@ last_update:
 
 ## Inspiration arises
 
-[Hollow Clock](https://www.youtube.com/watch?v=jvoOgxK4EvI&ab_channel=TheWrench) gained significant popularity on YouTube some time ago, with the original design by [sh1ura](https://www.instructables.com/Hollow-Clock-4/），[cool demo video](https://youtu.be/hRpLiRoMx34) and the [3D design available on Thingsverse](https://www.thingiverse.com/thing:5636482). A big shout-out to sh1ura for the great inspiration.
+[Hollow Clock](https://www.youtube.com/watch?v=jvoOgxK4EvI&ab_channel=TheWrench) gained significant popularity on YouTube some time ago, with the original design by [sh1ura](https://www.instructables.com/Hollow-Clock-4/)，[cool demo video](https://youtu.be/hRpLiRoMx34) and the [3D design available on Thingsverse](https://www.thingiverse.com/thing:5636482). A big shout-out to sh1ura for this great inspiration.
 Standing on the giants' shoulders, we now have remixed a version using the thumb-sized [XIAO RA4M1](https://www.seeedstudio.com/Seeed-XIAO-RA4M1-p-5943.html) and a custom smaller motor driver board!
 
 ## Hadware Overview
