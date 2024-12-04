@@ -1,5 +1,5 @@
 ---
-description: Single Channel LoraWAN Gateway based on XIAO ESP32S3 & SX1262 Kit
+description: Single Channel LoraWAN Gateway based on XIAO ESP32S3 & Wio-SX1262 Kit
 title: Single Channel LoRaWAN Gateway
 keywords: ["XIAO ESP32S3", "LoRa", "Wio SX1262", "Single Channel Gateway"]
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
@@ -10,19 +10,19 @@ last_update:
   author: Evelyn Chen
 ---
 
-# **Configuring XIAO ESP32S3 & SX1262 Kit as Single Chanel LoRaWAN Gateway**
+# **Configuring XIAO ESP32S3 & Wio-SX1262 Kit as Single Chanel LoRaWAN Gateway**
 
 Single channel gateways(called One-Channel Hub) are low-cost tools that enable users to begin exploring the LoRa realm. These gateways can receive LoRa packets on a specific spreading factor and channel and facilitate the exchange of these packets with the network. Due to their affordability, many users have embarked on building their own single-channel gateways to experiment with LoRa.
 
 
-The XIAO ESP32S3 as host MCU and Wio SX1262 LoRa radio kit can be configured to function as single channel gateway. This kit offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
+The XIAO ESP32S3 as host MCU and Wio-SX1262 LoRa radio kit can be configured to function as single channel gateway. This kit offers a practical solution for those interested in delving into LoRa technology and establishing connections to LNS(lora network server).
 
 This is the github project: [One Channel Hub](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262-bt-config).
 
 
 ## Flash Firmware
 
-The firmware is prepared for installation which is pre-flashed to XIAO ESP32S3 & SX1262 Kit with 3D case. If you want to flash XIAO ESP32S3 & SX1262 Kit as Single Channel LoRaWAN Gateway, simply download from [bin library](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262-bt-config/bin).
+The firmware is prepared for installation which is pre-flashed to XIAO ESP32S3 & Wio-SX1262 Kit with 3D case. If you want to flash XIAO ESP32S3 & Wio-SX1262 Kit as Single Channel LoRaWAN Gateway, simply download from [bin library](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262-bt-config/bin).
 
 :::note
 This firmware build with:
