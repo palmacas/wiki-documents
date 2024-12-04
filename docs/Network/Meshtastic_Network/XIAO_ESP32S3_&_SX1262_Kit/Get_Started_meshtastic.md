@@ -1,20 +1,20 @@
 ---
-description: Meshtastic based on Wio-SX1262 with XIAO esp32s3 module
+description: Meshtastic based on XIAO ESP32S3 & Wio-SX1262 Kit
 title: Get Started for Meshtastic
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
-slug: /wio_sx1262_xiao_esp32s3_for_meshtastic
-sidebar_position: 2
+slug: /xiao_esp32s3_&_wio_SX1262_kit_for_meshtastic
 last_update:
   date: 09/30/2024
   author: Evelyn Chen
 ---
 
-Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. XIAO ESP32S3 & Wio-SX1262 Kit kit is flexible solution for meshtastic developer and maker.
+
+Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. XIAO ESP32S3 & Wio-SX1262 Kit is flexible solution for meshtastic developer and maker.
 
 ## Flash Firmware
 
 :::note
-Please flash the firmware onto your device if you purchased the XIAO ESP32S3 & Wio-SX1262 Kit Kit before **October 24, 2024** by following this step-by-step tutorial.
+Please flash the firmware onto your device if you purchased the XIAO ESP32S3 & Wio-SX1262 Kit before **October 24, 2024** by following this step-by-step tutorial.
 :::
 
 **Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.

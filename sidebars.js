@@ -2396,6 +2396,13 @@ const sidebars = {
 
               ],
             },
+            {
+              type: 'category',
+              label: 'XIAO ESP32S3 & Wio-SX1262 Kit for Meshtastic',
+              items: [
+                'Network/Meshtastic_Network/XIAO_ESP32S3_&_SX1262_Kit/Get_Started_meshtastic',
+              ],
+            },
           ],
     },
     {
