@@ -18,6 +18,7 @@ last_update:
 - [WIFI](#jump4)
 - [SD Card](#jump5)
 - [Uart (Debug)](#jump6)
+- [User Button](#jump7)
 
 ## <span id="jump1"> Camera </span>
 Regarding the camera call, we have adapted node for recamera, you can get the camera's image data in node-red.
@@ -129,13 +130,26 @@ Check the mount result by `lsblk`
 
 The base circuit board of the recamera has three contacts tx,rx, and gnd, which serve as the debug serial port of the recamera.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-7.png" /></div>
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/image-7.png" /></div>
 
 The device has a serial port baud rate of 115200 and can log into the recamera system.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-8.png" /></div>
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-9.png" /></div>
+
+## <span id="jump7">User Button</span>
+
+The reCamera's usr button can be customized by the user.
+
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/image-10.png" /></div>
+
+```bash
+echo "510" > /sys/class/gpio/export
+echo "in" > /sys/class/gpio/gpio510/direction #Enable the input mode
+cat /sys/class/gpio/gpio510/value #When the key is pressed, 0 is printed
+```
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-11.png" /></div>
 
 
 ## Tech Support & Product Discussion
