@@ -2,13 +2,13 @@ const docList = [
   [
     {
       "path": "/rtl8822ce_wireless_module_for_jetson",
-      "image": "https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/rtl8822ce.webp",
       "title": "RTL8822CE Wireless Module for Jetson",
       "date": "12/3/2024"
     },
     {
       "path": "/sensecraft_ai_pretrained_models_for_grove_visionai_v2",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/23.png",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/23.webp",
       "title": "Using a model for Grove Vision AI V2",
       "date": "12/02/2024"
     }
@@ -16,7 +16,7 @@ const docList = [
   [
     {
       "path": "/sensecraft_ai_pretrained_models_for_xiao",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/14.png",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/14.webp",
       "title": "Using a model for XIAO ESP32S3 Sense",
       "date": "12/02/2024"
     },
