@@ -5,7 +5,8 @@ keywords:
 - Cloud and Chain
 - SenseCraft
 - SenseCraft AI
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
+image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+sidebar_class_name: hidden
 slug: /xiao_esp32s3_workspace
 last_update:
   date: 08/22/2024

@@ -7,6 +7,7 @@ keywords:
 - SenseCraft AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
 slug: /sensecraft_ai
+sidebar_position: 1
 last_update:
   date: 12/28/2023
   author: Seraphina

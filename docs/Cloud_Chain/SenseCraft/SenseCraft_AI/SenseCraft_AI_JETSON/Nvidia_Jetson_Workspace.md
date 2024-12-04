@@ -5,8 +5,9 @@ keywords:
 - Cloud and Chain
 - SenseCraft
 - SenseCraft AI
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
+image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /nvidia_jetson_workspace
+sidebar_position: 2
 last_update:
   date: 08/22/2024
   author: Frank

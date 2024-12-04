@@ -255,12 +255,17 @@ This code checks if the button is pressed:
 
 This feature is useful for users when they need to reconfigure the device due to network or pairing issues.
 
+:::tip
+The official routines are still being continuously updated, our documentation may not be able to synchronize the latest programs at the first time, if there is any discrepancy, please refer to **[Espressif's program examples](https://github.com/espressif/arduino-esp32/blob/3.0.7/libraries/Zigbee/examples/Zigbee_On_Off_Light/Zigbee_On_Off_Light.ino)**.
+:::
+
 ```cpp title=Zigbee_On_Off_Light.ino showLineNumbers
 #ifndef ZIGBEE_MODE_ED
 #error "Zigbee end device mode is not selected in Tools->Zigbee mode"
 #endif
 
-#include "Zigbee.h"
+#include "ZigbeeCore.h"
+#include "ep/ZigbeeLight.h"
 
 #define LED_PIN               LED_BUILTIN
 #define BUTTON_PIN            9  // ESP32-C6/H2 Boot button
@@ -323,7 +328,8 @@ Here, the XIAO ESP32C6 serves as the **Zigbee Coordinator**, responsible for con
 ##### Include and Definitions
 
 ```cpp
-#include "Zigbee.h"
+#include "ZigbeeCore.h"
+#include "ep/ZigbeeLight.h"
 
 #define SWITCH_ENDPOINT_NUMBER 5
 #define GPIO_INPUT_IO_TOGGLE_SWITCH 9
@@ -511,12 +517,18 @@ void loop() {
 - When the button is pressed and released (`SWITCH_RELEASE_DETECTED`), the `onZbButton()` callback is invoked to toggle the light.
 - Every **10 seconds**, the bound lights are printed for monitoring purposes.
 
+:::tip
+The official routines are still being continuously updated, our documentation may not be able to synchronize the latest programs at the first time, if there is any discrepancy, please refer to **[Espressif's program examples](https://github.com/espressif/arduino-esp32/blob/3.0.7/libraries/Zigbee/examples/Zigbee_On_Off_Switch/Zigbee_On_Off_Switch.ino)**.
+:::
+
+
 ```cpp title=Zigbee_On_Off_Switch.ino showLineNumbers
 #ifndef ZIGBEE_MODE_ZCZR
 #error "Zigbee coordinator mode is not selected in Tools->Zigbee mode"
 #endif
 
-#include "Zigbee.h"
+#include "ZigbeeCore.h"
+#include "ep/ZigbeeLight.h"
 
 #define SWITCH_ENDPOINT_NUMBER 5
 
