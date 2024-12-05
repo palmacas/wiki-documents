@@ -1,6 +1,34 @@
 const docList = [
   [
     {
+      "path": "/rtl8822ce_wireless_module_for_jetson",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/rtl8822ce.webp",
+      "title": "RTL8822CE Wireless Module for Jetson",
+      "date": "12/3/2024"
+    },
+    {
+      "path": "/sensecraft_ai_pretrained_models_for_grove_visionai_v2",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/23.webp",
+      "title": "Using a model for Grove Vision AI V2",
+      "date": "12/02/2024"
+    }
+  ],
+  [
+    {
+      "path": "/sensecraft_ai_pretrained_models_for_xiao",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/14.webp",
+      "title": "Using a model for XIAO ESP32S3 Sense",
+      "date": "12/02/2024"
+    },
+    {
+      "path": "/relay_add_on_module_for_xiao",
+      "image": "https://files.seeedstudio.com/wiki/XIAO/Gadgets/relay_module_for_xiao/relay_module.webp",
+      "title": "Relay Add On Module For XIAO",
+      "date": "12/02/2024"
+    }
+  ],
+  [
+    {
       "path": "/tinyml_course_Image_classification_project",
       "image": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/image_classification.webp",
       "title": "XIAO ESP32S3-Sense Image Classification",
@@ -53,34 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/SenseCAPS210X/TTN_Network/003.webp",
       "title": "Connect to The Things Network",
       "date": "11/25/2024"
-    }
-  ],
-  [
-    {
-      "path": "/getting-started-xiao-rp2350",
-      "image": "https://files.seeedstudio.com/wiki/XIAO-RP2350/img/RP2350-thumbnail.webp",
-      "title": "Getting Started with Seeed Studio XIAO RP2350(MicroPython)",
-      "date": "2024-11-22T05:59:15.764Z"
-    },
-    {
-      "path": "/SenseCAP_T1000_tracker_Helium",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker.webp",
-      "title": "Connecting SenseCAP T1000 to Helium",
-      "date": "11/22/2024"
-    }
-  ],
-  [
-    {
-      "path": "/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8",
-      "image": "https://files.seeedstudio.com/wiki/multistream_benchmark_hailo8/raspberry_pi_ai_hat.webp",
-      "title": "Benchmark of Multistream Inference on Raspberrypi 5 with Hailo8",
-      "date": "11/21/2024"
-    },
-    {
-      "path": "/XIAO-RS485-Expansion-Board",
-      "image": "https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/top.webp",
-      "title": "Getting Started with Seeed Studio XIAO-RS485-Expansion-Board",
-      "date": "11/20/2024"
     }
   ]
 ];
