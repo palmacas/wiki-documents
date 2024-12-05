@@ -3,7 +3,7 @@ description: Connect to The Things Network
 title: Connect to The Things Network
 keywords:
 - SenseCAP Sensor_Probe&Accessories
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAPS210X/TTN_Network/003.webp
 last_update:
   date: 11/25/2024
   author: Leo
