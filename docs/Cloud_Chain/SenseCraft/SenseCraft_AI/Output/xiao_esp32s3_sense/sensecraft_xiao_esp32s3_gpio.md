@@ -79,10 +79,6 @@ Before proceeding, make sure that your XIAO ESP32S3 Sense board has a trained mo
 
 - [Using a model for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_xiao/)
 
-If you are using Grove Vision AI V2, you can read this document below using models from the model repository.
-
-- [Using a model for Grove Vision AI V2](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
-
 If you want to use your own trained model, you can refer to the following two Wikis.
 
 - [Type of training - Classification](https://wiki.seeedstudio.com/sensecraft_ai_training_classification/)
