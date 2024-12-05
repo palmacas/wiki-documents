@@ -121,6 +121,8 @@ Keep in mind that the output functionality relies on the web-based connection be
 
 By following this step-by-step guide, you have learned how to configure model output settings and trigger actions on the SenseCraft AI platform for the Grove Vision AI V2 device. You can now set up your device to perform specific actions, such as turning on the onboard LED or saving captured images, based on the output of your trained model. This functionality enables you to create interactive applications and projects using the Grove Vision AI V2 and SenseCraft AI. Remember to maintain a stable connection between the web platform and your device for seamless operation.
 
+The Grove Vision AI V2 is still essentially an AI camera sensor, so we can't expect to do much more than sensor stuff with it. If you have an extra MCU, you can do more interesting projects with the Grove interface or Pin to Pin interface, SenseCraft AI is just a medium to deliver the model, for more Arduino routines on the Grove Vision AI V2 model, please refer to [Getting Started with Grove Vision AI V2](https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/).
+
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
