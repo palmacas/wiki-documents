@@ -1,7 +1,7 @@
 ---
 description: How to use a model for Grove Vision AI V2
 title: for Grove Vision AI V2
-image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/23.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/23.webp
 slug: /sensecraft_ai_pretrained_models_for_grove_visionai_v2
 sidebar_position: 2
 last_update:

@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /reComputer_A608_Flash_System
 last_update:
-  date: 01/19/2024
+  date: 12/4/2024
   author: Youjiang
 ---
 
@@ -28,6 +28,38 @@ In this wiki, we will show you how to flash Jetpack to an NVMe SSD and a USB Fla
 - Ubuntu Host PC 
 - A608 Carrier Board with Jetson Orin NX or Jetson Orin Nano module
 - USB Type-C data transmission cable
+
+:::info
+We recommend that you use physical ubuntu host devices instead of virtual machines.
+Please refer to the table below to prepare the host machine.
+        
+<table style={{textAlign: 'center'}}>
+  <tbody>
+    <tr>
+        <td  rowspan="2"> JetPack Version </td>
+        <td class="dbon" colspan="3"> Ubuntu Version (Host Computer) </td>
+    </tr>
+    <tr>
+        <td > 18.04 </td>
+        <td > 20.04 </td>
+        <td > 22.04 </td>
+    </tr>
+    <tr>
+        <td >JetPack 5.x</td>
+        <td > ✅ </td>
+        <td > ✅ </td>
+        <td > </td>
+    </tr>
+    <tr>
+        <td >JetPack 6.x</td>
+        <td > </td>
+        <td > ✅ </td>
+        <td > ✅ </td>
+    </tr>
+  </tbody>
+</table>
+
+:::
 
 
 ## Enter Force Recovery Mode
@@ -206,33 +238,22 @@ Open a terminal window on the host PC and run the following command：
 ```sh
 cd <path to drivers>
 sudo apt install unzip 
-tar xf Jetson_Linux_R35.4.1_aarch64.tbz2
-sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R35.4.1_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
+tar xf Jetson_Linux_R36.3.0_aarch64.tbz2
+sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.3.0_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
 cd Linux_for_Tegra/
 sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
 cd ..
-unzip a608_jp60.zip
+unzip 608_jp60.zip
 sudo cp -r ./608_jp60/Linux_for_Tegra/* ./Linux_for_Tegra/
 ```
 
-**Step 4.** Flash the system to A608.
+**Step 4.** Flash the system to Nvme of A608.
 
-- Flash to NVMe
-  ```sh
-  cd Linux_for_Tegra
-  sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
-  ```
-- Flash to USB
-  ```sh
-  cd Linux_for_Tegra
-  sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device sda1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
-  ```
-- Flash to SD
-  ```sh
-  cd Linux_for_Tegra
-  sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device mmcblk1p1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
-  ```
+```sh
+cd Linux_for_Tegra
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
+```
 
 You will see the following output if the flashing process is successful.
 
