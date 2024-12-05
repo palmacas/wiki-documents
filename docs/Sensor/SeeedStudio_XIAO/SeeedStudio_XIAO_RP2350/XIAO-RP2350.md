@@ -93,7 +93,7 @@ The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 core
     <tr>
         <td>Low power</td>
        <td align="center"> - </td>
-        <td>5V - 205uA <br></br>3.7V - 57uA</td>
+        <td>5V/205uA <br></br>3.7V/57uA</td>
     </tr>
     <tr>
         <td>Software compatibility</td>
