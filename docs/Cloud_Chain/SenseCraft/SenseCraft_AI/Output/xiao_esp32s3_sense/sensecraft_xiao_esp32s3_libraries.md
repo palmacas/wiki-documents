@@ -1,20 +1,16 @@
 ---
-description: SenseCraft AI
-title: Sense Craft AI Overview
+description: This article describes how to use SenseCraft AI's libraries on XIAO.
+title: Via libraries ouput
 image: https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.png
-slug: /sensecraft_ai_main
-sidebar_position: 1
+slug: /sensecraft_ai_output_libraries_xiao
+sidebar_position: 3
+sidebar_class_name: hidden
 last_update:
-  date: 11/27/2024
-  author: qiuyu
+  date: 12/04/2024
+  author: Citric
 ---
 
-# SenseCraft AI Wiki Center
-
-
-
-
-
+# Using SenseCraft AI's libraries on XIAO
 
 
 
@@ -34,4 +30,3 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="mailto:support@sensecapmx.com" class="button_tech_support_sensecap2"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-

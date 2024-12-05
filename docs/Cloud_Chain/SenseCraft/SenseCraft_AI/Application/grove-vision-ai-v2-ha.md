@@ -1,11 +1,12 @@
 ---
 description: Introducing how to plug Grove Vision AI V2 into Home Assistant.
-title: Connecting to Home Assistant
+title: Connect Grove Vision AI V2 to Home Assistant
 keywords:
 - vision AI
 - home assistant
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /connect_vision_ai_v2_to_ha
+sidebar_position: 1
 last_update:
   date: 01/10/2024
   author: Citric

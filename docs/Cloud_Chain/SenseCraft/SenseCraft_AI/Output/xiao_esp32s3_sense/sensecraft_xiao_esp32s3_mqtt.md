@@ -1,20 +1,16 @@
 ---
-description: SenseCraft AI
-title: Sense Craft AI Overview
+description: This article describes how to send the recognition results of a model over MQTT.
+title: Via MQTT output
 image: https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.png
-slug: /sensecraft_ai_main
-sidebar_position: 1
+slug: /sensecraft_ai_output_mqtt_xiao
+sidebar_position: 2
+sidebar_class_name: hidden
 last_update:
-  date: 11/27/2024
-  author: qiuyu
+  date: 12/04/2024
+  author: Citric
 ---
 
-# SenseCraft AI Wiki Center
-
-
-
-
-
+# Send results via MQTT
 
 
 
