@@ -132,16 +132,17 @@ If not using the complete ESP-IDF environment, can just download the provided bi
 ### WiFi & LoRaWAN Configuration
 **Step 1**: Download `SenseCraft` App: [Download Link](https://sensecap-mate-download.seeed.cn/)
 
-**Step 2**: Connect the XIAO ESP32S3 & SX1262 Kit to power.
+**Step 2**: Connect the XIAO ESP32S3 & Wio-SX1262 Kit to power.
 
 **Step 3**: Follow the instructions in the app to configure the WiFi and LoRaWAN.
 
 - Register and Login SenseCraft APP
 - Navigate to `User` -> `Device Bluetooth Configuration`
-- Select `XIAO ESP32S3 & SX1262 Kit`
+- Select `XIAO ESP32S3 & Wio-SX1262 Kit`
 - Click `Device is ready for configuration`
 - Press the kit botton once, When the LED starts to blink, it will enter the Bluetooth pairing mode.
 
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/APPOperation.gif" alt="pir" width={300} height="auto" /></p>
 
 **Step 4**: Resigter the LoRaWAN Gateway on The Things Network(TTN).
 
