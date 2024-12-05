@@ -17,7 +17,7 @@ last_update:
 
 ## Overview
 
-The **2-Channel Wi-Fi AC Relay Module** is a smart device from Seeed Studio designed to control AC-powered appliances wirelessly. Its dual-channel configuration supports independent control of two loads, making it an excellent choice for automating household appliances such as lights, fans, and other devices in a Home Assistant environment.
+The **[2-Channel Wi-Fi AC Relay Module](https://www.seeedstudio.com/Dual-Smart-Relay-Module-for-XIAO-p-6309.html)** is a smart device from Seeed Studio designed to control AC-powered appliances wirelessly. Its dual-channel configuration supports independent control of two loads, making it an excellent choice for automating household appliances such as lights, fans, and other devices in a Home Assistant environment.
 
 This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
 
@@ -87,7 +87,7 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
 
 #### Physical Representation
 
-```diagram
+``` diagram
 +-----------------------------------------+
 | Seeed Studio 2-Channel AC Wi-Fi Relay   |
 |-----------------------------------------|
