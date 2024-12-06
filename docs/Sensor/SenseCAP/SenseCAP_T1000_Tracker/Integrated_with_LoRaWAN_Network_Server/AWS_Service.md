@@ -4,16 +4,16 @@ title: AWS Cloud Services
 keywords:
 - Tracker
 - AWS
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Tracker/t1000.webp
 slug: /SenseCAP_T1000_Tracker_AWS
 last_update:
   date: 12/4/2024
   author: Leo
 ---
 
+# Using AWS Cloud Services for SenseCAP T1000 Tracker
 
 [AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html) provides the cloud services that connect your IoT devices to other devices and AWS cloud services. AWS IoT provides device software that can help you integrate your IoT devices into AWS IoT-based solutions. If your devices can connect to AWS IoT, AWS IoT can connect them to the cloud services that AWS provides.
-
 
 Login to [AWS IoT console](https://console.aws.amazon.com/iot/home)
 

@@ -1,7 +1,7 @@
 ---
 description: This article describes how to send the recognition results of a model over GPIO.
 title: Via GPIO output
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/xiaoesp32s3sense.webp
 slug: /sensecraft_ai_output_gpio_xiao
 sidebar_position: 1
 last_update:

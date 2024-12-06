@@ -12,12 +12,9 @@ const excludedPaths = [
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
   
   path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera_model_conversion.md'), // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera_warranty.md'), // 排除指定文档
-
-  // 添加排除的五个文档路径
-  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'Pretrained_Models', 'Grove_vision_AI_V2.md'),
-  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'Pretrained_Models', 'XIAO_ESP32S3_Sense.md'),
-  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'SenseCraft_AI_main_page.md')
+  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'SenseCraft_AI_main_page.md'),
+  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'Output', 'xiao_esp32s3_sense', 'sensecraft_xiao_esp32s3_libraries.md'),
+  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'Output', 'xiao_esp32s3_sense', 'sensecraft_xiao_esp32s3_mqtt.md')
 ];
 
 // 递归函数，用于遍历多层文件夹
