@@ -1,6 +1,48 @@
 const docList = [
   [
     {
+      "path": "/sensecraft_ai_output_grove_visionai",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/54.webp",
+      "title": "Configuring Model Output on SenseCraft AI for Grove Vision AI V2",
+      "date": "12/04/2024"
+    },
+    {
+      "path": "/sensecraft_ai_output_gpio_xiao",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/xiaoesp32s3sense.webp",
+      "title": "Configuring Model Output and GPIO on SenseCraft AI for XIAO ESP32S3 Sense",
+      "date": "12/04/2024"
+    }
+  ],
+  [
+    {
+      "path": "/reComputer_A608_Flash_System",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/A608CB.webp",
+      "title": "Flash JetPack OS to A608 Carrier Board (NVIDIA Jetson Orin NX/Nano supported)",
+      "date": "12/4/2024"
+    },
+    {
+      "path": "/SenseCAP_T1000_Tracker_AWS",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Tracker/t1000.webp",
+      "title": "Using AWS Cloud Services for SenseCAP T1000 Tracker",
+      "date": "12/4/2024"
+    }
+  ],
+  [
+    {
+      "path": "/sensecraft_ai_pretrained_models_for_watcher",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/32.webp",
+      "title": "SenseCraft AI for SenseCAP Watcher",
+      "date": "12/03/2024"
+    },
+    {
+      "path": "/sensecraft_ai_training_classification",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/34.webp",
+      "title": "Type of training - Classification",
+      "date": "12/03/2024"
+    }
+  ],
+  [
+    {
       "path": "/rtl8822ce_wireless_module_for_jetson",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/rtl8822ce.webp",
       "title": "RTL8822CE Wireless Module for Jetson",
@@ -39,48 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/XIAO-BLE/102010469_Front-14.jpg",
       "title": "Getting Started with Seeed Studio XIAO nRF52840 Series",
       "date": "2024-11-28T03:15:24.000Z"
-    }
-  ],
-  [
-    {
-      "path": "/sensecraft_ai_overview",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/1.webp",
-      "title": "SenseCraft AI Overview",
-      "date": "11/28/2024"
-    },
-    {
-      "path": "/2_channel_wifi_ac_relay",
-      "image": "https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/3-thumbnail.webp",
-      "title": "2-Channel Wi-Fi AC Relay Module In Home Assistant",
-      "date": "2024-11-27T03:21:36.491Z"
-    }
-  ],
-  [
-    {
-      "path": "/sensecraft_ai_Training_Classification",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/main_page.webp",
-      "title": "Type of training - Classification",
-      "date": "11/27/2024"
-    },
-    {
-      "path": "/sensecraft_ai_Training_Object_Detection",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/object%20detection/1.9.webp",
-      "title": "Type of training - Object Detection",
-      "date": "11/27/2024"
-    }
-  ],
-  [
-    {
-      "path": "/xiao_esp32c6_zigbee_arduino",
-      "image": "https://files.seeedstudio.com/wiki/xiaoc6_zigbee/3.webp",
-      "title": "XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)",
-      "date": "11/25/2024"
-    },
-    {
-      "path": "Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/How-to-Connect-SenseCAP-S210X-to-The-Things-Network",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAPS210X/TTN_Network/003.webp",
-      "title": "Connect to The Things Network",
-      "date": "11/25/2024"
     }
   ]
 ];

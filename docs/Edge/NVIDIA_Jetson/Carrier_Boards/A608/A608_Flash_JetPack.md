@@ -4,7 +4,7 @@ title: A608 Carrier Board
 keywords:
   - Edge
   - reComputer
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/A608CB.webp
 slug: /reComputer_A608_Flash_System
 last_update:
   date: 12/4/2024

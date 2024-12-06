@@ -1,7 +1,7 @@
 ---
 description: This article describes how to get outputs using Grove Vision AI V2 and SenseCraft AI.
 title: Grove Vision AI V2 Model Output
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/54.webp
 slug: /sensecraft_ai_output_grove_visionai
 sidebar_position: 1
 last_update:
