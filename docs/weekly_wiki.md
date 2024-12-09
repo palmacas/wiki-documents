@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/02/2024
+  date: 12/09/2024
   author: Frank
 ---
 
@@ -17,51 +17,65 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is December 9th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with Seeed Studio XIAO-RS485-Expansion-Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/)
+### [Configuring Model Output on SenseCraft AI for Grove Vision AI V2](https://wiki.seeedstudio.com/relay_add_on_module_for_xiao/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/top.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/54.jpg" style={{width:800, height:'auto'}}/></div>
 
-This guide will help you quickly set up the Seeed Studio XIAO RS485 Expansion Board and get started with RS485 communication. Whether you're new to RS485 or already familiar with it, this step-by-step walkthrough will guide you through the hardware setup, wiring connections, and software configuration to get your system running smoothly. Unlock the potential of reliable, long-distance communication with ease!
+This wiki article provides a comprehensive guide on how to configure model output settings for the Grove Vision AI V2 device using the SenseCraft AI platform. By following these step-by-step instructions, you will learn how to set up trigger conditions and actions based on the output of your trained model running on the Grove Vision AI V2.
 
-### [2-Channel Wi-Fi AC Relay Module In Home Assistant](https://wiki.seeedstudio.com/2_channel_wifi_ac_relay/)
+### [Configuring Model Output and GPIO on SenseCraft AI for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_output_gpio_xiao/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/3-thumbnail.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/43.png" style={{width:800, height:'auto'}}/></div>
 
-The **2-Channel Wi-Fi AC Relay Module** is a smart device from Seeed Studio designed to control AC-powered appliances wirelessly. Its dual-channel configuration supports independent control of two loads, making it an excellent choice for automating household appliances such as lights, fans, and other devices in a Home Assistant environment.
-This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
+This wiki article provides a step-by-step guide on how to configure model output and GPIO settings for the XIAO ESP32S3 Sense board using the SenseCraft AI platform. By following these instructions, you will learn how to trigger GPIO level changes based on specific event conditions detected by your trained model.
 
-### [SenseCraft AI Overview](https://wiki.seeedstudio.com/sensecraft_ai_overview/)
+### [Using a model for Grove Vision AI V2](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/1.webp" style={{width:800, height:'auto'}}/></div>
+SenseCraft AI is a powerful platform that offers a wide range of AI models compatible with various devices, including the Grove Vision AI V2. The Grove Vision AI V2 is a comprehensive AI vision module that combines a camera, processor, and AI capabilities, making it easy to integrate computer vision applications into your projects.
 
-SenseCraft AI is an all-in-one platform designed to empower developers and creators in building and deploying AI projects with ease. The website offers a wide range of tools and features to streamline the AI development process, making it accessible to users with varying levels of expertise. In this wiki, we will explore the main sections of the SenseCraft AI website, providing an overview of their key features and functionalities.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/30.png" style={{width:800, height:'auto'}}/></div>
 
-### [SenseCraft AI - Classification Training](https://wiki.seeedstudio.com/sensecraft_ai_Training_Classification/)
+In this tutorial, we will guide you through the process of using a SenseCraft AI model on the Grove Vision AI V2 and previewing the model's output. We will also explore some key concepts and settings to help you understand and optimize the model's performance.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/main_page.png" style={{width:800, height:'auto'}}/></div>
+### [Using a model for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_xiao/)
 
-**Classification** training is a machine learning method that learns the relationship between data and categories by giving the model sample data labelled with categories, ultimately enabling the model to classify new data into predefined categories.
-Next, we will show you how to train a classification model of your own. The model will recognise whether people are wearing masks or not.
+SenseCraft AI is a powerful platform that provides a vast repository of AI models compatible with various devices. It allows developers and enthusiasts to easily deploy and experiment with different AI models on their hardware.
 
-### [SenseCraft AI - Object Detection](https://wiki.seeedstudio.com/sensecraft_ai_Training_Object_Detection/)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/22.png" style={{width:800, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/object%20detection/1.9.png" style={{width:800, height:'auto'}}/></div>
+In this comprehensive tutorial, we will guide you through the process of using a SenseCraft AI model on the XIAO ESP32S3 Sense board and previewing the model's output. We will also delve into some key concepts and settings to help you understand and optimize the model's performance.
 
-This guide helps you quickly set up the Seeed SenseCraft AI platform for object detection. Choose between Quick Training for fast, single-class model creation or Image Collection Training for improved accuracy using custom images. Follow simple steps to train, deploy, and evaluate your model on devices like Grove Vision AI (V2).
+### [SenseCraft AI for SenseCAP Watcher](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_watcher/)
 
-### [Benchmark of Multistream Inference on Raspberrypi 5 with Hailo8](https://wiki.seeedstudio.com/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8/)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/32.png" style={{width:800, height:'auto'}}/></div>
+
+SenseCAP Watcher is a powerful monitoring device that can be configured to recognize specific objects and trigger alarms based on user-defined tasks. To enhance Watcher's object recognition capabilities, users can leverage custom models from the SenseCraft AI model repository. This wiki article will guide you through the process of using these custom models in your Watcher monitoring tasks.
+
+### [Relay Add On Module For XIAO](https://wiki.seeedstudio.com/relay_add_on_module_for_xiao/)
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/relay_module_for_xiao/relay_module.jpg" /></div>
+
+The Relay Add On Module For XIAO is a smart module from Seeed Studio designed to control AC-powered appliances. It is characterized by the combination of XIAO, through the ESPHome access Home Assistant to control a variety of appliances, so that your home smarter!
+
+### [RTL8822CE Wireless Module for Jetson](https://wiki.seeedstudio.com/rtl8822ce_wireless_module_for_jetson/)
 
 <div align="center">
-<iframe width="700" height="400" src="https://www.youtube.com/embed/CHxg7qWTMYw" title="Multistream Inference on Hailo8 with RPi5 AI Box" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/RTL8822CE_Wireless_NIC_for_Jetson.png"/>
 </div>
 
-This wiki showcases benchmarking of YOLOv8m for object detection on Raspberry Pi 5 with hailo8. All tests utilize the same model (YOLOv8m), quantized to int8, with an input size of 640x640 resolution, batch size set to 8.
+The RTL8822CE is a compact Dual-band WLAN+Bluetooth Combo M.2 Card that integrates a 2T2R Dual-band WLAN subsystem with PCI Express controllers and a Bluetooth v5.0 subsystem with USB support. Compatible with IEEE 802.11 a/b/g/n/ac standards, it delivers a maximum PHY rate of up to 867 Mbps and supports Bluetooth dual mode (v5.0/v4.2/v2.1). Ideal for high-performance wireless and Bluetooth connectivity for using with embedded devices such as [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html).
 
-## Existing Wiki Updated
+### [Configuring Wio-SX1262 with XIAO ESP32S3 kit as Meshtastic device](https://wiki.seeedstudio.com/xiao_esp32s3_&_wio_SX1262_kit_for_meshtastic/)
+
+<iframe class="youtube-video-r" src="https://www.youtube.com/embed/dzqx32lBJso" title="Configuring Wio-SX1262 with XIAO ESP32S3 kit as Meshtastic device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. XIAO ESP32S3 & Wio-SX1262 Kit is flexible solution for meshtastic developer and maker.
+
+<!-- ## Existing Wiki Updated
 
 ### [XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)](https://wiki.seeedstudio.com/xiao_esp32c6_zigbee_arduino/)
 
@@ -71,7 +85,7 @@ We have refined the [XIAO ESP32C6 Zigbee example page](https://wiki.seeedstudio.
 
 We have updated the [Image Classification example for ESP32-S3 with Edge Impulse](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/).
 
-<!-- ### [Pin Multiplexing with Seeed Studio XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/)
+### [Pin Multiplexing with Seeed Studio XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/)
 
 We have added an [example](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/#software-preparation) of software preparation for using CAN with XIAO RA4M1.
 
@@ -179,5 +193,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.11.11th](/Seeed_Elderly/weekly_wiki/wiki241111)
 - [weekly wiki on 2024.11.18th](/Seeed_Elderly/weekly_wiki/wiki241118)
 - [weekly wiki on 2024.11.25th](/Seeed_Elderly/weekly_wiki/wiki241125)
+- [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 
 </details>
