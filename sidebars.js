@@ -1572,6 +1572,7 @@ const sidebars = {
                 'Sensor/Wio_Terminal/Application/Easy_IoT/Wio-Terminal-Azure-IOT',
                 'Sensor/Wio_Terminal/Application/Easy_IoT/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core',
                 'Sensor/Wio_Terminal/Application/Easy_IoT/Get-Started-with-Wio-Terminal-and-Wappsto-IoT',
+                'Sensor/Wio_Terminal/Application/Easy_IoT/CyberDeck_Wio-Terminal',
               ],
             },
             {
@@ -4062,10 +4063,6 @@ const sidebars = {
           label: 'ModelAssistant',
           collapsed: true,
           collapsible: true,
-          link: {
-            type: "doc",
-            id: 'Topics/TinyML/ModelAssistant/introduction/overview',
-          },
           items: [
             {
               type: 'category',
@@ -5806,6 +5803,7 @@ const sidebars = {
             'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/CN-Wio-Terminal-Azure-IOT',
             'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/CN-Connect-Wio-Terminal-to-Google-Cloud-IoT-Core',
             'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/CN-Get-Started-with-Wio-Terminal-and-Wappsto-IoT',
+            'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/CN-CyberDeck_Wio-Terminal',
           ],
         },
         {
