@@ -63,9 +63,9 @@ Thanks for our [contributors](https://wiki.seeedstudio.com/contributors/), the c
 
 - [SenseCAP Dashboard](https://wiki.seeedstudio.com/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics/)
 - [SenseCAP API](https://wiki.seeedstudio.com/Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction/)
-- [SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai/)
+- [SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai_main/)
 
-[![button](https://sensecraft.seeed.cc/wp-content/uploads/2023/11/%E5%88%87%E5%9B%BE-139@2x.png)](https://wiki.seeedstudio.com/sensecraft_ai/)
+[![button](https://sensecraft.seeed.cc/wp-content/uploads/2023/11/%E5%88%87%E5%9B%BE-139@2x.png)](https://wiki.seeedstudio.com/sensecraft_ai_main/)
 
 ### Technology Topics and Popular Platforms
 

@@ -1,6 +1,6 @@
 ---
 description: Nvidia Jetson Workspace on SenseCraft AI Platform
-title: Nvidia Jetson Workspace on SenseCraft AI Platform
+title: reComputer Jetson Workspace
 keywords:
 - Cloud and Chain
 - SenseCraft

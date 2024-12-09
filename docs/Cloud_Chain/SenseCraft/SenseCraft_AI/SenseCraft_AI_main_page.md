@@ -1,23 +1,146 @@
 ---
-description: SenseCraft AI
-title: Sense Craft AI Overview
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.png
+description: Catalog of SenseCraft AI Documentation
+title: SenseCraft AI Overview
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png
 slug: /sensecraft_ai_main
 sidebar_position: 1
 last_update:
   date: 11/27/2024
-  author: qiuyu
+  author: Citrc
 ---
 
 # SenseCraft AI Wiki Center
 
+## Overview
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png" style={{width:1000, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_overview/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Overview 🖱️</font></span></strong>
+    </a>
+</div><br />
+
+The Overview section provides a high-level introduction to SenseCraft AI, explaining its purpose, key features, and benefits. It serves as a starting point for users to understand the platform and its capabilities. The overview also includes links to Getting Started guides and FAQs to help users quickly get up and running with SenseCraft AI.
+
+## Pretrained Models
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/13.png" style={{width:1000, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_main_page/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Pretrained Models 🖱️</font></span></strong>
+    </a>
+</div><br />
+
+The Pretrained Models section contains information about the readily available models that can be deployed on various devices supported by SenseCraft AI. These models are optimized for specific hardware and can be used for different applications without the need for custom training. The section is further divided into subsections based on the supported devices:
+
+- **for XIAO ESP32S3 Sense**: This subsection lists the pretrained models compatible with the XIAO ESP32S3 Sense board, along with their descriptions and use cases.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_xiao/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>for XIAO ESP32S3 Sense</font></span></strong>
+    </a>
+</div><br />
+
+- **for Grove Vision AI V2**: Here, you can find the pretrained models specifically designed for the Grove Vision AI V2 device.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_grove_visionai_v2/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>for Grove Vision AI V2</font></span></strong>
+    </a>
+</div><br />
 
 
+- **for SenseCAP Watcher**: This subsection provides information about the pretrained models that can be used with the SenseCAP Watcher device, enabling various monitoring and detection functionalities.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_watcher/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>for SenseCAP Watcher</font></span></strong>
+    </a>
+</div><br />
+
+- **for reComputer Jetson**: The reComputer Jetson subsection contains pretrained models optimized for the powerful reComputer Jetson platform, suitable for more demanding AI applications.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_deploy_model_to_jetson/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>for reComputer Jetson</font></span></strong>
+    </a>
+</div><br />
+
+## Training
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/40.png" style={{width:1000, height:'auto'}}/></div>
 
 
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_training_main_page/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Training 🖱️</font></span></strong>
+    </a>
+</div><br />
 
+The Training section is dedicated to guiding users through the process of creating custom models using SenseCraft AI. It is divided into two main subsections:
 
+- Classification: This subsection provides step-by-step tutorials and best practices for training image classification models using SenseCraft AI.
 
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_training_classification/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Classification 🖱️</font></span></strong>
+    </a>
+</div><br />
+
+- Object Detection: Here, you can find detailed guides on training object detection models using SenseCraft AI.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_training_object_detection/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Object Detection 🖱️</font></span></strong>
+    </a>
+</div><br />
+
+## Models Output
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_output_main_page/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Models Output 🖱️</font></span></strong>
+    </a>
+</div><br />
+
+The Models Output section focuses on how to configure and utilize the output of trained models on different devices supported by SenseCraft AI. It is organized into the following subsections:
+
+- **Grove Vision AI V2 Model Output**: This subsection explains how to configure and access the output of models deployed on the Grove Vision AI V2 device. It covers topics such as setting up triggers, integrating with external systems, and visualizing the model's predictions.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_output_grove_visionai/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Grove Vision AI V2</font></span></strong>
+    </a>
+</div><br />
+
+- XIAO ESP32S3 Sense Model Output: Here, you can find information on how to work with model outputs on the XIAO ESP32S3 Sense board. The subsection is further divided into:
+
+  - via GPIO: This part provides guides on how to map model outputs to the GPIO pins of the XIAO ESP32S3 Sense, enabling control of external hardware based on the model's predictions.
+
+  <br /><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_output_gpio_xiao/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>via GPIO</font></span></strong>
+    </a></div><br />
+
+  - via MQTT: Here, you can learn how to send model outputs from the XIAO ESP32S3 Sense to other devices or systems using the MQTT protocol, facilitating seamless integration and communication.
+
+  - via Serial Port: This part explains how to access model outputs through the serial port of the XIAO ESP32S3 Sense, allowing easy integration with other software or devices.
+
+- reComputer Jetson Workspace: This subsection provides information on how to set up and utilize the reComputer Jetson Workspace for working with model outputs. It covers topics such as configuring the workspace, visualizing model predictions, and integrating with other software.
+
+![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/video.gif)
+
+## Application
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_applications_main_page/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Application 🖱️</font></span></strong>
+    </a>
+</div><br />
+
+The Application section showcases real-world examples and case studies demonstrating how SenseCraft AI can be used to solve various problems across different domains. It includes detailed project write-ups, code samples, and best practices to inspire and guide users in developing their own AI applications using SenseCraft AI.
 
 
 
