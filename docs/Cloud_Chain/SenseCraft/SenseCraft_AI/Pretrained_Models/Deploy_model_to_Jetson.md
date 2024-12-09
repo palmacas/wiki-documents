@@ -1,12 +1,13 @@
 ---
 description: Deploy model to Jetson on Sensecraft AI Platform
-title: Deploy model to Jetson on Sensecraft AI Platform
+title: for reComputer Jetson
 keywords:
 - Cloud and Chain
 - SenseCraft
 - SenseCraft AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
 slug: /sensecraft_deploy_model_to_jetson
+sidebar_position: 4
 last_update:
   date: 08/22/2024
   author: Frank
