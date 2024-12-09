@@ -1,12 +1,13 @@
 ---
 description: SenseCraft AI Jetson
-title: SenseCraft AI Jetson
+title: Tolkit for reComputer Jetson
 keywords:
 - Cloud and Chain
 - SenseCraft
 - SenseCraft AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
 slug: /sensecraft_ai_jetson
+sidebar_position: 1
 last_update:
   date: 08/16/2024
   author: Frank
