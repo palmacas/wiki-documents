@@ -4062,10 +4062,6 @@ const sidebars = {
           label: 'ModelAssistant',
           collapsed: true,
           collapsible: true,
-          link: {
-            type: "doc",
-            id: 'Topics/TinyML/ModelAssistant/introduction/overview',
-          },
           items: [
             {
               type: 'category',
