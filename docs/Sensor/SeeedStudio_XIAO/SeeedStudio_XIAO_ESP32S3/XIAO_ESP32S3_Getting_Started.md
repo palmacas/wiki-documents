@@ -81,19 +81,19 @@ Seeed Studio XIAO ESP32S3 Sense integrates camera sensor, digital microphone and
 	    <th>Memory</th>
 	    <td align="center">On-chip 8M PSRAM & 8MB Flash</td>
         <td align="center">On-chip 8M PSRAM & 8MB Flash <br></br> Onboard SD Card Slot, supporting 32GB FAT</td>
-		<td align="center">On-chip 8M PSRAM & 16MB Flash <br></br> Onboard SD Card Slot, supporting 32GB FAT</td>
+		<td align="center">On-chip 8M PSRAM & <strong>16MB</strong> Flash</td>
 	</tr>
     <tr>
 	    <th>Interface</th>
 	    <td>1x UART, 1x IIC, 1x IIS, 1x SPI, 11x GPIOs (PWM), 9x ADC, 1x User LED, 1x Charge LED  <br></br> 1x Reset button, 1x Boot button</td>
         <td>1x UART, 1x IIC, 1x IIS, 1x SPI, 11x GPIOs (PWM), 9x ADC, 1x User LED, 1x Charge LED, 1x B2B Connector (with 2 additional GPIOs), 1x Reset button, 1x Boot button</td>
-		<td><strong>2</strong>x UART, 1x IIC, 1x IIS, <strong>2</strong>x SPI, <strong>18</strong>x GPIOs (PWM), 9x ADC, 1x JTAG, <strong>1x Camera interface</strong>, <strong>1x Microphone interface</strong>, 1x User LED, 1x Charge LED, 1x B2B Connector, 1x Reset button, 1x Boot button</td>
+		<td><strong>2</strong>x UART, 1x IIC, 1x IIS, <strong>2</strong>x SPI, <strong>18</strong>x GPIOs (PWM), 9x ADC, <strong>1x JTAG</strong>, <strong>1x Camera interface</strong>, <strong>1x Microphone interface</strong>, 1x User LED, 1x Charge LED, 1x B2B Connector, 1x Reset button, 1x Boot button</td>
 	</tr>
     <tr>
 	    <th>Dimensions</th>
 	    <td align="center">21 x 17.8mm</td>
         <td align="center">21 x 17.8 x 15mm (with expansion board)</td>
-		<td align="center">21 x 17.8 x 15mm (with expansion board)</td>
+		<td align="center">21 x 17.8mm</td>
 	</tr>
     <tr>
 	    <th rowspan="5">Power</th>
@@ -141,7 +141,7 @@ Seeed Studio XIAO ESP32S3 Sense integrates camera sensor, digital microphone and
 - **Powerful MCU Board**: Incorporate the ESP32S3 32-bit, dual-core, Xtensa processor chip operating up to 240 MHz, mounted multiple development ports, Arduino / MicroPython supported
 - **Advanced Functionality** (for Sense): Detachable OV2640 camera sensor for 1600*1200 resolution, compatible with OV5640 camera sensor, intergating additional digital microphone
 - **Elaborate Power Design**: Lithium battery charge management capability, offer 4 power consumption model which allows for deep sleep mode with power consumption as low as 14μA
-- **Great Memory for more Possibilities**: Offer 8MB PSRAM and 8MB FLASH (16MB in **Plus** version), supporting SD card slot for external 32GB FAT memory 
+- **Great Memory for more Possibilities**: Offer 8MB PSRAM and 8MB FLASH (16MB in **Plus** version), supporting SD card slot for external 32GB FAT memory (only for XIAO ESP32S3)
 - **Outstanding RF performance**: Support 2.4GHz Wi-Fi and BLE dual wireless communication, support 100m+ remote communication when connected with U.FL antenna
 - **Thumb-sized Compact Design**: 21 x 17.8mm, adopting the classic form factor of XIAO, suitable for space limited projects like wearable devices
 
