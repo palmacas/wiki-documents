@@ -243,7 +243,7 @@ Click on the github download link to drive the microphone sensor.
 Currently we need to manually modify the replacement file, the subsequent direct download library can be used, please wait for our wiki update.
 :::
 
-- **[Replacement Files]** [gsdk.a](https://github.com/Seeed-Studio/wiki/mg24_mic/gsdk.a)
+- **[Replacement Files]** [gsdk.a](https://files.seeedstudio.com/wiki/mg24_mic/gsdk_v2.a)
 
 **Changing the file path**
   - __/Users/yourname/Library/Arduino15/packages/SiliconLabs/hardware/silabs/2.2.0/variants/xiao_mg24/ble_silabs/__
