@@ -200,6 +200,10 @@ Before everything starts, it is quite essential to have some basic parameters of
 	</tr>
 </table>
 
+:::tip
+The B2B connector of XIAO ESP32S3 Plus is compatible with [Wio-SX1262 extension board](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html) but not with Plug-in camera sensor board.
+:::
+
 </TabItem>
 
 </Tabs>
