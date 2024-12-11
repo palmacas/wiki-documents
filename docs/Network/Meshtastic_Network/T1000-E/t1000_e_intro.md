@@ -5,6 +5,7 @@ keywords:
 - Tracker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /t1000_e_intro
+sidebar_position: 1
 last_update:
   date: 7/1/2024
   author: Jessie
