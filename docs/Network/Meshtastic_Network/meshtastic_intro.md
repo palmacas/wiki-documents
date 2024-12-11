@@ -5,6 +5,7 @@ keywords:
 - Meshtastic
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /meshtastic_introduction
+sidebar_position: 1
 last_update:
   date: 6/17/2024
   author: Jessie
