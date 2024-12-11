@@ -1775,7 +1775,29 @@ const sidebars = {
     // },
 
 
-
+    {
+      type: 'category',
+      label: 'ReSpeaker 2-Mics Pi HAT',
+        items: [
+        'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT',
+        {
+          type: 'category',
+          label: 'For v1 Users \(Deprecated\)',
+          items: [
+            'Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+            'Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ReSpeaker_2_Mics_Pi_HAT_Jetson',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'For v2 Users',
+          items: [
+            'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+          ],
+        },
+        'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+      ],
+    },
     {
       type: 'category',
       label: 'ReSpeaker Lite',
@@ -4608,15 +4630,6 @@ const sidebars = {
                 'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Drive_Unit',
                 'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v2.0',
                 'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'ReSpeaker 2-Mics Pi HAT',
-              items: [
-                'Seeed_Elderly/reSpeaker/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT',
-                'Seeed_Elderly/reSpeaker/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT_Raspberry',
-                'Seeed_Elderly/reSpeaker/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT_Jetson',
               ],
             },
             'Seeed_Elderly/reSpeaker/ReSpeaker_4_Mic_Array_for_Raspberry_Pi',
