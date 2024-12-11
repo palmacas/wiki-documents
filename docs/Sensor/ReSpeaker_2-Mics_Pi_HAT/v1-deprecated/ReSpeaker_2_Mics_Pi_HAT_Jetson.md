@@ -10,6 +10,10 @@ last_update:
   author: jianjing Huang
 ---
 
+:::caution
+This wiki is wrote for ReSpeaker 2-Mics Pi HAT **v1**, to distinguish the v1 and v2 device, please refer to [How to Distinguish ReSpeaker 2-Mics Pi HAT Hardware Revisions](/How-to-Distinguish-ReSpeaker_2-Mics_Pi_HAT-Hardware-Revisions).
+:::
+
 ### Driver installation and configuration
 
 **1. Connect ReSpeaker 2-Mics Pi HAT to Jetson Nano**
