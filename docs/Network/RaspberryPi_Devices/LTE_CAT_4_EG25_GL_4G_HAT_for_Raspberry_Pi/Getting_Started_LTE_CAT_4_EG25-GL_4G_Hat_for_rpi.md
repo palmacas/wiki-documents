@@ -1,7 +1,7 @@
 ---
 description: The Quectel EG25-GL-powered 4G LTE Raspberry Pi HAT delivers high-speed connectivity and precise GNSS positioning, making it perfect for IoT and M2M applications. Compatible with Raspberry Pi and PCs, it supports global frequency bands, real-time tracking, and reliable communication for versatile use across industries.
 
-title: Getting Started with the Raspberry Pi 4G LTE HAT - Powered by Quectel EG25-GL
+title: Getting Started with the Raspberry Pi 4G LTE HAT 
 keywords:
   - Raspberry Pi Hat
   - Getting started
@@ -105,10 +105,10 @@ At its core, the EG25-GL module ensures robust performance with global frequency
 | - Power Consumption (Idle)     | 15.7 mA                                                                    |
 
 
-### Hardware Overview
+## Hardware Overview
 
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/overview.jpg" style={{width:600}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/overview.jpg" style={{width:800}}/></div>
 
 ### 4G LTE HAT and Raspberry Pi GPIO connection 
 
@@ -187,6 +187,13 @@ These antenna options ensure robust and reliable connectivity for LTE and locati
 
 The 4G LTE HAT features two LED indicators for status monitoring:
 
+<div style={{ textAlign: 'center' }}>
+  <img 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/LED.PNG" 
+    style={{ width: 200}} 
+  />
+</div>
+
 - **PWR LED (Red)**: Lights up to indicate the power status of the HAT.
 - **NET LED (Blue)**: Indicates the network connection status. It flashes at specific intervals during active connections and data transfer, while remaining off if no connection is established.
 
@@ -204,6 +211,13 @@ These LEDs provide quick visual feedback on the HAT's power and network activity
 
 ### USB-C Interfaces
 
+<div style={{ textAlign: 'center' }}>
+  <img 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/usbcin.jpg" 
+    style={{ width: 600}} 
+  />
+</div>
+
 
 The 4G LTE HAT includes two USB-C interfaces with distinct functions:
 
@@ -215,7 +229,7 @@ The 4G LTE HAT includes two USB-C interfaces with distinct functions:
 
 2. **USB-C 2 Interface**
 
-  - Used to provide a high-power supply of up to 5V 3A to the LTE HAT.
+  - Used to provide a high-power supply of up to 5V-15V to the LTE HAT.
   - The power supply can be toggled using the DIP switch.
   - After connecting the PowerMode Switch Jumper, this interface can be used to directly power the Raspberry Pi.
 
@@ -224,17 +238,38 @@ These interfaces facilitate efficient communication and debugging for the HAT, w
 
 ### Boot Pads
 
+<div style={{ textAlign: 'center' }}>
+  <img 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/bootpads.PNG" 
+    style={{ width: 500}} 
+  />
+</div>
 
 - Provides access to the LTE module's **USB_BOOT** pin and **1.8V VDD**.
 - Shorting the USB_BOOT pin forces the LTE module into boot mode, enabling firmware burning via the **USB-C 1** interface.
 
 ### RST/PWR Buttons
 
+<div style={{ textAlign: 'center' }}>
+  <img 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/rstpwr.PNG" 
+    style={{ width: 300}} 
+  />
+</div>
+
 - **RST Button**: Performs a one-click reset of the LTE module. The button is horizontally mounted and designed for easy operation.
 - **PWR Button**:In the off state, pressing the button powers on the HAT.
 ○While powered on, pressing and holding the button turns it off.
 
+
 ### DIP Switches
+
+<div style={{ textAlign: 'center' }}>
+  <img 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/dipswitches.PNG" 
+    style={{ width: 150}} 
+  />
+</div>
 
 - **Power-On Self-Start Switch**:
   - **0 (Off)**: Disabled.
@@ -255,7 +290,7 @@ These interfaces facilitate efficient communication and debugging for the HAT, w
   - **0 (Off)**: Disabled.
   - **1 (On)**: Enables the Raspberry Pi to control the LTE module’s power state via GPIO.
 
-## Layout
+### Layout
 
 The 4G LTE HAT is designed with careful alignment and placement for seamless integration with the Raspberry Pi 5:
 
@@ -309,7 +344,7 @@ The 4G LTE HAT package includes everything needed for installation and operation
 <div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/steps.jpg" 
-    style={{ width: 600}} 
+    style={{ width: 900}} 
   />
 </div>
 
@@ -411,7 +446,7 @@ lsusb
 
 <div style={{ textAlign: 'center' }}>
   <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/usb-rpi.PNG" 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/usb-rpi-small.PNG" 
     style={{ width: 600}} 
   />
 </div>
@@ -423,7 +458,7 @@ For AT commands, use /dev/ttyUSB2 as the communication port.
 
 <div style={{ textAlign: 'center' }}>
   <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/usb_list.PNG" 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/usb-list.PNG" 
     style={{ width: 600}} 
   />
 </div>
@@ -453,7 +488,7 @@ Parity: N
 ```
 <div style={{ textAlign: 'center' }}>
   <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/serialport_settings.PNG" 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/usb-settings.PNG" 
     style={{ width: 600}} 
   />
 </div>

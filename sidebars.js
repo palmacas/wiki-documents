@@ -2681,11 +2681,8 @@ const sidebars = {
         label: ' Raspberry Pi 4G LTE Hat',
         collapsed: true,
         collapsible: true,
-        link: {
-          type: "doc",
-          id: 'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
-        },
         items: [
+          'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
         ],
        },  
 
