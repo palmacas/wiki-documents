@@ -3,15 +3,15 @@ description: Getting Started with Raspberry Pi
 title: Getting Started with Raspberry Pi
 keywords:
 - ReSpeaker_2-Mics_Pi_HAT
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2
+image: https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp
+slug: /respeaker_2_mics_pi_hat_raspberry_v2
 last_update:
   date: 12/11/2024
   author: Joshua Lee
 ---
 
 :::caution
-This wiki is wrote for ReSpeaker 2-Mics Pi HAT **v2**, to distinguish the v1 and v2 device, please refer to [How to Distinguish ReSpeaker 2-Mics Pi HAT Hardware Revisions](/How-to-Distinguish-ReSpeaker_2-Mics_Pi_HAT-Hardware-Revisions).
+This wiki is wrote for ReSpeaker 2-Mics Pi HAT **v2**, to distinguish the v1 and v2 device, please refer to [How to Distinguish ReSpeaker 2-Mics Pi HAT Hardware Revisions](/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions).
 :::
 
 On the latest Raspberry Pi OS, the traditional method of driver installation (For v1 device) is no longer available and may lead to the following known issues:

@@ -11,7 +11,7 @@ last_update:
 ---
 
 :::caution
-This wiki is wrote for ReSpeaker 2-Mics Pi HAT **v1**, to distinguish the v1 and v2 device, please refer to [How to Distinguish ReSpeaker 2-Mics Pi HAT Hardware Revisions](/How-to-Distinguish-ReSpeaker_2-Mics_Pi_HAT-Hardware-Revisions).
+This wiki is wrote for ReSpeaker 2-Mics Pi HAT **v1**, to distinguish the v1 and v2 device, please refer to [How to Distinguish ReSpeaker 2-Mics Pi HAT Hardware Revisions](/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions).
 :::
 
 ### Driver installation and configuration
