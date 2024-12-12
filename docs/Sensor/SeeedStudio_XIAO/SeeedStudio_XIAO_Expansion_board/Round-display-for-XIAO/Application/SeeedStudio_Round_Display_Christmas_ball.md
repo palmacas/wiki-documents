@@ -5,17 +5,17 @@ keywords:
 - XIAO
 - Round Dislay
 - Christmas
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
-slug: /christmas_ball
+image: https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif
+slug: /round_display_christmas_ball
 last_update:
-  date: 08/12/2024 #dd/mm/yyyy
+  date: 12/08/2024
   author: Bruno Santos
 ---
 
-# Seeed Studio Round Display for XIao Christmas Ball
+# Seeed Studio Round Display for XIAO Christmas Ball
 
 <div style={{textAlign:'center'}}>
-  <img src="Christmas_ball.gif" style={{width:600, height:'auto'}}/>
+  <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
 </div>
 
 On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. 
@@ -55,9 +55,9 @@ Our images are PNG images stored in Flash Arrays. They are displayed using PNGde
 
 Here are the images that I've used - all are AI generated
 <div style={{textAlign:'center'}}>
-<img src="background1.png" style={{width:800, height:'auto'}}/>
-<img src="background2.png" style={{width:800, height:'auto'}}/>
-<img src="background3.png" style={{width:800, height:'auto'}}/>
+<img src="https://files.seeedstudio.com/wiki/Christmas_round_display/background1.png" style={{width:200, height:'auto'}}/>
+<img src="https://files.seeedstudio.com/wiki/Christmas_round_display/background2.png" style={{width:200, height:'auto'}}/>
+<img src="https://files.seeedstudio.com/wiki/Christmas_round_display/background3.png" style={{width:200, height:'auto'}}/>
 </div>
 
 Our background images need to be prepared for that TFT_eSPI can display them and they fit well on the Round Display for XIAO.
@@ -68,16 +68,16 @@ Our Round Display for XIAO has a 240x240 resolution. We need to resize the image
 
 1. Open the image
 2. Go to **Image > Scale Image**
-<div style={{textAlign:'center'}}><img src="screenshot1.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot1.jpg" style={{width:600, height:'auto'}}/></div>
 
 3. Set Width and Height to 240. Because the **Keep Ratio** is selected (the chain), once you change the **width**, the **height** should also change. 
-<div style={{textAlign:'center'}}><img src="screenshot2.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot2.jpg" style={{width:400, height:'auto'}}/></div>
 
 4. Press the **Scale** button. 
-<div style={{textAlign:'center'}}><img src="screenshot3.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot3.jpg" style={{width:400, height:'auto'}}/></div>
 
 5. Save the image (I'm going to override the old one)
-<div style={{textAlign:'center'}}><img src="screenshot4.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot4.jpg" style={{width:400, height:'auto'}}/></div>
 
 
 #### Create the Flash Arrays
@@ -88,30 +88,30 @@ To create the flash array, go to [File to C style array converter](https://notis
 
 The steps now are:
 1. Upload the image using **Browse** . After uploading the image
-<div style={{textAlign:'center'}}><img src="screenshot5.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot5.jpg" style={{width:800, height:'auto'}}/></div>
 
 2. We need to set some options
 - **Treat as binary**
-<div style={{textAlign:'center'}}><img src="screenshot6.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot6.jpg" style={{width:800, height:'auto'}}/></div>
 
 All the other options gray out. 
-<div style={{textAlign:'center'}}><img src="screenshot7.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot7.jpg" style={{width:600, height:'auto'}}/></div>
 
 3. Let's change the **Data type** to **char**
-<div style={{textAlign:'center'}}><img src="screenshot8.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot8.jpg" style={{width:800, height:'auto'}}/></div>
 
 4. Press convert. This will convert the image to an array. 
-<div style={{textAlign:'center'}}><img src="screenshot9.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot9.jpg" style={{width:800, height:'auto'}}/></div>
 
 5. You can now press the button **Save as file** to save your image and add it to your Arduino Sketch or press the button **Copy to clipboard** 
 If you **Copy to clipboard**, you'll have to press the 3 dots on the right side of the Arduino editor and choose **New Tab**
-<div style={{textAlign:'center'}}><img src="screenshot10.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot10.jpg" style={{width:400, height:'auto'}}/></div>
 
 Give it a name (generally your image name with .h extension)
-<div style={{textAlign:'center'}}><img src="screenshot11.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot11.jpg" style={{width:600, height:'auto'}}/></div>
 
 You'll end up with all your images as *.h* files. 
-<div style={{textAlign:'center'}}><img src="screenshot12.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Christmas_round_display/screenshot12.jpg" style={{width:800, height:'auto'}}/></div>
 
 ## Code
 Here's the code for the Christmas ball.
@@ -441,4 +441,4 @@ void loop() {
 }
 ```
 
-Now you can use your own pictures to create a magical Christmas Ball
+Now you can use your own pictures to create a magical Christmas Ball.
