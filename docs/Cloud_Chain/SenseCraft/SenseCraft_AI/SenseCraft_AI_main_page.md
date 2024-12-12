@@ -138,6 +138,13 @@ The Models Output section focuses on how to configure and utilize the output of 
             <strong><span><font color={'FFFFFF'} size={"4"}>As a Sensor</font></span></strong>
     </a></div><br />
 
+  - **Use SSCMACore library output model info**: If you don't want to use an additional XIAO to receive data output from your model, then the tutorial here may be for you.
+
+  <br /><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_sscmacore_library/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Use SSCMACore</font></span></strong>
+    </a></div><br />
+
 - reComputer Jetson Workspace: This subsection provides information on how to set up and utilize the reComputer Jetson Workspace for working with model outputs. It covers topics such as configuring the workspace, visualizing model predictions, and integrating with other software.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img/video.gif" style={{width:1000, height:'auto'}}/></div>
