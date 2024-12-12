@@ -2683,6 +2683,14 @@ const sidebars = {
         collapsible: true,
         items: [
           'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+
+          {
+            type: 'category',
+            label: 'Application',
+            items: [
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
+            ],
+          },
         ],
        },  
 
