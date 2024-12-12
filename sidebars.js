@@ -2689,6 +2689,7 @@ const sidebars = {
             label: 'Application',
             items: [
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
             ],
           },
         ],
