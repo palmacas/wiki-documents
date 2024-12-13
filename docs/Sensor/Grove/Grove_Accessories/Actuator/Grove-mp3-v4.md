@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /grove_mp3_v4
 last_update:
-  date: 05/22/2023
+  date: 12/13/2024
   author: Carla
 ---
 
@@ -45,7 +45,7 @@ This MP3 module with an Arduino can be turned into your multi-format music playe
 
 ## Hardware Overview
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/grove-mp3-v4/mp3V4.png" style={{width:300, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_716539_x5zKByNTcw7Jc8sR_1706149458?w=2608&h=1322&type=image/png" style={{width:750, height:'auto'}}/></div>
 
 ## Getting Started
 
