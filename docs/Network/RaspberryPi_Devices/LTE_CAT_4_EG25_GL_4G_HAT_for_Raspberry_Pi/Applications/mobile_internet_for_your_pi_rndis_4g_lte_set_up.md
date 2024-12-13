@@ -21,13 +21,16 @@ last_update:
 **RNDIS (Remote Network Driver Interface Specification)** is a protocol that allows USB-connected devices, like the Quectel EG25-G 4G module, to act as network interfaces. By enabling RNDIS on a Raspberry Pi, the 4G module can provide cellular internet connectivity to the Pi. This setup is widely used in IoT applications, such as creating portable internet routers, IoT gateways, and remote monitoring systems. The Raspberry Pi communicates with the 4G module using AT commands to configure features like RNDIS mode, GNSS, and SMS. This approach simplifies internet access in scenarios where traditional wired or Wi-Fi connections are unavailable.
 
 ## Hardware Preparation
+
 <div class="table-center">
   <table align="center">
     <tr>
         <th>Raspberry Pi 5</th>
+         <th>Raspberry Pi 4G LTE CAT4 HAT</th>
     </tr>
     <tr>
         <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-102110919-raspberry-pi-5-8gb-45font.jpg" style={{width:250, height:'auto'}}/></div></td>    
+         <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_23_1.jpg" style={{width:250, height:'auto'}}/></div></td>
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -35,9 +38,15 @@ last_update:
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
+<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/LTE-CAT-4-EG25-GL-HAT-for-Raspberry-Pi-p-6325.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
     </tr>
   </table>
 </div>
+
 
 ## The Hardware Setup
 

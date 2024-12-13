@@ -31,10 +31,12 @@ At its core, the EG25-GL module ensures robust performance with global frequency
     <tr>
         <th>Raspberry Pi 5</th>
         <th>GPS Antenna</th>
+        <th>Raspberry Pi 4G LTE CAT4 HAT</th>
     </tr>
     <tr>
         <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-102110919-raspberry-pi-5-8gb-45font.jpg" style={{width:250, height:'auto'}}/></div></td>
         <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-110061521-gps-antenna-kit-for-reterminal-dm-4g-module-45font.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_23_1.jpg" style={{width:250, height:'auto'}}/></div></td>
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -44,6 +46,11 @@ At its core, the EG25-GL module ensures robust performance with global frequency
       </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/GPS-Antenna-Kit-for-reTerminal-DM-4G-Module-p-5774.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/LTE-CAT-4-EG25-GL-HAT-for-Raspberry-Pi-p-6325.html">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
