@@ -5,7 +5,7 @@ keywords:
 - XIAO
 - Round Dislay
 - Christmas
-image: https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif
+image: https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball_1.gif
 slug: /round_display_christmas_ball
 last_update:
   date: 12/08/2024
