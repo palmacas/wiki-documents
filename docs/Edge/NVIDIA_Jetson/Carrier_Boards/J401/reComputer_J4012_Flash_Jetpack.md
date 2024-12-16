@@ -314,7 +314,19 @@ The below image is for Orin NX 16GB
 
 </details>
 
-### Flash to Jetson
+### Method 1: Flash the device with a single command.
+The reComputer Jetson J30/40 has launched a one-click flashing script, which supports flashing Jetpack 5.1.1, 5.1.2 and 6.0. Currently, the one-click flashing for Jetpack 6.1 and other series of reComputer Jetson is under testing and will be available to everyone in the near future. 
+
+```bash
+wget -O ./flashing.sh https://files.seeedstudio.com/OSHW_Jetson/flashing.sh  && sudo chmod 777 ./flashing.sh && ./flashing.sh
+```
+
+
+<div align="center">
+  <iframe width="800" height="450" src="https://www.youtube.com/watch?v=_YfpJAhhT-g" title="one-click flashing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+### Method 2: Flash the device step by step.
 
 :::note
 Before moving onto flashing, it should be noted that Jetson Orin NX module only supports JetPack 5.1 and above, while Jetson Orin Nano module only supports JetPack 5.1.1 and above.
