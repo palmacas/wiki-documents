@@ -64,7 +64,7 @@ const docList = [
     },
     {
       "path": "/traffic_saving_config",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker.webp",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/sensecap_m2.jpg",
       "title": "Low Data Consumption Mode Config(for 4G version)",
       "date": "12/4/2024"
     }
