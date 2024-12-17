@@ -1,10 +1,10 @@
 ---
-description: Comming soon!
+description: This article provides a getting-started guide for the reComputer Mini (based on the NVIDIA Jetson Orin platform), including the device's specifications and the steps for initial setup and configuration.
 title: Getting Started with reComputer Mini
 keywords:
   - reComputer
   - reComputer mini
-  - embedded omputer
+  - embedded computer
   - robots
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recomputer_jetson_mini_getting_started
@@ -158,7 +158,29 @@ The below image is for Orin Nx 16GB:
   <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/3.png"/>
 </div>
 
-### Flash to Jetson
+
+### Flash to Jetson with Single Command.
+
+<details>
+
+<summary> Flash the device with a single command. </summary>
+
+The reComputer Jetson J30/40 Mini has launched a one-click flashing script, which supports flashing Jetpack 6.0. 
+
+```bash
+wget -O ./flashing.sh https://files.seeedstudio.com/OSHW_Jetson/flashing.sh  && sudo chmod 777 ./flashing.sh && ./flashing.sh
+```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZFBzTlyOjhE?si=uNN-l5VVGbAyGnot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::caution
+Disclaimer: The one-click flashing script aims to make jetpack flashing quicker. The current version is a beta one and may have many problems. We hope for your understanding. If there are flashing issues, follow the `Flash The Device Step by Step` below and give feedback in our [Discord Jetson channel](https://discord.com/channels/862602258452578314/930732339624026152). We'll fix them promptly and improve this function in the near future. 
+:::
+
+</details>
+
+
+### Flash to Jetson Step by Step
 
 **Step 1:** Extract the downloaded image file on ubuntu host PC:
 
