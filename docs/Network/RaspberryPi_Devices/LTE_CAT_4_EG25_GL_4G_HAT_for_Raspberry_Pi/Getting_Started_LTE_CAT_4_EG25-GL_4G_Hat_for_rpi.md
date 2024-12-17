@@ -24,6 +24,24 @@ The 4G Raspberry Pi HAT is a powerful and versatile add-on designed for seamless
 
 At its core, the EG25-GL module ensures robust performance with global frequency band support, offering reliable connectivity across LTE, UMTS/HSPA+, and GSM/GPRS/EDGE networks. Backward-compatible with 4G, 3G, and 2G, it supports multiple communication protocols such as MIMO, DFOTA, and DTMF. Its multi-constellation GNSS receiver ensures accurate and fast positioning.
 
+## Package Contents 
+
+<div style={{ textAlign: 'center' }}>
+  <img 
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/9-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi-feature.jpg" 
+    style={{ width: 600}} 
+  />
+</div>
+
+The 4G LTE HAT package includes everything needed for installation and operation:  
+
+
+- **Screws and Studs** All required hardware for securely mounting and fixing the HAT.  
+- **Screwdriver** A tool for easy installation.  
+- **2x 4G Antenna** Ensures reliable LTE connectivity.  
+- **USB-A to USB-C** Adapter Enables connection between the HAT and the Raspberry Pi’s USB 3.0 port.  
+- **2x20 Pin Stacking** Header Provides the necessary height for proper alignment and clearance during installation.  
+- **0.3M Type-C Data Cable** Supports both power supply and data transmission.  
 
 ## Hardware preparation
 <div class="table-center">
@@ -327,24 +345,7 @@ The 4G LTE HAT is designed to match the Raspberry Pi’s size, ensuring seamless
   
 These design considerations make the HAT fully compatible with the Raspberry Pi 5 while maintaining ease of installation and functionality.
 
-## Package Contents 
 
-<div style={{ textAlign: 'center' }}>
-  <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/9-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi-feature.jpg" 
-    style={{ width: 600}} 
-  />
-</div>
-
-The 4G LTE HAT package includes everything needed for installation and operation:  
-
-
-- **Screws and Studs** All required hardware for securely mounting and fixing the HAT.  
-- **Screwdriver** A tool for easy installation.  
-- **2x 4G Antenna** Ensures reliable LTE connectivity.  
-- **USB-A to USB-C** Adapter Enables connection between the HAT and the Raspberry Pi’s USB 3.0 port.  
-- **2x20 Pin Stacking** Header Provides the necessary height for proper alignment and clearance during installation.  
-- **0.3M Type-C Data Cable** Supports both power supply and data transmission.  
 
 ## Assemble Guide 
 
