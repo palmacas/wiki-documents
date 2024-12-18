@@ -130,23 +130,26 @@ sudo minicom -D /dev/ttyUSB2
 ### Step-by-Step
 
 1. **Setup Network Context**:
-    ```
+   
+```bash
     AT+QICSGP=1,1,"dialogbb","","",1
     AT+QIACT=1
     AT+QIACT?
-    ```
+ ```
 2. **Configure FTP**:
-    ```
+   
+```bash
     AT+QFTPCFG="contextid",1
     AT+QFTPCFG="account","your_username","your_password"
     AT+QFTPCFG="filetype",1
     AT+QFTPCFG="transmode",1
     AT+QFTPCFG="rsptimeout",90
-    ```
+```
 3. **Connect to FTP Server**:
-    ```
+   
+```bash
     AT+QFTPOPEN="ftp.drivehq.com",21
-    ```
+```
 <div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ftp1.PNG" 
@@ -155,10 +158,11 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 4. **Navigate Directories**:
-    ```
+
+```bash
     AT+QFTPCWD="/"
     AT+QFTPLIST="."
-    ```
+```
 <div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ftp2.PNG" 
@@ -167,9 +171,10 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 5. **Upload File**:
-    ```
+   
+```bash
     AT+QFTPPUT="test_my2.txt","COM:",0
-    ```
+```
 <div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/upload_ftp.PNG" 
@@ -178,9 +183,10 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 6. **Download File**:
-    ```
+
+```bash
     AT+QFTPGET="test_my2.txt","COM:"
-    ```
+```
 <div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/download_ftp.PNG" 
@@ -189,10 +195,11 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 7. **Close FTP Session**:
-    ```
+
+```bash
     AT+QFTPCLOSE
     AT+QIDEACT=1
-    ```
+```
 
 ---
 
