@@ -53,7 +53,7 @@ FTP is useful for Raspberry Pi 4G LTE HAT applications, enabling reliable file t
 
 If you have not installed relevant drivers and communication tools, please check the [guide](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#software-preparation) first:
 
-### Addidtional Requirements 
+### Additional Requirements 
 
 You will need a pre-configured FTP server with the following details:
 
@@ -130,13 +130,13 @@ sudo minicom -D /dev/ttyUSB2
 ### Step-by-Step
 
 1. **Setup Network Context**:
-    ```plaintext
+    ```
     AT+QICSGP=1,1,"dialogbb","","",1
     AT+QIACT=1
     AT+QIACT?
     ```
 2. **Configure FTP**:
-    ```plaintext
+    ```
     AT+QFTPCFG="contextid",1
     AT+QFTPCFG="account","your_username","your_password"
     AT+QFTPCFG="filetype",1
@@ -144,7 +144,7 @@ sudo minicom -D /dev/ttyUSB2
     AT+QFTPCFG="rsptimeout",90
     ```
 3. **Connect to FTP Server**:
-    ```plaintext
+    ```
     AT+QFTPOPEN="ftp.drivehq.com",21
     ```
 <div style={{ textAlign: 'center' }}>
@@ -155,7 +155,7 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 4. **Navigate Directories**:
-    ```plaintext
+    ```
     AT+QFTPCWD="/"
     AT+QFTPLIST="."
     ```
@@ -167,7 +167,7 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 5. **Upload File**:
-    ```plaintext
+    ```
     AT+QFTPPUT="test_my2.txt","COM:",0
     ```
 <div style={{ textAlign: 'center' }}>
@@ -178,7 +178,7 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 6. **Download File**:
-    ```plaintext
+    ```
     AT+QFTPGET="test_my2.txt","COM:"
     ```
 <div style={{ textAlign: 'center' }}>
@@ -189,7 +189,7 @@ sudo minicom -D /dev/ttyUSB2
 </div>
 
 7. **Close FTP Session**:
-    ```plaintext
+    ```
     AT+QFTPCLOSE
     AT+QIDEACT=1
     ```
