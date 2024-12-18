@@ -3436,16 +3436,6 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'reComputer Industrial',
-              items: [
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
-              ],
-            },
-
-            {
-              type: 'category',
               label: 'reComputer J10',
               link: {
                 type: "doc",
@@ -3492,7 +3482,25 @@ const sidebars = {
               items: [
                 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_J30_40_with_Jetson_getting_start',
                 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_Jetson_with_Infineon_Wi-Fi_Module'
-              ]}
+              ]
+            },
+            {
+              type: 'category',
+              label: 'reComputer Industrial',
+              items: [
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reComputer Mini',
+              items: [
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
+              ],
+            },
         ]},
         
         // reServer Jetson Series
