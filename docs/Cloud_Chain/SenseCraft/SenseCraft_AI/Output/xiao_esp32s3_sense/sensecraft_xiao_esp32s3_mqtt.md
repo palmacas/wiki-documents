@@ -1,7 +1,7 @@
 ---
 description: This article describes how to send the recognition results of a model over MQTT.
 title: Via MQTT output
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.png
+image: https://files.seeedstudio.com/wiki/watcher_getting_started/headimage.webp
 slug: /sensecraft_ai_output_mqtt_xiao
 sidebar_position: 2
 last_update:
