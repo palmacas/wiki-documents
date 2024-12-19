@@ -5,6 +5,7 @@ keywords:
 - Tracker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /sensecap_t1000_e
+sidebar_position: 2
 last_update:
   date: 7/1/2024
   author: Jessie
@@ -551,18 +552,7 @@ When you have completed the above steps, then you can follow this [step](https:/
 
 
 
-### Solid LED 
 
-
-**Description:**
-
-The LED stays on without flashing, and there is no response when pressing the button, this indicates the device is in DFU mode.
-
-
-**Solution:**
-
-Force Reboot the device: Press and hold the button, then connect the charging cable.
- 
 
 ## Resource
 

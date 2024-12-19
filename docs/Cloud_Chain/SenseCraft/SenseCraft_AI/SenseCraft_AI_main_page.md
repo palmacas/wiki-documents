@@ -117,20 +117,37 @@ The Models Output section focuses on how to configure and utilize the output of 
 
 - XIAO ESP32S3 Sense Model Output: Here, you can find information on how to work with model outputs on the XIAO ESP32S3 Sense board. The subsection is further divided into:
 
-  - via GPIO: This part provides guides on how to map model outputs to the GPIO pins of the XIAO ESP32S3 Sense, enabling control of external hardware based on the model's predictions.
+  - **via GPIO**: This part provides guides on how to map model outputs to the GPIO pins of the XIAO ESP32S3 Sense, enabling control of external hardware based on the model's predictions.
 
   <br /><div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_output_gpio_xiao/">
             <strong><span><font color={'FFFFFF'} size={"4"}>via GPIO</font></span></strong>
     </a></div><br />
 
-  - via MQTT: Here, you can learn how to send model outputs from the XIAO ESP32S3 Sense to other devices or systems using the MQTT protocol, facilitating seamless integration and communication.
+  - **via MQTT**: Here, you can learn how to send model outputs from the XIAO ESP32S3 Sense to other devices or systems using the MQTT protocol, facilitating seamless integration and communication.
 
-  - via Serial Port: This part explains how to access model outputs through the serial port of the XIAO ESP32S3 Sense, allowing easy integration with other software or devices.
+  <br /><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_output_mqtt_xiao/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>via MQTT</font></span></strong>
+    </a></div><br />
+
+  - **As a Sensor**: This part will explain how to use XIAO, which has already uploaded a model, as a sensor. It may require you to use an additional XIAO or Arduino device.
+
+  <br /><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_output_libraries_xiao/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>As a Sensor</font></span></strong>
+    </a></div><br />
+
+  - **Use SSCMACore library output model info**: If you don't want to use an additional XIAO to receive data output from your model, then the tutorial here may be for you.
+
+  <br /><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_ai_sscmacore_library/">
+            <strong><span><font color={'FFFFFF'} size={"4"}>Use SSCMACore</font></span></strong>
+    </a></div><br />
 
 - reComputer Jetson Workspace: This subsection provides information on how to set up and utilize the reComputer Jetson Workspace for working with model outputs. It covers topics such as configuring the workspace, visualizing model predictions, and integrating with other software.
 
-![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/video.gif)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img/video.gif" style={{width:1000, height:'auto'}}/></div>
 
 ## Application
 

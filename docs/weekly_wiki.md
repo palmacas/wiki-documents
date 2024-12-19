@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/09/2024
+  date: 12/16/2024
   author: Frank
 ---
 
@@ -17,91 +17,103 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 9th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is December 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Configuring Model Output on SenseCraft AI for Grove Vision AI V2](https://wiki.seeedstudio.com/relay_add_on_module_for_xiao/)
+### [SenseCraft AI Overview](https://wiki.seeedstudio.com/sensecraft_ai_main/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/54.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png" style={{width:800, height:'auto'}}/></div>
 
-This wiki article provides a comprehensive guide on how to configure model output settings for the Grove Vision AI V2 device using the SenseCraft AI platform. By following these step-by-step instructions, you will learn how to set up trigger conditions and actions based on the output of your trained model running on the Grove Vision AI V2.
+The Overview section provides a high-level introduction to SenseCraft AI, explaining its purpose, key features, and benefits. It serves as a starting point for users to understand the platform and its capabilities. The overview also includes links to Getting Started guides and FAQs to help users quickly get up and running with SenseCraft AI.
 
-### [Configuring Model Output and GPIO on SenseCraft AI for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_output_gpio_xiao/)
+### [Wio Terminal PC Monitor Tutorial - Cyberpunk Style](https://wiki.seeedstudio.com/CyberDeck_Wio-Terminal/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/43.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif" style={{width:600, height:'auto'}}/></div>
 
-This wiki article provides a step-by-step guide on how to configure model output and GPIO settings for the XIAO ESP32S3 Sense board using the SenseCraft AI platform. By following these instructions, you will learn how to trigger GPIO level changes based on specific event conditions detected by your trained model.
+This project uses the Wio Terminal to display real-time PC stats like CPU, RAM, and temperature in a cyberpunk style. Data is gathered with a Python script and shown on the terminal. The setup includes installing Python, VSCode, and PlatformIO, with options for customization and adding features. It also covers using Cursor AI for development and debugging.
 
-### [Using a model for Grove Vision AI V2](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
+### [Guide to Configuring Low Data Consumption Mode for M2 Multi-Platform Gateway (4G Version)](https://wiki.seeedstudio.com/traffic_saving_config/)
 
-SenseCraft AI is a powerful platform that offers a wide range of AI models compatible with various devices, including the Grove Vision AI V2. The Grove Vision AI V2 is a comprehensive AI vision module that combines a camera, processor, and AI capabilities, making it easy to integrate computer vision applications into your projects.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/sensecap_m2.jpg" style={{width:600, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/30.png" style={{width:800, height:'auto'}}/></div>
+This tutorial will guide users to configure the low data consumption mode for the M2 Multi-Platform Gateway 4G version. In this mode, the traffic per month is expected to be around 60M. The specific traffic depends on the nodes packets, etc.
 
-In this tutorial, we will guide you through the process of using a SenseCraft AI model on the Grove Vision AI V2 and previewing the model's output. We will also explore some key concepts and settings to help you understand and optimize the model's performance.
+### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
 
-### [Using a model for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_xiao/)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mg24.jpg" style={{width:600, height:'auto'}}/></div>
 
-SenseCraft AI is a powerful platform that provides a vast repository of AI models compatible with various devices. It allows developers and enthusiasts to easily deploy and experiment with different AI models on their hardware.
+This document introduces the built-in sensors of the Seeed Studio XIAO MG24 Sense, including the 6-Axis IMU (LSM6DS3TR-C) for motion measurement and the MEMS Microphone (MSM381ACT001) for high-quality audio capture, with key features and functionalities outlined.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/22.png" style={{width:800, height:'auto'}}/></div>
+### [Configuring Model Output via MQTT on SenseCraft AI for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_output_mqtt_xiao/)
 
-In this comprehensive tutorial, we will guide you through the process of using a SenseCraft AI model on the XIAO ESP32S3 Sense board and previewing the model's output. We will also delve into some key concepts and settings to help you understand and optimize the model's performance.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/60.png" style={{width:800, height:'auto'}}/></div>
 
-### [SenseCraft AI for SenseCAP Watcher](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_watcher/)
+This wiki article provides a step-by-step guide on how to configure model output using MQTT (Message Queuing Telemetry Transport) for the XIAO ESP32S3 Sense board on the SenseCraft AI platform. MQTT is a lightweight messaging protocol that enables efficient communication between devices. By following these instructions, you will learn how to set up MQTT communication and retrieve model inference results from your XIAO ESP32S3 Sense.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/32.png" style={{width:800, height:'auto'}}/></div>
+### [Getting Started with the Raspberry Pi 4G LTE HAT](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/)
 
-SenseCAP Watcher is a powerful monitoring device that can be configured to recognize specific objects and trigger alarms based on user-defined tasks. To enhance Watcher's object recognition capabilities, users can leverage custom models from the SenseCraft AI model repository. This wiki article will guide you through the process of using these custom models in your Watcher monitoring tasks.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/7-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi-feature.jpg" style={{width:800, height:'auto'}}/></div>
 
-### [Relay Add On Module For XIAO](https://wiki.seeedstudio.com/relay_add_on_module_for_xiao/)
+The 4G Raspberry Pi HAT is a powerful and versatile add-on designed for seamless integration with Raspberry Pi models, including A+, B+, Pi 2, Pi 3, Pi 4, Pi 5, and Zero, as well as PCs. Equipped with a 40-pin GPIO connector, it ensures easy plug-and-play compatibility. The HAT features the Quectel EG25-GL CAT4 LTE module, providing high-speed 4G communication, SMS functionality, and cloud platform integration for IoT and M2M applications.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/relay_module_for_xiao/relay_module.jpg" /></div>
+### [Getting Started with ReSpeaker 2-Mics Pi HAT v2](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/)
 
-The Relay Add On Module For XIAO is a smart module from Seeed Studio designed to control AC-powered appliances. It is characterized by the combination of XIAO, through the ESPHome access Home Assistant to control a variety of appliances, so that your home smarter!
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/pi.png" style={{width:800, height:'auto'}}/></div>
 
-### [RTL8822CE Wireless Module for Jetson](https://wiki.seeedstudio.com/rtl8822ce_wireless_module_for_jetson/)
+On the latest Raspberry Pi OS, the traditional method of driver installation (For v1 device) is no longer available. We have therefore re-released a new wiki on this issue, if you are using the more modern Raspberry Pi OS rather than previous releases, please follow these steps to get your ReSpeaker working.
 
-<div align="center">
-  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/RTL8822CE_Wireless_NIC_for_Jetson.png"/>
-</div>
+### [Using XIAO ESP32S3 Sense as an AI Sensor with SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai_output_libraries_xiao/)
 
-The RTL8822CE is a compact Dual-band WLAN+Bluetooth Combo M.2 Card that integrates a 2T2R Dual-band WLAN subsystem with PCI Express controllers and a Bluetooth v5.0 subsystem with USB support. Compatible with IEEE 802.11 a/b/g/n/ac standards, it delivers a maximum PHY rate of up to 867 Mbps and supports Bluetooth dual mode (v5.0/v4.2/v2.1). Ideal for high-performance wireless and Bluetooth connectivity for using with embedded devices such as [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html).
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/uart_connection.png" style={{width:800, height:'auto'}}/></div>
 
-### [Configuring Wio-SX1262 with XIAO ESP32S3 kit as Meshtastic device](https://wiki.seeedstudio.com/xiao_esp32s3_&_wio_SX1262_kit_for_meshtastic/)
+This wiki provides a step-by-step guide on how to configure the output of a model on SenseCraft AI and use the XIAO ESP32S3 Sense as an AI sensor. By following these instructions, you will learn how to connect the XIAO ESP32S3 Sense to your computer, select the appropriate output method, and retrieve the model data using different communication protocols such as UART, I2C, and SPI.
 
-<iframe class="youtube-video-r" src="https://www.youtube.com/embed/dzqx32lBJso" title="Configuring Wio-SX1262 with XIAO ESP32S3 kit as Meshtastic device" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### [Configuring Model Output on SenseCraft AI for XIAO ESP32S3 Sense using SSCMACore Library](https://wiki.seeedstudio.com/sensecraft_ai_sscmacore_library/)
 
-Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. XIAO ESP32S3 & Wio-SX1262 Kit is flexible solution for meshtastic developer and maker.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.png" style={{width:800, height:'auto'}}/></div>
 
-<!-- ## Existing Wiki Updated
+This wiki provides a step-by-step guide on how to configure the model output on SenseCraft AI for the XIAO ESP32S3 Sense board using the SSCMACore (Seeed SenseCraft Model Assistant Core) library. By following these instructions, you will be able to set up your XIAO ESP32S3 Sense to work with a pre-trained model and utilize the SSCMACore library to process the model's output.
 
-### [XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)](https://wiki.seeedstudio.com/xiao_esp32c6_zigbee_arduino/)
+### [Convert and Quantize AI Models for reCamera](https://wiki.seeedstudio.com/recamera_model_conversion/)
 
-We have refined the [XIAO ESP32C6 Zigbee example page](https://wiki.seeedstudio.com/xiao_esp32c6_zigbee_arduino/).
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/013.jpg" style={{width:800, height:'auto'}}/></div>
 
-### [XIAO ESP32C6 Zigbee Quick Start Guide (Arduino)](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/)
+The AI model conversion tool of **reCamera** currently supports frameworks such as `PyTorch`, `ONNX`, `TFLite`, and `Caffe`. Models from other frameworks need to be converted into `ONNX` format. For instructions on how to convert models from other deep learning architectures to `ONNX`, you can refer to the official ONNX website: <https://github.com/onnx/tutorials>. This article introduces how to use reCamera's AI model conversion tool through simple examples.
 
-We have updated the [Image Classification example for ESP32-S3 with Edge Impulse](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/).
+### [Getting Started with Raspberry Pi 4G HAT GNSS Functionalities](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_gnss_functionlities/)
 
-### [Pin Multiplexing with Seeed Studio XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.png" style={{width:800, height:'auto'}}/></div>
 
-We have added an [example](https://wiki.seeedstudio.com/xiao_ra4m1_pin_multiplexing/#software-preparation) of software preparation for using CAN with XIAO RA4M1.
+The integration of GNSS into the 4G LTE module enhances its capabilities, enabling precise real-time positioning and reliable communication for IoT applications. With support for multi-constellation GNSS systems, the module delivers accurate and dependable location tracking, even in remote or underserved areas. These features make it ideal for scenarios like asset tracking, fleet management, and real-time remote monitoring.
 
-### [Watcher to Node-RED Quick Start](https://wiki.seeedstudio.com/watcher_to_node_red/)
+### [Mobile Internet for Your Pi - RNDIS 4G LTE Setup](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_rndis_mobile_internet/)
 
-We have added an [example](https://wiki.seeedstudio.com/watcher_to_node_red/#part-5-preview-image) demonstrating how to preview images from Watcher.      -->
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.jpg" style={{width:800, height:'auto'}}/></div>
+
+RNDIS (Remote Network Driver Interface Specification) is a protocol that allows USB-connected devices, like the Quectel EG25-G 4G module, to act as network interfaces. By enabling RNDIS on a Raspberry Pi, the 4G module can provide cellular internet connectivity to the Pi. The Raspberry Pi communicates with the 4G module using AT commands to configure features like RNDIS mode, GNSS, and SMS. This approach simplifies internet access in scenarios where traditional wired or Wi-Fi connections are unavailable.
+
+### [Sending and Receiving SMS Messages with Quectel 4G Raspberry pi Hat](https://wiki.seeedstudio.com/send_recive_sms_raspberry_pi_4g_lte_hat/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:800, height:'auto'}}/></div>
+
+In rural and remote areas, where 4G coverage is sparse or unavailable, SMS communication through 2G networks becomes a vital tool for ensuring uninterrupted connectivity in IoT systems. For wildlife preservation, this technology enables automated alert systems to monitor environmental conditions, track animal movements, and report critical events in real-time. By leveraging 4G modules with SMS capabilities, devices can send automated alerts and receive instructions, ensuring that even in isolated regions, conservation efforts are not hindered by lack of modern network infrastructure.
+
+## Existing Wiki Updated
+
+### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
+
+We have refined the [SenseCAP Indicator for Meshtastic example page](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/).
 
 ## The Efforts of Contributor
 
-<!-- [IAO ESP32S3(Sense) With FreeRTOS](https://wiki.seeedstudio.com/xiao-esp32s3-freertos/)
+### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/1.png" alt="pir" width={600} height="auto" /></p>
+<div style={{textAlign:'center'}}>
+  <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
+</div>
 
-FreeRTOS is a collection of C libraries comprised of a real-time kernel and a set of modular libraries that implement complementary functionality. The FreeRTOS kernel is a real-time kernel (or real-time scheduler) that enables applications built on FreeRTOS to meet their hard real-time requirements. It enables applications to be organized as a collection of independent threads of execution.
-
-This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). With the assistance of this guide you will be able to utilize the feature set available to the board.     -->
+On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images.
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -194,5 +206,6 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.11.18th](/Seeed_Elderly/weekly_wiki/wiki241118)
 - [weekly wiki on 2024.11.25th](/Seeed_Elderly/weekly_wiki/wiki241125)
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
+- [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 
 </details>
