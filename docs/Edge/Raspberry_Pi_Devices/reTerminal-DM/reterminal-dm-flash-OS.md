@@ -410,7 +410,7 @@ cd seeed-linux-dtoverlays
 - **Step 3.** Type the following to install the drivers
 
 ```sh
-sudo ./scripts/reTerminal.sh --device reTerminal-plus
+sudo ./scripts/reTerminal.sh --device reTerminal-DM
 ```
 
 <!-- You will see the following output if you have successfully installed the drivers
