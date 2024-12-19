@@ -1,5 +1,5 @@
 ---
-description: comming soon!
+description: This article explains how to upgrade the existing Jetson Orin Nano Developer Kit to the Jetson Orin Nano Super Developer Kit. Through a software update, users can enhance the system's AI performance and experience more powerful computational capabilities.
 title: How to Update Jetson Orin Nano Developer Kit to Super Kit
 keywords:
   - Edge reComputer
