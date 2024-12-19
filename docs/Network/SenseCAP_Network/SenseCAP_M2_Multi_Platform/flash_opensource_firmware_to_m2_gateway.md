@@ -140,3 +140,17 @@ Login into console with username **root** and **no password**
 - \[**Website**\] <a  href="https://github.com/Seeed-Solution/LoRa_Gateway_OpenWRT" target="_blank"><span> GitHub-Seeed-Solution/Lora_Gateway_OpenWRT</span></a>
 - \[**Website**\] <a  href="https://openwrt.org/" target="_blank"><span> OpenWrt offical website</span></a>
 - \[**PDF**\] <a  href="https://files.seeedstudio.com/products/SenseCAP/M2OpensourceHarewareDescription.pdf" target="_blank"><span> M2 Gateway Hardware Description</span></a>
+
+## Tech Support
+
+**Need help with your SenseCAP M2 Gateway? We're here to assist you!**
+
+<div class="button_tech_support_container">
+<a href="https://discord.com/invite/QqMgVwHT3X" class="button_tech_support_sensecap"></a>
+<a href="https://support.sensecapmx.com/portal/en/home" class="button_tech_support_sensecap3"></a>
+</div>
+
+<div class="button_tech_support_container">
+<a href="mailto:support@sensecapmx.com" class="button_tech_support_sensecap2"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+</div>
