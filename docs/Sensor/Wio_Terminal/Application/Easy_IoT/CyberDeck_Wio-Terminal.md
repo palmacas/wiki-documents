@@ -1,6 +1,6 @@
 ---
 title: Cyber Desk on Wio Terminal using Platform IO, powered by Cursor AI
-image: https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif
+image: https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal_1.gif
 slug: /CyberDeck_Wio-Terminal
 last_update:
   date: 12/09/2024
