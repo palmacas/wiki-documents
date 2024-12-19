@@ -124,7 +124,11 @@ void loop() {
   }
 }
 ```
+:::tip
 
+Due to the update of the LSM6DS3 library, if you have previously added this library to the user, you will need to re-download version 2.0.4 or higher and add the ZIP file to the Arduino.
+
+:::
 ### Function Overview
 - **Include Libraries**
   ```cpp
