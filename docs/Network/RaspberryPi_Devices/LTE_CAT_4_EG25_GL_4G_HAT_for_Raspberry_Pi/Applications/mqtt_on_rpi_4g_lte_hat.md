@@ -153,6 +153,145 @@ AT+QMTUNS=0,2,"test/topic"
 AT+QMTDISC=0
 ```
 
+## Python Code Implementation 
+
+### Step 1. Prepare the Directory and Virtual Environment
+
+
+- Open a terminal on your Raspberry Pi.
+- Create a new project folder and navigate into it:
+```bash
+mkdir mqtt_EX
+cd mqtt_EX
+```
+- Set up a Python virtual environment:
+```bash
+python3 -m venv --system-site-packages env
+```
+
+- Activate the virtual environment:
+
+```bash
+source env/bin/activate
+```
+
+- Install the required libraries:
+
+```bash
+pip install pyserial 
+```
+
+### Step 2. Prepare the Python Script
+
+- Open the **Thonny Python IDE** (pre-installed on Raspberry Pi).
+
+- Create a new file in Thonny and paste the provided code into the editor.
+
+- Update the usb_port parameter to match your Raspberry Pi's serial port for the 4G HAT. Typically, it might be `/dev/ttyUSB2` or `/dev/ttyUSB3`. Example:
+
+```bash
+usb_port = "/dev/ttyUSB2"
+```
+- Save the file as test_mqtt.py in the **mqtt_EX** folder.
+
+```bash 
+
+import serial
+import time
+
+# Serial port configuration
+SERIAL_PORT = '/dev/ttyUSB2'  # Adjust based on your setup
+BAUD_RATE = 9600
+
+
+def send_at_command(ser, command, delay=1):
+    """
+    Sends an AT command to the Quectel module and waits for a response.
+    """
+    ser.write((command + '\r\n').encode())
+    time.sleep(delay)
+    response = ser.read_all().decode()
+    print(f"Command: {command}\nResponse: {response}")
+    return response
+
+
+def main():
+    # Open serial connection
+    ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=5)
+    if not ser.is_open:
+        ser.open()
+
+    try:
+        # Configure MQTT receive mode
+        send_at_command(ser, 'AT+QMTCFG="recv/mode",0,0,1')
+
+        # Open MQTT connection
+        send_at_command(ser, 'AT+QMTOPEN=0,"test.mosquitto.org",1883')
+        send_at_command(ser, 'AT+QMTOPEN?')  # Check connection status
+
+        # Connect to the MQTT broker
+        send_at_command(ser, 'AT+QMTCONN=0,"clientExample"')
+
+        # Subscribe to the topic
+        send_at_command(ser, 'AT+QMTSUB=0,1,"test/topic_subscribe",2')
+
+        print("Publishing and subscribing. Press Ctrl+C to stop.")
+
+        while True:
+            try:
+                # Publish a message
+                send_at_command(ser, 'AT+QMTPUBEX=0,0,0,0,"test/topic_publish",30')
+                send_at_command(ser, 'This is test data, hello MQTT.', delay=0.5)
+
+                # Read incoming messages
+                print("Checking for subscribed topic messages...")
+                incoming = ser.read_all().decode()
+                if incoming:
+                    print(f"Received: {incoming}")
+
+                # Delay between operations
+                time.sleep(2)
+            except KeyboardInterrupt:
+                print("Exiting loop...")
+                break
+
+        # Unsubscribe from the topic
+        send_at_command(ser, 'AT+QMTUNS=0,2,"test/topic_subscribe"')
+
+        # Disconnect from the broker
+        send_at_command(ser, 'AT+QMTDISC=0')
+    finally:
+        # Close serial connection
+        ser.close()
+
+
+if __name__ == '__main__':
+    main()
+
+```
+
+### Step 3. Run the Script
+
+- Open a terminal, ensure you're in the project directory:
+```bash
+cd mqtt_EX
+```
+
+- Activate the virtual environment:
+
+```bash
+source env/bin/activate
+```
+
+- Run the script using Python:
+```bash
+python test_mqtt.py
+```
+- The output 
+  
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mqtt_python.PNG" style={{width:800}}/></div>
+
+
 ## Resources
 
 
