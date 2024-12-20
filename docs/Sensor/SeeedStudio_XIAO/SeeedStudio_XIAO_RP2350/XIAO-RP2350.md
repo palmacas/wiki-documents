@@ -452,7 +452,7 @@ def main():
     init_gpio()  # Initialize the enable pin
     adc = ADC(Pin(29))  # Initialize the ADC on GPIO29
 
-    conversion_factor = 3.3 / (1 << 12)  # Conversion factor for 12-bit ADC and 3.3V reference
+    conversion_factor = 3.3 / (65535)  # Conversion factor for 12-bit ADC and 3.3V reference
     
     while True:
         result = adc.read_u16()  # Read the ADC value
