@@ -2491,6 +2491,7 @@ const sidebars = {
                 'Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack',
               ],
             },
+            'Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/flash_opensource_firmware_to_m2_gateway'
           ],
         },
 
@@ -3543,6 +3544,7 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Other_Devices',
           // },
           items: [
+            'Edge/NVIDIA_Jetson/Other_Devices/How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
             'Edge/NVIDIA_Jetson/Other_Devices/RTL8822CE_Wireless_Module_for_Jetson',
             'Edge/NVIDIA_Jetson/Other_Devices/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
             'Edge/NVIDIA_Jetson/Other_Devices/Jetson_Xavier_AGX_H01_Driver_Installation',
