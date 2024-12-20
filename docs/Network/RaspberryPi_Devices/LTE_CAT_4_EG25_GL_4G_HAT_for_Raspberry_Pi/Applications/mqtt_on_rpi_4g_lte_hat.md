@@ -9,7 +9,7 @@ keywords:
   - IoT
   - MQTT
   - Edge Computing
-image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png
+image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mqtt_ex.webp
 slug: /mqtt_raspberry_pi_4g_lte_hat
 last_update:
   date: 12/18/2024

@@ -4,7 +4,7 @@ title: Grove - MP3 v4.0
 keywords:
 - mp3
 - grove
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/grove-mp3-v4/0.webp
 slug: /grove_mp3_v4
 last_update:
   date: 12/13/2024
