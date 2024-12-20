@@ -193,10 +193,6 @@ Now, rotate the **Grove Rotary Angle Sensor**, and you will hear different sound
     </table>
 </div>
 
-:::note
-In this kit, we have upgraded the Grove Temperature Humidity Sensor (DHT11) to [Grove Temperature Humidity Sensor (DHT20)](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html). If you'd like to get started with the DHT20 sensor, click [here](https://wiki.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DH20/).
-:::
-
 **Step 2.** Connect the Grove OLED Display 0.96" to port I2C1 of the Grove Shield.
 
 **Step 3.** Connect the Grove Temperature Humidity Sensor (DHT11) to port D18 of the Grove Shield.
@@ -341,11 +337,13 @@ class DHT(object):
 
 3. Open **dht11.py** in Thonny IDE, click `File -> Save As -> MicroPython device`, and save the file with the name **dht11.py** on your device.
 
-![Save as MicroPython device](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/saveas.png)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/saveas.png" style={{width:700, height:'auto'}}/></div>
+
+<br></br>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/open.png" style={{width:700, height:'auto'}}/></div>
 
 4. Repeat the same process to save **ssd1306.py** to your MicroPython device.
-
-![Open MicroPython file](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/open.png)
 
 #### Running the Project
 
