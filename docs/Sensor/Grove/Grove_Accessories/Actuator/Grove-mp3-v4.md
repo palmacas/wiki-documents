@@ -36,7 +36,7 @@ This MP3 module with an Arduino can be turned into your multi-format music playe
 | Input                                  | 5V(DC)                                     |
 | Operating current (without signal output state) | less than 15 mA                            |
 | Operating current (with signal output state)    | less than 40 mA                            |
-| Chip                                   | KT403A                                      |
+| Chip                                   | WT2605CX                                     |
 | Chip LDO output voltage                | 3.3 V                                      |
 | Chip output current                   | 100 mA(at Max.)                            |
 | File formats supported                 | MP3, WAV, WMA                               |
