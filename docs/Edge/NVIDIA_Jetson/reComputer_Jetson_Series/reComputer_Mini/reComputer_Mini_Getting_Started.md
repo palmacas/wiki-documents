@@ -6,7 +6,7 @@ keywords:
   - reComputer mini
   - embedded computer
   - robots
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp
 slug: /recomputer_jetson_mini_getting_started
 last_update:
   date: 12/11/2024
