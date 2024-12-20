@@ -6,7 +6,7 @@ keywords:
   - reComputer mini
   - embedded computer
   - robots
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp
 slug: /recomputer_jetson_mini_getting_started
 last_update:
   date: 12/11/2024
@@ -20,17 +20,201 @@ last_update:
   <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.jpg"/>  
 </div>
 
-reComputer mini series built with Jetson Orin is a powerful and compact intelligent edge box to bring up to 100TOPS modern AI performance to the edge. While combining the NVIDIA Ampere™ GPU architecture with 64-bit operating capability.
-reComputer mini J30/40 is preinstalled with Jetpack 6.0, simplifies development, and fits for deployment for edge AI solution providers working in robotics, video analytics, and AI agent across industries of smart cities, security, industrial automation, smart factories.
+reComputer Mini is a tiny AI computer powered by NVIDIA Jetson Orin Nano/Orin NX module,delivering up to 100 TOPS AI performance. It‘s equipped with PCIe port at the bottom to provide rich expansion capabilities, which also can be customized flexibly. The whole system is designed for embedding into autonomous machines such as drones, patrol robots, delivering robots, etc. It can directly occupy 54V DC input, able to be widely used in battery powered systems.
 
 
 <!-- Buy links -->
 
-<!-- ## Features  -->
+## Features 
 
-<!-- ## Specifications -->
+- **Brilliant AI Performance for Production:** Achieves up to **100 TOPS** AI performance with low power and latency, built by NVIDIA Orin SoC combining the NVIDIA Ampere™ GPU architecture with 64-bit operating capability, integrated advanced multi-function video and image processing, and NVIDIA Deep Learning Accelerators.
+- **Hand-Size Edge AI Device:** Compact size at **63mm * 95mm * 42mm**, featuring an NVIDIA Jetson Orin NX 16GB module, Mini J401 carrier board, fan and enclosure. Support desktop and wall mounting.
+- **Expandable with Rich I/Os:** Includes up to 7x USB, DP 2.1, 2x CSI, 1x RJ45 for GbE, M.2 Key E, M.2 Key M, dual channel CAN, and GPIO.
+- **Accelerate Solutions to Market:** Pre-installed **JetPack 6.1.1** on 128GB NVMe SSD, Linux OS BSP, supporting Jetson software and leading AI frameworks. 
+- **Scale to deploy:** support OTA, remote management services powered by Allxon and Balena. 
+- **Flexible Customization:** inlcudes changing accessories modules, logo, and hardware interfaces modification based on reComputer Mini J4012 original design.
 
-<!-- ## Hardware Overview  -->
+
+## Specifications
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <tbody>
+    <tr>
+      <th colSpan={5} style={{ fontSize: '24px', fontWeight: 'bold' }}>Jetson Orin System on Module</th>
+    </tr>
+    <tr>
+      <th>Specifications</th>
+      <th>reComputer Mini J3010</th>
+      <th>reComputer Mini J3011</th>
+      <th>reComputer Mini J4011</th>
+      <th>reComputer Mini J4012</th>
+    </tr>
+    <tr>
+      <td>Module</td>
+      <td>Jetson Orin Nano 4GB</td>
+      <td>Jetson Orin Nano 8GB</td>
+      <td>Jetson Orin NX 8GB</td>
+      <td>Jetson Orin NX 16GB</td>
+    </tr>
+    <tr>
+      <td>AI Performance</td>
+      <td>20 TOPS</td>
+      <td>40 TOPS</td>
+      <td>70 TOPS</td>
+      <td>100 TOPS</td>
+    </tr>
+    <tr>
+      <td>GPU</td>
+      <td>512-core NVIDIA Ampere architecture GPU with 16 Tensor Cores</td>
+      <td colSpan={3}>1024-core NVIDIA Ampere architecture GPU with 32 Tensor Cores</td>
+    </tr>
+    <tr>
+      <td>CPU</td>
+      <td colSpan={2}>6-core Arm® Cortex®-A78AE v8.2 64-bit CPU<br />1.5MB L2 + 4MB L3</td>
+      <td>6-core Arm® Cortex®-A78AE v8.2 64-bit CPU 1.5MB L2 + 4MB L3</td>
+      <td>8-core Arm® Cortex®-A78AE v8.2 64-bit CPU 2MB L2 + 4MB L3</td>
+    </tr>
+    <tr>
+      <td>CPU Max Frequency</td>
+      <td colSpan={2}>1.5 GHz</td>
+      <td colSpan={2}>2 GHz</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>4GB 64-bit LPDDR5<br />34 GB/s</td>
+      <td>8GB 128-bit LPDDR5<br />68 GB/s</td>
+      <td>8GB 128-bit LPDDR5 102.4GB/s</td>
+      <td>16GB 128-bit LPDDR5 102.4GB/s</td>
+    </tr>
+    <tr>
+      <td>DL Accelerator</td>
+      <td colSpan={2}>/</td>
+      <td>1x NVDLA v2</td>
+      <td>2x NVDLA v2</td>
+    </tr>
+    <tr>
+      <td>Video Encoder</td>
+      <td colSpan={2}>1080p30 supported by 1-2 CPU cores</td>
+      <td colSpan={2}>1x 4K60 (H.265) | 3x 4K30 (H.265)<br />6x 1080p60 (H.265) | 12x 1080p30 (H.265)</td>
+    </tr>
+    <tr>
+      <td>Video Decoder</td>
+      <td colSpan={2}>1x 4K60 (H.265)<br />2x 4K30 (H.265)<br />5x 1080p60 (H.265)<br />11x 1080p30 (H.265)</td>
+      <td colSpan={2}>1x 8K30 (H.265)<br />2x 4K60 (H.265)<br />4x 4K30 (H.265)<br />9x 1080p60 (H.265)<br />18x 1080p30 (H.265)</td>
+    </tr>
+    <tr>
+      <th colSpan={5} style={{ fontSize: '24px', fontWeight: 'bold' }}>Carrier Board</th>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td colSpan={4}>128GB NVMe SSD</td>
+    </tr>
+    <tr>
+      <td>Networking</td>
+      <td>M.2 KEY E</td>
+      <td colSpan={3}>1x M.2 Key E for WiFi/Bluetooth module</td>
+    </tr>
+    <tr>
+      <td rowSpan={7}>I/O</td>
+      <td >USB</td>
+      <td colSpan={3}>2x USB 3.2 Type-A (10Gbps)<br />1x USB 2.0 Micro-B (Device Mode)<br />1x USB 2.0 Type-C (Host Mode)<br />1x USB 2.0 JST-4pin (Host Mode)</td>
+    </tr>
+    <tr>
+      <td>UART</td>
+      <td colSpan={3}>1x UART; 1x UART for Debug</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td colSpan={3}>1x DP 2.1 (included in Type-C conenctor)</td>
+    </tr>
+    <tr>
+      <td>Fan</td>
+      <td colSpan={3}>1x 4 pin Fan Connector (5V PWM)</td>
+    </tr>
+    <tr>
+      <td>Button</td>
+      <td colSpan={3}>1x Reset Button; 1x Recovery Button</td>
+    </tr>
+    <tr>
+      <td>Extension Port</td>
+      <td colSpan={3}>2x 60 pin High Speed Connector (For extension board)<br />1x 10 pin Power Connector (For extension board)</td>
+    </tr>
+    <tr>
+      <td>RTC</td>
+      <td colSpan={3}>1x RTC 2-pin</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+      <td colSpan={4}>1x XT30 Connector (12-54V DC)</td>
+    </tr>
+    <tr>
+      <td colSpan={5} style={{ fontSize: '24px', fontWeight: 'bold' }}>Extension Board</td>
+    </tr>
+    <tr>
+      <td>Networking</td>
+      <td>Ethernet</td>
+      <td colSpan={3}>1x RJ-45 Gigabit Ethernet (10/100/1000M)</td>
+    </tr>
+    <tr>
+      <td rowSpan={5}>I/O</td>
+      <td >USB</td>
+      <td colSpan={3}>4x USB 3.2 Type-A (10 Gbps)</td>
+    </tr>
+    <tr>
+      <td>CAN</td>
+      <td colSpan={3}>1x CAN JST 4pin (3.3V); 1x CAN (XT30 2+2) </td>
+    </tr>
+    <tr>
+      <td>Fan</td>
+      <td colSpan={3}>1x 4 pin Fan Connector (5V PWM)</td>
+    </tr>
+    <tr>
+      <td>I2C</td>
+      <td colSpan={3}>2x I2C JST 4pin (3.3V)</td>
+    </tr>
+    <tr>
+      <td>SPI</td>
+      <td colSpan={3}>1x I2S JST 6pin (3.3V)</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+      <td colSpan={4}>2x XT30 2+2 Connector (12-54V DC)</td>
+    </tr>
+    <tr>
+      <td colSpan={5} style={{ fontSize: '24px', fontWeight: 'bold' }}>Others</td>
+    </tr>
+    <tr>
+      <td rowSpan={3}>Mechanical</td>
+      <td >Dimensions (W x D x H)</td>
+      <td colSpan={3}>63mm * 95mm * 42mm (Without Extension)<br />63mm * 95mm * 66.7mm (With Extension)</td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td colSpan={3}>345g (Without Extension)<br />462g (With Extension)</td>
+    </tr>
+    <tr>
+      <td>Installation</td>
+      <td colSpan={3}>Desk, wall-mounting</td>
+    </tr>
+    <tr>
+      <td>Operating Temperature</td>
+      <td colSpan={4}>-10℃ ~ 50℃</td>
+    </tr>
+    <tr>
+      <td>Warranty</td>
+      <td colSpan={4}>1 Year</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+## Hardware Overview 
+
+<div align="center">
+  <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/hardware.png"/>  
+</div>
+
 
 ## Flash JetPack OS
 
@@ -225,7 +409,11 @@ sudo apt update
 sudo apt install nvidia-jetpack
 ```
 
+## Hardware Interfaces Usage
 
+:::info
+If you want to learn more about the detailed specifications and usage of the hardware interface, please refer to [this wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/).
+:::
 
 ## Tech Support & Product Discussion
 

@@ -86,17 +86,19 @@ When it is used as an input mode, you need to turn the switch to IN, and if it i
 ### Sender Code
 
 ```cpp
-#include <SoftwareSerial.h> // Include the SoftwareSerial library
+#include <HardwareSerial.h>
 
-// Create a SoftwareSerial object using D5 and D4 pins
-SoftwareSerial mySerial(D5, D4);
+HardwareSerial mySerial(1); 
+
+
 #define enable_pin D2 // Define the enable pin as D2
 
 void setup() {
   Serial.begin(115200); // Initialize the hardware serial with a baud rate of 115200
-  mySerial.begin(115200); // Initialize the software serial with a baud rate of 115200
+  mySerial.begin(115200, SERIAL_8N1, 7, 6); // RX=D4(GPIO4), TX=D5(GPIO5)
+
   
-  // Wait for the software serial to be ready
+  // Wait for the hardware serial to be ready
   while(!mySerial);
   // Wait for the hardware serial to be ready
   while(!Serial);
@@ -106,54 +108,54 @@ void setup() {
 }
 
 void loop() {
-  // Check if there is data available from the hardware serial
-  if (Serial.available()) {
-    char data = Serial.read(); // Read the data from the hardware serial
-    
-    // If the received data is not a newline character
-    if (data != '\n' && data != '\r') {
-      Serial.println("send successfully"); // Print a success message
-      mySerial.print("Master send information is: "); // Send a prompt message to the software serial
-      mySerial.println(data); // Send the received data to the software serial
+if (Serial.available()) {
+    String receivedData = Serial.readStringUntil('\n'); // Read the data from the hardware serial until a newline character
+
+    // If the received data is not empty
+    if (receivedData.length() > 0) {
+        Serial.println("Send successfully"); // Print a success message
+        mySerial.print("Master send information is: "); // Send a prompt message to the hardware serial
+        mySerial.println(receivedData); // Send the received data to the hardware serial
     }
   }
-  delay(1000); // Delay for 1 second
 }
 
 ```
-- **SoftwareSerial Library:** Allows the creation of additional serial ports on ESP32, typically used for communication with devices (such as sensors or modules).
-- `SoftwareSerial mySerial(D5, D4)`: Defines a SoftwareSerial object named mySerial, using D5 and D4 as the receive and transmit pins.
+- **HardwareSerial Library:** Allows the creation of additional serial ports on ESP32, typically used for communication with devices (such as sensors or modules).
+- `HardwareSerial mySerial(1); `: Defines a HardwareSerial object named mySerial, using D5 and D4 as the receive and transmit pins.
 - `#define enable_pin D2`: Defines an enable pin used to control the sending and receiving state of the RS485 module.
 
-- `setup()`：
-  - `while(!mySerial)`: Waits until the software serial is ready for communication.
+- `setup()`:
+  - `Serial.begin(115200`: Initializes the hardware serial port with a baud rate of 115200.
+  - `mySerial.begin(115200, SERIAL_8N1, 7, 6);`: RX=D4(GPIO4), TX=D5(GPIO5).
+  - `while(!mySerial)`: Waits until the hardware serial is ready for communication.
   - `while(!Serial)`: Waits until the hardware serial is ready for communication.
   - `pinMode(enable_pin, OUTPUT)`: Configures the enable_pin as an output pin to control the RS485 module.
   - `digitalWrite(enable_pin, HIGH)`: Sets the enable_pin to HIGH, configuring the RS485 module for sending mode.
 
 - `loop():`
-  - `if (mySerial.available())`: Checks if there is any data available to read from the software serial port.
-  - `char data = mySerial.read()`: Reads a single character from the software serial port and stores it in the variable data.
-  - `if(data != '\n' && data != '\r')`: Checks if the received data is not a newline (\n) or carriage return (\r) character.
-  - `Serial.println("send successfully")`: Print a success message.
-  - `mySerial.print("Master send information is: ")`: Send a prompt message to the software serial.
-  - `mySerial.println(data)` :Send the data you need to an RS485 expansion board.
+  - `if (receivedData.length() > 0)`: Checks if there is any data available to read from the hadware serial port.
+  -  `String receivedData = Serial.readStringUntil('\n');` : Read the data from the hardware serial until a newline character
+  - `Serial.println("Send successfully")`: Print a success message.
+  - `mySerial.print("Master send information is: ")`: Send a prompt message to the hardware serial.
+  - `mySerial.println(receivedData)` :Send the data you need to an RS485 expansion board.
+
 
 ### Receiver Code
 
 ```cpp
-#include <SoftwareSerial.h> // Include the SoftwareSerial library
+#include <HardwareSerial.h>
 
-SoftwareSerial mySerial(D5, D4); // Create a SoftwareSerial object; D5 is RX and D4 is TX
+HardwareSerial mySerial(1); // Use UART2
 #define enable_pin D2 // Define the enable pin as D2
 
 void setup() {
   Serial.begin(115200); // Initialize the hardware serial with a baud rate of 115200
-  mySerial.begin(115200); // Initialize the software serial with a baud rate of 115200
+  mySerial.begin(115200, SERIAL_8N1, 7, 6); // RX=D4(GPIO4), TX=D5(GPIO5)
   
   // Wait for the hardware serial to be ready
   while(!Serial);
-  // Wait for the software serial to be ready
+  // Wait for the hardware serial to be ready
   while(!mySerial);
   
   pinMode(enable_pin, OUTPUT); // Set the enable pin as an output
@@ -161,44 +163,39 @@ void setup() {
 }
 
 void loop() {
-  // Check if there is data available from the software serial
+  // Check if there is data available from the hardware serial
   if (mySerial.available()) {
-    char data = mySerial.read(); // Read the data from the software serial
-    
-    // If the received data is not a newline character
-    if(data != '\n' && data != '\r'){
-      Serial.println("receiver information"); // Print a message indicating that data is received
-      mySerial.println(data); // Echo the received data back to the software serial
-    }
+      String receivedData = mySerial.readStringUntil('\n'); // Read strings based on newlines
+      Serial.print("Received data: ");
+      Serial.println(receivedData); // Direct printing of received data
   }
 }
 
 ```
 
-- **SoftwareSerial Library:** Allows the creation of additional serial ports on ESP32, typically used for communication with devices (such as sensors or modules).
-- `SoftwareSerial mySerial(D5, D4)`: Defines a SoftwareSerial object named mySerial, using D5 as RX and D4 as TX.
+- **HardwareSerial Library:** Allows the creation of additional serial ports on ESP32, typically used for communication with devices (such as sensors or modules).
+- `HardwareSerial mySerial(1);`: Defines a HardwareSerial object named mySerial, using D5 as RX and D4 as TX.
 - `define enable_pin D2`: Defines an enable pin used to control the sending and receiving state of the RS485 module.
 
 - `setup()`:
   - `Serial.begin(115200`: Initializes the hardware serial port with a baud rate of 115200.
-  - `mySerial.begin(115200)`: Initializes the software serial port with a baud rate of 115200.
+  - `mySerial.begin(115200, SERIAL_8N1, 7, 6);`RX=D4(GPIO4), TX=D5(GPIO5).
   - `while(!Serial)`: Waits until the hardware serial port is ready for communication.
-  - `while(!mySerial)`: Waits until the software serial port is ready for communication.
+  - `while(!mySerial)`: Waits until the hardware serial port is ready for communication.
   - `pinMode(enable_pin, OUTPUT)`: Configures the enable_pin as an output pin to control the RS485 module.
   - `digitalWrite(enable_pin, LOW)`: Sets the enable_pin to low, configuring the RS485 module for receiving mode.
 
 - `loop()`:
-  - `if (mySerial.available())`: Checks if there is any data available to read from the software serial port.
-  - `char data = mySerial.read()`: Reads a single character from the software serial port and stores it in the variable data.
-  - `if(data != '\n' && data != '\r')`: Checks if the received data is not a newline (\n) or carriage return (\r) character.
-  - `Serial.println("receiver information")`: Prints a message to the hardware serial indicating that data has been received.
-  - `mySerial.println(data)`: Print the data sent to the receiver RS485.
+  - `if (mySerial.available())`: Checks if there is any data available to read from the hadwareware serial port.
+  - `String receivedData = mySerial.readStringUntil('\n');`: Read strings based on newlines
+  - `Serial.print("Received data: ");`: Prints a message to the hardware serial indicating that data has been received.
+  - `Serial.println(receivedData);`: Print the data sent to the receiver RS485.
 
 
 ## RS485 Transmission Result
 
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/rs485_ExpansionBoard/result.png" style={{width:900, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RS485_V2AI/photo/rs485_result.png" style={{width:1000, height:'auto'}}/></div>
 
 
 ## Tech Support & Product Discussion
