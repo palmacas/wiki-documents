@@ -4,8 +4,8 @@ title: RS485 transmission of Vision AI V2 data
 keywords:
 - RS485
 - Vision AI
-image: https://files.seeedstudio.com/wiki/RS485_V2AI/photo/connectv2.jpg
-slug: /Grove_vision_ai_v2_RS485
+image: https://files.seeedstudio.com/wiki/RS485_V2AI/photo/connectv2.webp
+slug: /grove_vision_ai_v2_rs485
 last_update:
   date: 12/19/2024
   author: Jason
