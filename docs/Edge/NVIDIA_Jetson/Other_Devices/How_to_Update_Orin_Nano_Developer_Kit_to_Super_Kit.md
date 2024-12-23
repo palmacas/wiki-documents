@@ -4,7 +4,7 @@ title: How to Update Jetson Orin Nano Developer Kit to Super Kit
 keywords:
   - Edge reComputer
   - Jetson Orin Nano Super Developer Kit
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/Orin-Nano-Developer-Kit/jetson-orin-nano-dev-kit.webp
 slug: /update_orin_nano_developer_kit_to_super_kit
 last_update:
   date: 12/19/2024
