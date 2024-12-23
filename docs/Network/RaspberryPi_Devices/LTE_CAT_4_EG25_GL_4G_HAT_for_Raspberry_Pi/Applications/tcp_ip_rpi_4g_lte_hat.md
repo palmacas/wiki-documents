@@ -1,5 +1,5 @@
 ---
-description: Discover how the 4G LTE HAT for Raspberry Pi and MQTT protocol enable efficient, real-time communication for IoT and IIoT applications. Simplify remote connectivity with AT commands for scalable, high-speed data transmission and remote management.
+description: Unleash the power of TCP for your Raspberry Pi 4G HAT. Explore how TCP ensures reliable data exchange, essential for IoT applications, remote monitoring, and more.
 
 title: 4G LTE HAT on Raspberry Pi- TCP/IP Networking Explained
 keywords:
@@ -9,7 +9,7 @@ keywords:
   - IoT
   - TCP/IP
   - Edge Computing
-image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png
+image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/tcp.PNG
 slug: /tcp_ip_raspberry_pi_4g_lte_hat
 last_update:
   date: 12/20/2024
