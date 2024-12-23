@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reCamera
 image: https://files.seeedstudio.com/wiki/reCamera/image.webp
-slug: /reCamera_hardware_interface
+slug: /recamera_hardware_interface
 # sidebar_position: 1
 last_update:
   date: 11/11/2024
