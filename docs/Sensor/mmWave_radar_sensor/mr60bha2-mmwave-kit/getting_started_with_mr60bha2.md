@@ -234,14 +234,19 @@ void loop() {
 
     PeopleCounting target_info;
     if (mmWave.getPeopleCountingTartgetInfo(target_info)) {
-        Serial.printf("-----Got a Tartget Info-----\n");
-        Serial.printf("target_num: %d\n", target_info.target_num);
-        Serial.printf("x_point: %.2f\n", target_info.x_point);
-        Serial.printf("y_point: %.2f\n", target_info.y_point);
-        Serial.printf("dop_index: %d\n", target_info.dop_index);
-        Serial.printf("cluster_index: %d\n", target_info.cluster_index);
+        Serial.printf("-----Got Target Info-----\n");
+        Serial.printf("Number of targets: %zu\n", target_info.targets.size());
+
+        for (size_t i = 0; i < target_info.targets.size(); i++) {
+            const auto& target = target_info.targets[i];
+            Serial.printf("Target %zu:\n", i + 1);
+            Serial.printf("  x_point: %.2f\n", target.x_point);
+            Serial.printf("  y_point: %.2f\n", target.y_point);
+            Serial.printf("  dop_index: %d\n", target.dop_index);
+            Serial.printf("  cluster_index: %d\n", target.cluster_index);
+            Serial.printf("  move_speed: %.2f cm/s\n", target.dop_index * RANGE_STEP);
+        }
     }
-    
     // delay(500);
   }
 }
@@ -450,7 +455,7 @@ This example uses the `SEEED_MR60BHA2` class to interface with the MR60BHA2 sens
     - `target_num` : Number of point clouds.
     - `x_point` : X coordinate.
     - `y_point` : Y coordinate.
-    - `dop_index` : Speed ​​Step, dop_index * RANGE_STEP = RANGE
+    - `dop_index` : Speed ​​Index, dop_index * RANGE_STEP = move_speed, RANGE_STEP represents the speed resolution.
     - `cluster_index` : Point Cloud ID
 
 - **`mmWave.getPeopleCountingTartgetInfo(PeopleCounting& target_info)`**:
@@ -459,7 +464,7 @@ This example uses the `SEEED_MR60BHA2` class to interface with the MR60BHA2 sens
     - `target_num` : Number of Target.
     - `x_point` : X coordinate.
     - `y_point` : Y coordinate.
-    - `dop_index` : Speed ​​Step, dop_index * RANGE_STEP = RANGE
+    - `dop_index` : Speed ​​Index, dop_index * RANGE_STEP = move_speed, RANGE_STEP represents the speed resolution.
     - `cluster_index` : Target ID
 
 - **`mmWave.isHumanDetected()`**:
