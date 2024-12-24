@@ -8,7 +8,7 @@ keywords:
   - IIoT
   - GNSS
   - Edge Computing
-image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.png
+image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.webp
 slug: /raspberry_pi_4g_hat_gnss_functionlities
 last_update:
   date: 12/12/2024

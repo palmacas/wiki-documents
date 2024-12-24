@@ -9,8 +9,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/r1000_connection_1.webp
 slug: /recomputer_r1000_use_rs485_modbus_rtu
 last_update:
-  date: 11/14/2024
-  author: Joshua Lee
+  date: 12/20/2024
+  author: Jiahao Li
 ---
 
 ## Introduction
@@ -58,6 +58,45 @@ This test uses an RS485 to USB module to connect reComputer R1000 and W10 PC.
 For ModbusTCP, we use Ethernet cables to connect the W10 PC and reComputer R1000 to a switch to ensure that they are on the same network segment.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/r1000_connection.png" alt="pir" width="500" height="auto" /></div>
+
+## Configure minicom on reComputer R1000v1.1
+
+**NOTE:** Before you use RS485 with minicom please install r1000 drivers like [this](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#install-drivers).
+
+
+### First, install minicom 
+
+Install minicom on both your host computer and reComputer r1000 with command below:
+
+```
+sudo apt install minicom
+```
+
+### Second, configure your minicom as follows:
+
+Open a terminal with `Ctrl+Alt+T`, and input command like below:
+
+```
+sudo minicom -D /dev/ttyAMA*
+```
+The `ttyAMA*` should be `ttyAMA2, ttyAMA3 or ttyAMA4` depends on which RS485 you use.
+
+And then type `Ctal+A` then type `C` you will see minicom like below:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom0.png" alt="pir" width="700" height="auto" /></div>
+
+Type `o` to configure minicom, and select `Serial port setup` you will see like below:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom1.png" alt="pir" width="700" height="auto" /></div>
+
+And the type `F` and `H` to make minicom to RS485 model, the result will show as below:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom2.png" alt="pir" width="700" height="auto" /></div>
+
+Finally, select `Exit` and type `Enter` to exit configure, like below: 
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom3.png" alt="pir" width="700" height="auto" /></div>
+
 
 ## Action required for reComputer R1000 v1.0
 

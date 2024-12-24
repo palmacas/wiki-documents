@@ -9,7 +9,7 @@ keywords:
   - IIoT
   - RNDIS
   - Mobile Data
-image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.jpg
+image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.webp
 slug: /raspberry_pi_4g_hat_rndis_mobile_internet
 last_update:
   date: 12/13/2024

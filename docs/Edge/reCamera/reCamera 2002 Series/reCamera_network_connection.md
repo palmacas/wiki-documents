@@ -6,6 +6,7 @@ keywords:
   - reCamera
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recamera_network_connection
+sidebar_position: 5
 last_update:
   date: 09/29/2024
   author: Parker Hu
@@ -13,9 +14,9 @@ last_update:
 
 # reCamera Network Connection
 
-reCamera is a combination of a **processor** and a camera **sensor**.
+If you encounter a situation where the usb-connected device fails to recognize reCamera during the network configuration for reCamera, as well as the problem of network connection failure after configuring the network, please refer to this article. 
 
-This combination makes reCamera a standalone system that can handle basic detection and control tasks on its own.
+It is necessary to modify and configure the computer network environment, including installing drivers on the Windows system, querying network cards on the Linux system, and configuring network priorities on the Mac system.
 
 ## Set up the working environment
 
