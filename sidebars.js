@@ -3663,6 +3663,12 @@ const sidebars = {
                     'Edge/NVIDIA_Jetson/Application/Robotics/Hardware/Orbbec_Depth_Camera',
                     'Edge/NVIDIA_Jetson/Application/Robotics/Hardware/CSI_Camera'
                       ]},
+                      {
+                        type: 'category',
+                        label: 'Projects',
+                        items: [
+                          'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm',
+                            ]},
                 
                 ]},
 
