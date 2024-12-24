@@ -201,6 +201,56 @@ The output will be as follows on Arduino Serial Monitor:
 
 If the returned data is not `0`, indicate the existence of a living thing inside the detection's range.
 
+#### Human Detection
+
+This example demonstrates how to use the **MR60BHA2** sensor for human detection.
+
+```cpp
+#include <Arduino.h>
+#include "Seeed_Arduino_mmWave.h"
+
+// If the board is an ESP32, include the HardwareSerial library and create a
+// HardwareSerial object for the mmWave serial communication
+#ifdef ESP32
+#  include <HardwareSerial.h>
+HardwareSerial mmWaveSerial(0);
+#else
+// Otherwise, define mmWaveSerial as Serial1
+#  define mmWaveSerial Serial1
+#endif
+
+SEEED_MR60BHA2 mmWave;
+
+void setup() {
+  Serial.begin(115200);
+  mmWave.begin(&mmWaveSerial);
+}
+
+void loop() {
+  if (mmWave.update(100)) {
+    if (mmWave.isHumanDetected()) {
+        Serial.printf("-----Human Detected-----\n");
+    }
+
+    PeopleCounting target_info;
+    if (mmWave.getPeopleCountingTartgetInfo(target_info)) {
+        Serial.printf("-----Got a Tartget Info-----\n");
+        Serial.printf("target_num: %d\n", target_info.target_num);
+        Serial.printf("x_point: %.2f\n", target_info.x_point);
+        Serial.printf("y_point: %.2f\n", target_info.y_point);
+        Serial.printf("dop_index: %d\n", target_info.dop_index);
+        Serial.printf("cluster_index: %d\n", target_info.cluster_index);
+    }
+    
+    // delay(500);
+  }
+}
+```
+
+The output will be as follows on Arduino Serial Monitor:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/people-counting-target-info.png" style={{width:700, height:'auto'}}/></div>
+
 <!-- 
 ### Fall Module
 
@@ -393,6 +443,27 @@ This example uses the `SEEED_MR60BHA2` class to interface with the MR60BHA2 sens
 
 - **`mmWave.getDistance(float &distance)`**:
   - Gets the distance from the sensor to the detected object (e.g., human body). This function is useful for understanding the range of the detected signal.
+
+- **`mmWave.getPeopleCountingPointCloud(PeopleCounting& point_cloud)`**:
+  - Get point cloud information. It just realizes the reception of message type, it is normal that there is no data.
+  - The `PeopleCounting` structure contains the following properties:
+    - `target_num` : Number of point clouds.
+    - `x_point` : X coordinate.
+    - `y_point` : Y coordinate.
+    - `dop_index` : Speed ​​Step, dop_index * RANGE_STEP = RANGE
+    - `cluster_index` : Point Cloud ID
+
+- **`mmWave.getPeopleCountingTartgetInfo(PeopleCounting& target_info)`**:
+  - Get detected target information.
+  - The `PeopleCounting` structure contains the following properties:
+    - `target_num` : Number of Target.
+    - `x_point` : X coordinate.
+    - `y_point` : Y coordinate.
+    - `dop_index` : Speed ​​Step, dop_index * RANGE_STEP = RANGE
+    - `cluster_index` : Target ID
+
+- **`mmWave.isHumanDetected()`**:
+  - Returns whether a human is detected.
 
 <!-- 
 ### Fall Module API
