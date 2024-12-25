@@ -82,6 +82,10 @@ To successfully integrate the MR60BHA2 mmWave Sensor with Home Assistant, you wi
    - Click "Install" and then "Start" to enable it.
    - Once installed, configure the add-on to ensure proper communication with the XIAO ESP32C6.
 
+:::caution Attention
+Due to the new icons, please install ESPHome plugin version 2024.12.0 and above.
+:::
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-enabling_ESPHome_Add-on.png" style={{width:1000, height:'auto'}}/></div>
 
 By gathering the necessary components and setting up Home Assistant with the ESPHome add-on, you'll be ready to proceed with the integration of the MR60BHA2 mmWave Sensor.
