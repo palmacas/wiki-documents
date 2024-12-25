@@ -2744,6 +2744,8 @@ const sidebars = {
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ftp_on_rpi_4g_lte_hat',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mqtt_on_rpi_4g_lte_hat',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/tcp_ip_rpi_4g_lte_hat',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_openwrt',
+
             ],
           },
         ],
