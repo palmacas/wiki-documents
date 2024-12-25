@@ -5,7 +5,7 @@ keywords:
 - mmwave
 - radar
 - MR60BHA2
-image: https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/2-mmWave-45font.jpg
+image: https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/22-114993387-mr60bha2-60ghz-mmwave-45font.jpg
 slug: /getting_started_with_mr60bha2_mmwave_kit
 sidebar_position: 0
 last_update:
@@ -15,7 +15,7 @@ last_update:
 
 # Getting started with 60GHz mmWave Breathing and Heartbeat Detection Sensor Kit with XIAO ESP32C6 (MR60BHA2)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/2-mmWave-45font.jpg" style={{width:'auto', height:'auto', "border-radius": '12.8px'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/22-114993387-mr60bha2-60ghz-mmwave-45font.jpg" style={{width:'auto', height:'auto', "border-radius": '12.8px'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/MR60BHA2-60GHz-mmWave-Sensor-Breathing-and-Heartbeat-Module-p-5945.html?utm_source=wiki">
@@ -197,7 +197,7 @@ if (mmWave.update(100)) {
 
 The output will be as follows on Arduino Serial Monitor:
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/breathing_and_heartbeat_detection.png" style={{width:700, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/breathing_and_heartbeat_detection_resize.png" style={{width:700, height:'auto'}}/></div>
 
 If the returned data is not `0`, indicate the existence of a living thing inside the detection's range.
 
@@ -206,7 +206,8 @@ If the returned data is not `0`, indicate the existence of a living thing inside
 This example demonstrates how to use the **MR60BHA2** sensor for human detection.
 
 :::caution
-Please make sure you have [upgrade the firmware](#module-firmware-upgrade) of MR60BHA2 module to the latest version.
+Please make sure you have [upgrade the firmware](#module-firmware-upgrade) of MR60BHA2 module to the latest version.  
+The latest firmware adds human presence detection and human object related functions.
 :::
 
 ```cpp
@@ -261,8 +262,9 @@ The output will be as follows on Arduino Serial Monitor:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/people-counting-target-info.png" style={{width:700, height:'auto'}}/></div>
 
 :::note
-When there are people moving within the 1.5M range, the module will enter the heartbeat and breathing detection mode.   
-In this mode, the sensitivity of the human detection function may decrease.
+Breathing and heart rate can be detected within 1.5 meters, and presence can be detected within a range of 1.5 to 6 meters.  
+When there are people within the 1.5M range, the module will enter the heartbeat and breathing detection mode.   
+In this mode, the sensitivity of the human detection function may decrease.  
 :::
 
 <!-- 
@@ -507,6 +509,13 @@ This example uses the `SEEED_MR60FDA2` class to interface with the MR60FDA2 sens
 
 ## Module firmware upgrade
 
+:::note
+The new firmware has the following update:
+1. Optimized the breathing and heart rate detection feature, fixing the bug where small body movements caused data loss.  
+2. Enhanced the 3D presence detection function: breathing and heart rate can be detected within 1.5 meters, and presence can be detected within a range of 1.5 to 6 meters.  
+3. Added a personnel detection feature, capable of detecting up to three individuals within a range of 6 meters.
+:::
+
 First, connect the XIAO ESP32C6 and MR60BHA2 modules together. Then use the following code to program XIAO.
 
 ```cpp
@@ -549,7 +558,10 @@ void loop() {
 }
 ```
 
-The function of the above code is to transparently transmit the serial port of the module to the USB serial port of XIAO, so as to upgrade the firmware of the module through XIAO.
+:::tips
+The function of the above code is to transparently transmit the serial port of the module to the USB serial port of XIAO, so as to upgrade the firmware of the module through XIAO.  
+Please connect XIAO to your PC during the upgrade process.
+:::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/passthrough-mode.png" style={{width:700, height:'auto'}}/></div>
 
