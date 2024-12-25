@@ -30,7 +30,7 @@ git clone {your repository}
 
 Please download the [node.js](https://nodejs.org/en/download/) according to your operating system(Windows, Mac).
 
-Please install the `v20.08.1 (LTS)` version of nodejs, otherwise errors may occur during the installation process.
+Please install the `v20.18.1 (LTS)` version of nodejs, otherwise errors may occur during the installation process.
 
 ### 3. Download Visual Studio Code
 
