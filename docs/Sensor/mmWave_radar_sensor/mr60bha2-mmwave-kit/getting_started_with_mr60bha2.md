@@ -569,8 +569,8 @@ You will see the original data sent by the module.
 
 Then you need to download and unzip the OTA tool and the firmware here.
 
- - [ANDAR_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/ANDAR_OTA.zip)
- - [Target_flash_eeprom_1204_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/Target_flash_eeprom_1204_1.6.4.bin)
+- **MR60BHA2 Firmware upgrade tool**: [MR60BHA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_OTA.zip)
+- **MR60BHA2 Firmware v1.6.4**: [MR60BHA2_eeprom_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_eeprom_1.6.4.bin)
 
 1. Check and connect to the serial port (set the baud rate to 115200)
 
@@ -611,8 +611,8 @@ For more information about 3D point cloud data generation and interference zone 
 - **STP**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/xiao_mm_wave.stp)
 - **GitHub Repository**: Access the full codebase and documentation at the [Seeed mmWave Library GitHub page](https://github.com/Love4yzp/Seeed-mmWave-library).
 - **ESPHome Documentation**: For further customization and integration, refer to the [ESPHome documentation](https://esphome.io/).
-- **MR60BHA2 Firmware upgrade tool**: [ANDAR_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/ANDAR_OTA.zip)
-- **MR60BHA2 Firmware v1.6.4**: [Target_flash_eeprom_1204_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/Target_flash_eeprom_1204_1.6.4.bin)
+- **MR60BHA2 Firmware upgrade tool**: [MR60BHA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_OTA.zip)
+- **MR60BHA2 Firmware v1.6.4**: [MR60BHA2_eeprom_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_eeprom_1.6.4.bin)
 
 
 ## Tech Support & Product Discussion
