@@ -459,22 +459,22 @@ This example uses the `SEEED_MR60BHA2` class to interface with the MR60BHA2 sens
   - Gets the distance from the sensor to the detected object (e.g., human body). This function is useful for understanding the range of the detected signal.
 
 - **`mmWave.getPeopleCountingPointCloud(PeopleCounting& point_cloud)`**:
-  - Get point cloud information. It just realizes the reception of message type, it is normal that there is no data.
-  - The `PeopleCounting` structure contains the following properties:
-    - `target_num` : Number of point clouds.
-    - `x_point` : X coordinate.
-    - `y_point` : Y coordinate.
-    - `dop_index` : Speed ​​Index, dop_index * RANGE_STEP = move_speed, RANGE_STEP represents the speed resolution.
-    - `cluster_index` : Point Cloud ID
+  - Retrieves information about point clouds. It just realizes the reception of message type, it is normal that there is no data.
+  - The `PeopleCounting` structure contains a vector of detected targets. Each target includes the following attributes:
+    - `x_point` : X coordinate of the target (in meter).
+    - `y_point` : Y coordinate of the target (in meter).
+    - `dop_index` : Doppler index, representing the speed of the target.
+      - The actual movement speed (in cm/s) can be calculated as: `dop_index * RANGE_STEP`, where `RANGE_STEP` is the speed resolution.
+    - `cluster_index` : Cluster ID of the target, used to identify individual targets in the scene.
 
 - **`mmWave.getPeopleCountingTartgetInfo(PeopleCounting& target_info)`**:
-  - Get detected target information.
-  - The `PeopleCounting` structure contains the following properties:
-    - `target_num` : Number of Target.
-    - `x_point` : X coordinate.
-    - `y_point` : Y coordinate.
-    - `dop_index` : Speed ​​Index, dop_index * RANGE_STEP = move_speed, RANGE_STEP represents the speed resolution.
-    - `cluster_index` : Target ID
+  - Retrieves information about detected targets.
+  - The `PeopleCounting` structure contains a vector of detected targets. Each target includes the following attributes:
+    - `x_point` : X coordinate of the target (in meter).
+    - `y_point` : Y coordinate of the target (in meter).
+    - `dop_index` : Doppler index, representing the speed of the target.
+      - The actual movement speed (in cm/s) can be calculated as: `dop_index * RANGE_STEP`, where `RANGE_STEP` is the speed resolution.
+    - `cluster_index` : Cluster ID of the target, used to identify individual targets in the scene.
 
 - **`mmWave.isHumanDetected()`**:
   - Returns whether a human is detected.
