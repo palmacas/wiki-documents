@@ -206,7 +206,7 @@ If the returned data is not `0`, indicate the existence of a living thing inside
 This example demonstrates how to use the **MR60BHA2** sensor for human detection.
 
 :::caution
-Please make sure you have upgrade the firmware of MR60BHA2 module to the latest version.
+Please make sure you have [upgrade the firmware](#module-firmware-upgrade) of MR60BHA2 module to the latest version.
 :::
 
 ```cpp
@@ -259,6 +259,11 @@ void loop() {
 The output will be as follows on Arduino Serial Monitor:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/people-counting-target-info.png" style={{width:700, height:'auto'}}/></div>
+
+:::note
+When there are people moving within the 1.5M range, the module will enter the heartbeat and breathing detection mode.   
+In this mode, the sensitivity of the human detection function may decrease.
+:::
 
 <!-- 
 ### Fall Module
