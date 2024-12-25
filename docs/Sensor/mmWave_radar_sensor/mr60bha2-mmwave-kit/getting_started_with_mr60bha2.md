@@ -205,6 +205,10 @@ If the returned data is not `0`, indicate the existence of a living thing inside
 
 This example demonstrates how to use the **MR60BHA2** sensor for human detection.
 
+:::caution
+Please make sure you have upgrade the firmware of MR60BHA2 module to the latest version.
+:::
+
 ```cpp
 #include <Arduino.h>
 #include "Seeed_Arduino_mmWave.h"
@@ -496,6 +500,89 @@ This example uses the `SEEED_MR60FDA2` class to interface with the MR60FDA2 sens
 - **`mmWave.getFall()`**:
   - Determines whether a fall has been detected. This function returns `true` if a fall is detected and `false` if not.-->
 
+## Module firmware upgrade
+
+First, connect the XIAO ESP32C6 and MR60BHA2 modules together. Then use the following code to program XIAO.
+
+```cpp
+#include <Arduino.h>
+#include "Seeed_Arduino_mmWave.h"
+
+// If the board is an ESP32, include the HardwareSerial library and create a
+// HardwareSerial object for the mmWave serial communication
+#ifdef ESP32
+#  include <HardwareSerial.h>
+HardwareSerial mmWaveSerial(0);
+#else
+// Otherwise, define mmWaveSerial as Serial1
+#  define mmWaveSerial Serial1
+#endif
+
+void setup() {
+  // Initialize the serial communication for debugging
+  Serial.begin(115200);
+  while (!Serial) {
+    ; // Wait for Serial to initialize
+  }
+
+  // Initialize the mmWaveSerial communication
+  mmWaveSerial.begin(115200);
+}
+
+void loop() {
+  // Check if there is data available from mmWaveSerial
+  while (mmWaveSerial.available() > 0) {
+    char receivedChar = mmWaveSerial.read();
+    Serial.write(receivedChar); // Forward data to Serial
+  }
+
+  // Check if there is data available from Serial
+  while (Serial.available() > 0) {
+    char receivedChar = Serial.read();
+    mmWaveSerial.write(receivedChar); // Forward data to mmWaveSerial
+  }
+}
+```
+
+The function of the above code is to transparently transmit the serial port of the module to the USB serial port of XIAO, so as to upgrade the firmware of the module through XIAO.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/passthrough-mode.png" style={{width:700, height:'auto'}}/></div>
+
+You will see the original data sent by the module.
+
+Then you need to download and unzip the OTA tool and the firmware here.
+
+ - [ANDAR_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/ANDAR_OTA.zip)
+ - [Target_flash_eeprom_1204_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/Target_flash_eeprom_1204_1.6.4.bin)
+
+1. Check and connect to the serial port (set the baud rate to 115200)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/1-check-and-connect-serial.png" style={{width:700, height:'auto'}}/></div>
+
+2. Click "REQUEST UPDATE" to enter the upgrade mode:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/2-request-update.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/3-upgrade-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/4-baudrate-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+3. If "C" or "43" is printed, it means that the module has entered upgrade mode.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/5-module-enter-upgrade-mode.png" style={{width:700, height:'auto'}}/></div>
+
+4. Select the firmware to be upgraded. After selection, it will automatically enter the upgrade state. 
+
+After the upgrade is completed, it will automatically jump to normal mode. If it does not jump, power off and restart, and then use OTA tool to view the serial port data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/6-open-file.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/7-choose-file.png" style={{width:700, height:'auto'}}/></div>
+
+5. After the upgrade is complete, you can use OTA tool to read the version and raw data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/8-flash-done.png" style={{width:700, height:'auto'}}/></div>
+
 ## Open for Customization
 
 Want to tailor-make the kit to fit your unique applications?
@@ -507,6 +594,9 @@ For more information about 3D point cloud data generation and interference zone 
 - **STP**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/xiao_mm_wave.stp)
 - **GitHub Repository**: Access the full codebase and documentation at the [Seeed mmWave Library GitHub page](https://github.com/Love4yzp/Seeed-mmWave-library).
 - **ESPHome Documentation**: For further customization and integration, refer to the [ESPHome documentation](https://esphome.io/).
+- **MR60BHA2 Firmware upgrade tool**: [ANDAR_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/ANDAR_OTA.zip)
+- **MR60BHA2 Firmware v1.6.4**: [Target_flash_eeprom_1204_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/Target_flash_eeprom_1204_1.6.4.bin)
+
 
 ## Tech Support & Product Discussion
 
