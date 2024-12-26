@@ -1,7 +1,7 @@
 ---
 description: This article describes how to use SSCMACore libraries on XIAO.
 title: Use SSCMACore library output model info
-image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.png
+image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.webp
 slug: /sensecraft_ai_sscmacore_library
 sidebar_position: 4
 last_update:

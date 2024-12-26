@@ -2730,6 +2730,18 @@ const sidebars = {
         collapsible: true,
         items: [
           'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+
+          {
+            type: 'category',
+            label: 'Application',
+            items: [
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_rndis_4g_lte_set_up',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ftp_on_rpi_4g_lte_hat',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mqtt_on_rpi_4g_lte_hat',
+            ],
+          },
         ],
        },  
 
@@ -3426,16 +3438,6 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'reComputer Industrial',
-              items: [
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
-              ],
-            },
-
-            {
-              type: 'category',
               label: 'reComputer J10',
               link: {
                 type: "doc",
@@ -3482,7 +3484,25 @@ const sidebars = {
               items: [
                 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_J30_40_with_Jetson_getting_start',
                 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_Jetson_with_Infineon_Wi-Fi_Module'
-              ]}
+              ]
+            },
+            {
+              type: 'category',
+              label: 'reComputer Industrial',
+              items: [
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reComputer Mini',
+              items: [
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
+              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
+              ],
+            },
         ]},
         
         // reServer Jetson Series

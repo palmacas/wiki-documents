@@ -203,57 +203,65 @@ Paste the following code into it and click **Import** button.
 ```
 [
     {
-        "id": "ae13bbcd03f719ce",
+        "id": "99b783856e77b41f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2791b077ca7367c9",
         "type": "http in",
-        "z": "f6f2187d.f17ca8",
+        "z": "99b783856e77b41f",
         "name": "",
         "url": "/v1/notification/event",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 280,
-        "y": 360,
+        "x": 450,
+        "y": 460,
         "wires": [
             [
-                "139364fe839c4715"
+                "5de4e51231d87d00"
             ]
         ]
     },
     {
-        "id": "93011c7c05cd8352",
+        "id": "61c50a0666f83a50",
         "type": "http response",
-        "z": "f6f2187d.f17ca8",
+        "z": "99b783856e77b41f",
         "name": "",
         "statusCode": "200",
         "headers": {},
-        "x": 660,
-        "y": 360,
+        "x": 830,
+        "y": 460,
         "wires": []
     },
     {
-        "id": "139364fe839c4715",
+        "id": "5de4e51231d87d00",
         "type": "function",
-        "z": "f6f2187d.f17ca8",
+        "z": "99b783856e77b41f",
         "name": "",
-        "func": "// 在这个地方处理数据\n// 例如下面的，提取了报警信息\n// msg.payload = {\n//     alertMsg: msg.payload.events.text\n// }\n msg.payload = {\n    code: 200,\n    msg:\"ok\",\n    data: msg.payload\n}\nreturn msg;",
+        "func": "// here to process data\n// for example, extract alarm info \n// msg.payload = {\n//     alertMsg: msg.payload.events.text\n// }\n msg.payload = {\n    code: 200,\n    msg:\"ok\",\n    data: msg.payload\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 360,
+        "x": 660,
+        "y": 460,
         "wires": [
             [
-                "93011c7c05cd8352",
-                "356cfd540bad72dd"
+                "61c50a0666f83a50",
+                "852490a1c300cd94"
             ]
         ]
     },
     {
-        "id": "356cfd540bad72dd",
+        "id": "852490a1c300cd94",
         "type": "debug",
-        "z": "f6f2187d.f17ca8",
+        "z": "99b783856e77b41f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -262,8 +270,8 @@ Paste the following code into it and click **Import** button.
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
-        "y": 420,
+        "x": 840,
+        "y": 520,
         "wires": []
     }
 ]
