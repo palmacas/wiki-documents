@@ -1,6 +1,6 @@
 ---
 description: This wiki will guide you on how to flash open source LoRaWAN® firmware for your M2 gateway. Based on the open source LoRaWAN® firmware, you can deeply customise your M2 gateway.
-title: Flash open source firmware to M2 Gateway
+title: Flash Opensource Firmware to M2 Gateway
 image: https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/m2-white.webp
 slug: /flash_opensource_firmware_to_m2_gateway
 last_update:
@@ -10,7 +10,7 @@ last_update:
 
 The SenseCAP M2 gateways represent a cost-effective solution for LoRa gateways, powered by the mature hardware solution MT7628 and the Semtech SX1302 baseband Long Range chip. The specific models are distinguished by the factory-set frequency band (EU868/US915/AS923/AU915), optional module (4G/GPS) and supported LoRa network (LoRaWAN®/Helium network)
 
-This wiki will guide you on how to burn open source firmware for your M2 gateway. Based on the open source firmware, you can deeply customise your M2 gateway, such as adding additional features or changing the operating band (antennas need to be adapted to the band)
+This wiki will guide you on how to flash open source firmware for your M2 gateway. Based on the open source firmware, you can deeply customise your M2 gateway, such as adding additional features or changing the operating band (antennas need to be adapted to the band)
 
 :::danger Warning
 After flashing the open source firmware, you **CAN NOT** revert to the **factory firmware**.
@@ -23,7 +23,6 @@ Seeed studio is **NOT responsible** for any damage to the device caused by the u
 - <a  href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5471.html" target="_blank"><span> <b>M2 Multi-Platform LoRaWAN Indoor Gateway(SX1302)</b></span></a>
 - <a  href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-4G-EU868-p-5599.html" target="_blank"><span> <b>M2 Multi-Platform LoRaWAN Indoor Gateway(SX1302-4G)</b></span></a>
 - <a  href="https://www.seeedstudio.com/SenseCAP-M2-Data-Only-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5339.html" target="_blank"><span> <b>M2 Data-Only LoRaWAN Indoor Gateway(SX1302)</b></span></a>
-- <a  href="https://www.seeedstudio.com/SenseCAP-M2-Light-Hotspot-and-Software-License.html" target="_blank"><span> <b>M2 Light Hotspot</b></span></a>
 
 ## Prepare the firmware
 
@@ -32,9 +31,9 @@ Seeed studio is **NOT responsible** for any damage to the device caused by the u
 If you want to experience open source firmware at your convenience, we provide some compiled firmwares. You can download from <a  href="https://github.com/Seeed-Solution/LoRa_Gateway_OpenWRT/releases" target="_blank"><span> Seeed-Solution/LoRa_Gateway_OpenWRT/Release</span></a>
 
 :::tip Note
-Make sure you download the firmware for your gateway
+Check the suffix of the .bin file to verify that the firmware is compatible with your M2 gateway
 
-E.g. the **EU868-4G** firmware does not work with **M2 gateways(EU868)**
+E.g. the **openwrt-...-EU868-4G.bin** firmware is compiled for M2 gateways operating in the **EU868 band with a 4G module**
 :::
 
 ### Build your firmware
@@ -87,13 +86,13 @@ You can flash the firmware into your gateway in one of two ways
 
 Before you begin, you will need to install the TFTP server tool on your computer and place the firmware in the appropriate directory.
 
-**Step 1:** Use a Type-c cable to connect the device to the computer, and use a network cable to place the device and the computer in the same LAN.
+**Step 1:** Use a Type-C cable to connect the device to the computer, and use a network cable to place the device and the computer in the same LAN.
 
 **Step 2:** Connect to the device using the serial port called `USB-SERIAL CH340` with **baud rate 57600**
 
 **Step 3:** Restart the device. When the device enters uboot, **select command 2** to enter the system update.
 
-**Step 4:** Enter **device ip**, where the device ip network segment must be the network segment of your own network; enter **server ip**, which is the IP of your computer, and enter **the name of the firmware** to be burned (the file suffix must be included)
+**Step 4:** Enter **device ip**, where the device ip network segment must be the network segment of your own network; enter **server ip**, which is the IP of your computer, and enter **the name of the firmware** to be flashed (the file suffix must be included)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/opensource3.png" alt="pir" width={800} height="auto" /></p>
 
