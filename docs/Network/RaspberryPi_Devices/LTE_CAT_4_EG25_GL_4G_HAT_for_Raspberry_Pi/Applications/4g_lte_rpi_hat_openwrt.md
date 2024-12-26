@@ -50,8 +50,9 @@ The Raspberry Pi 5, paired with **OpenWrt** and a 4G LTE HAT , offers a powerful
 </div>
 
 
+## Build the OpenWrt Image
 
-## Choose the OpenWrt Snapshot
+### Choose the OpenWrt Snapshot
 
 To work with a 4G LTE module, certain dependencies are required. The OpenWrt Firmware Selector provides the flexibility to include these dependencies during the image creation process, allowing you to compile a customized firmware. Without this approach, you would need an alternative internet source to install the dependencies on the Raspberry Pi after setup. Therefore, it is recommended to build a firmware image that already includes the necessary dependencies.
 
@@ -68,7 +69,6 @@ To work with a 4G LTE module, certain dependencies are required. The OpenWrt Fir
   />
 </div>
 
-## Build a Custom OpenWrt Image
 
 Ensure the following packages are included during the custom build process:
 
@@ -97,7 +97,7 @@ Ensure the following packages are included during the custom build process:
 - Connect your Raspberry Pi to a 4G LTE modul
 
 
-## Check Device Connection
+### Check Device Connection
 
 Access the Raspberry Pi using SSH:
 
@@ -177,7 +177,7 @@ minicom -D /dev/ttyUSB2
 AT+QCFG="usbnet"
 AT+QCFG="usbnet",1 
 ```
-## Add a New Network Interface
+### Add a New Network Interface
 
 - Log in to the OpenWrt LuCI web interface via web browser **192.168.1.1**.
 - Go to **Network > Interfaces > Add New Interface**.
@@ -206,7 +206,7 @@ AT+QCFG="usbnet",1
 
 - Under DHCP Server, enable Ignore Interface.
 
-##  Set Up a Wireless Access Point
+###  Set Up a Wireless Access Point
 
 - In the LuCI web interface, navigate to **Network > Wireless > Add**.
 
@@ -242,7 +242,7 @@ AT+QCFG="usbnet",1
 
 - Reboot the device.
 
-## Test the Wireless Network:
+### Test the Wireless Network:
 - Your wireless SSID should now be visible on nearby devices.
 - Connect using the configured password to access the 4G LTE internet.
 
