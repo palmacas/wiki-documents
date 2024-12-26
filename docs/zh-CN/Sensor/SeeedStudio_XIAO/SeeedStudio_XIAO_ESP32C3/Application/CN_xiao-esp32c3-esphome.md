@@ -375,7 +375,7 @@ text_sensor:
 
 binary_sensor:
   - platform: seeed_mr24hpc1
-    someone_exist:
+    has_target:
       name: "存在信息"
 
 sensor:
@@ -397,13 +397,13 @@ sensor:
 
 switch:
   - platform: seeed_mr24hpc1
-    underly_open_function:
+    underlying_open_function:
       name: "底层开启功能信息输出开关"
 
 button:
   - platform: seeed_mr24hpc1
-    reset:
-      name: "模块重置"
+    restart:
+      name: "模块重启"
     custom_set_end:
       name: "自定义模式设置结束"
 
