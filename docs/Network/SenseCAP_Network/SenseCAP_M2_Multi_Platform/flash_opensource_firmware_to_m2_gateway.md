@@ -142,10 +142,10 @@ Login into console with username **root** and **no password**
 
 ## Tech Support
 
-**Need help with your SenseCAP M2 Gateway? We're here to assist you!**
+**Having trouble with open source firmware? Feel free to discuss it with community members via the Discord link below.**
 
 <div class="button_tech_support_container">
-<a href="https://discord.com/invite/QqMgVwHT3X" class="button_tech_support_sensecap"></a>
+<a href="https://discord.gg/nFByJZnC5H" class="button_tech_support_sensecap"></a>
 <a href="https://support.sensecapmx.com/portal/en/home" class="button_tech_support_sensecap3"></a>
 </div>
 
