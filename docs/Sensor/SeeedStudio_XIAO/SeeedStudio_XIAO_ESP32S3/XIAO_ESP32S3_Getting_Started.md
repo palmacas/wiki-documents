@@ -87,7 +87,7 @@ Seeed Studio XIAO ESP32S3 Sense integrates camera sensor, digital microphone and
 	    <th>Interface</th>
 	    <td>1x UART, 1x IIC, 1x IIS, 1x SPI, 11x GPIOs (PWM), 9x ADC, 1x User LED, 1x Charge LED  <br></br> 1x Reset button, 1x Boot button</td>
         <td>1x UART, 1x IIC, 1x IIS, 1x SPI, 11x GPIOs (PWM), 9x ADC, 1x User LED, 1x Charge LED, 1x B2B Connector (with 2 additional GPIOs), 1x Reset button, 1x Boot button</td>
-		<td><strong>2</strong>x UART, 1x IIC, 1x IIS, <strong>2</strong>x SPI, <strong>18</strong>x GPIOs (PWM), 9x ADC, <strong>1x JTAG</strong>, <strong>1x Camera interface</strong>, <strong>1x Microphone interface</strong>, 1x User LED, 1x Charge LED, 1x B2B Connector, 1x Reset button, 1x Boot button</td>
+		<td><strong>2</strong>x UART, 1x IIC, 1x IIS, <strong>2</strong>x SPI, <strong>18</strong>x GPIOs (PWM), 9x ADC, 1x User LED, 1x Charge LED, 1x B2B Connector, 1x Reset button, 1x Boot button</td>
 	</tr>
     <tr>
 	    <th>Dimensions</th>

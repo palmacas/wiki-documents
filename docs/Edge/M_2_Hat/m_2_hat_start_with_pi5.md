@@ -8,8 +8,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /raspberry_pi_5_uses_pcie_hat_dual_hat
 last_update:
-  date: 08/26/2024
-  author: ShuishengPeng
+  date: 12/24/2024
+  author: Jiahaoli
 
 ---
 
@@ -207,7 +207,7 @@ You will be asked whether you want to reboot now. Click `Yes`:
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_6.png" alt="pir" width="700" height="auto" /></div>
 
 
-### Modify PCIe speed
+### Modify PCIe
 
 <Tabs>
 <TabItem value="Method 1" label="M.2 Hat">
@@ -226,9 +226,89 @@ Save the file and reboot again, you may see a speed increase!.
 </TabItem>
 
 <TabItem value="Method 2" label="M.2 dual Hat">
-M.2 dual Hat does not support PCIe speed adjustment for the time being. We are further developing it and there will be corresponding updates in the future, so stay tuned!
+
+PCIe2.0 M.2 dual Hat supports PCIe Gen 2, and PCIe3.0 M.2 dual Hat supports PCIe Gen 2 and PCIe 3.
+
+**Step 1**: Enter the following command to open the `/boot/firmware/config.txt` file
+```shell
+sudo nano /boot/firmware/config.txt
+```
+
+**Step 2**:Add the following to the [all] section at the end of the `/boot/firmware/config.txt` file:
+
+```shell
+dtparam=pciex1_gen=3
+dtoverlay=pciex1-compat-pi5,no-mip
+
+```
+
 </TabItem>
 </Tabs>
+
+### Speed Benchmark 
+
+<Tabs>
+<TabItem value="Method 1" label="M.2 hat">
+
+This test show that raspberrypi boot from the SD card and use the SSD as backup storage:
+```
+# write speed command
+sudo dd if=/dev/zero of=/mnt/nvme/testfile bs=1M count=1024 oflag=direct
+
+# read speed command
+sudo dd if=/mnt/nvme/testfile of=/dev/null bs=1M iflag=direc
+```
+
+| M.2 hat | Read Speed| Write Speed|
+|:-------------|:--------------:|--------------:|
+| PCIe 3.0       | 822MB/s       | 716MB/s         |
+| PCIe 2.0       | 431 MB/s      | 389MB/s         |
+
+
+</TabItem>
+
+<TabItem value="Method 2" label="M.2 dual Hat">
+
+This test show that raspberrypi boot from the SSD and use another SSD as backup storage:
+
+```
+# write speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 oflag=direct
+# read speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 
+```
+
+| M.2 dual Hat | Read & Read | Write & Write | Read & Write |
+|:-------------|:--------------:|--------------:|--------------:|
+| PCIe 3.0       | average 454MB/s      | average 407MB/s        |   697MB/s 663MB/s|
+| PCIe 2.0       | average 234MB/s      | average 214MB/s        |      414MB/s 324MB/s|
+
+
+</TabItem>
+
+<TabItem value="Method 3" label="M.2 dual Hat with hailo8">
+
+This test show that raspberrypi boot from the SSD and Hailo8 AI accelerator:
+
+
+```
+# write speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 oflag=direct
+# read speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 
+```
+
+| M.2 dual Hat with hailo8| Read | Read & Hailo8 | Write |Write & Hailo8|
+|:-------------|:--------------:|--------------:|--------------:|--------------:|
+| PCIe 3.0       | 812MB/S     | 416MB/S 187FPS      |   701MB/s |  340MB/s  188FPS|
+| PCIe 2.0       | 429MB/S      | 233MB/S/s 128FPS       |      372MB/S|  273MB/S 111FPS|
+
+> **Note:** To test Hailo8 please check this [link](https://github.com/hailo-ai/hailo-rpi5-examples) and prepare a video with 240 FPS.
+
+
+</TabItem>
+</Tabs>
+
 
 ## Tech Support & Product Discussion
 

@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/16/2024
+  date: 12/23/2024
   author: Frank
 ---
 
@@ -17,103 +17,75 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is December 23th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [SenseCraft AI Overview](https://wiki.seeedstudio.com/sensecraft_ai_main/)
+### [How to Update Jetson Orin Nano Developer Kit to Super Kit](https://wiki.seeedstudio.com/update_orin_nano_developer_kit_to_super_kit/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png" style={{width:800, height:'auto'}}/></div>
+<div align="center">
+  <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Orin-Nano-Developer-Kit/jetson-orin-nano-dev-kit.png"/>
+</div>
 
-The Overview section provides a high-level introduction to SenseCraft AI, explaining its purpose, key features, and benefits. It serves as a starting point for users to understand the platform and its capabilities. The overview also includes links to Getting Started guides and FAQs to help users quickly get up and running with SenseCraft AI.
+The NVIDIA Jetson Orin Nano™ Super Developer Kit is a compact, yet powerful computer that redefines generative AI for small edge devices. It delivers up to 67 TOPS of AI performance—a 1.7X improvement over its predecessor—to seamlessly run the most popular generative AI models, like vision transformers, large language models, vision-language models, and more. Existing Jetson Orin Nano Developer Kit users can experience this performance boost with just a software upgrade, so everyone can now unlock new possibilities with generative AI.
 
-### [Wio Terminal PC Monitor Tutorial - Cyberpunk Style](https://wiki.seeedstudio.com/CyberDeck_Wio-Terminal/)
+### [Connect and Transfer- FTP on Your Raspberry Pi 4G LTE HAT](https://wiki.seeedstudio.com/ftp_with_raspberry_pi_4g_lte_hat/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:600, height:'auto'}}/></div>
 
-This project uses the Wio Terminal to display real-time PC stats like CPU, RAM, and temperature in a cyberpunk style. Data is gathered with a Python script and shown on the terminal. The setup includes installing Python, VSCode, and PlatformIO, with options for customization and adding features. It also covers using Cursor AI for development and debugging.
+FTP is useful for Raspberry Pi 4G LTE HAT applications, enabling reliable file transfers between embedded systems and remote servers. It simplifies **managing logs, configurations, or data files** in IoT and M2M communication setups. With its compatibility and straightforward commands, FTP ensures efficient integration for connected projects.
 
-### [Guide to Configuring Low Data Consumption Mode for M2 Multi-Platform Gateway (4G Version)](https://wiki.seeedstudio.com/traffic_saving_config/)
+### [Setting Up 4G LTE Connectivity for IIoT with MQTT](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/sensecap_m2.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:600, height:'auto'}}/></div>
 
-This tutorial will guide users to configure the low data consumption mode for the M2 Multi-Platform Gateway 4G version. In this mode, the traffic per month is expected to be around 60M. The specific traffic depends on the nodes packets, etc.
+The 4G LTE HAT for Raspberry Pi provides reliable, high-speed cellular connectivity, making it essential for remote and industrial IoT (IIoT) applications. With MQTT, a lightweight messaging protocol, devices can communicate efficiently over cellular networks, even in isolated locations. Using AT commands for configuration, it simplifies the process of connecting IoT devices to the network. This combination of 4G LTE and MQTT enhances real-time data transmission, enabling scalable IIoT solutions with remote management capabilities.
 
-### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
+### [Flash open source firmware to M2 Gateway](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mg24.jpg" style={{width:600, height:'auto'}}/></div>
+The SenseCAP M2 gateways represent a cost-effective solution for LoRa gateways, powered by the mature hardware solution MT7628 and the Semtech SX1302 baseband Long Range chip. The specific models are distinguished by the factory-set frequency band (EU868/US915/AS923/AU915), optional module (4G/GPS) and supported LoRa network (LoRaWAN®/Helium network)
 
-This document introduces the built-in sensors of the Seeed Studio XIAO MG24 Sense, including the 6-Axis IMU (LSM6DS3TR-C) for motion measurement and the MEMS Microphone (MSM381ACT001) for high-quality audio capture, with key features and functionalities outlined.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/m2-white.webp" style={{width:600, height:'auto'}}/></div>
 
-### [Configuring Model Output via MQTT on SenseCraft AI for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_output_mqtt_xiao/)
+This wiki will guide you on how to burn open source firmware for your M2 gateway. Based on the open source firmware, you can deeply customise your M2 gateway, such as adding additional features or changing the operating band (antennas need to be adapted to the band)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/60.png" style={{width:800, height:'auto'}}/></div>
+### [A DIY 4-layer sandwich Meshtastic kit](https://wiki.seeedstudio.com/4_layer_sandwich_for_meshtastic/)
 
-This wiki article provides a step-by-step guide on how to configure model output using MQTT (Message Queuing Telemetry Transport) for the XIAO ESP32S3 Sense board on the SenseCraft AI platform. MQTT is a lightweight messaging protocol that enables efficient communication between devices. By following these instructions, you will learn how to set up MQTT communication and retrieve model inference results from your XIAO ESP32S3 Sense.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.png" alt="pir" width={600} height="auto" /></p>
 
-### [Getting Started with the Raspberry Pi 4G LTE HAT](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/)
+A full-featured meshtastic node is developed based on XIAO ESP32S3 & Wio-SX1262 Kit. This 4-layer sandwich structure like meshtastic kit takes the xiao expansion board as its foundation. Through the grove interface and pin to pin interface, it supports a variety of expandable modules that are supported by meshtastic firmware. It also supports the I2C communication protocol, including controllable ambient lighting, telemetry sensors, ambient sensors, and GPS modules. It can be easily set up for modular design and function application via meshtastic communication technology. Moreover, it can be connected to an external 3.7V battery through the JST battery connector to realize a mobile node.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/7-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi-feature.jpg" style={{width:800, height:'auto'}}/></div>
+### [RS485 transmission of Vision AI V2 data](https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/)
 
-The 4G Raspberry Pi HAT is a powerful and versatile add-on designed for seamless integration with Raspberry Pi models, including A+, B+, Pi 2, Pi 3, Pi 4, Pi 5, and Zero, as well as PCs. Equipped with a 40-pin GPIO connector, it ensures easy plug-and-play compatibility. The HAT features the Quectel EG25-GL CAT4 LTE module, providing high-speed 4G communication, SMS functionality, and cloud platform integration for IoT and M2M applications.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RS485_V2AI/photo/connectv2.jpg" style={{width:600, height:'auto'}}/></div>
 
-### [Getting Started with ReSpeaker 2-Mics Pi HAT v2](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/)
+This guide will show you how to transfer recognition data from Vision AI V2 via RS485. By using RS485, you can efficiently transmit data over long distances.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/pi.png" style={{width:800, height:'auto'}}/></div>
+### [4G LTE HAT on Raspberry Pi- TCP/IP Networking Explained](https://wiki.seeedstudio.com/tcp_ip_raspberry_pi_4g_lte_hat/)
 
-On the latest Raspberry Pi OS, the traditional method of driver installation (For v1 device) is no longer available. We have therefore re-released a new wiki on this issue, if you are using the more modern Raspberry Pi OS rather than previous releases, please follow these steps to get your ReSpeaker working.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/tcp.PNG" alt="pir" width={600} height="auto" /></p>
 
-### [Using XIAO ESP32S3 Sense as an AI Sensor with SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai_output_libraries_xiao/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/uart_connection.png" style={{width:800, height:'auto'}}/></div>
-
-This wiki provides a step-by-step guide on how to configure the output of a model on SenseCraft AI and use the XIAO ESP32S3 Sense as an AI sensor. By following these instructions, you will learn how to connect the XIAO ESP32S3 Sense to your computer, select the appropriate output method, and retrieve the model data using different communication protocols such as UART, I2C, and SPI.
-
-### [Configuring Model Output on SenseCraft AI for XIAO ESP32S3 Sense using SSCMACore Library](https://wiki.seeedstudio.com/sensecraft_ai_sscmacore_library/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.png" style={{width:800, height:'auto'}}/></div>
-
-This wiki provides a step-by-step guide on how to configure the model output on SenseCraft AI for the XIAO ESP32S3 Sense board using the SSCMACore (Seeed SenseCraft Model Assistant Core) library. By following these instructions, you will be able to set up your XIAO ESP32S3 Sense to work with a pre-trained model and utilize the SSCMACore library to process the model's output.
-
-### [Convert and Quantize AI Models for reCamera](https://wiki.seeedstudio.com/recamera_model_conversion/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/013.jpg" style={{width:800, height:'auto'}}/></div>
-
-The AI model conversion tool of **reCamera** currently supports frameworks such as `PyTorch`, `ONNX`, `TFLite`, and `Caffe`. Models from other frameworks need to be converted into `ONNX` format. For instructions on how to convert models from other deep learning architectures to `ONNX`, you can refer to the official ONNX website: <https://github.com/onnx/tutorials>. This article introduces how to use reCamera's AI model conversion tool through simple examples.
-
-### [Getting Started with Raspberry Pi 4G HAT GNSS Functionalities](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_gnss_functionlities/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.png" style={{width:800, height:'auto'}}/></div>
-
-The integration of GNSS into the 4G LTE module enhances its capabilities, enabling precise real-time positioning and reliable communication for IoT applications. With support for multi-constellation GNSS systems, the module delivers accurate and dependable location tracking, even in remote or underserved areas. These features make it ideal for scenarios like asset tracking, fleet management, and real-time remote monitoring.
-
-### [Mobile Internet for Your Pi - RNDIS 4G LTE Setup](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_rndis_mobile_internet/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.jpg" style={{width:800, height:'auto'}}/></div>
-
-RNDIS (Remote Network Driver Interface Specification) is a protocol that allows USB-connected devices, like the Quectel EG25-G 4G module, to act as network interfaces. By enabling RNDIS on a Raspberry Pi, the 4G module can provide cellular internet connectivity to the Pi. The Raspberry Pi communicates with the 4G module using AT commands to configure features like RNDIS mode, GNSS, and SMS. This approach simplifies internet access in scenarios where traditional wired or Wi-Fi connections are unavailable.
-
-### [Sending and Receiving SMS Messages with Quectel 4G Raspberry pi Hat](https://wiki.seeedstudio.com/send_recive_sms_raspberry_pi_4g_lte_hat/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:800, height:'auto'}}/></div>
-
-In rural and remote areas, where 4G coverage is sparse or unavailable, SMS communication through 2G networks becomes a vital tool for ensuring uninterrupted connectivity in IoT systems. For wildlife preservation, this technology enables automated alert systems to monitor environmental conditions, track animal movements, and report critical events in real-time. By leveraging 4G modules with SMS capabilities, devices can send automated alerts and receive instructions, ensuring that even in isolated regions, conservation efforts are not hindered by lack of modern network infrastructure.
+TCP (Transmission Control Protocol) is vital for applications involving the Raspberry Pi 4G HAT because it ensures reliable, ordered, and error-checked data transmission over the internet. This is crucial for real-time applications like IoT devices, where consistent communication with cloud servers or remote systems is needed. TCP’s reliability makes it ideal for sending critical data (e.g., sensor readings, telemetry) and receiving commands, ensuring no data is lost or corrupted. It supports diverse applications such as remote monitoring, messaging systems, and file transfers with the Raspberry Pi acting as a gateway or client.
 
 ## Existing Wiki Updated
 
-### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
+### [Setting Up 4G LTE Connectivity for IIoT with MQTT](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/)
 
-We have refined the [SenseCAP Indicator for Meshtastic example page](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/).
+We have added an example of the [Python Code Implementation](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/#python-code-implementation).
+
+### [How to use rs485 and modbus with reComputer R1000](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/)
+
+We have added an example of how to [Configure minicom on reComputer R1000v1.1](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/#configure-minicom-on-recomputer-r1000v11).
 
 ## The Efforts of Contributor
 
-### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
+<!-- ### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
 
 <div style={{textAlign:'center'}}>
   <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
 </div>
 
-On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images.
+On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -207,5 +179,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.11.25th](/Seeed_Elderly/weekly_wiki/wiki241125)
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
+- [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
 
 </details>

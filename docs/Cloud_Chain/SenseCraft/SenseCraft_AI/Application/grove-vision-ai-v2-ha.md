@@ -201,7 +201,7 @@ Note that although the XIAO ESP32S3 is selected here, we are still using the XIA
 Click the button below to download the firmware file and click the **Add File** button on the web page to flash the `XIAO_C3_as_AT_module.bin` firmware for the `0x0` address.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/visionai-v2-ha/res/XIAO_C3_as_AT_module.bin">
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/visionai-v2-ha/res/XIAO_C3_as_AT_module_v241209.bin">
             <strong><span><font color={'FFFFFF'} size={"4"}>Download the file</font></span></strong>
     </a>
 </div>
