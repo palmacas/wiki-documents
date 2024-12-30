@@ -1,7 +1,7 @@
 ---
 description: A DIY meshtastic kit based on XIAO ESP32S3 & Wio-SX1262 kit, XIAO expansion board, grove sensor and L76K GNSS module with acrylic casing.
 title: 4-Layer Sandwich kit for Meshtastic
-image: https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.webp
+image: https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-08.jpg
 slug: /4_layer_sandwich_for_meshtastic
 sidebar_position: 6
 last_update:
@@ -13,7 +13,7 @@ last_update:
 
 A full-featured meshtastic node is developed based on XIAO ESP32S3 & Wio-SX1262 Kit. This 4-layer sandwich structure like meshtastic kit takes the xiao expansion board as its foundation. Through the grove interface and pin to pin interface, it supports a variety of expandable modules that are supported by meshtastic firmware. It also supports the I2C communication protocol, including controllable ambient lighting, telemetry sensors, ambient sensors, and GPS modules. It can be easily set up for modular design and function application via meshtastic communication technology. Moreover, it can be connected to an external 3.7V battery through the JST battery connector to realize a mobile node.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-08.jpg" alt="pir" width={600} height="auto" /></p>
 
 ## Hardware Preparation
 
