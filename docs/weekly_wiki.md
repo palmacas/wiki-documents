@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/23/2024
+  date: 12/30/2024
   author: Frank
 ---
 
@@ -17,65 +17,64 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 23th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is December 30th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [How to Update Jetson Orin Nano Developer Kit to Super Kit](https://wiki.seeedstudio.com/update_orin_nano_developer_kit_to_super_kit/)
+### [How to use the SO100Arm robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
 
-<div align="center">
-  <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Orin-Nano-Developer-Kit/jetson-orin-nano-dev-kit.png"/>
-</div>
+  <div align="center">
+      <img width={800} 
+      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.png" />
+  </div>
 
-The NVIDIA Jetson Orin Nano™ Super Developer Kit is a compact, yet powerful computer that redefines generative AI for small edge devices. It delivers up to 67 TOPS of AI performance—a 1.7X improvement over its predecessor—to seamlessly run the most popular generative AI models, like vision transformers, large language models, vision-language models, and more. Existing Jetson Orin Nano Developer Kit users can experience this performance boost with just a software upgrade, so everyone can now unlock new possibilities with generative AI.
+The SO-ARM100 and reComputer Jetson AI intelligent robot kit seamlessly combine high-precision robotic arm control with a powerful AI computing platform, providing a comprehensive robot development solution. This kit is based on the Jetson Orin or AGX Orin platform, combined with the SO-ARM100 robotic arm and the LeRobot AI framework, offering users an intelligent robot system applicable to multiple scenarios such as education, research, and industrial automation.
+This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework.
 
-### [Connect and Transfer- FTP on Your Raspberry Pi 4G LTE HAT](https://wiki.seeedstudio.com/ftp_with_raspberry_pi_4g_lte_hat/)
+### [Keyword Spotting with TensorFlow Lite on the ReSpeaker 2-Mics Pi HAT v2](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_v2_speech_recognition/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:600, height:'auto'}}/></div>
+  <div align="center">
+      <img width={800} 
+      src="https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp" />
+  </div>
 
-FTP is useful for Raspberry Pi 4G LTE HAT applications, enabling reliable file transfers between embedded systems and remote servers. It simplifies **managing logs, configurations, or data files** in IoT and M2M communication setups. With its compatibility and straightforward commands, FTP ensures efficient integration for connected projects.
+This project demonstrates how to use TensorFlow Lite for keyword spotting on the ReSpeaker 2-Mics Pi HAT v2. Keyword spotting allows for real-time detection of predefined words from audio input, enabling applications such as voice-controlled devices and interactive systems. We will guide you through the steps to train a TensorFlow Lite model, deploy it on the ReSpeaker HAT, and run speech recognition locally.
 
-### [Setting Up 4G LTE Connectivity for IIoT with MQTT](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/)
+### [Setting Up a Hotspot with Raspberry Pi 4G LTE Hat on Raspberry Pi OS](https://wiki.seeedstudio.com/4g_lte_hotspot_on_raspberry_pi_os/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:600, height:'auto'}}/></div>
+  <div align="center">
+      <img width={800} 
+      src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" />
+  </div>
 
-The 4G LTE HAT for Raspberry Pi provides reliable, high-speed cellular connectivity, making it essential for remote and industrial IoT (IIoT) applications. With MQTT, a lightweight messaging protocol, devices can communicate efficiently over cellular networks, even in isolated locations. Using AT commands for configuration, it simplifies the process of connecting IoT devices to the network. This combination of 4G LTE and MQTT enhances real-time data transmission, enabling scalable IIoT solutions with remote management capabilities.
+This guide will walk you through the process of setting up a 4G LTE hotspot on your Raspberry Pi using the 4G LTE Hat. We'll cover the necessary hardware and software components, including the Raspberry Pi, the 4G LTE Hat, with Raspberry Pi OS (Bookworm). You'll learn how to configure the 4G module, establish a Wi-Fi network, and securely share your internet connection with other devices.
 
-### [Flash open source firmware to M2 Gateway](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/)
+### [Setting Up OpenWrt on Raspberry Pi 5 with a 4G LTE Module](https://wiki.seeedstudio.com/4g_lte_hat_and_raspberry_pi_router_with_openwrt/)
 
-The SenseCAP M2 gateways represent a cost-effective solution for LoRa gateways, powered by the mature hardware solution MT7628 and the Semtech SX1302 baseband Long Range chip. The specific models are distinguished by the factory-set frequency band (EU868/US915/AS923/AU915), optional module (4G/GPS) and supported LoRa network (LoRaWAN®/Helium network)
+  <div align="center">
+      <img width={600} 
+      src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp" />
+  </div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/m2-white.webp" style={{width:600, height:'auto'}}/></div>
-
-This wiki will guide you on how to burn open source firmware for your M2 gateway. Based on the open source firmware, you can deeply customise your M2 gateway, such as adding additional features or changing the operating band (antennas need to be adapted to the band)
-
-### [A DIY 4-layer sandwich Meshtastic kit](https://wiki.seeedstudio.com/4_layer_sandwich_for_meshtastic/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.png" alt="pir" width={600} height="auto" /></p>
-
-A full-featured meshtastic node is developed based on XIAO ESP32S3 & Wio-SX1262 Kit. This 4-layer sandwich structure like meshtastic kit takes the xiao expansion board as its foundation. Through the grove interface and pin to pin interface, it supports a variety of expandable modules that are supported by meshtastic firmware. It also supports the I2C communication protocol, including controllable ambient lighting, telemetry sensors, ambient sensors, and GPS modules. It can be easily set up for modular design and function application via meshtastic communication technology. Moreover, it can be connected to an external 3.7V battery through the JST battery connector to realize a mobile node.
-
-### [RS485 transmission of Vision AI V2 data](https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RS485_V2AI/photo/connectv2.jpg" style={{width:600, height:'auto'}}/></div>
-
-This guide will show you how to transfer recognition data from Vision AI V2 via RS485. By using RS485, you can efficiently transmit data over long distances.
-
-### [4G LTE HAT on Raspberry Pi- TCP/IP Networking Explained](https://wiki.seeedstudio.com/tcp_ip_raspberry_pi_4g_lte_hat/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/tcp.PNG" alt="pir" width={600} height="auto" /></p>
-
-TCP (Transmission Control Protocol) is vital for applications involving the Raspberry Pi 4G HAT because it ensures reliable, ordered, and error-checked data transmission over the internet. This is crucial for real-time applications like IoT devices, where consistent communication with cloud servers or remote systems is needed. TCP’s reliability makes it ideal for sending critical data (e.g., sensor readings, telemetry) and receiving commands, ensuring no data is lost or corrupted. It supports diverse applications such as remote monitoring, messaging systems, and file transfers with the Raspberry Pi acting as a gateway or client.
+The Raspberry Pi 5, paired with **OpenWrt** and a 4G LTE HAT , offers a powerful and flexible solution for creating a portable hotspot. This setup is ideal for providing internet access in remote locations, supporting IoT devices, or creating a personal wireless network on the go. OpenWrt’s customizability ensures seamless integration with 4G LTE modules, allowing users to harness the full potential of Raspberry Pi 5 as a reliable and high-performance wireless router. Whether for home, travel, or professional use, this guide will help you transform your Raspberry Pi 5 into a fully functional hotspot powered by OpenWrt and 4G LTE connectivity.
 
 ## Existing Wiki Updated
 
-### [Setting Up 4G LTE Connectivity for IIoT with MQTT](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/)
+### [Getting started with 60GHz mmWave Breathing and Heartbeat Detection Sensor Kit with XIAO ESP32C6 (MR60BHA2)](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/)
 
-We have added an example of the [Python Code Implementation](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/#python-code-implementation).
+We have added an example of the [Human Detection code implementation](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/#human-detection) and an example of the [Module firmware upgrade procedure](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/#module-firmware-upgrade).
 
-### [How to use rs485 and modbus with reComputer R1000](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/)
+### [Raspberry Pi 5 uses PCIe hat/dual hat](https://wiki.seeedstudio.com/raspberry_pi_5_uses_pcie_hat_dual_hat/)
 
-We have added an example of how to [Configure minicom on reComputer R1000v1.1](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/#configure-minicom-on-recomputer-r1000v11).
+We have added an example of the [Modify PCIe](https://wiki.seeedstudio.com/raspberry_pi_5_uses_pcie_hat_dual_hat/#modify-pcie) and an example of the [Speed Benchmark](https://wiki.seeedstudio.com/raspberry_pi_5_uses_pcie_hat_dual_hat/#speed-benchmark).
+
+### [Flash JetPack OS to J401 Carrier Board](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/)
+
+We have added a step-by-step example of [Flashing the device via JP6.1](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/#flash-the-device-step-by-step).
+
+### [Getting Started with reComputer Industrial](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
+
+We have added an example of [Flashing Jetson with Jetpack 6.1](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/#flash-to-jetson).
 
 ## The Efforts of Contributor
 
@@ -180,5 +179,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
+- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
 
 </details>

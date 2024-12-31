@@ -5,7 +5,7 @@ keywords:
   - M.2 hat
   - dual hat
   - Raspberry Pi
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp
 slug: /raspberry_pi_5_uses_pcie_hat_dual_hat
 last_update:
   date: 12/24/2024

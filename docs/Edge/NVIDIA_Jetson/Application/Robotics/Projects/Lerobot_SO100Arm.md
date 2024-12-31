@@ -6,7 +6,7 @@ keywords:
 - Huggingface
 - Arm
 - Robotics
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /lerobot_so100m
 last_update:
   date: 12/24/2024

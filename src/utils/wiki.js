@@ -1,9 +1,51 @@
 const docList = [
   [
     {
+      "path": "/4g_lte_hat_and_raspberry_pi_router_with_openwrt",
+      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp",
+      "title": "Setting Up OpenWrt on Raspberry Pi 5 with a 4G LTE Module",
+      "date": "12/25/2024"
+    },
+    {
+      "path": "/raspberry_pi_5_uses_pcie_hat_dual_hat",
+      "image": "https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp",
+      "title": "Raspberry Pi 5 uses PCIe hat/dual hat",
+      "date": "12/24/2024"
+    }
+  ],
+  [
+    {
+      "path": "/lerobot_so100m",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
+      "title": "How to use the SO100Arm robotic arm in Lerobot",
+      "date": "12/24/2024"
+    },
+    {
+      "path": "/4g_lte_hotspot_on_raspberry_pi_os",
+      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp",
+      "title": "Setting Up a Hotspot with Raspberry Pi 4G LTE Hat on Raspberry Pi OS",
+      "date": "12/24/2024"
+    }
+  ],
+  [
+    {
+      "path": "/respeaker_2_mics_pi_hat_v2_speech_recognition",
+      "image": "https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp",
+      "title": "Keyword Spotting with TensorFlow Lite",
+      "date": "12/23/2024"
+    },
+    {
       "path": "/recomputer_r1000_use_rs485_modbus_rtu",
       "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/r1000_connection_1.webp",
       "title": "How to use rs485 and modbus with reComputer R1000",
+      "date": "12/20/2024"
+    }
+  ],
+  [
+    {
+      "path": "/tcp_ip_raspberry_pi_4g_lte_hat",
+      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/tcp_python.webp",
+      "title": "4G LTE HAT on Raspberry Pi- TCP/IP Networking Explained",
       "date": "12/20/2024"
     },
     {
@@ -39,48 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp",
       "title": "reComputer Mini Hardware and Interfaces Usage",
       "date": "12/16/2024"
-    }
-  ],
-  [
-    {
-      "path": "/4_layer_sandwich_for_meshtastic",
-      "image": "https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.webp",
-      "title": "A DIY 4-layer sandwich Meshtastic kit",
-      "date": "12/13/2024"
-    },
-    {
-      "path": "/raspberry_pi_4g_hat_rndis_mobile_internet",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.webp",
-      "title": "Mobile Internet for Your Pi - RNDIS 4G LTE Setup",
-      "date": "12/13/2024"
-    }
-  ],
-  [
-    {
-      "path": "/grove_mp3_v4",
-      "image": "https://files.seeedstudio.com/wiki/grove-mp3-v4/0.webp",
-      "title": "Grove - MP3 v4.0",
-      "date": "12/13/2024"
-    },
-    {
-      "path": "/sensecraft_ai_sscmacore_library",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.webp",
-      "title": "Configuring Model Output on SenseCraft AI for XIAO ESP32S3 Sense using SSCMACore Library",
-      "date": "12/12/2024"
-    }
-  ],
-  [
-    {
-      "path": "/raspberry_pi_4g_hat_gnss_functionlities",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.webp",
-      "title": "Getting Started with Raspberry Pi 4G HAT GNSS Functionalities",
-      "date": "12/12/2024"
-    },
-    {
-      "path": "/recomputer_jetson_mini_getting_started",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp",
-      "title": "Getting Started with reComputer Mini",
-      "date": "12/11/2024"
     }
   ]
 ];

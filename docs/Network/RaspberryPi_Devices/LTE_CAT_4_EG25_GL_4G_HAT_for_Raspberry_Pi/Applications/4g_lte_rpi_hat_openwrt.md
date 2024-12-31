@@ -9,7 +9,7 @@ keywords:
   - Mobile Data
   - 4G LTE
   - OpenWRT
-image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp
+image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp
 slug: /4g_lte_hat_and_raspberry_pi_router_with_openwrt
 last_update:
   date: 12/25/2024
