@@ -101,34 +101,39 @@ Seeed Studio XIAO ESP32S3 Sense integrates camera sensor, digital microphone and
 	</tr>
     <tr>
 	    <td>Circuit operating Voltage  (ready to operate): <br></br> - Type-C: 5V@<strong>19mA</strong> <br></br> - BAT: 3.8V@<strong>22mA</strong></td>
-        <td colspan="2">Circuit operating Voltage  (ready to operate): <br></br> - Type-C: 5V@<strong>38.3mA</strong> <br></br> - BAT: 3.8V@<strong>43.2mA</strong> (with expansion board)</td>
+        <td>Circuit operating Voltage  (ready to operate): <br></br> - Type-C: 5V@<strong>38.3mA</strong> <br></br> - BAT: 3.8V@<strong>43.2mA</strong> (with expansion board)</td>
+		<td>Circuit operating Voltage  (ready to operate): <br></br> - Type-C: 5V@<strong>28mA</strong> <br></br> - BAT: 3.8V@<strong>35mA</strong></td>
 	</tr>
 	<tr>
 	    <td align="center"> - </td>
-        <td colspan="2">Webcam Web application: <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>138mA</strong> <br></br> - - Photo moment: 5V/<strong>341mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 3.8V/<strong>154mA</strong> <br></br> - - Photo moment: 3.8V/<strong>304mA</strong></td>
+        <td align="center">Webcam Web application: <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>138mA</strong> <br></br> - - Photo moment: 5V/<strong>341mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 3.8V/<strong>154mA</strong> <br></br> - - Photo moment: 3.8V/<strong>304mA</strong></td>
+		<td align="center"> - </td>
 	</tr>
 	<tr>
 	    <td align="center"> - </td>
-        <td colspan="2">Microphone recording & SD card writing:  <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>46.5mA</strong> <br></br> - - Peak power consumption: 5V/<strong>89.6mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 3.8V/<strong>54.4mA</strong> <br></br> - - Peak power consumption: 3.8V/<strong>108mA</strong></td>
+        <td align="center">Microphone recording & SD card writing:  <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>46.5mA</strong> <br></br> - - Peak power consumption: 5V/<strong>89.6mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 3.8V/<strong>54.4mA</strong> <br></br> - - Peak power consumption: 3.8V/<strong>108mA</strong></td>
+		<td align="center"> - </td>
 	</tr>
     <tr>
-	    <td align="center">Charging battery current: <strong>100mA</strong></td>
-		<td colspan="2">Charging battery current: <strong>100mA</strong></td>
+		<td align="center" colspan="3">Charging battery current: <strong>100mA</strong></td>
 	</tr>
     <tr>
         <th>Low Power Consumption Model</th>
         <td>Modem-sleep Model: <strong>3.8V/25 mA</strong> <br></br> Light-sleep Model: <strong>3.8V/2 mA</strong> <br></br> Deep Sleep Model: <strong>3.8V/14 μA</strong></td>
-        <td colspan="2">Without any peripherals: <br></br> - Modem-sleep Model: <strong>3.8V/25.5 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/2.4 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/63.768 μA</strong> <br></br> Connect the camera: <br></br> - Modem-sleep Model: <strong>3.8V/44.57 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/5.47 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/3.00 mA</strong> <br></br> Connecting an SD Card: <br></br> - Modem-sleep Model: <strong>3.8V/32.8 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/3.48 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/1.08 mA</strong><br></br> Simultaneously connect the camera and the SD card: <br></br> - Modem-sleep Model: <strong>3.8V/55.72 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/6.56 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/3.98 mA</strong></td>
+        <td>Without any peripherals: <br></br> - Modem-sleep Model: <strong>3.8V/25.5 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/2.4 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/63.768 μA</strong> <br></br> Connect the camera: <br></br> - Modem-sleep Model: <strong>3.8V/44.57 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/5.47 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/3.00 mA</strong> <br></br> Connecting an SD Card: <br></br> - Modem-sleep Model: <strong>3.8V/32.8 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/3.48 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/1.08 mA</strong><br></br> Simultaneously connect the camera and the SD card: <br></br> - Modem-sleep Model: <strong>3.8V/55.72 mA</strong> <br></br> - Light-sleep Model: <strong>3.8V/6.56 mA</strong> <br></br> - Deep Sleep Model: <strong>3.8V/3.98 mA</strong></td>
+		<td>Modem-sleep Model: <strong>3.8V/26.5 mA</strong> <br></br> Light-sleep Model: <strong>3.8V/2.2 mA</strong> <br></br> Deep Sleep Model: <strong>3.8V/69 μA</strong></td>
     </tr>
     <tr>
         <th>Wi-Fi Enabled Power Consumption</th>
         <td align="center">Active Model: <strong>~ 100 mA</strong></td>
-        <td colspan="2" align="center">Active Model: <strong>~ 110 mA</strong> (with expansion board)</td>
+        <td align="center">Active Model: <strong>~ 110 mA</strong> (with expansion board)</td>
+		<td align="center">Active Model: <strong>~ 85 mA</strong></td>
     </tr>
     <tr>
         <th>BLE Enabled Power Consumption</th>
         <td align="center">Active Model: <strong>~ 85 mA</strong></td>
-        <td colspan="2" align="center">Active Model: <strong>~ 102 mA</strong> (with expansion board)</td>
+        <td align="center">Active Model: <strong>~ 102 mA</strong> (with expansion board)</td>
+		<td align="center">Active Model: <strong>~ 77 mA</strong></td>
     </tr> 
     <tr>
         <th>Working Temperature</th>

@@ -176,7 +176,7 @@ Seeed Studio XIAO nRF52840 Sense is compatible to the Seeed Studio XIAO expansio
 </table>
 
  </TabItem>
- <TabItem value="52840Plus" label="XIAO nRF52840 Plus" default>
+ <TabItem value="52840Plus" label="XIAO nRF52840 Plus/XIAO nRF52840 Sense Plus" default>
 
  <table align="center">
   <tr>
