@@ -436,7 +436,7 @@ We can't do it without the love, contribution that we get from the community, an
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/XIAO-ESP32C3-Zephyr/">XIAO ESP32C3</a></th>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32s3_zephyr_rtos/">XIAO ESP32S3 (Sense)</a></th>
-            <th style={{width:333, height:'auto'}}><a href=""></a></th>
+            <th style={{width:333, height:'auto'}}><a href="https://docs.zephyrproject.org/latest/boards/seeed/xiao_esp32c6/doc/index.html">XIAO ESP32C6</a></th>		
 		</tr>
 	</table>
 </div>
