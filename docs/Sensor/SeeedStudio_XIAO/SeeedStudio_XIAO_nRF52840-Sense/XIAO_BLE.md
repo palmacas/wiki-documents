@@ -176,7 +176,7 @@ Seeed Studio XIAO nRF52840 Sense is compatible to the Seeed Studio XIAO expansio
 </table>
 
  </TabItem>
- <TabItem value="52840Plus" label="XIAO nRF52840 Plus" default>
+ <TabItem value="52840Plus" label="XIAO nRF52840 Plus/XIAO nRF52840 Sense Plus" default>
 
  <table align="center">
   <tr>
@@ -558,6 +558,10 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 - **[ZIP]** [Seeed Studio XIAO nRF52840 Sense Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-Certification.zip)
 
 - 🔗 **[Kicad]** [Seeed Studio XIAO nRF52840 Sense FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
+### Seeed Studio XIAO nRF52840 (Sense) Plus
+
+- **[ZIP]** [Seeed Studio XIAO nRF52840 (Sense) Plus Schematic ](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XIAO_nRF52840_Plus_SCH_PCB_v1.0.zip)
 
 ## Course Resources
 
