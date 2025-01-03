@@ -424,7 +424,7 @@ For more information about 3D point cloud data generation and interference zone 
 
 ## Resources
 
-- **STP**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/xiao_mm_wave.stp)
+- **STL**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/Seeed_Studio_60GHz_mmWave_Human_Fall_Breating_and_Heartbeat_Detection_Sensor-MR60FDA2_MR60BHA2_Enclosure.stl)
 - **GitHub Repository**: Access the full codebase and documentation at the [Seeed mmWave Library GitHub page](https://github.com/Love4yzp/Seeed-mmWave-library).
 - **ESPHome Documentation**: For further customization and integration, refer to the [ESPHome documentation](https://esphome.io/).
 - **mmWave Sensor SCH V1.0**: [mmWave_Sensor_SCH_V1.0.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/sch/mmWave_Sensor_SCH_V1.0.pdf)
