@@ -1,37 +1,51 @@
 const docList = [
   [
     {
+      "path": "/getting_started_with_rs485_vision_ai_cam",
+      "image": "https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.webp",
+      "title": "RS485 Vision AI Camera",
+      "date": "12/26/2024"
+    },
+    {
       "path": "/4g_lte_hat_and_raspberry_pi_router_with_openwrt",
       "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp",
       "title": "Setting Up OpenWrt on Raspberry Pi 5 with a 4G LTE Module",
       "date": "12/25/2024"
-    },
+    }
+  ],
+  [
     {
       "path": "/raspberry_pi_5_uses_pcie_hat_dual_hat",
       "image": "https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp",
       "title": "Raspberry Pi 5 uses PCIe hat/dual hat",
       "date": "12/24/2024"
-    }
-  ],
-  [
+    },
     {
       "path": "/lerobot_so100m",
       "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
       "title": "How to use the SO100Arm robotic arm in Lerobot",
       "date": "12/24/2024"
-    },
+    }
+  ],
+  [
     {
       "path": "/4g_lte_hotspot_on_raspberry_pi_os",
       "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp",
       "title": "Setting Up a Hotspot with Raspberry Pi 4G LTE Hat on Raspberry Pi OS",
       "date": "12/24/2024"
-    }
-  ],
-  [
+    },
     {
       "path": "/respeaker_2_mics_pi_hat_v2_speech_recognition",
       "image": "https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp",
       "title": "Keyword Spotting with TensorFlow Lite",
+      "date": "12/23/2024"
+    }
+  ],
+  [
+    {
+      "path": "/train_ai_with_a1102",
+      "image": "https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.webp",
+      "title": "Deploying models to SenseCAP A1102 with SenseCraft AI",
       "date": "12/23/2024"
     },
     {
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mqtt_ex.webp",
       "title": "Setting Up 4G LTE Connectivity for IIoT with MQTT",
       "date": "12/18/2024"
-    }
-  ],
-  [
-    {
-      "path": "/ftp_with_raspberry_pi_4g_lte_hat",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp",
-      "title": "Connect and Transfer- FTP on Your Raspberry Pi 4G LTE HAT",
-      "date": "12/17/2024"
-    },
-    {
-      "path": "/recomputer_jetson_mini_hardware_interfaces_usage",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp",
-      "title": "reComputer Mini Hardware and Interfaces Usage",
-      "date": "12/16/2024"
     }
   ]
 ];

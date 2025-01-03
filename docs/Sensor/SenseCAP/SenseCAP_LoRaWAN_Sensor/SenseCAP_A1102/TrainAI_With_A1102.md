@@ -3,7 +3,7 @@ description: Train_AI_With_A1102
 title: SenseCraft AI With A1102
 keywords:
 - Sensor Vision_AI_V2
-image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg
+image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.webp
 slug: /train_ai_with_a1102
 sidebar_position: 2
 sidebar_class_name: hidden
