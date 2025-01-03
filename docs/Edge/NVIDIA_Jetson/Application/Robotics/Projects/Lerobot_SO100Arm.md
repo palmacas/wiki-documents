@@ -6,7 +6,7 @@ keywords:
 - Huggingface
 - Arm
 - Robotics
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /lerobot_so100m
 last_update:
   date: 12/24/2024
@@ -40,6 +40,8 @@ This wiki provides the assembly and debugging tutorial for the SO ARM100 and rea
 3. **AI-Driven**: It integrates the LeRobot AI framework of Hugging Face, supports natural language processing (NLP) and computer vision, enabling the robot to intelligently understand instructions and perceive the environment.
 4. **Open Source and Flexible Expansion**: It is an open-source platform that is easy to customize and expand, suitable for developers and researchers to conduct secondary development, and supports the integration of multiple sensors and tools.
 5. **Multi-Scene Application**: It is applicable to fields such as education, scientific research, automated production, and robotics, helping users achieve efficient and precise robot operations in various complex tasks. 
+
+<iframe width="960" height="640" src="https://www.youtube.com/embed/JrF_ymUvrqc?si=vslu5NNI-ZIzVXLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Specification
 | Specification | Arm Kit | Arm Kit Pro |
@@ -190,12 +192,17 @@ The calibration of the robotic arm should be carried out strictly in accordance 
 
 **Manual calibration of follower arm**
 
-Contrarily to step 6 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the auto calibration, we will actually do manual calibration of follower for now.
+Firstly, you need to ensure that the serial port numbers of the robotic arm in the `\lerobot\lerobot\configs\robot\so100.yaml` file are consistent with yours, as shown in the following figure. You can view all serial port names according to `ls /dev/ttyACM*`.
 
-<iframe width="960" height="640" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so100yaml.png" />
+</div>
 
 
 You will need to move the follower arm to these positions sequentially:
+
+<iframe width="960" height="640" src="https://www.youtube.com/embed/m1z9Dlk1gW8?si=Ln2PFmPnap2AeDZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Make sure both arms are connected and run this script to launch manual calibration:
 ```bash
@@ -226,15 +233,49 @@ python lerobot/scripts/control_robot.py teleoperate \
     --display-cameras 0
 ```
 
+<iframe width="960" height="640" src="https://www.youtube.com/embed/hnRwfcyX1ZI?si=RuzYjP_FUTK16lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Teleop with displaying cameras**
-Follow [this guide to setup your cameras](https://github.com/huggingface/lerobot/blob/main/examples/7_get_started_with_real_robot.md#c-add-your-cameras-with-opencvcamera). Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
+### Teleop with displaying cameras### 
+After inserting your two USB cameras, run the following script to check the port numbers of the cameras.
+```bash
+python lerobot/common/robot_devices/cameras/opencv.py \
+    --images-dir outputs/images_from_opencv_cameras
+```
+
+The terminal will print out the following information.
+```markdown
+Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+[...]
+Camera found at index 2
+Camera found at index 4
+[...]
+Connecting cameras
+OpenCVCamera(2, fps=30.0, width=640, height=480, color_mode=rgb)
+OpenCVCamera(4, fps=30.0, width=640, height=480, color_mode=rgb)
+Saving images to outputs/images_from_opencv_cameras
+Frame: 0000	Latency (ms): 39.52
+[...]
+Frame: 0046	Latency (ms): 40.07
+Images have been saved to outputs/images_from_opencv_cameras
+```
+
+You can find the pictures taken by each camera in the `outputs/images_from_opencv_cameras` directory, and confirm the port index information corresponding to the cameras at different positions. Then complete the alignment of the camera parameters in the `\lerobot\lerobot\configs\robot\so100.yaml` file.
+
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so100camerayaml.png" />
+</div>
+
+Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 ```bash
 python lerobot/scripts/control_robot.py teleoperate \
     --robot-path lerobot/configs/robot/so100.yaml
 ```
 
-### Record a dataset
+<iframe width="960" height="640" src="https://www.youtube.com/embed/EUcXlLlOjGE?si=6ncQ7o5ZFLR4PGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Record the dataset
 
 Once you're familiar with teleoperation, you can record your first dataset with SO-100.
 
@@ -261,9 +302,22 @@ python lerobot/scripts/control_robot.py record \
     --reset-time-s 10 \
     --num-episodes 2 \
     --push-to-hub 1
+    --single-task seeedstudio
 ```
 
-### Visualize a dataset
+```markdown
+Parameter Explanations
+- wormup-time-s: It refers to the initialization time.
+- episode-time-s: It represents the time for collecting data each time.
+- reset-time-s: It is the preparation time between each data collection.
+- num-episodes: It indicates how many groups of data are expected to be collected.
+- push-to-hub: It determines whether to upload the data to the HuggingFace Hub. 
+```
+
+<iframe width="960" height="640" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=-eDB73KgUksyJXa-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+### Visualize the dataset
 
 If you uploaded your dataset to the hub with `--push-to-hub 1`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 ```bash
@@ -303,7 +357,7 @@ python lerobot/scripts/train.py \
   hydra.run.dir=outputs/train/act_so100_test \
   hydra.job.name=act_so100_test \
   device=cuda \
-  wandb.enable=true
+  wandb.enable=false
 ```
 
 Let's explain it:
@@ -335,7 +389,7 @@ As you can see, it's almost the same command as previously used to record your t
 1. There is an additional `-p` argument which indicates the path to your policy checkpoint with  (e.g. `-p outputs/train/eval_so100_test/checkpoints/last/pretrained_model`). You can also use the model repository if you uploaded a model checkpoint to the hub (e.g. `-p ${HF_USER}/act_so100_test`).
 2. The name of dataset begins by `eval` to reflect that you are running inference (e.g. `--repo-id ${HF_USER}/eval_act_so100_test`).
 
-
+<iframe width="960" height="640" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=Y2SXU9T0DSmtz4ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Citation
 TheRobotStudio Project: [SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)

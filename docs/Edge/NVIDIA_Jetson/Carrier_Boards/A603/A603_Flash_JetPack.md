@@ -458,10 +458,10 @@ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.0/releas
 Execute the following commands in order:
 
 ```bash
-tar xf jetson_linux_r36.3.0_aarch64.tbz2
-sudo tar xpf tegra_linux_sample-root-filesystem_r36.3.0_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
-unzip 603_jp60.zip # Unzip the driver package
-sudo cp -r 603_jp60/Linux_for_Tegra/* Linux_for_Tegra/ # Replace all files in the Linux_for_Tegra directory with the files from the driver package
+tar xf Jetson_Linux_R36.4.0_aarch64.tbz2
+sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.4.0_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
+tar xpf 603_jetpack6.1.tar.gz # Unzip the driver package
+sudo cp -r 603_jetpack6.1/Linux_for_Tegra/* Linux_for_Tegra/ # Replace all files in the Linux_for_Tegra directory with the files from the driver package
 cd Linux_for_Tegra/ # Navigate to the Linux_for_Tegra path to run the flashing commands
 sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
@@ -481,7 +481,7 @@ sudo ./tools/l4t_flash_prerequisites.sh
 **Step 4:** Flash the Device.
 
 ```bash
-sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml"  --showlogs --network usb0 jetson-orin-nano-devkit internal
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml"   --showlogs --network usb0 jetson-orin-nano-devkit internal
 ```
 
 **Tips:** Backup the System and Flash Using the Backup Image

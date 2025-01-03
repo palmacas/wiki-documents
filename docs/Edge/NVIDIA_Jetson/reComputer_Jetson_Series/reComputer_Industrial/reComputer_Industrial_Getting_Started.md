@@ -593,6 +593,73 @@ After that, the board will reboot and will be ready to use!
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/106.png"/></div>
 </TabItem>
+
+<TabItem value="Jetpack 6.1" label="Jetpack6.1">
+
+- **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using
+  <table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Image Link</th>
+      <th>JetPack Version</th>
+      <th>L4T Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reComputer Industrial J4012</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUNMocOFBZNPqqC-W9uiIM4BgYUw-ZL0pk6juOVPFd_vqg?e=C8ldYX" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td rowSpan={6}>6.1</td>
+      <td rowSpan={6}>36.4</td>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J4011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfYrDXxD_oRCuk5nv8WmtqIBPY9FjkEHiAmsZDpvDj-sfQ?e=qxV5MG" target="_blank" rel="noopener noreferrer">Download</a></td>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J3011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeOq0sfMDhBEqZPX-ti_gJ0BzUdSGeFf5RrSdxFnQ70aNQ?e=GVr10a" target="_blank" rel="noopener noreferrer">Download</a></td>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J3010</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXK1GomjByJKnmt3OdE5Vq8BSqzYZm1MY_yD18YjmRplLw?e=dIWPKA" target="_blank" rel="noopener noreferrer">Download</a></td>
+    </tr>
+  </tbody>
+  </table> 
+
+:::info
+The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra).
+:::
+
+- **Step 2:** Extract the generated file 
+
+```sh
+sudo tar -xvf <file_name>.tar.gz
+```
+
+- **Step 3:** Navigate to the extracted file from before and execute the flash command as follows 
+
+```sh
+cd mfi_xxxx
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0 --showlogs
+```
+
+Now it will start to flash the system image to the board. If the flashing is successful, you will see the below output
+
+<div align="center"><img width ="650" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/99.png"/></div>
+
+
+- **Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
+
+</TabItem>
+
 </Tabs>
 
 <!-- Code END -->
