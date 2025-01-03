@@ -3,8 +3,7 @@ description: Getting Started with SenseCAP Vision AI V2
 title: Getting Started with SenseCAP Vision AI V2
 keywords:
 - SenseCAP A1102 - LoRaWAN® Vision AI Sensor
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /sensecap_a1102
+image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.webp
 sidebar_position: 1
 last_update:
   date: 12/23/2023
