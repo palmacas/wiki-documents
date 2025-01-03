@@ -42,7 +42,7 @@ Navigate to `Status` -> `Overview`, check the current OS and firmware version.
 #### Upgrade OS
 
 
-The OS firmware can‘t be updated automatically, so users need to manual operate it.
+The firmware will be upgraded automatically, but user needs to upgrade the OS version manually.
 
 
 Navigate to `System` -> `Backup/Flash Firmware`, click `Update`.
