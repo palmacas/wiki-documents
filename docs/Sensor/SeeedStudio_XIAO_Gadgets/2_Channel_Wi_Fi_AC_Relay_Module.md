@@ -84,6 +84,8 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
 
 #### Input and Output Terminals
 
+<div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/relay_connections.png" style={{width: 600, height: 'auto'}}/></div>
+
 - Input
   - **N (Neutral)**: Connect the neutral wire from the AC power supply.
   - **L (Live)**: Connect the live wire from the AC power supply.
