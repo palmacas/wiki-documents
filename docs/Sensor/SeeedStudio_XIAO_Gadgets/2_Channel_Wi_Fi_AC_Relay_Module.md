@@ -2,7 +2,7 @@
 title: 2-Channel Wi-Fi AC Relay Module In Home Assistant
 description: |
   A smart device from Seeed Studio designed to control AC-powered appliances wirelessly
-image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/3-thumbnail.webp
+image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2-114993526-dual-smart-relay-module-for-xiao-45font.jpg
 slug: /2_channel_wifi_ac_relay
 keywords:
   - XIAO
@@ -14,6 +14,16 @@ last_update:
   author: Spencer
   date: 2024-11-27T03:21:36.491Z
 ---
+
+# Getting started with 2-Channel Wi-Fi AC Relay Module In Home Assistant
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2-114993526-dual-smart-relay-module-for-xiao-45font.jpg" style={{width:420, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Dual-Smart-Relay-Module-for-XIAO-p-6309.html?utm_source=wiki">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div><br />
 
 ## Overview
 
