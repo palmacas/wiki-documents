@@ -109,11 +109,9 @@ Voltages exceeding 24V may cause electric shock or burns, especially in cases of
 ### Requirements
 
 1. **Core Components**:
-   - 6-Channel Wi-Fi Relay Module
-2. **Software**:
-   - **Home Assistant**: A smart home platform that will manage the sensor data.
-   - **ESPHome Add-on**: Firmware that enables easy configuration and management of ESP32 devices.
-3. **Network**:
+   - [6-Channel Wi-Fi Relay Module](https://www.seeedstudio.com/)
+   - [Home Assistant Green](https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html)
+2. **Network**:
    - Stable Wi-Fi for seamless interaction between hardware and Home Assistant.
 
 ### Step 1: Setting Up Home Assistant {#setting-up-home-assistant}

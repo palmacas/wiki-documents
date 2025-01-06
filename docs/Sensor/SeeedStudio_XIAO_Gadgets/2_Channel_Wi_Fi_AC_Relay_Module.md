@@ -102,11 +102,9 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
 ### Requirements
 
 1. **Core Components**:
-   - 2-Channel Wi-Fi AC Relay Module
-2. **Software**:
-   - Home Assistant installed
-   - **ESPHome  Add-On** set up for device communication(if not then the device will not be discovered)
-3. **Network**:
+   - [2-Channel Wi-Fi AC Relay Module](https://www.seeedstudio.com/Dual-Smart-Relay-Module-for-XIAO-p-6309.html)
+   - [Home Assistant Green](https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html)
+2. **Network**:
    - Stable Wi-Fi for seamless interaction between hardware and Home Assistant.
 
 ### Step 1: Set Up the Relay Module (Physical Setup)
