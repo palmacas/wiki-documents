@@ -2,7 +2,7 @@
 title: 2-Channel Wi-Fi AC Relay Module In Home Assistant
 description: |
   A smart device from Seeed Studio designed to control AC-powered appliances wirelessly
-image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2-114993526-dual-smart-relay-module-for-xiao-45font.jpg
+image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/dual_smart_relay_module_for_xiao_45font.webp
 slug: /2_channel_wifi_ac_relay
 keywords:
   - XIAO
@@ -97,24 +97,6 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
     - **N2 (Neutral)**: Neutral wire for the load connected to Relay 2.
     - **L2 (Live)**: Live wire for the load connected to Relay 2.
 
-#### Physical Representation
-
-``` diagram
-+-----------------------------------------+
-| Seeed Studio 2-Channel AC Wi-Fi Relay   |
-|-----------------------------------------|
-| Input:                                  |
-|   N  (Neutral)                          |
-|   L  (Live)                             |
-| Output: Channel 1                       |
-|   N1 (Neutral for Load 1)               |
-|   L1 (Live for Load 1)                  |
-| Output: Channel 2                       |
-|   N2 (Neutral for Load 2)               |
-|   L2 (Live for Load 2)                  |
-+-----------------------------------------+
-```
-
 ## Getting Started
 
 ### Requirements
@@ -156,15 +138,6 @@ This way, you can connect the module to your Home Assistant network and let Home
 2. **Manual Configuration**:
    - If not automatically discovered, manually add the device by specifying its IP address.
 
-## Automation and Use Cases
-
-1. Basic Automation:
-   - Create a time-based schedule to toggle the relay at specific times.
-2. Sensor Integration:
-   - Combine the relay with a temperature or motion sensor for conditional control (e.g., turn on a fan when the temperature exceeds a threshold).
-3. Notifications:
-   - Set up Home Assistant to send notifications when the relay state changes or if the device goes offline.
-
 ## Safety and Maintenance
 
 1. Periodically inspect wiring for wear and tear.
@@ -179,6 +152,10 @@ This way, you can connect the module to your Home Assistant network and let Home
    - No, using USB while connected to AC power may damage the device or create a safety hazard.
 3. **Can this module work without Home Assistant?**
    - Yes, the module can be controlled via its **local IP address** or integrated with other platforms that support ESPHome or MQTT.
+
+## Resources
+
+- **GitHub Repository**: Access the ESPHome Firmware at the [Seeed Studio Dual Channel Relay Module GitHub page](https://github.com/limengdu/2-Channel_Relay_based_on_XIAO_ESP32C3).
 
 ## Tech Support & Product Discussion
 

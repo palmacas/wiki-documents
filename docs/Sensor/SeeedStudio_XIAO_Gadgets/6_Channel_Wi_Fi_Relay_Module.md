@@ -49,10 +49,10 @@ This guide provides a detailed walkthrough, including setup, integration, and ad
     <tbody>
         <tr>
             <th>Input Voltage</th>
-            <td>DC 0~30V</td>
+            <td>DC 5V(For XIAO)</td>
         </tr>
         <tr>
-            <th>Output Voltage</th>
+            <th>DC withstand voltage</th>
             <td>DC 0~30V</td>
         </tr>
         <tr>
@@ -231,15 +231,6 @@ Voltages exceeding 24V may cause electric shock or burns, especially in cases of
     - Power on the module through USB.
     - Turn on the DC power supply to control other electrical appliances.
 
-## Automation and Use Cases
-
-1. Basic Automation:
-   - Create a time-based schedule to toggle the relay at specific times.
-2. Sensor Integration:
-   - Combine the relay with a temperature or motion sensor for conditional control (e.g., turn on a fan when the temperature exceeds a threshold).
-3. Notifications:
-   - Set up Home Assistant to send notifications when the relay state changes or if the device goes offline.
-
 ## Safety and Maintenance
 
 1. Periodically inspect wiring for wear and tear.
@@ -254,6 +245,10 @@ Voltages exceeding 24V may cause electric shock or burns, especially in cases of
    - No, using USB while connected to AC power may damage the device or create a safety hazard.
 3. **Can this module work without Home Assistant?**
    - Yes, the module can be controlled via its **local IP address** or integrated with other platforms that support ESPHome or MQTT.
+
+## Resources
+
+- **GitHub Repository**: Access the ESPHome Firmware at the [Seeed Studio 6 Channel Relay Module GitHub page](https://github.com/Seeed-Projects/6-Channel_Relay_based_on_XIAO_ESP32C6).
 
 ## Tech Support & Product Discussion
 
