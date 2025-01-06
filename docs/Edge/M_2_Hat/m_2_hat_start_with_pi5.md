@@ -15,7 +15,7 @@ last_update:
 
 ## Introduction
 
-This tutorial mainly introduces the hardware connection configuration of M.2 Hat/dual Hat and how to make the Raspberry Pi boot from the SSD.And introduces two installation methods, with and without casing.
+This tutorial primarily introduces the hardware connection configuration of the M.2 Hat/Dual Hat and how to boot the Raspberry Pi from an SSD. It also covers two installation methods: with and without a casing, and tests the SSD read/write speeds under different conditions.
 
 ## Getting Start
 
