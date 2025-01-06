@@ -21,6 +21,31 @@ This tutorial primarily introduces the hardware connection configuration of the 
 
 ### Hardware Preparation
 
+<div class="table-center">
+	<table align="center">
+	<tr>
+		<th>Raspberry Pi5 8GB</th>
+		<th>M.2 Hat/dual Hat</th>
+	</tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:600, height:'auto'}}/></div></td>
+	  <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/3/-/3-103110064-pcie-to-m.2-dual-hat-for-raspberry-pi-5-fonmt.jpg" style={{width:600, height:'auto'}}/></div></td>
+    </tr>
+		<tr>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+		</tr>
+	</table>
+</div>
+
 For installation without a casing, you need to prepare the following materials:
 
 - ① Raspberry Pi 5
