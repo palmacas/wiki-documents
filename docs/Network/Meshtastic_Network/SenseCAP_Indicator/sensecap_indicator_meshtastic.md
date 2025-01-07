@@ -34,6 +34,7 @@ last_update:
 SenseCAP Indicator is a 4-inch touchscreen device designed for Meshtastic®, powered by dual MCUs, the ESP32 and RP2040, and supports Wi-Fi, BLE, and LoRa®. It is an open-source, powerful IoT development platform.
 
 
+
 :::caution note
 During the process of continuous optimization and testing of the SenseCAP Indicator for Meshtastic, we found a situation that may affect your experience. In order to ensure that you can continue to enjoy the best product performance, we are currently optimizing this feature, so shipments may be delayed.
 
@@ -82,6 +83,9 @@ Thank you for your understanding as we work to provide the best possible user ex
 
 ## Flash Firmware
 
+:::tip
+The Fancy-UI firmware has not been officially released yet, it's recommended to flash the Classic-UI firmware described in this wiki.
+:::
 
 ### Flash Application Firmware
 
