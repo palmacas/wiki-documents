@@ -24,7 +24,7 @@ last_update:
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1L-for-Meshtastic-p-6304.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -32,6 +32,19 @@ last_update:
 
 
 SenseCAP Indicator is a 4-inch touchscreen device designed for Meshtastic®, powered by dual MCUs, the ESP32 and RP2040, and supports Wi-Fi, BLE, and LoRa®. It is an open-source, powerful IoT development platform.
+
+
+:::caution note
+During the process of continuous optimization and testing of the SenseCAP Indicator for Meshtastic, we found a situation that may affect your experience. In order to ensure that you can continue to enjoy the best product performance, we are currently optimizing this feature, so shipments may be delayed.
+
+**Identified Issue**<br/>
+In the `LONGFAST`, `LONGSLOW`, and `MIDSLOW` settings, message content exceeding `50 bytes` may result in instability and CRC errors.
+
+**Special Service for Previous Purchasers**<br/>
+If you are a previous purchaser and have the same issue, we are offering a special service to assist you. Please contact us at `sensecap@seeed.cc` and include your order number for support.
+
+Thank you for your understanding as we work to provide the best possible user experience.
+:::
 
 ## Introduction
 
