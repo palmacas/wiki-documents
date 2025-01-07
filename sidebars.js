@@ -1326,7 +1326,7 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO-ESP32S3-FreeRTOS',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_with_MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_CircuitPython',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
+                // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
               ],
             },
             {
@@ -3419,171 +3419,174 @@ const sidebars = {
         id: 'Edge/NVIDIA_Jetson/RecomputerPage',
       },
       items: [
-        // Carrier Boards
+        // Getting Started
         {
           type: 'category',
-          label: 'Carrier Boards',
-          // link: {
-          //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/Carrier_Boards',
-          // },
+          label: 'Getting Started',
           items: [
-            'Edge/NVIDIA_Jetson/Carrier_Boards/J101/reComputer_J1010_J101_Flash_Jetpack',
-            'Edge/NVIDIA_Jetson/Carrier_Boards/J202/reComputer_J2021_J202_Flash_Jetpack',
+            // Carrier Boards
             {
               type: 'category',
-              label: 'J401 Carrier Board',
+              label: 'Carrier Boards',
               items: [
-                'Edge/NVIDIA_Jetson/Carrier_Boards/J401/reComputer_J4012_Flash_Jetpack',
-                'Edge/NVIDIA_Jetson/Carrier_Boards/J401/J401_carrierboard_Hardware_Interfaces_Usage',
+                'Edge/NVIDIA_Jetson/Carrier_Boards/J101/reComputer_J1010_J101_Flash_Jetpack',
+                'Edge/NVIDIA_Jetson/Carrier_Boards/J202/reComputer_J2021_J202_Flash_Jetpack',
+                {
+                  type: 'category',
+                  label: 'J401 Carrier Board',
+                  items: [
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/J401/reComputer_J4012_Flash_Jetpack',
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/J401/J401_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'J501 Carrier Board',
+                  items: [
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/J501/reServer_Industrial_J501_Getting_Started',
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/J501/Hardware_Interfaces_Usage',
+                  ],
+                },
+                'Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/reComputer_A203_Flash_System',
+                'Edge/NVIDIA_Jetson/Carrier_Boards/A205/reComputer_A205_Flash_System',
+                'Edge/NVIDIA_Jetson/Carrier_Boards/A603/A603_Flash_JetPack',
+                'Edge/NVIDIA_Jetson/Carrier_Boards/A607/A607_Flash_JetPack',
+                'Edge/NVIDIA_Jetson/Carrier_Boards/A608/A608_Flash_JetPack',
+                
               ],
             },
-            {
-              type: 'category',
-              label: 'J501 Carrier Board',
-              items: [
-                'Edge/NVIDIA_Jetson/Carrier_Boards/J501/reServer_Industrial_J501_Getting_Started',
-                'Edge/NVIDIA_Jetson/Carrier_Boards/J501/Hardware_Interfaces_Usage',
-              ],
-            },
-            'Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/reComputer_A203_Flash_System',
-            'Edge/NVIDIA_Jetson/Carrier_Boards/A205/reComputer_A205_Flash_System',
-            'Edge/NVIDIA_Jetson/Carrier_Boards/A603/A603_Flash_JetPack',
-            'Edge/NVIDIA_Jetson/Carrier_Boards/A607/A607_Flash_JetPack',
-            'Edge/NVIDIA_Jetson/Carrier_Boards/A608/A608_Flash_JetPack',
-            
-          ],
-        },
 
-        // reComputer Jetson Series
-        {
-          type: 'category',
-          label: 'reComputer Jetson',
-          link: {
-            type: "doc",
-            id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Intro',
-          },
-          items: [
+            // reComputer Jetson Series
             {
               type: 'category',
-              label: 'reComputer J10',
+              label: 'reComputer Jetson',
               link: {
                 type: "doc",
-                id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_Jetson_Series_Introduction',
+                id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Intro',
               },
               items: [
                 {
                   type: 'category',
-                  label: 'reComputer J1010',
+                  label: 'reComputer J10',
+                  link: {
+                    type: "doc",
+                    id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_Jetson_Series_Introduction',
+                  },
                   items: [
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_J1010_with_Jetson_getting_start',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J101_Enable_SD_Card',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J1010_Boot_From_SD_Card',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_GPIO',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Memory_Expansion',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Hardware_Layout',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Initiation',
+                    {
+                      type: 'category',
+                      label: 'reComputer J1010',
+                      items: [
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_J1010_with_Jetson_getting_start',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J101_Enable_SD_Card',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J1010_Boot_From_SD_Card',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_GPIO',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Memory_Expansion',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Hardware_Layout',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Initiation',
+                      ],
+                    },
+
+                    {
+                      type: 'category',
+                      label: 'reComputer J1020',
+                      items: [
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020v2_with_Jetson_getting_start',
+                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020_A206_Flash_JetPack',
+                      ],
+                    },
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'reComputer J20',
+                  items: [
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/reComputer_J20_with_Jetson_getting_start',
+                  ]},
+                {
+                  type: 'category',
+                  label: 'reComputer J30/40',
+                  // link: {
+                  //   type: "doc",
+                  //   id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40',
+                  // },
+                  items: [
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_J30_40_with_Jetson_getting_start',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_Jetson_with_Infineon_Wi-Fi_Module'
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Industrial',
+                  items: [
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Mini',
+                  items: [
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
+                  ],
+                },
+            ]},
+            
+            // reServer Jetson Series
+            {
+              type: 'category',
+              label: 'reServer Jetson',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_Getting_Started',
+              // },
+              items: [
+                'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
+                // {
+                //   type: 'category',
+                //   label: 'reServer Industrial J30/40',
+                //   items: [
+                //   'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
+                //   ],
+                // },
 
                 {
                   type: 'category',
-                  label: 'reComputer J1020',
+                  label: 'reServer J2032',
                   items: [
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020v2_with_Jetson_getting_start',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020_A206_Flash_JetPack',
+                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Flash_Jetpack',
+                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Getting_Started'
                   ],
                 },
-              ],
-            },
+
+
+            ]},
+
+            // Other Devices
             {
               type: 'category',
-              label: 'reComputer J20',
-              items: [
-                'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/reComputer_J20_with_Jetson_getting_start',
-              ]},
-            {
-              type: 'category',
-              label: 'reComputer J30/40',
+              label: 'Other Devices',
               // link: {
               //   type: "doc",
-              //   id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40',
+              //   id: 'Edge/NVIDIA_Jetson/Other_Devices',
               // },
               items: [
-                'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_J30_40_with_Jetson_getting_start',
-                'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/reComputer_Jetson_with_Infineon_Wi-Fi_Module'
+                'Edge/NVIDIA_Jetson/Other_Devices/How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
+                'Edge/NVIDIA_Jetson/Other_Devices/RTL8822CE_Wireless_Module_for_Jetson',
+                'Edge/NVIDIA_Jetson/Other_Devices/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
+                'Edge/NVIDIA_Jetson/Other_Devices/Jetson_Xavier_AGX_H01_Driver_Installation',
+                'Edge/NVIDIA_Jetson/Other_Devices/Jetson-Mate',
+                'Edge/NVIDIA_Jetson/Other_Devices/Mini_AI_Computer_T906',
+                'Edge/NVIDIA_Jetson/Other_Devices/reComputer_A203E_Flash_System',
+                'Edge/NVIDIA_Jetson/Other_Devices/reComputer_A205E_Flash_System',
+                'Edge/NVIDIA_Jetson/Other_Devices/reComputer_Jetson_Series_GPIO_Grove'
               ]
             },
-            {
-              type: 'category',
-              label: 'reComputer Industrial',
-              items: [
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
-              ],
-            },
-            {
-              type: 'category',
-              label: 'reComputer Mini',
-              items: [
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
-              'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
-              ],
-            },
-        ]},
-        
-        // reServer Jetson Series
-        {
-          type: 'category',
-          label: 'reServer Jetson',
-          // link: {
-          //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_Getting_Started',
-          // },
-          items: [
-            'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
-            // {
-            //   type: 'category',
-            //   label: 'reServer Industrial J30/40',
-            //   items: [
-            //   'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
-            //   ],
-            // },
 
-            {
-              type: 'category',
-              label: 'reServer J2032',
-              items: [
-              'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Flash_Jetpack',
-              'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Getting_Started'
-              ],
-            },
-
-
-        ]},
-
-        // Other Devices
-        {
-          type: 'category',
-          label: 'Other Devices',
-          // link: {
-          //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/Other_Devices',
-          // },
-          items: [
-            'Edge/NVIDIA_Jetson/Other_Devices/How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
-            'Edge/NVIDIA_Jetson/Other_Devices/RTL8822CE_Wireless_Module_for_Jetson',
-            'Edge/NVIDIA_Jetson/Other_Devices/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
-            'Edge/NVIDIA_Jetson/Other_Devices/Jetson_Xavier_AGX_H01_Driver_Installation',
-            'Edge/NVIDIA_Jetson/Other_Devices/Jetson-Mate',
-            'Edge/NVIDIA_Jetson/Other_Devices/Mini_AI_Computer_T906',
-            'Edge/NVIDIA_Jetson/Other_Devices/reComputer_A203E_Flash_System',
-            'Edge/NVIDIA_Jetson/Other_Devices/reComputer_A205E_Flash_System',
-            'Edge/NVIDIA_Jetson/Other_Devices/reComputer_Jetson_Series_GPIO_Grove'
           ]
         },
-
 
         // Applications
         {
@@ -3741,6 +3744,7 @@ const sidebars = {
             },
           ]
         },
+
         // FAQs
         {
           type: 'category',
