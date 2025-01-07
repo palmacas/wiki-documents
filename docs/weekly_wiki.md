@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/30/2024
+  date: 01/06/2025
   author: Frank
 ---
 
@@ -17,64 +17,33 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 30th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is January 6th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [How to use the SO100Arm robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+### [Getting with RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
 
-  <div align="center">
-      <img width={800} 
-      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.png" />
-  </div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.jpg" style={{width:800, height:'auto'}}/></div>
 
-The SO-ARM100 and reComputer Jetson AI intelligent robot kit seamlessly combine high-precision robotic arm control with a powerful AI computing platform, providing a comprehensive robot development solution. This kit is based on the Jetson Orin or AGX Orin platform, combined with the SO-ARM100 robotic arm and the LeRobot AI framework, offering users an intelligent robot system applicable to multiple scenarios such as education, research, and industrial automation.
-This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework.
+The Seeed Studio RS485 Vision AI Camera is an intelligent device that combines an ESP32-C3 MCU (Seeed Studio XIAO) with a Himax WiseEye2 HX6538 processor, featuring dual-core Arm Cortex-M55 and an integrated Ethos-U55 neural processor. This advanced camera delivers high-performance AI recognition at 480×480 resolution and 10 FPS, while maintaining low power consumption through flexible options for transmitting inference results. With its standard Modbus RS485 interface, it seamlessly integrates with industrial systems and supports both LoRaWAN and 4G connectivity through SenseCAP DTUs or other standard RS485 DTU devices.
 
-### [Keyword Spotting with TensorFlow Lite on the ReSpeaker 2-Mics Pi HAT v2](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_v2_speech_recognition/)
+### [Getting Started with SenseCAP Vision AI V2](https://wiki.seeedstudio.com/sensecap_a1102/)
 
-  <div align="center">
-      <img width={800} 
-      src="https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp" />
-  </div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/A1102_shop.jpg" style={{width:800, height:'auto'}}/></div>
 
-This project demonstrates how to use TensorFlow Lite for keyword spotting on the ReSpeaker 2-Mics Pi HAT v2. Keyword spotting allows for real-time detection of predefined words from audio input, enabling applications such as voice-controlled devices and interactive systems. We will guide you through the steps to train a TensorFlow Lite model, deploy it on the ReSpeaker HAT, and run speech recognition locally.
+TinyML AI models run locally, transmitting only inference results via LoRaWAN® (863-928MHz) for privacy and power efficiency. Operating at 480×480 resolution and 10 FPS, it features pre-deployed models for human detection, people counting, and meter reading. Users can access 300+ pre-trained models or train custom models via the [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home) platform, and deploy models from [TensorFlow Lite](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/). The device is configurable via the [SenseCraft App](https://sensecap-mate-download.seeed.cn/), IP66-rated, and suitable for both indoor and outdoor use with long-range communication, powered by a built-in battery.
 
-### [Setting Up a Hotspot with Raspberry Pi 4G LTE Hat on Raspberry Pi OS](https://wiki.seeedstudio.com/4g_lte_hotspot_on_raspberry_pi_os/)
+### [Deploying models to SenseCAP A1102 with SenseCraft AI](https://wiki.seeedstudio.com/train_ai_with_a1102/)
 
-  <div align="center">
-      <img width={800} 
-      src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" />
-  </div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg" style={{width:800, height:'auto'}}/></div>
 
-This guide will walk you through the process of setting up a 4G LTE hotspot on your Raspberry Pi using the 4G LTE Hat. We'll cover the necessary hardware and software components, including the Raspberry Pi, the 4G LTE Hat, with Raspberry Pi OS (Bookworm). You'll learn how to configure the 4G module, establish a Wi-Fi network, and securely share your internet connection with other devices.
-
-### [Setting Up OpenWrt on Raspberry Pi 5 with a 4G LTE Module](https://wiki.seeedstudio.com/4g_lte_hat_and_raspberry_pi_router_with_openwrt/)
-
-  <div align="center">
-      <img width={600} 
-      src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp" />
-  </div>
-
-The Raspberry Pi 5, paired with **OpenWrt** and a 4G LTE HAT , offers a powerful and flexible solution for creating a portable hotspot. This setup is ideal for providing internet access in remote locations, supporting IoT devices, or creating a personal wireless network on the go. OpenWrt’s customizability ensures seamless integration with 4G LTE modules, allowing users to harness the full potential of Raspberry Pi 5 as a reliable and high-performance wireless router. Whether for home, travel, or professional use, this guide will help you transform your Raspberry Pi 5 into a fully functional hotspot powered by OpenWrt and 4G LTE connectivity.
+SenseCraft AI with A1102 enables easy deployment of AI models on the SenseCAP A1102 device. With Vision AI V2 and 8GB of memory, it supports image recognition, real-time data processing, and local storage. This guide provides step-by-step instructions for pairing the device, selecting AI models, and configuring settings for efficient operation. Perfect for anyone looking to implement AI-driven applications on the A1102.
 
 ## Existing Wiki Updated
 
-### [Getting started with 60GHz mmWave Breathing and Heartbeat Detection Sensor Kit with XIAO ESP32C6 (MR60BHA2)](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/)
+### [Hardware and Interfaces Usage for J501 carrier board](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/)
 
-We have added an example of the [Human Detection code implementation](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/#human-detection) and an example of the [Module firmware upgrade procedure](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/#module-firmware-upgrade).
-
-### [Raspberry Pi 5 uses PCIe hat/dual hat](https://wiki.seeedstudio.com/raspberry_pi_5_uses_pcie_hat_dual_hat/)
-
-We have added an example of the [Modify PCIe](https://wiki.seeedstudio.com/raspberry_pi_5_uses_pcie_hat_dual_hat/#modify-pcie) and an example of the [Speed Benchmark](https://wiki.seeedstudio.com/raspberry_pi_5_uses_pcie_hat_dual_hat/#speed-benchmark).
-
-### [Flash JetPack OS to J401 Carrier Board](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/)
-
-We have added a step-by-step example of [Flashing the device via JP6.1](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/#flash-the-device-step-by-step).
-
-### [Getting Started with reComputer Industrial](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
-
-We have added an example of [Flashing Jetson with Jetpack 6.1](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/#flash-to-jetson).
+We have added more details about the [Usage Instruction with USB to CAN Adapter](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/#usage-instruction-with-usb-to-can-adapter).
 
 ## The Efforts of Contributor
 
@@ -180,5 +149,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
 - [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 
 </details>
