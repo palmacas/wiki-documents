@@ -5525,7 +5525,7 @@ const sidebars = {
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/CN_XIAO-ESP32S3-FreeRTOS',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/CN_XIAO_ESP32S3_with_MicroPython',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/CN_XIAO_ESP32S3_CircuitPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/CN_XIAO_ESP32S3_Micropython',
+            // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/CN_XIAO_ESP32S3_Micropython',
             
           ],
         },
