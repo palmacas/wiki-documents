@@ -17,47 +17,107 @@ import TabItem from '@theme/TabItem';
 
 <meta name="google-site-verification" content="2bq3L0F_PFVokQM-qT-al7x9FcSNJOO8TtJfAHW43lE" />
 
-<div class="table-center">
-	<table align="center">
-  <tr>
-    <th>XIAO nRF52840</th>
-    <th>XIAO nRF52840 Sense</th>
-    <th>XIAO nRF52840 Plus</th>
-    <th>XIAO nRF52840 Sense Plus</th>
-  </tr>
-  <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/1-102010469-Seeed-Studio-XIAO-nRF52840-Sense-45font.jpg" style={{width:250, height:'auto'}}/></div></td>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840sence.png" style={{width:250, height:'auto'}}/></div></td>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840plus.png" style={{width:250, height:'auto'}}/></div></td>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840senceplus.png" style={{width:250, height:'auto'}}/></div></td>
-  </tr>
-  <tr>      
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-  </tr>
-</table>
+<div className="w-full overflow-x-auto">
+  <table className="min-w-full">
+    <tr>
+      <th>XIAO nRF52840</th>
+      <th>XIAO nRF52840 Sense</th>
+      <th>XIAO nRF52840 Plus</th>
+      <th>XIAO nRF52840 Sense Plus</th>
+    </tr>
+    <tr>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/1-102010469-Seeed-Studio-XIAO-nRF52840-Sense-45font.jpg"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840sence.png"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840plus.png"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840senceplus.png"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://wiki.seeedstudio.com/XIAO_BLE/"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://wiki.seeedstudio.com/XIAO_BLE/"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
 As the first wireless product in the Seeed Studio XIAO family, **Seeed Studio XIAO nRF52840** is equipped with a powerful **Nordic nRF52840 MCU** which integrates **Bluetooth 5.0** connectivity. Meanwhile, it has a **small and exquisite form-factor** which can be used for wearable devices and Internet of Things projects. The **single-sided surface-mountable design** and the onboard **Bluetooth antenna** can greatly facilitate the rapid deployment of IoT projects.
