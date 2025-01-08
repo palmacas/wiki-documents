@@ -96,7 +96,6 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="JP5.1.1" label="JP5.1.1">
 
-## Download the system image package to the PC host
 
 Here we will use NVIDIA L4T 35.3.1 to install Jetpack 5.1.1 on the A608 Carrier Board with Jetson Orin NX module.
 
@@ -117,7 +116,7 @@ Now you will see three compressed files in the same folder:
 
 Open a terminal window on the host PC and run the following command：
 
-```sh
+```bash
 cd <path to drivers>
 sudo apt install unzip 
 tar xf Jetson_Linux_R35.3.1_aarch64.tbz2
@@ -134,17 +133,17 @@ cp -r ./608_jp511/Linux_for_Tegra/* ./Linux_for_Tegra/
 **Step 4.** Flash the system to A608.
 
 - Flash to NVMe
-  ```sh
+  ```bash
   cd Linux_for_Tegra
   sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
   ```
 - Flash to USB
-  ```sh
+  ```bash
   cd Linux_for_Tegra
   sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device sda1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
   ```
 - Flash to SD
-  ```sh
+  ```bash
   cd Linux_for_Tegra
   sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device mmcblk1p1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
   ```
@@ -156,8 +155,6 @@ You will see the following output if the flashing process is successful.
 After flashing, power on Jetson Device again and log into the system.
 </TabItem>
 <TabItem value="JP5.1.2" label="JP5.1.2">
-
-## Download the system image package to the PC host
 
 Here we will use NVIDIA L4T 35.4.1 to install Jetpack 5.1.2 on the A608 Carrier Board with Jetson Orin NX module.
 
@@ -176,7 +173,7 @@ Now you will see three compressed files in the same folder:
 
 Open a terminal window on the host PC and run the following command：
 
-```sh
+```bash
 cd <path to drivers>
 sudo apt install unzip 
 tar xf Jetson_Linux_R35.4.1_aarch64.tbz2
@@ -192,17 +189,17 @@ cp -r ./608_jp512/Linux_for_Tegra/* ./Linux_for_Tegra/
 **Step 4.** Flash the system to A608.
 
 - Flash to NVMe
-  ```sh
+  ```bash
   cd Linux_for_Tegra
   sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
   ```
 - Flash to USB
-  ```sh
+  ```bash
   cd Linux_for_Tegra
   sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device sda1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
   ```
 - Flash to SD
-  ```sh
+  ```bash
   cd Linux_for_Tegra
   sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device mmcblk1p1 -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
   ```
@@ -216,8 +213,6 @@ After flashing, power on Jetson Device again and log into the system.
 </TabItem>
 
 <TabItem value="JP6.0" label="JP6.0">
-
-## Download the system image package to the PC host
 
 Here we will use NVIDIA L4T 36.3 to install Jetpack 6.0 on the A608 Carrier Board with Jetson Orin NX module.
 
@@ -251,6 +246,51 @@ sudo cp -r ./608_jp60/Linux_for_Tegra/* ./Linux_for_Tegra/
 **Step 4.** Flash the system to Nvme of A608.
 
 ```sh
+cd Linux_for_Tegra
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
+```
+
+You will see the following output if the flashing process is successful.
+
+<div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/5.1.2_P3.png" /></div>
+
+After flashing, power on Jetson Device again and log into the system.
+
+</TabItem>
+
+<TabItem value="JP6.1" label="JP6.1">
+
+Here we will use NVIDIA L4T 36.4 to install Jetpack 6.1 on the A608 Carrier Board with Jetson Orin NX module.
+
+**Step 1.** [Download](https://developer.nvidia.com/embedded/jetson-linux-r3640) the NVIDIA drivers on the host PC. The required drivers are shown below:
+<div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/5.1.2_P1.png" /></div>
+
+**Step 2.** [Download](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVrGntfS1wxHhrgnwGeHQmQBtQ0gvHj4udkREIDIACvFDw?e=5B07Za) peripheral drivers and put all the drivers in same folder.
+
+Now you will see three compressed files in the same folder:
+
+<div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/a608_jp6.1.png" /></div>
+
+
+**Step 3.** Prepare system image.
+
+Open a terminal window on the host PC and run the following command：
+
+```bash
+cd <path to drivers>
+tar xf Jetson_Linux_R36.3.0_aarch64.tbz2
+sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.3.0_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
+cd Linux_for_Tegra/
+sudo ./apply_binaries.sh
+sudo ./tools/l4t_flash_prerequisites.sh
+cd ..
+tar xf A608_Jetpack_6.1.tar.gz
+sudo cp -r 608_jetpack6.1/Linux_for_Tegra/* Linux_for_Tegra/
+```
+
+**Step 4.** Flash the system to Nvme of A608.
+
+```bash
 cd Linux_for_Tegra
 sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
 ```
