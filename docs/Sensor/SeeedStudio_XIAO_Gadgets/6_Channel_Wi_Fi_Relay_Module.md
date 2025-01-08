@@ -116,7 +116,7 @@ Voltages exceeding 24V may cause electric shock or burns, especially in cases of
 
 ### Step 1: Setting Up Home Assistant {#setting-up-home-assistant}
 
-1. **Installation**: For optimal performance, it's recommended to install [Home Assistant OS](https://www.home-assistant.io/installation/) on a Virtual Machine or Raspberry Pi. Follow the official installation guide on the Home Assistant website.
+1. **Installation**: homeassistant is already pre-installed in Home Assistant Green.
 2. **Enabling ESPHome Add-on**:
    - Access the Home Assistant dashboard.
    - Navigate to the "Add-ons" section and search for the ESPHome add-on.

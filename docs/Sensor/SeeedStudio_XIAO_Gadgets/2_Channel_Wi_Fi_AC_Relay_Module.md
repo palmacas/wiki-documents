@@ -15,6 +15,9 @@ last_update:
   date: 2024-11-27T03:21:36.491Z
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Getting started with 2-Channel Wi-Fi AC Relay Module In Home Assistant
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2-114993526-dual-smart-relay-module-for-xiao-45font.jpg" style={{width:420, height:'auto'}}/></div>
@@ -109,13 +112,66 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
 
 ### Step 1: Set Up the Relay Module (Physical Setup)
 
-1. Wiring:
-    - Follow the Physical Layout and Connections section to wire the relay module.
-    - Ensure all connections are secure, and there are no exposed wires.
-2. Power On:
-    - Turn on the AC supply. Do not power on the module through USB if it is connected to AC power.
+1. **Installation**: homeassistant is already pre-installed in Home Assistant Green.
+2. **Enabling ESPHome Add-on**:
+   - Access the Home Assistant dashboard.
+   - Navigate to the "Add-ons" section and search for the ESPHome add-on.
+   - Click "Install" and then "Start" to enable it.
+   - Once installed, configure the add-on to ensure proper communication with the XIAO ESP32C3.
 
-### Step 2: Network Configuration
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-enabling_ESPHome_Add-on.png" style={{width:1000, height:'auto'}}/></div>
+
+By gathering the necessary components and setting up Home Assistant with the ESPHome add-on, you'll be ready to proceed with the integration of the 2-Channel Wi-Fi AC Relay Module.
+
+:::tip install Home Assistant
+We have also written how to install Home Assistant for some of Seeed Studio products, please refer to them.
+
+- [Getting Started with Home Assistant on ODYSSEY-X86](/ODYSSEY-X86-Home-Assistant)
+- [Getting Started with Home Assistant on reTerminal](/reTerminal_Home_Assistant)
+- [Getting Started with Home Assistant on LinkStar H68K/reRouter CM4](/h68k-ha-esphome)
+:::
+
+### Step 2: Preparing the Relay Module
+
+By default, your device (XIAO ESP32C3) comes pre-flashed with firmware for 2-Channel Wi-Fi AC Relay Module. However, there are two scenarios where you may need to update the firmware:
+
+1. **Re-flashing the Firmware**: If the existing firmware is corrupted or you need to start fresh.
+2. **Upgrading the Firmware**: If there is a newer version of the firmware with improved functionality.
+
+There are two simple methods for flashing the firmware:
+
+:::caution
+Firefox does not support flashing firmware on ESP devices. Please use Google Chrome or Microsoft Edge instead.
+:::
+
+<Tabs>
+<TabItem value='Web Tool'>
+
+You can use this [Web Tool](https://limengdu.github.io/2-Channel_Relay_based_on_XIAO_ESP32C3/) for an easy and direct method to flash your firmware. Simply follow the on-screen instructions.
+
+- Click the `CONNECT` button to initiate the connection. The tool will automatically update the firmware.
+
+If something goes wrong, follow the on-screen troubleshooting steps or switch to the `ESPHome Web` method to complete the process.
+
+</TabItem>
+<TabItem value='ESPHome Web'>
+
+For this method, you'll need to download the `bin` firmware file from [here](https://github.com/limengdu/2-Channel_Relay_based_on_XIAO_ESP32C3/releases)(you'll need to unzip the downloaded file).
+
+1. Connect the sensor kit to your PC.
+2. Visit the [ESPHome Web](https://web.esphome.io/) page.
+3. Select the firmware file with the `*.factory.bin` suffix.
+
+Watch the following video for a detailed walkthrough of flashing the firmware via ESPHome Web:
+
+<iframe class="youtube-video-r" src="https://www.youtube.com/embed/J3AVeZCoLK8?si=1AeNTsdmbTvMl0Nq" title="Install firmware via ESPHome Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</TabItem>
+</Tabs>
+
+With either method, you'll have your firmware updated and ready for integration with Home Assistant.
+
+### Step 3: Network Configuration
 
 1. **Enable Access Point**:
    - Upon powering up for the first time, the module will create a Wi-Fi network (SSID: `seeedstudio-relay`).
@@ -123,18 +179,25 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
    - Connect to the network using a phone or PC.
    - Open a browser and navigate to `http://192.168.4.1`.
    - Enter the SSID and password of your home Wi-Fi network.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap_wireless_setting_page.png" style={{width:'auto', height:680, "border-radius": '15px'}}/></div>
+
 3. **Home Assistant Integration**:
    - Once connected to the home network, the module will be discoverable in Home Assistant under `Settings -> Devices & Services`.
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ha_new_device_discovered.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
+
 This way, you can connect the module to your Home Assistant network and let Home Assistant discover it.
 
-### Step 3: Add the module device
+### Step 4: Add the module device
 
 1. **Automatic Discovery**:
    - Ensure the **ESPHome** is installed in Home Assistant.
    - Navigate to `Settings -> Devices & Services -> Integrations` and look for the device.
 2. **Manual Configuration**:
    - If not automatically discovered, manually add the device by specifying its IP address.
+
+After adding the device, you can see both switches in the Overview page. You can also set the name of each switch individually.
 
 ## Safety and Maintenance
 
@@ -154,6 +217,7 @@ This way, you can connect the module to your Home Assistant network and let Home
 ## Resources
 
 - **GitHub Repository**: Access the ESPHome Firmware at the [Seeed Studio Dual Channel Relay Module GitHub page](https://github.com/limengdu/2-Channel_Relay_based_on_XIAO_ESP32C3).
+- **Dual Channel Relay Module Schematic**: [Seeed_Studio_2-Channel_AC_Wi-Fi_Relay_SCH.pdf](https://www.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/resource/Seeed_Studio_2-Channel_AC_Wi-Fi_Relay_SCH.pdf).
 
 ## Tech Support & Product Discussion
 
