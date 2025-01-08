@@ -116,7 +116,7 @@ Voltages exceeding 24V may cause electric shock or burns, especially in cases of
 
 ### Step 1: Setting Up Home Assistant {#setting-up-home-assistant}
 
-1. **Installation**: homeassistant is already pre-installed in Home Assistant Green.
+1. **Installation**: homeassistant is already pre-installed in [Home Assistant Green](https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html).
 2. **Enabling ESPHome Add-on**:
    - Access the Home Assistant dashboard.
    - Navigate to the "Add-ons" section and search for the ESPHome add-on.

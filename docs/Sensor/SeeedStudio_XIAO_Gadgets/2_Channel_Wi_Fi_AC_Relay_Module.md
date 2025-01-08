@@ -112,7 +112,7 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
 
 ### Step 1: Set Up the Relay Module (Physical Setup)
 
-1. **Installation**: homeassistant is already pre-installed in Home Assistant Green.
+1. **Installation**: homeassistant is already pre-installed in [Home Assistant Green](https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html).
 2. **Enabling ESPHome Add-on**:
    - Access the Home Assistant dashboard.
    - Navigate to the "Add-ons" section and search for the ESPHome add-on.
@@ -122,14 +122,6 @@ Always disconnect AC power before wiring the relay. Avoid using the USB port whi
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-enabling_ESPHome_Add-on.png" style={{width:1000, height:'auto'}}/></div>
 
 By gathering the necessary components and setting up Home Assistant with the ESPHome add-on, you'll be ready to proceed with the integration of the 2-Channel Wi-Fi AC Relay Module.
-
-:::tip install Home Assistant
-We have also written how to install Home Assistant for some of Seeed Studio products, please refer to them.
-
-- [Getting Started with Home Assistant on ODYSSEY-X86](/ODYSSEY-X86-Home-Assistant)
-- [Getting Started with Home Assistant on reTerminal](/reTerminal_Home_Assistant)
-- [Getting Started with Home Assistant on LinkStar H68K/reRouter CM4](/h68k-ha-esphome)
-:::
 
 ### Step 2: Preparing the Relay Module
 
