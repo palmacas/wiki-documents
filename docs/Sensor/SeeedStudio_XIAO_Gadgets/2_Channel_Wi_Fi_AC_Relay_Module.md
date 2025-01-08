@@ -175,6 +175,9 @@ With either method, you'll have your firmware updated and ready for integration 
 
 1. **Enable Access Point**:
    - Upon powering up for the first time, the module will create a Wi-Fi network (SSID: `seeedstudio-relay`).
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2ch_relay_wifi_list.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
+
 2. **Access Configuration**:
    - Connect to the network using a phone or PC.
    - Open a browser and navigate to `http://192.168.4.1`.
@@ -198,6 +201,8 @@ This way, you can connect the module to your Home Assistant network and let Home
    - If not automatically discovered, manually add the device by specifying its IP address.
 
 After adding the device, you can see both switches in the Overview page. You can also set the name of each switch individually.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/ha_switch_overview.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
 
 ## Safety and Maintenance
 

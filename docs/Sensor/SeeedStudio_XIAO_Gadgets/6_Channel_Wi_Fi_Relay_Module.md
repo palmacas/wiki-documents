@@ -127,14 +127,6 @@ Voltages exceeding 24V may cause electric shock or burns, especially in cases of
 
 By gathering the necessary components and setting up Home Assistant with the ESPHome add-on, you'll be ready to proceed with the integration of the 6-Channel relay module.
 
-:::tip install Home Assistant
-We have also written how to install Home Assistant for some of Seeed Studio products, please refer to them.
-
-- [Getting Started with Home Assistant on ODYSSEY-X86](/ODYSSEY-X86-Home-Assistant)
-- [Getting Started with Home Assistant on reTerminal](/reTerminal_Home_Assistant)
-- [Getting Started with Home Assistant on LinkStar H68K/reRouter CM4](/h68k-ha-esphome)
-:::
-
 ### Step 2: Preparing the Relay Module
 
 By default, your device (XIAO ESP32C6) comes pre-flashed with firmware for 6-Channel relay. However, there are two scenarios where you may need to update the firmware:
@@ -178,9 +170,9 @@ With either method, you'll have your firmware updated and ready for integration 
 ### Step 3: Network Configuration
 
 1. **Enable Access Point**:
-   - Upon powering up for the first time, the module will create a Wi-Fi network (SSID: `seeedstudio-6-channel-relay`).
+   - Upon powering up for the first time, the module will create a Wi-Fi network (SSID: `seeedstudio-2-channel-relay`).
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap-from-xiao-esp32c6-seeedstudio-6-channel-relay.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2ch_relay_wifi_list.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
 
 2. **Access Configuration**:
    - Connect to the network using a phone or PC.
