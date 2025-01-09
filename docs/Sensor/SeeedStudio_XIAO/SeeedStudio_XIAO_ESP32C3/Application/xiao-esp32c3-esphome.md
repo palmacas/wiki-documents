@@ -18,7 +18,6 @@ This article will guide you through the installation of the ESPHome service in y
 
 In addition, we will build a Home Assistant with human presence detection in combination with the most popular 24GHz mmWave Human Static Presence Module Lite.
 
-
 ## Getting Started
 
 :::tip
