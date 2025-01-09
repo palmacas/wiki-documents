@@ -1823,6 +1823,7 @@ const sidebars = {
           label: 'For v2 Users',
           items: [
             'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+            'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
           ],
         },
         'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
