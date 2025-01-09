@@ -5754,7 +5754,17 @@ const sidebars = {
             'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/YOLOv8_custom_classification_model',
           ]
         },
-        
+        {
+          type: 'category',
+          label: '机器人',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
+          // },
+          items: [
+            'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/Lerobot_SO100Arm_zh',
+          ]
+        },
 
 
     //Jetson 这里
