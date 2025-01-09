@@ -36,7 +36,7 @@ no_comments: false # for Disqus
 		<tr>
 			<td>
 				<div class="get_one_now_container" style="text-align:center;">
-					<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html">
+					<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
 					<strong><span style="font-size:16px;">Get One Now 🖱️</span></strong>
 					</a>
 				</div>
