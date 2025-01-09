@@ -1823,6 +1823,7 @@ const sidebars = {
           label: 'For v2 Users',
           items: [
             'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+            'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
           ],
         },
         'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
@@ -5773,7 +5774,17 @@ const sidebars = {
             'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/YOLOv8_custom_classification_model',
           ]
         },
-        
+        {
+          type: 'category',
+          label: '机器人',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
+          // },
+          items: [
+            'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/Lerobot_SO100Arm_zh',
+          ]
+        },
 
 
     //Jetson 这里

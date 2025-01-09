@@ -29,7 +29,7 @@ import TabItem from '@theme/TabItem';
       <td>
         <div style={{textAlign: 'center'}}>
           <img 
-            src="https://files.seeedstudio.com/wiki/XIAO-BLE/1-102010469-Seeed-Studio-XIAO-nRF52840-Sense-45font.jpg"
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/nrf52840_front.jpg"
             style={{width: '100%', maxWidth: '250px', height: 'auto'}}
           />
         </div>
@@ -92,7 +92,7 @@ import TabItem from '@theme/TabItem';
         <div className="get_one_now_container" style={{textAlign: 'center'}}>
           <a 
             className="get_one_now_item" 
-            href="https://wiki.seeedstudio.com/XIAO_BLE/"
+            href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Plus-p-6359.html"
           >
             <strong>
               <span>
@@ -106,7 +106,7 @@ import TabItem from '@theme/TabItem';
         <div className="get_one_now_container" style={{textAlign: 'center'}}>
           <a 
             className="get_one_now_item" 
-            href="https://wiki.seeedstudio.com/XIAO_BLE/"
+            href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Plus-p-6360.html"
           >
             <strong>
               <span>
@@ -621,7 +621,13 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 
 ### Seeed Studio XIAO nRF52840 (Sense) Plus
 
+- **[PDF]** [nRF52840 datasheet](https://files.seeedstudio.com/wiki/XIAO-BLE/nrf52840_datasheet.pdf)
+
 - **[ZIP]** [Seeed Studio XIAO nRF52840 (Sense) Plus Schematic ](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XIAO_nRF52840_Plus_SCH_PCB_v1.0.zip)
+
+- **[ZIP]** [Seeed Studio XIAO nRF52840 KiCAD file](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XlAO_nRF52840_KiCAD_file.zip)
+
+- **[DXF]** [Seeed Studio XIAO nRF52840 Sense Dimension in DXF](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XlA0_nRF52840_Sense_Dimension_in_DXF.dxf)
 
 ## Course Resources
 
