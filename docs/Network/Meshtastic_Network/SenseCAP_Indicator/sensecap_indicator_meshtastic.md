@@ -256,9 +256,21 @@ Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/regi
 
 Now that you have set the LoRa region on your device, you can continue with configuring any [LoRa Configs](https://meshtastic.org/docs/configuration/radio/lora/) to suit your needs.
 
-### Pages Description
+### Keyboard usage
+
+**Step 1**: Navigate to `Settings` -> `Canned Messages`, and enable it.
 
 
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/canned.png" alt="pir" width={500} height="auto" /></p>
+
+**Step 2**
+
+On the node page, slide the screen from top to bottom and the keyboard will appear.
+
+
+<div class="table-center">
+    <iframe width="500" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay> </iframe>
+</div>
 
 ### Precautions
 
