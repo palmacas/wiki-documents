@@ -3400,7 +3400,8 @@ const sidebars = {
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l', 
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/clip_application_on_rpi_with_ai_kit'
+          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/clip_application_on_rpi_with_ai_kit',
+          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/frigate_nvr_with_raspberrypi_5',
         ]
       },
 
