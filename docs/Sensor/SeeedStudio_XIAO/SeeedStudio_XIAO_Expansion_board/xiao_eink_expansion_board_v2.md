@@ -1,7 +1,7 @@
 ---
-title: XIAO eInk Expansion Board V2
+title: ePaper Driver Board for Seeed Studio XIAO
 description: The eInk expansion board For XIAO is a smart module from Seeed Studio designed to display something in epaper screen. 
-image: https://files.seeedstudio.com/wiki/eInk/xiao-expansion/titleimg.jpg
+image: https://files.seeedstudio.com/wiki/eInk/xiao-expansion/titleimg.webp
 slug: /xiao_eink_expansion_board_v2
 keywords:
   - XIAO
@@ -23,7 +23,7 @@ last_update:
 The ePaper driver board features a 24-pin FPC connector, built-in charging IC for efficient and safe battery charging, and a JST 2-pin BAT connector for easy battery connection. Ideal for creating WiFi-enabled digital photo frames.
 
 :::note
-This breakout board does not include an eInk display; the display must be purchased separately.
+This breakout board does not include an ePaper display; the display must be purchased separately.
 :::
 
 ## Introduction
@@ -52,12 +52,13 @@ This breakout board does not include an eInk display; the display must be purcha
 2. JST BAT Connector: For battery connection and switch.
 3. XIAO Socket: For connecting the Seeed Studio XIAO development board.
 4. IO Break out: For connecting Grove sensors or the others controller, such Arduino UNO or Raspberry Pi.
+5. Power switch: For battery power control.
 
 ### Pinout Definitions
 
 <div class="table-center">
 
-|  eInk SPI Pins |  XIAO  | 
+|  ePaper SPI Pins |  XIAO  | 
 |       ---      |  ---   |
 |      RST       |   D0   |
 |      CS        |   D1   |
@@ -70,7 +71,7 @@ This breakout board does not include an eInk display; the display must be purcha
 
 </div>
 
-### Supported eInk
+### Supported ePaper
 
 1. [1.54-inch E-paper - Dotmatix 200x200](https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html)
 2. [2.13-inch E-Paper -Flexible Monochrome 212x104](https://www.seeedstudio.com/2-13-Flexible-Monochrome-ePaper-Display-with-212x104-Pixels-p-5781.html)
@@ -90,7 +91,7 @@ This breakout board does not include an eInk display; the display must be purcha
 <table align="center">
 	<tr>
 		<th>Seeed Studio XIAO ESP32S3</th>
-	    <th>eink expansion board</th>
+	    <th>ePaper expansion board</th>
 	    <th>7.5 inch epaper screen</th>
 	</tr>
 	<tr>
@@ -121,12 +122,12 @@ This breakout board does not include an eInk display; the display must be purcha
 Except for XIAO SAMD21 haven't enough FLASH and RAM to run program in 5.65 and 7.5 inch epaper, all other XIAO support all kinds of sizes of epaper.
 :::
 
-Insert the eInk into the FPC Connector: Carefully slide your E-paper into the 24-pin FPC connector on the ePaper Breakout Board.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e3.png" style={{width:700, height:'auto'}}/></div>
+Insert the ePaper into the FPC Connector: Carefully slide your E-paper into the 24-pin FPC connector on the ePaper Breakout Board.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e3.png" style={{width:600, height:'auto'}}/></div>
 
 Insert the XIAO into the XIAO Socket: Align the pins and gently insert your XIAO into the XIAO socket on the board.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e4.png" style={{width:700, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e4.png" style={{width:600, height:'auto'}}/></div>
 
 
 
@@ -274,7 +275,7 @@ Click "Save" to save the the lcd output array as a file of `.h`. Keep that file,
 
 ##### Step 3.Display image
 
-Download the Demo Code, and open the code for your specific eInk Screen. 
+Download the Demo Code, and open the code for your specific ePaper Screen. 
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Allen-Kuang/e-ink_Demo">
@@ -282,7 +283,7 @@ Download the Demo Code, and open the code for your specific eInk Screen.
     </a>
 </div><br />
 
-Take a example of using 4.2-inch eInk and a XIAO ESP32S3, once you have downloaded and extract the demo code, please navigate and open the "4.2 inch E-paper - Monocolor 400x300" folder. 
+Take a example of using 4.2-inch ePaper and a XIAO ESP32S3, once you have downloaded and extract the demo code, please navigate and open the "4.2 inch E-paper - Monocolor 400x300" folder. 
 
 Then open the "example" folder and use Arduino IDE to open the "example.ino" file:
 
@@ -304,7 +305,7 @@ Please click "upload" to flash the firmware on to XIAO
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e2.png" style={{width:500, height:'auto'}}/></div>
 
-You should see the eInk display refreahing the demo image as shown below:
+You should see the ePaper display refreahing the demo image as shown below:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/8.png" style={{width:500, height:'auto'}}/></div>
 
