@@ -397,6 +397,22 @@ You will be asked whether you want to reboot now. Click `Yes`:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_6.png" alt="pir" width="700" height="auto" /></div>
 
+## Power consumption and temperature
+
+
+:warning: **Note:** The standby state was tested under the following conditions: the graphical interface was disabled, Bluetooth was turned off, and Wi-Fi was disabled. The command is shown as below:
+```
+sudo ifconfig wlan0 down
+sudo systemctl stop bluetooth
+sudo systemctl stop lightdm
+```
+
+| **Condition**        | **Power consumption** | **Temperature** |
+|----------------------|----------------------|----------------------|
+|**Standby**|5.9w   |   cpu:46°C|
+|**Normal Operation**|6.3w|cpu:53°C|
+|**Max Load**|16.2w|cpu:75°C hailo8:81°C|
+
 ## Application
 
 ### Frigate
