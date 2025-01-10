@@ -2,7 +2,7 @@
 title: 6-Channel Wi-Fi Relay Module In Home Assistant
 description: |
   A smart device from Seeed Studio designed to wirelessly control devices with safe DC voltage.
-image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/six_channel_wifi_relay_simplified_diagram.png
+image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/7-114993588_6_CH_Relay_Sensor_feature.webp
 slug: /6_channel_wifi_relay
 keywords:
   - XIAO
@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 
 # Getting started with 6-Channel Wi-Fi Relay Module In Home Assistant
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/six_channel_wifi_relay_simplified_diagram.png" style={{width:420, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/7-114993588_6_CH_Relay_Sensor_feature.webp" style={{width:640, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/?utm_source=wiki">
