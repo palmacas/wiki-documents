@@ -7,8 +7,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recomputer_r
 last_update:
-  date: 05/06/2024
-  author: Parker Hu
+  date: 01/08/2025
+  author: Joshua Lee
 ---
 
 <!-- ---
@@ -527,43 +527,51 @@ If the ACT LED doesn't blink, then the EEPROM code might be corrupted, try again
 STICKY: Is your Pi not booting? (The Boot Problems Sticky) - Raspberry Pi Forums
 For more detail please check the [Raspberry Pi forum](https://forums.raspberrypi.com//viewtopic.php?f=28&t=58151).
 
-In this section we will use the raspi-gpio tool to test with GPIOs, you can use the raspi-gpio help to view the manual:
+To control the user LEDs, we recommend using sysfs, a pseudo-filesystem provided by the Linux kernel that exposes information about various kernel subsystems, hardware devices, and their associated drivers. On the ReComputer R1000, we have abstracted the user LED interface into three device files (led-red, led-blue, and led-green), enabling users to control the LED lights simply by interacting with these files. The examples are as follows:
+
+1. To turn on the red LED, please enter following command in the Terminal:
 
 ```bash
-raspi-gpio help
+echo 1 | sudo tee /sys/class/leds/led-red/brightness
 ```
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/17.png" /></div>
-1. The pin controlling the third LED of reComputer R1000 is gpio20. To get specific GPIO status, Please enter following command in the Terminal :
+
+2. To turn off the red LED, please enter following command in the Terminal:
 
 ```bash
-raspi-gpio get 20
+echo 0 | sudo tee /sys/class/leds/led-red/brightness
 ```
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/18.png" /></div>
-2. Change the state of gpio20:
+
+3. You can turn on red and green LED at the same time, please enter following command in the Terminal:
 
 ```bash
-#set current pin state
-sudo raspi-gpio set 20 dl
-#get the pin state after set
-raspi-gpio get 20
+echo 1 | sudo tee /sys/class/leds/led-red/brightness
+echo 1 | sudo tee /sys/class/leds/led-green/brightness
 ```
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/19.png" /></div>
-3. The third led-user LED will light up.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/20.png" /></div>
 
 ### Buzzer
 
 <div align="left"><img width={300} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/fig07.png" /></div>
 
-The reComputer R1000 features an active buzzer, which can be used for various purposes such as alarm and event notifications. The buzzer is controlled through GPIO21 to CM4.
+The reComputer R1000 features an active buzzer, which can be used for various purposes such as alarm and event notifications. The buzzer is controlled through GPIO21 to CM4 in reComputer R1000 v1.0, and GPIO20 to CM4 in reComputer R1000 1.1.
 
-To turn off(on) the buzzer, Please enter following command in the Terminal :
+:::note
+To distinguish between the hardware revision (v1.0 and v1.1), you can refer to [reComputer R1000 V1.1 Product change details](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/).
+:::
+
+For reComputer R1000 v1.0 users, the buzzer is connected to GPIO-21, to turn on/off the buzzer, Please enter following command in the Terminal:
 
 ```bash
-# Turn off the buzzer using LED brightness
-raspi-gpio set 21 op dl
-# Turn on the buzzer using LED brightness
-raspi-gpio set 21 op dh
+raspi-gpio set 21 op dh # turn on
+raspi-gpio set 21 op dl # turn off
+```
+
+For reComputer R1000 v1.1 users, the buzzer is connected to PCA9535 P15, to turn off(on) the buzzer, Please enter following command in the Terminal :
+
+```bash
+echo 591 | sudo tee /sys/class/gpio/export
+echo out | sudo tee /sys/class/gpio/gpio591/direction
+echo 1 | sudo tee /sys/class/gpio/gpio591/value # turn on
+echo 0 | sudo tee /sys/class/gpio/gpio591/value # turn off
 ```
 
 ### RS485

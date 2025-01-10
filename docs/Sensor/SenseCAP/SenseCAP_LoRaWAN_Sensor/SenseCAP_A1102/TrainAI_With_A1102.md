@@ -1,77 +1,122 @@
 ---
 description: Train_AI_With_A1102
-title: SenseCraft AI With A1102
+title: Deploy AI Models on SenseCAP A1102 Using SenseCraft AI
 keywords:
 - Sensor Vision_AI_V2
-image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg
+- SenseCAP A1102
+- SenseCraft AI
+image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top2.webp
 slug: /train_ai_with_a1102
 sidebar_position: 2
-sidebar_class_name: hidden
+# sidebar_class_name: hidden
 last_update:
   date: 12/23/2024
   author: Jason
 ---
 
-# Deploying models to SenseCAP A1102 with SenseCraft AI
+# Deploying AI Models on SenseCAP A1102 Using SenseCraft AI
 
+The SenseCAP A1102 is a powerful sensor device that combines advanced AI capabilities with ease of deployment. This guide will walk you through deploying AI models on the A1102 using the **SenseCraft AI** app, offering step-by-step instructions for pairing, configuration, and testing.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg" style={{width:800, height:'auto'}}/></div>
 
 
-### Connect with SenseCraft APP
+## **Getting Started with SenseCAP A1102**
+
+### **What is SenseCAP A1102?**
+The SenseCAP A1102 is an intelligent camera sensor designed for edge AI applications. Equipped with 8GB of memory, it can:
+- Deploy custom AI models.
+- Automatically save recognized images.
+- Enable real-time recognition with high accuracy.
+
+### **Requirements**
+Before starting, ensure you have:
+- The SenseCAP A1102 device.
+- The **SenseCraft AI** app installed on your smartphone.
+- Any pre-trained AI model for deployment.
 
 
-**Step 1 :**Press and hold for three seconds for device pairing
+## **Connecting the SenseCAP A1102 to SenseCraft AI**
+
+### **Device Pairing**
+
+Press and hold the power button on the SenseCAP A1102 for **three seconds** to enable pairing mode.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/11.png" style={{width:400, height:'auto'}}/></div>
 
-**Setp 2 :**  When the serial number is scanned, click on Pairing.
+In the SenseCraft AI app, scan the serial number of the A1102 device and tap on **Pairing**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/12.png" style={{width:400, height:'auto'}}/></div>
 
-**Setp 3 :** Click on Advanced Settings
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/13.png" style={{width:400, height:'auto'}}/></div>
+## **Configuring the SenseCAP A1102**
 
-**Setp 4 :** Click on Advanced Settings
+### **Access Advanced Settings**
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/14.png" style={{width:400, height:'auto'}}/></div>
+Once paired, click on **Advanced Settings** in the SenseCraft AI app.
 
-**Setp 5 :** Click on our camera models for pairing
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/1.png" style={{width:400, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/15.png" style={{width:400, height:'auto'}}/></div>
+Navigate to additional configuration options by clicking **Advanced Settings** again.
 
-**Setp 6 :** Select the AI model we need to deploy
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/16.png" style={{width:400, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/2.png" style={{width:400, height:'auto'}}/></div>
 
 
-**Step 7 .** Select whether to save the recognizer image and set the confidence level
+## **Deploying an AI Model**
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/17.png" style={{width:400, height:'auto'}}/></div>
+### **Selecting an AI Model**
+From the settings menu, select your desired AI model for deployment. Choose from pre-loaded models or upload a custom model.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/3.png" style={{width:400, height:'auto'}}/></div>
+
+### **Configuring Model Parameters**
+Set parameters like:
+- **Confidence Level**: Adjust the threshold for object recognition (e.g., 80% confidence).
+- **Save Recognized Images**: Enable or disable saving recognized images to the memory card.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/5.png" style={{width:400, height:'auto'}}/></div>
+
+
+## **Testing and Running the Model**
+
+### **Preview Camera Capture**
+After deploying the model, preview the camera's captured images directly in the app to ensure the model is working as expected.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/7.png" style={{width:400, height:'auto'}}/></div>
+
+### **View Device Information**
+Return to the app's homepage to check the device information of the A1102, such as model status, connectivity.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/18.png" style={{width:400, height:'auto'}}/></div>
+
+### **Review Recognition Results**
+View the recognition data and logs. For example, set a reporting interval (e.g., every 5 minutes) to track recognized objects.
+
+
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/11.jpg" style={{width:400, height:'auto'}}/></div>
+
+
+### **Accessing the SD Card**
+Locate the gap in the A1102 unit and gently insert a screwdriver. Apply a little force to pry it open.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/8.jpg" style={{width:400, height:'auto'}}/></div>
+
+Locate the four screw holes and rotate the knobs to open them. Make sure to apply consistent pressure while turning to ensure they come loose.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/9.jpg" style={{width:400, height:'auto'}}/></div>
+
+
+Once the screws are loosened, remove the cover to access the SD card slot. You can then take out the SD card to read the information stored inside.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/A1102_10.jpg" style={{width:400, height:'auto'}}/></div>
+
+### **Automatic Image Saving**
+With 8GB of internal memory, the A1102 can automatically save recognized images to a memory card. Access and retrieve these images later for analysis or reporting.
 
 :::tip
 Equipped with 8GB of memory, the A1102 is able to automatically save images to the memory card when a target is recognized. When we need to access this image information, we can extract and access the required image data directly from the memory card.
 :::
 
 
-**Step 8 .** Return to the APP homepage to see the device information of A1102
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/18.png" style={{width:400, height:'auto'}}/></div>
-
-**Step 9 .** Tap it again to see the recognized information, here as an example of 5 minutes to report the recognition results
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/19.png" style={{width:400, height:'auto'}}/></div>
-
-
-
-
-<!-- ## Program on Arduino Connecting With Seeed Studio XIAO Board
-
-The SenseCAP A1102 integrates Vision AI V2 and the XIAO ESP32 C3, providing a powerful platform for deploying your favorite models. When you need to deploy a model on the XIAO, you can refer to this wiki(https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/) for detailed guidance and resources to help you get started! -->
-
-
-# Tech Support
+## **Tech Support & Product Discussion**
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
@@ -84,5 +129,3 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-
-
