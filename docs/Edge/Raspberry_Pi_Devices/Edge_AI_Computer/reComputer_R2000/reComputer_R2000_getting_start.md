@@ -6,7 +6,7 @@ keywords:
 - Edge AI Computer
 - reComputer R2000
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /R2000_Series_getting_start
+slug: /r2000_series_getting_start
 last_update:
   date: 1/09/2025
   author: Jiahao Li
