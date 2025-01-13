@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reComputer r1000
   - Object detecton
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/frigate.webp
 slug: /frigate_nvr_with_raspberrypi_5
 last_update:
   date: 01/09/2025
@@ -26,31 +26,21 @@ no_comments: false # for Disqus
 <div class="table-center">
 	<table align="center">
 	<tr>
-		<th>Raspberry Pi 5 8GB</th>
-		<th>Raspberry Pi AI Kit</th>
+		<th>reComputer AI R2130</th>
 	</tr>
     <tr>
-      <td><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:600, height:'auto'}}/></td>
-	  <td><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-113060086-raspberry-pi-ai-kit-all.jpg" style={{width:600, height:'auto'}}/></td>
+      <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:600, height:'auto'}}/></div></td>
     </tr>
 		<tr>
-			<td>
-				<div class="get_one_now_container" style={{textAlign:'center'}}>
-					<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
-					<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-					</a>
-				</div>
-			</td>
-			<td>
-				<div class="get_one_now_container" style={{textAlign:'center'}}>
-					<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html">
-					<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-					</a>
-				</div>
-			</td>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-R2130-12-p-6368.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
 		</tr>
 	</table>
 </div>
+
 
 **Alternatively, you also need at least one camera for video streaming. You can refer to [Recommended hardware](https://docs.frigate.video/frigate/hardware#cameras) to see the recommended cameras.**
 
@@ -68,11 +58,11 @@ $ sudo raspi-config
 In the dialog, select **6 Advanced Options** and then **A8 PCIe Speed**.
 
 ![6 Advanced Options](https://raw.githubusercontent.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/main/resource/1.png)
-![6 Advanced Options](https://raw.githubusercontent.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/main/resource/2.png)
+![A8 PCIe Speed](https://raw.githubusercontent.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/main/resource/2.png)
 
 Choose "Yes" to enable PCIe Gen 3 mode.
 
-![6 Advanced Options](https://raw.githubusercontent.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/main/resource/3.png)
+![Choose Yes](https://raw.githubusercontent.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L/main/resource/3.png)
 
 Afterward, click "Finish" to exit.
 
@@ -110,7 +100,7 @@ $ sudo cp *.bin /lib/firmware/hailo
 To avoid PCIe max_desc_page_size issue, we also need to create a rule in `/etc/modprobe.d/hailo_pci.conf` with the following content.
 
 ```bash
-options hailo_pci force_desc_page_size=256
+options hailo_pci force_desc_page_size=4096
 ```
 
 Restart the system to take effect.
@@ -153,15 +143,17 @@ In this part, we assume you have your camera set up and ready to stream with RTS
    $ sudo reboot
    ```
 
-4. **Get Frigate Image:**
+### Step 2: Deploying Frigate
+
+1. **Pull the Frigate Image:**
 
     Go to [Package frigate](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/versions), choose one image with `-h8l` suffix. In this example, we choose `ghcr.io/blakeblackshear/frigate:b265b6b-h8l`.
 
-   ```bash
-   $ docker pull ghcr.io/blakeblackshear/frigate:b265b6b-h8l
-   ```
+    ```bash
+    $ docker pull ghcr.io/blakeblackshear/frigate:b265b6b-h8l
+    ```
 
-5. **Create Docker Compose File:**
+2. **Create Docker Compose File:**
 
     Here is an example of the `frigate.yml` file, the `hailo0` device is the one you created in the previous step, configuration files are in the `./config` directory and data files are in the `./data` directory.:
 
@@ -188,7 +180,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
                 - 5000:5000
     ```
 
-6. **Download Model:**
+3. **Download Model:**
 
     Go to [Public Pre-Trained Models](https://github.com/hailo-ai/hailo_model_zoo/blob/master/docs/public_models/HAILO8/HAILO8_object_detection.rst) to download the model you want to use. Here is the example of using YOLOv8n model: `yolov8n`.
 
@@ -197,7 +189,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
     $ sudo wget https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ModelZoo/Compiled/v2.14.0/hailo8/yolov8n.hef -O ./config/model_cache/yolov8n.hef
     ```
 
-9. **Edit Frigate Config:**
+4. **Edit Frigate Config:**
 
     Here is an example of the `config/config.yml` file, which is for the Frigate application:
 
@@ -233,7 +225,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
         input_pixel_format: bgr
     ```
 
-6. **Start Docker Instance:**
+5. **Start Docker Instance:**
 
     ```bash
     $ docker compose -f frigate.yml up -d

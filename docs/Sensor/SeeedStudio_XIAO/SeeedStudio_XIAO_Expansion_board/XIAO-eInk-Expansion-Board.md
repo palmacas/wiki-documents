@@ -1,6 +1,6 @@
 ---
 description: Getting Started XIAO eInk Expansion Board
-title: XIAO eInk Expansion Board
+title: ePaper Driver Board for XIAO
 keywords:
 - XIAO eInk Expansion
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png

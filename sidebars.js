@@ -1405,7 +1405,7 @@ const sidebars = {
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/xiao-rgb-matrix',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/gpio_expander_for_xiao',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/XIAO-eInk-Expansion-Board',
-            // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/xiao_eink_expansion_board_v2',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/xiao_eink_expansion_board_v2',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/XIAO-RS485-Expansion-Board',
           ],
         },
@@ -2893,7 +2893,7 @@ const sidebars = {
           items:[
             {
             type: 'category',
-            label: 'reCoputer-R2000',
+            label: 'reComputer-R2000',
             collapsed: true,
             collapsible: true,
             link:{
@@ -5724,7 +5724,15 @@ const sidebars = {
           ]}
     ]},
 
-       
+    {
+      type: 'category',
+      label: '其他设备',
+      items: [
+        // Models
+        // 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-initial_setup_jon',
+        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
+      ]
+    },  
 
         // Generative AI
         {
