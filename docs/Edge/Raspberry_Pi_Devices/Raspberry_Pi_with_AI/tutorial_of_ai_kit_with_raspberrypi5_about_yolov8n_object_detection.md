@@ -24,7 +24,7 @@ This wiki will guide you on how to use YOLOv8n for object detection with AI Kit 
 
 ## Prepare Hardware
 
-### FOr Hailo8L 13 TOPS
+### For Hailo8L 13 TOPS
 <div class="table-center">
 	<table align="center">
 	<tr>
@@ -50,7 +50,7 @@ This wiki will guide you on how to use YOLOv8n for object detection with AI Kit 
 	</table>
 </div>
 
-### FOr Hailo8 26 TOPS
+### For Hailo8 26 TOPS
 
 <div class="table-center">
 	<table align="center">
