@@ -2893,7 +2893,7 @@ const sidebars = {
           items:[
             {
             type: 'category',
-            label: 'reCoputer-R2000',
+            label: 'reComputer-R2000',
             collapsed: true,
             collapsible: true,
             link:{
