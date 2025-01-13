@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/06/2025
+  date: 01/13/2025
   author: Frank
 ---
 
@@ -17,33 +17,41 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is January 6th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is January 13th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting with RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:800, height:'auto'}}/></div>
 
-The Seeed Studio RS485 Vision AI Camera is an intelligent device that combines an ESP32-C3 MCU (Seeed Studio XIAO) with a Himax WiseEye2 HX6538 processor, featuring dual-core Arm Cortex-M55 and an integrated Ethos-U55 neural processor. This advanced camera delivers high-performance AI recognition at 480×480 resolution and 10 FPS, while maintaining low power consumption through flexible options for transmitting inference results. With its standard Modbus RS485 interface, it seamlessly integrates with industrial systems and supports both LoRaWAN and 4G connectivity through SenseCAP DTUs or other standard RS485 DTU devices.
+**Frigate NVR** is an open-source network video recorder designed for real-time object detection with AI models. Paired with the **Raspberry Pi 5**, it enables efficient video surveillance at the edge, powered by YOLOv8n. This guide will walk you through the installation and configuration process for an optimal setup.
 
-### [Getting Started with SenseCAP Vision AI V2](https://wiki.seeedstudio.com/sensecap_a1102/)
+### [Getting Start with R2000 Series](https://wiki.seeedstudio.com/r2000_series_getting_start/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/A1102_shop.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:800, height:'auto'}}/></div>
 
-TinyML AI models run locally, transmitting only inference results via LoRaWAN® (863-928MHz) for privacy and power efficiency. Operating at 480×480 resolution and 10 FPS, it features pre-deployed models for human detection, people counting, and meter reading. Users can access 300+ pre-trained models or train custom models via the [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home) platform, and deploy models from [TensorFlow Lite](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/). The device is configurable via the [SenseCraft App](https://sensecap-mate-download.seeed.cn/), IP66-rated, and suitable for both indoor and outdoor use with long-range communication, powered by a built-in battery.
+reComputer AI R2000 is a powerful Edge AI Computer based on the Raspberry Pi 5. With quad-core Arm Cortex-A76 processor 8GB RAM, M.2 SSD support, and an Hailo-8 AI acceleration module providing up to 26 TOPS, Enabling real-time, low latency & high-efficiency AI inferencing. it's the perfect chioce for a wide range of AI applications, including AI-powered video analytics, machine vision, and intelligent edge computing.
 
-### [Deploying models to SenseCAP A1102 with SenseCraft AI](https://wiki.seeedstudio.com/train_ai_with_a1102/)
+### [ePaper Driver Board for Seeed Studio XIAO](https://wiki.seeedstudio.com/xiao_eink_expansion_board_v2/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/headimage.jpg" style={{width:800, height:'auto'}}/></div>
 
-SenseCraft AI with A1102 enables easy deployment of AI models on the SenseCAP A1102 device. With Vision AI V2 and 8GB of memory, it supports image recognition, real-time data processing, and local storage. This guide provides step-by-step instructions for pairing the device, selecting AI models, and configuring settings for efficient operation. Perfect for anyone looking to implement AI-driven applications on the A1102.
+The ePaper driver board features a 24-pin FPC connector, built-in charging IC for efficient and safe battery charging, and a JST 2-pin BAT connector for easy battery connection. Ideal for creating WiFi-enabled digital photo frames.
 
 ## Existing Wiki Updated
 
-### [Hardware and Interfaces Usage for J501 carrier board](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/)
+### Flash JetPack OS to Carrier Boards
 
-We have added more details about the [Usage Instruction with USB to CAN Adapter](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/#usage-instruction-with-usb-to-can-adapter).
+We have added examples for flashing JetPack 6.1 on the following carrier boards:  
+
+- [A607 Carrier Board (NVIDIA Jetson Orin NX/Nano supported)](https://wiki.seeedstudio.com/reComputer_A607_Flash_System/#flash-to-jetson)  
+- [A608 Carrier Board (NVIDIA Jetson Orin NX/Nano supported)](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/#flash-to-jetson)  
+- [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#flash-to-jetson)  
+
+### Added Resources for XIAO ESP32S3 Plus & nRF52840 (Sense) Plus
+
+We have added resources files for [XIAO ESP32S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus) and [XIAO nRF52840 (Sense) Plus](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus).
 
 ## The Efforts of Contributor
 
@@ -150,5 +158,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
 - [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
+- [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 
 </details>

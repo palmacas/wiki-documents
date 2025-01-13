@@ -5,7 +5,7 @@ keywords:
 - Sensor Vision_AI_V2
 - SenseCAP A1102
 - SenseCraft AI
-image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top2.webp
+image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.webp
 slug: /train_ai_with_a1102
 sidebar_position: 2
 # sidebar_class_name: hidden
