@@ -2893,7 +2893,7 @@ const sidebars = {
           items:[
             {
             type: 'category',
-            label: 'reCoputer-R2000',
+            label: 'reComputer-R2000',
             collapsed: true,
             collapsible: true,
             link:{
@@ -5724,7 +5724,15 @@ const sidebars = {
           ]}
     ]},
 
-       
+    {
+      type: 'category',
+      label: '其他设备',
+      items: [
+        // Models
+        // 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-initial_setup_jon',
+        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
+      ]
+    },  
 
         // Generative AI
         {

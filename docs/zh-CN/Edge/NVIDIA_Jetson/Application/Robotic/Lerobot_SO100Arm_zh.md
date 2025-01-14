@@ -44,6 +44,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
 
 # 规格参数
 本教程硬件由[矽递科技Seeed Studio](https://www.seeedstudio.com/)提供
+
 | 规格 | [标准版](https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html) | [专业版](https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit-Pro-p-6343.html) |
 |--|--|--|
 | 自由度 | 6 | 6 |
