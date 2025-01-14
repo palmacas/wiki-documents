@@ -5729,7 +5729,7 @@ const sidebars = {
       label: '其他设备',
       items: [
         // Models
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-initial_setup_jon',
+        // 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-initial_setup_jon',
         'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn-How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
       ]
     },  
