@@ -368,7 +368,7 @@ Start by removing the protective cover from the heat sink to expose the thermal 
 <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/heat-sink.jpg" style={{width:400, height:'auto'}}/></div></td>
 <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/remove-heat-sink-cover.jpg" style={{width:400, height:'auto'}}/></div></td>
 
-***Step 2. Pssemble the Heat Sink:***
+***Step 2. Assemble the Heat Sink:***
 
 <Tabs>
   <TabItem value="single" label="Single Heat Sink" default>
