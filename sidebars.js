@@ -3718,6 +3718,7 @@ const sidebars = {
                         label: 'Projects',
                         items: [
                           'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm',
+                          'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm_Isaacsim',
                             ]},
                 
                 ]},
