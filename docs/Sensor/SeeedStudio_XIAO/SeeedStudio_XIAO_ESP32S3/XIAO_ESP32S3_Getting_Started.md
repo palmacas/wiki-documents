@@ -415,18 +415,61 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 
 - **Step 3.** Add ESP32 board package to your Arduino IDE.
 
-    Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-    *<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>*
+<Tabs>
+<TabItem value='For Windows'>
 
-    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png" style={{width:800, height:'auto'}}/></div>
+Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
 
-    Navigate to **Tools > Board > Boards Manager...**, type the keyword **esp32** in the search box, select the latest version of **esp32**, and install it.
+```
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
 
-    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/9.png" style={{width:1000, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png" style={{width:800, height:'auto'}}/></div>
+
+Navigate to **Tools > Board > Boards Manager...**, type the keyword **esp32** in the search box, select the latest version of **esp32**, and install it.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/9.png" style={{width:1000, height:'auto'}}/></div>
 
 :::caution
-The on-board package for XIAO ESP32S3 requires at least version **2.0.8** to be available.
+The on-board package for XIAO ESP32S3 requires version **2.0.8** and above to be available.
 :::
+
+- **Step 4.** Select your board and port.
+
+On top of the Arduino IDE, you can select the port directly. This is likely to be COM3 or higher (**COM1** and **COM2** are usually reserved for hardware serial ports).
+
+</TabItem>
+<TabItem value='For Mac OS'>
+
+Navigate to **Arduino IDE > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
+
+```
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_29.png" style={{width:680, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_80.png" style={{width:680, height:'auto'}}/></div></td>
+    </tr>
+  </table>
+</div>
+
+Navigate to **Tools > Board > Boards Manager...**, type the keyword **esp32** in the search box, select the latest version of **esp32**, and install it.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/9.png" style={{width:1000, height:'auto'}}/></div>
+
+:::caution
+The on-board package for XIAO ESP32S3 requires version **2.0.8** and above to be available.
+:::
+
+- **Step 4.** Select your board and port.
+
+At the top of the Arduino IDE you can directly select the port. This will probably be the one with "usbmodem" or "usbserial" in the name. If you're unsure, unplug and plug again to see which port is missing.
+
+</TabItem>
+</Tabs>
 
 <!-- :::tip
 We have now submitted a merge request to ESP32 and will be able to search and use XIAO ESP32S3 in the Arduino IDE when ESP32 releases the next version of the on-board package update.
@@ -467,9 +510,6 @@ After you have downloaded the above zip, please unzip it and you will see two fi
 
 - **Step 4.** Close the Arduino IDE and reopen it.-->
 
-- **Step 4.** Select your board and port.
-
-On top of the Arduino IDE, you can select the port directly. This is likely to be COM3 or higher (**COM1** and **COM2** are usually reserved for hardware serial ports).
 <Tabs>
 <TabItem value="(Sense)" label="for XIAO ESP32S2 (Sense)" default>
 
@@ -498,7 +538,7 @@ When you encounter the above two situations, you can try to put XIAO into BootLo
 
 - **Step 1**. Press and hold the `BOOT` button on the XIAO ESP32S3 without releasing it.
 - **Step 2**. Keep the `BOOT` button pressed and then connect to the computer via the data cable. Release the `BOOT` button after connecting to the computer.
-- **Step 3**. Upload the **Blink** program to check the operation of the XIAO ESP32S3.
+- **Step 3**. Upload the **File > Examples > 01.Basics > Blink** program to check the operation of the XIAO ESP32S3.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/15.gif" style={{width:500, height:'auto'}}/></div>
 
