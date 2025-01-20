@@ -1,24 +1,38 @@
 const docList = [
   [
     {
+      "path": "/lerobot_so100m_isaacsim",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Isaac_sim_import_success.webp",
+      "title": "How to Import and Control SO100Arm Kit in Isaac Sim",
+      "date": "01/16/2025"
+    },
+    {
       "path": "/r2000_series_getting_start",
       "image": "https://files.seeedstudio.com/wiki/recomputer-r2000-getting-start/1_24_1.webp",
       "title": "Getting Start with R2000 Series",
       "date": "1/09/2025"
-    },
+    }
+  ],
+  [
     {
       "path": "/frigate_nvr_with_raspberrypi_5",
       "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/frigate.webp",
       "title": "Frigate NVR with Raspberry Pi 5",
       "date": "01/09/2025"
-    }
-  ],
-  [
+    },
     {
       "path": "/recomputer_r",
       "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp",
       "title": "reComputer R1000 Getting Started",
       "date": "01/08/2025"
+    }
+  ],
+  [
+    {
+      "path": "/6_channel_wifi_relay",
+      "image": "https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/7-114993588_6_CH_Relay_Sensor_feature.webp",
+      "title": "Getting started with 6-Channel Wi-Fi Relay Module In Home Assistant",
+      "date": "01/04/2025"
     },
     {
       "path": "/getting_started_with_rs485_vision_ai_cam",
@@ -37,7 +51,7 @@ const docList = [
     {
       "path": "/lerobot_so100m",
       "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
-      "title": "How to use the SO100Arm robotic arm in Lerobot",
+      "title": "How to use the SO-ARM100 robotic arm in Lerobot",
       "date": "12/24/2024"
     }
   ],
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.webp",
       "title": "Deploying AI Models on SenseCAP A1102 Using SenseCraft AI",
       "date": "12/23/2024"
-    }
-  ],
-  [
-    {
-      "path": "/recomputer_r1000_use_rs485_modbus_rtu",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/r1000_connection_1.webp",
-      "title": "How to use rs485 and modbus with reComputer R1000",
-      "date": "12/20/2024"
-    },
-    {
-      "path": "/tcp_ip_raspberry_pi_4g_lte_hat",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/tcp_python.webp",
-      "title": "4G LTE HAT on Raspberry Pi- TCP/IP Networking Explained",
-      "date": "12/20/2024"
     }
   ]
 ];
