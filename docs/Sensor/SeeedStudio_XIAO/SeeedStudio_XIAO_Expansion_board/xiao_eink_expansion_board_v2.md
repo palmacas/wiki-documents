@@ -177,6 +177,10 @@ Click the below button to download code
 
 Unzip the code and choose the size of the epaper you are using and open the **example.ino** file via Arduino IDE.
 
+:::tip
+Only 4.2-inch and 7.5-inch epaper support GUI function now.
+:::
+
 **Function Overview**
 
 Before we get started developing a sketch, let's look at the available functions 
