@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/13/2025
+  date: 01/20/2025
   author: Frank
 ---
 
@@ -21,25 +21,13 @@ Today is January 13th, and a brand new week has begun! Check out what Seeed Stud
 
 ## Latest Wiki Launched
 
-### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
+### [How to Import and Control SO100Arm Kit in Isaac Sim](https://wiki.seeedstudio.com/lerobot_so100m_isaacsim/)
 
-<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp" style={{width:800, height:'auto'}}/></div>
 
-**Frigate NVR** is an open-source network video recorder designed for real-time object detection with AI models. Paired with the **Raspberry Pi 5**, it enables efficient video surveillance at the edge, powered by YOLOv8n. This guide will walk you through the installation and configuration process for an optimal setup.
+This wiki provides instructions on how to import the SO100 Arm Kit robotic arm into NVIDIA's Isaac Sim simulation platform and control it using ROS2 and Python scripts.
 
-### [Getting Start with R2000 Series](https://wiki.seeedstudio.com/r2000_series_getting_start/)
-
-<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:800, height:'auto'}}/></div>
-
-reComputer AI R2000 is a powerful Edge AI Computer based on the Raspberry Pi 5. With quad-core Arm Cortex-A76 processor 8GB RAM, M.2 SSD support, and an Hailo-8 AI acceleration module providing up to 26 TOPS, Enabling real-time, low latency & high-efficiency AI inferencing. it's the perfect chioce for a wide range of AI applications, including AI-powered video analytics, machine vision, and intelligent edge computing.
-
-### [ePaper Driver Board for Seeed Studio XIAO](https://wiki.seeedstudio.com/xiao_eink_expansion_board_v2/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/headimage.jpg" style={{width:800, height:'auto'}}/></div>
-
-The ePaper driver board features a 24-pin FPC connector, built-in charging IC for efficient and safe battery charging, and a JST 2-pin BAT connector for easy battery connection. Ideal for creating WiFi-enabled digital photo frames.
-
-## Existing Wiki Updated
+<!-- ## Existing Wiki Updated
 
 ### Flash JetPack OS to Carrier Boards
 
@@ -51,7 +39,7 @@ We have added examples for flashing JetPack 6.1 on the following carrier boards:
 
 ### Added Resources for XIAO ESP32S3 Plus & nRF52840 (Sense) Plus
 
-We have added resources files for [XIAO ESP32S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus) and [XIAO nRF52840 (Sense) Plus](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus).
+We have added resources files for [XIAO ESP32S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus) and [XIAO nRF52840 (Sense) Plus](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus). -->
 
 ## The Efforts of Contributor
 
@@ -159,5 +147,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
+- [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
 
 </details>
