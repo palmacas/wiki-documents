@@ -27,6 +27,15 @@ For details, please click [here](/Solution_for_the_Compatibility_Issue_between_r
 
 For details, please click [here](/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
 
+#### Q5: How to get the system log of reComputer J30/J40?
+
+For details, please click [here](/get_the_system_log_of_reComputer_J30_and_J40)
+
+#### Q6: Timeout issue during flash Jetpack.
+
+For details, please click [here](/usb_timeout_during_flash)
+
+
 # Tech support
 
 Thank you for choosing our products! We are **here** to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
