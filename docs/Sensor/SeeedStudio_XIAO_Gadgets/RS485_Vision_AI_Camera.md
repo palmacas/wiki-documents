@@ -270,6 +270,11 @@ If you access 5v, you don't need to access 12v, 12v and 5v choose one of the vol
 Once you have successfully connected according to the diagram above, click on this      [wiki](https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/) link for a more detailed explanation of how to use the code to drive the
 
 
+## Resources
+
+- 📄 **[PDF]** [Seeed Studio RS485 Vision AI Camera Schematic](https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/SenseCraft_APP/SenseCAP_RS485_Vision_AI_Sensor_SCH.pdf)
+
+
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
