@@ -29,7 +29,7 @@ For details, please click [here](/Use_IMX477_Camera_with_A603_Jetson_Carrier_Boa
 
 #### Q5: How to get the system log of reComputer J30/J40?
 
-For details, please click [here](/get_the_system_log_of_reComputer_J30_and_J40)
+For details, please click [here](/get_the_system_log_of_recomputer_j30_and_j40)
 
 #### Q6: Timeout issue during flash Jetpack.
 
