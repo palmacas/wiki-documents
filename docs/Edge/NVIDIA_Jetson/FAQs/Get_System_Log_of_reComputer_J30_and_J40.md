@@ -4,7 +4,7 @@ title: How to get the system log of reComputer J30/J40?
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /get_the_system_log_of_reComputer_J30_and_J40
+slug: /get_the_system_log_of_recomputer_j30_and_j40
 last_update:
   date: 1/22/2025
   author: Youjiang
