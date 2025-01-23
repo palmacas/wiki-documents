@@ -232,7 +232,7 @@ When it runs well, you will see the following effect.
 
 ##### Step 1.Make a picture
 
-Use the build-in software **Paint** in Windows to creat a picture with the **same resolution(the resolution of different types of screens in below table)** as the screen you are using,  and save it as`BMP` or  `JPG` file; 
+Use the build-in software **Paint** in Windows to create a picture with the **same resolution(the resolution of different types of screens in below table)** as the screen you are using,  and save it as`BMP` or  `JPG` file; 
 
 :::tip
 Your picture resolution must be the same as the screen you are using, for example, 4.2-inch E-paper is 400 x 300 pixels, then you can not use the size of 300 x 400, it will cause the iamge2lcd output `.h `file with an extra 200 bytes.
