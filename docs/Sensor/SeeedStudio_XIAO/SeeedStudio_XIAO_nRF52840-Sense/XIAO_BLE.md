@@ -481,7 +481,6 @@ void loop()
   // nothing to do
 }
 ```
->>>>>>> docusaurus-version
 
 :::tip
 Here , We would like to express our special thanks to the author for providing the code  -> ***daCoder*** <-
