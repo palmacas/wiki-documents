@@ -142,7 +142,7 @@ The reComputer Mini features RTC interfaces, providing accurate timekeeping even
 
 #### Connection Connection
 
-Connect a 3V CR2302 coin cell battery with JST connector to the 2-pin 1.25mm JST socket on the board.
+Connect a 3V CR2032 coin cell battery with JST connector to the 2-pin 1.25mm JST socket on the board.
 
 <div align="center">
   <img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/rtc.png"/>
