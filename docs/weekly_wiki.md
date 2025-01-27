@@ -9,7 +9,7 @@ last_update:
   author: Frank
 ---
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IndexWiki/logo.png" style={{width:1000, height:'auto'}}/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/IndexWiki/logo.png" /></div>
 
 ## Greetings
 
