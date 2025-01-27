@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/20/2025
+  date: 01/27/2025
   author: Frank
 ---
 
@@ -17,29 +17,36 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is January 20th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is January 27th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [How to Import and Control SO100Arm Kit in Isaac Sim](https://wiki.seeedstudio.com/lerobot_so100m_isaacsim/)
+### [Connect to Home Assistant via the Zigbee of the XIAO ESP32C6](https://wiki.seeedstudio.com/xiaoc6_zigbee_led_ha/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee_ha/1.png" style={{width:800, height:'auto'}}/></div>
 
-This wiki provides instructions on how to import the SO100 Arm Kit robotic arm into NVIDIA's Isaac Sim simulation platform and control it using ROS2 and Python scripts.
+The integration of Zigbee devices into smart home ecosystems has become increasingly popular due to Zigbee's low power consumption, reliability, and ease of use. In this wiki, we’ll guide you through connecting the **XIAO ESP32C6** to **Home Assistant** via its Zigbee functionality. By the end of this guide, you’ll have a working demo where the XIAO ESP32C6 acts as a Zigbee device that can be controlled directly from Home Assistant's dashboard.
 
-<!-- ## Existing Wiki Updated
+## Existing Wiki Updated
 
-### Flash JetPack OS to Carrier Boards
+### XIAO Open-Source Materials
 
-We have added examples for flashing JetPack 6.1 on the following carrier boards:  
+We have added examples for the following XIAO boards' open-source materials:
 
-- [A607 Carrier Board (NVIDIA Jetson Orin NX/Nano supported)](https://wiki.seeedstudio.com/reComputer_A607_Flash_System/#flash-to-jetson)  
-- [A608 Carrier Board (NVIDIA Jetson Orin NX/Nano supported)](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/#flash-to-jetson)  
-- [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#flash-to-jetson)  
+- [XIAO nRF52840 (Sense) Plus Open-Source Materials](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus)
+- [XIAO ESP32S3 Plus Open-Source Materials](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus)
 
-### Added Resources for XIAO ESP32S3 Plus & nRF52840 (Sense) Plus
+### [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
 
-We have added resources files for [XIAO ESP32S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus) and [XIAO nRF52840 (Sense) Plus](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus). -->
+We have added the schematic for [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/#resources).
+
+### [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/)
+
+We have added several [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/#q5-how-to-get-the-system-log-of-recomputer-j30j40).
+
+### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
+
+We have added an example for [reCamera Factory Reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset).
 
 ## The Efforts of Contributor
 
