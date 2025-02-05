@@ -1,9 +1,9 @@
 ---
-description: Get Started with SenseCAP Card Tracker T1000-E for Meshtastic
-title: LoRaWAN Open Source Firmware Tutorial
+description: Get Started with SenseCAP Card Tracker T1000-E for LoRaWAN
+title: LoRaWAN Open Source Firmware
 keywords:
 - Tracker
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.png
 slug: /open_source_lorawan
 sidebar_position: 3
 last_update:
@@ -12,7 +12,9 @@ last_update:
 ---
 
 
-Good news for all technology enthusiasts! The SenseCAP T1000-E now has an open source LoRaWAN version of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
+Good news for all technology enthusiasts! The [SenseCAP T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) now has an open source **LoRaWAN version** of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
+
+
 
 ## Preparation
 
@@ -59,7 +61,7 @@ The nRF5 SDK provides a rich developing environment for nRF5 Series devices by i
 
 Seeed provides an example project for developers to get started more quickly. This example includes LoRaWAN communication, positioning information acquisition, onboard sensor data acquisition, etc.
 
-<a  href="https://github.com/Seeed-Studio/Seeed_Wio_WM1110_Dev_Board" target="_blank"><span>Seeed Example-Download</span></a>
+<a  href="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Seeed_T1000_E_Dev_Board_Alpha-main.zip" target="_blank"><span>Seeed Example-Download</span></a>
 
 
 **Add Seeed Example file to nRF5 SDK**
@@ -67,7 +69,7 @@ Seeed provides an example project for developers to get started more quickly. Th
 Copy the `Seeed T1000-E Example file` to the following path of nRF5 SDK:
 `.../nRF5_SDK_17.1.0_ddde560/examples/ble_peripheral/`
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/copyfile.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/file-path.png" alt="pir" width={600} height="auto" /></p>
 
 
 
@@ -75,29 +77,35 @@ Copy the `Seeed T1000-E Example file` to the following path of nRF5 SDK:
 
 ### Flash Bootloader
 
-* **Bootloader Download**
-
-**Step 1:** Enter DFU mode
 
 
-Connect the USB cable to your PC, press and hold the device button, then connect the charging cable, there should be a driver named `T1000-E` display.
+**[Bootloader Download](https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_bootloader_1th_ota_uf2.uf2)**
 
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/file-path.png" alt="pir" width={600} height="auto" /></p>
-
-
-**Step 2:** Flash Bootloader
-
-
-Copy `UF2` file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
-
-The correct bootloader information is shown in the figure：
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/bootloader-info.png" alt="pir" width={600} height="auto" /></p>
+* **Step 1:** Enter DFU mode
 
 
 
-### Run Example Project
+ Connect the USB cable to your PC, press and hold the device button, then connect the charging cable, there should be a driver named `T1000-E` display.
+
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/e-driver.png" alt="pir" width={600} height="auto" /></p>
+
+* **Step 2:** Flash Bootloader
+
+
+ Copy `UF2` file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
+
+ The correct bootloader information is shown in the figure：
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/bootloader-info.png" alt="pir" width={600} height="auto" /></p>
+
+
+
+
+
+
+
+### Run LoRaWAN Example Project
 
 
 **Import Example Project**
@@ -145,6 +153,18 @@ python uf2conv.py filename.hex -c -f 0xADA52840 -o filename.uf2
 #### Flash the Application Firmware
 
 
+* **Step 1:** Enter DFU mode
+
+
+ Connect the USB cable to your PC, press and hold the device button, then connect the charging cable, there should be a driver named `T1000-E` display.
+
+
+ <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/e-driver.png" alt="pir" width={600} height="auto" /></p>
+
+* **Step 2:** Flash LoRaWAN Application Firmware
+
+
+ Copy `UF2` file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
 
 
 ### Connect to a LNS
@@ -189,6 +209,7 @@ Set the following parameters:
 
 :::tip 
 JoinEUI/DevEUI/APPEUI: Which you defined in the 'lorawan_key_config.h' file in the previous setting.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keys-define.png" alt="pir" width={600} height="auto" /></p>
 :::
 
 
@@ -200,5 +221,10 @@ JoinEUI/DevEUI/APPEUI: Which you defined in the 'lorawan_key_config.h' file in t
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/payload-data.png" alt="pir" width={800} height="auto" /></p>
 
 
+
+### Switch to Meshtastic Firmware
+
+
+If you want to use the Meshtastic back, after flashing the bootloader, refer to [flash the Meshtastic application firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware) to use the Meshtastic network.
 
 
