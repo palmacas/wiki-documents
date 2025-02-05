@@ -134,6 +134,11 @@ First of all, you need to install the peripheral drivers for this board. These a
 </table>
 </div>
 
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided [here](https://seeedstudio88-my.sharepoint.com/:x:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXljqlpW3ZNNplIPBwJuyvsBdkW92geUmV7_7VN4SDlggA?e=Xea32u), it confirms that the firmware you downloaded is complete and intact.
+:::
 
 **Note:** Currently we provide the above drivers. We will keep updating the drivers in the future with the release of new JetPack versions.
 

@@ -220,6 +220,8 @@ interfaces offer the most verstile platform for developers building vision AI sy
 
 ### Base Board-B101 -->
 
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
+
 
 ## Interface Overview
 

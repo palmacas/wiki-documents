@@ -755,6 +755,9 @@ To flash the firmware, simply run the appropriate `.bat` file. If the flashing p
 - **[DXF]** [Seeed Studio XIAO ESP32S3 Plus Dimension in DXF (bottom)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/BOTTOM.dxf)
 - **[XLSX]** [Seeed Studio XIAO ESP32S3 Plus pinout sheet](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/Seeed_Studio_XIAO_ESP32S3_Plus_Pinout.xlsx)
 - **[ZIP]** [Seeed Studio XIAO ESP32S3 Plus KiCAD file](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/Seeed_Studio_XIAO_ESP32S3_Plus_V1.0_SCH%26PCB_KICAD.zip)
+- **[ZIP]** [Seeed Studio XIAO Plus Base with botton pad lead out](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_with_botton_pad_lead_out_V1.0.zip)
+- **[ZIP]** [Seeed Studio XIAO Plus Base without botton pad lead out](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip)
+
 ## Course Resources
 
 <div align="middle"><img width="400" src="https://mjrovai.github.io/XIAO_Big_Power_Small_Board-ebook/cover.jpg" /></div>
