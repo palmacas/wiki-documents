@@ -140,7 +140,7 @@ cd ~
 sudo apt install python3.8
 ```
 
-Creat hailo_env as your virtual environment
+Create hailo_env as your virtual environment
 
 ```
 python3.8 -m venv hailo_env

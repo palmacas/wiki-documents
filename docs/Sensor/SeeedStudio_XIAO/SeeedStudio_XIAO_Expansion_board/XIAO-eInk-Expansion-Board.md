@@ -86,7 +86,7 @@ This breakout board does not include an eInk display; the display must be purcha
 
 ### How to Make Picture
 
-Use the build-in software **Paint** in Windows to creat a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
+Use the build-in software **Paint** in Windows to create a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
 
 
 :::note
