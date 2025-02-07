@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/06/2025
+  date: 01/27/2025
   author: Frank
 ---
 
@@ -17,33 +17,36 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is January 6th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is January 27th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting with RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+### [Connect to Home Assistant via the Zigbee of the XIAO ESP32C6](https://wiki.seeedstudio.com/xiaoc6_zigbee_led_ha/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee_ha/1.png" style={{width:800, height:'auto'}}/></div>
 
-The Seeed Studio RS485 Vision AI Camera is an intelligent device that combines an ESP32-C3 MCU (Seeed Studio XIAO) with a Himax WiseEye2 HX6538 processor, featuring dual-core Arm Cortex-M55 and an integrated Ethos-U55 neural processor. This advanced camera delivers high-performance AI recognition at 480×480 resolution and 10 FPS, while maintaining low power consumption through flexible options for transmitting inference results. With its standard Modbus RS485 interface, it seamlessly integrates with industrial systems and supports both LoRaWAN and 4G connectivity through SenseCAP DTUs or other standard RS485 DTU devices.
-
-### [Getting Started with SenseCAP Vision AI V2](https://wiki.seeedstudio.com/sensecap_a1102/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/A1102_shop.jpg" style={{width:800, height:'auto'}}/></div>
-
-TinyML AI models run locally, transmitting only inference results via LoRaWAN® (863-928MHz) for privacy and power efficiency. Operating at 480×480 resolution and 10 FPS, it features pre-deployed models for human detection, people counting, and meter reading. Users can access 300+ pre-trained models or train custom models via the [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home) platform, and deploy models from [TensorFlow Lite](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/). The device is configurable via the [SenseCraft App](https://sensecap-mate-download.seeed.cn/), IP66-rated, and suitable for both indoor and outdoor use with long-range communication, powered by a built-in battery.
-
-### [Deploying models to SenseCAP A1102 with SenseCraft AI](https://wiki.seeedstudio.com/train_ai_with_a1102/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg" style={{width:800, height:'auto'}}/></div>
-
-SenseCraft AI with A1102 enables easy deployment of AI models on the SenseCAP A1102 device. With Vision AI V2 and 8GB of memory, it supports image recognition, real-time data processing, and local storage. This guide provides step-by-step instructions for pairing the device, selecting AI models, and configuring settings for efficient operation. Perfect for anyone looking to implement AI-driven applications on the A1102.
+The integration of Zigbee devices into smart home ecosystems has become increasingly popular due to Zigbee's low power consumption, reliability, and ease of use. In this wiki, we’ll guide you through connecting the **XIAO ESP32C6** to **Home Assistant** via its Zigbee functionality. By the end of this guide, you’ll have a working demo where the XIAO ESP32C6 acts as a Zigbee device that can be controlled directly from Home Assistant's dashboard.
 
 ## Existing Wiki Updated
 
-### [Hardware and Interfaces Usage for J501 carrier board](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/)
+### XIAO Open-Source Materials
 
-We have added more details about the [Usage Instruction with USB to CAN Adapter](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/#usage-instruction-with-usb-to-can-adapter).
+We have added examples for the following XIAO boards' open-source materials:
+
+- [XIAO nRF52840 (Sense) Plus Open-Source Materials](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus)
+- [XIAO ESP32S3 Plus Open-Source Materials](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus)
+
+### [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+
+We have added the schematic for [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/#resources).
+
+### [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/)
+
+We have added several [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/#q5-how-to-get-the-system-log-of-recomputer-j30j40).
+
+### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
+
+We have added an example for [reCamera Factory Reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset).
 
 ## The Efforts of Contributor
 
@@ -150,5 +153,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
 - [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
+- [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
+- [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
 
 </details>

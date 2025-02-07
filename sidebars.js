@@ -1291,12 +1291,19 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'Zigbee',
+              items: [
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee_arduino',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiaoc6_zigbee_led_ha',
+              ],
+            },
+            {
+              type: 'category',
               label: 'Application',
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/xiao_esp32c6_aws_iot',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/xiao_esp32c6_kafka',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/xiao_esp32c6_zigbee',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/xiao_esp32c6_zigbee_arduino',
               ],
             },
             
@@ -2893,7 +2900,7 @@ const sidebars = {
           items:[
             {
             type: 'category',
-            label: 'reCoputer-R2000',
+            label: 'reComputer-R2000',
             collapsed: true,
             collapsible: true,
             link:{
@@ -3718,6 +3725,7 @@ const sidebars = {
                         label: 'Projects',
                         items: [
                           'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm',
+                          'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm_Isaacsim',
                             ]},
                 
                 ]},

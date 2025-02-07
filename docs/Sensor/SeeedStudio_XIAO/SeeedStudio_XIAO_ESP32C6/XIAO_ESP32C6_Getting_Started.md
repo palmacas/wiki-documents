@@ -318,7 +318,7 @@ Once the program is successfully uploaded, you will see the following output mes
 
 The XIAO ESP32C6 series features a built-in power management chip, allowing it to be powered independently by a battery or to charge the battery through its USB port.
 
-For connecting a battery to your XIAO, we recommend using a qualified rechargeable 3.7V lithium battery. When soldering the battery, carefully distinguish between the positive and negative terminals. The negative terminal should be on the side closest to the USB port, while the positive terminal should be on the side farthest from the USB port.
+For connecting a battery to your XIAO, we recommend using a qualified rechargeable 3.7V lithium battery. When soldering the battery, carefully distinguish between the positive and negative terminals. The negative electrode pad should be located on the left side near the silk screen marking "D8," while the positive electrode pad should be located on the right side near the silk screen marking "D5."
 
 :::caution
 When using battery power, no voltage will be present on the 5V pin.
