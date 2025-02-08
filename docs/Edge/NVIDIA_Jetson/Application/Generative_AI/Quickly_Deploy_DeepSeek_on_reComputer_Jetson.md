@@ -6,7 +6,7 @@ keywords:
 - LLM
 - ollama
 - deepseek
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp
 slug: /deploy_deepseek_on_jetson
 last_update:
   date: 02/08/2025
