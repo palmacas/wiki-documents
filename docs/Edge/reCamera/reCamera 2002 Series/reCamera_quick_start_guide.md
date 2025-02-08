@@ -128,7 +128,9 @@ We also provided a build-in dashboard UI example where you can preview the video
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
 
-If you forget your device's passcode, you can reset the device by long pressing the **User** button and then connecting the device to power.
+If you forget your device's passcode, you can reset the device by long pressing the **User** button and then connecting the  device to power. When the red light of the device is on, release the User button.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-1.gif" /></div>
 
 :::note
 This will delete user information, including applications you have developed. Please operate with caution.
