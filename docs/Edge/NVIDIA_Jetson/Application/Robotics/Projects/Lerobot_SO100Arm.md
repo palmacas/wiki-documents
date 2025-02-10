@@ -76,29 +76,29 @@ The 3D printed parts and table clamps are not included in the product. However, 
 :::
 
 ## Table of Contents
-  A. 3D Printing Guide
+  [A. 3D Printing Guide](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot)
 
-  B. Install LeRobot
+  [B. Install LeRobot](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot)
 
-  C. Configure the motors
+  [C. Configure the motors](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors)
 
-  D. Assembly
+  [D. Assembly](https://wiki.seeedstudio.com/lerobot_so100m/#assembly)
 
-  E. Calibrate
+  [E. Calibrate](https://wiki.seeedstudio.com/lerobot_so100m/#calibrate)
 
-  F. Teleoperate
+  [F. Teleoperate](https://wiki.seeedstudio.com/lerobot_so100m/#teleoperate)
 
-  G. Teleop with displaying cameras
+  [G. Add cameras](https://wiki.seeedstudio.com/lerobot_so100m/#Add-cameras)
 
-  H. Record the dataset
+  [H. Record the dataset](https://wiki.seeedstudio.com/lerobot_so100m/#record-the-dataset)
 
-  I. Visualize the dataset
+  [I. Visualize the dataset](https://wiki.seeedstudio.com/lerobot_so100m/#visualize-the-dataset)
 
-  J. Replay an episode
+  [J. Replay an episode](https://wiki.seeedstudio.com/lerobot_so100m/#replay-an-episode)
 
-  K. Train a policy
+  [K. Train a policy](https://wiki.seeedstudio.com/lerobot_so100m/#train-a-policy)
 
-  L. Evaluate your policy
+  [L. Evaluate your policy](https://wiki.seeedstudio.com/lerobot_so100m/#evaluate-your-policy)
 
 ## 3D Printing Guide
 
@@ -382,7 +382,7 @@ python lerobot/scripts/control_robot.py \
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/hnRwfcyX1ZI?si=RuzYjP_FUTK16lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Teleop with displaying cameras
+## Add cameras
 
 After inserting your two USB cameras, run the following script to check the port numbers of the cameras.
 
