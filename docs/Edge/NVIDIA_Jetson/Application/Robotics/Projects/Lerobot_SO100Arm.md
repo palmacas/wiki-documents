@@ -88,7 +88,7 @@ The 3D printed parts and table clamps are not included in the product. However, 
 
   [F. Teleoperate](https://wiki.seeedstudio.com/lerobot_so100m/#teleoperate)
 
-  [G. Add cameras](https://wiki.seeedstudio.com/lerobot_so100m/#Add-cameras)
+  [G. Add cameras](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras)
 
   [H. Record the dataset](https://wiki.seeedstudio.com/lerobot_so100m/#record-the-dataset)
 
