@@ -123,7 +123,7 @@ For the convenience of downloading, we have already packaged all the files on th
 
 ## Install LeRobot
 
-On your reComputer Nvidia Jetson:
+Environments such as pytorch and torchvision need to be installed based on your CUDA. Then, on your reComputer Nvidia Jetson:
 
 1. Install Miniconda:
 For Jetson:
@@ -197,7 +197,49 @@ sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
 
-**Update config file**
+**Configure your motors**
+
+Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 1
+```
+
+Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
+
+Then unplug your motor and plug the second motor and set its ID to 2.
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 2
+```
+
+Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
+
+## Assembly
+
+Detailed video instructions are on the [HuggingFace Youtube](https://www.youtube.com/watch?v=FioA2oeFZ5I)
+
+<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Calibrate
+
+Next, you'll need to calibrate your SO-100 robot to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-100 robot to work on another.
+
+:::info
+The calibration of the robotic arm should be carried out strictly in accordance with the ["Calibrate"](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md#e-calibrate) steps in the official tutorial of Lerobot.
+:::
+
+**Manual calibration of follower arm**
 
 IMPORTANTLY: Now that you have your ports, update the port default values of [SO100RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py)(`lerobot/lerobot/common/robot_devices/robots
 /configs.py`). You will find something like:
@@ -247,98 +289,6 @@ class So100RobotConfig(ManipulatorRobotConfig):
     )
 ```
 
-**Configure your motors**
-
-Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 1
-```
-
-Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
-
-Then unplug your motor and plug the second motor and set its ID to 2.
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 2
-```
-
-Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
-
-## Assembly
-
-Detailed video instructions are on the [HuggingFace Youtube](https://www.youtube.com/watch?v=FioA2oeFZ5I)
-
-<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Calibrate
-
-Next, you'll need to calibrate your SO-100 robot to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-100 robot to work on another.
-
-:::info
-The calibration of the robotic arm should be carried out strictly in accordance with the ["Calibrate"](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md#e-calibrate) steps in the official tutorial of Lerobot.
-:::
-
-**Manual calibration of follower arm**
-
-Firstly, you need to ensure that the serial port numbers of the robotic arm in the `lerobot/lerobot/common/robot_devices/robots
-/configs.py` file are consistent with yours, as shown in the following figure. You can view all serial port names according to `ls /dev/ttyACM*`.
-
-
-```python
-@RobotConfig.register_subclass("so100")
-@dataclass
-class So100RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so100"
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/ttyACM0",  <-- CHECK HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/ttyACM0",  <-- CHECK HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-```
 
 You will need to move the follower arm to these positions sequentially:
 
