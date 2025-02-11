@@ -1,5 +1,5 @@
 ---
-description: List the possible causes of timeout issues during the Jetson flashing process.
+description: This is a FAQ about Using OTA or incremental updates may lead to system instability and security risks, so it is recommended to perform full ROM updates to maintain system security and stability, avoiding partial updates.
 title: Upgrade Software Packages for Jetson
 keywords:
 - reComputer
