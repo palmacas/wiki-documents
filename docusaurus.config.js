@@ -544,7 +544,7 @@ const config = {
             title: 'Quick Guide',
             items: [
               {
-                label: 'Bazzar',
+                label: 'Bazaar',
                 to: 'https://www.seeedstudio.com/',
               },
               {

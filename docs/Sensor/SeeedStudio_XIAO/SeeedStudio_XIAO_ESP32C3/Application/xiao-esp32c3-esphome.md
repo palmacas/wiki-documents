@@ -14,11 +14,9 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/homs-xiaoc3-linkstar/78.jpg" style={{width:700, height:'auto'}}/></div>
 
-
 This article will guide you through the installation of the ESPHome service in your own Home Assistant environment. By using the WiFi function of the XIAO ESP32C3, you will be able to connect your XIAO to the Home Assistant as part of your home terminal in a very smooth way.
 
 In addition, we will build a Home Assistant with human presence detection in combination with the most popular 24GHz mmWave Human Static Presence Module Lite.
-
 
 ## Getting Started
 
@@ -318,7 +316,7 @@ logger:
 
 <summary>Click here to preview the full code</summary>
 
-```css
+```yml
 # Sets up Bluetooth LE (Only on ESP32) to allow the user
 # to provision wifi credentials to the device.
 esp32_improv:
@@ -360,7 +358,7 @@ text_sensor:
 
 binary_sensor:
   - platform: seeed_mr24hpc1
-    someone_exist:
+    has_target:
       name: "Presence Information"
 
 sensor:
@@ -382,13 +380,13 @@ sensor:
 
 switch:
   - platform: seeed_mr24hpc1
-    underly_open_function:
+    underlying_open_function:
       name: Underlying Open Function Info Output Switch
 
 button:
   - platform: seeed_mr24hpc1
-    reset:
-      name: "Module Reset"
+    restart:
+      name: "Module Restart"
     custom_set_end:
       name: "End Of Custom Mode Settings"
 

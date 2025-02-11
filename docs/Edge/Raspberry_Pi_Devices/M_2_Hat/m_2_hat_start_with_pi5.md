@@ -5,21 +5,46 @@ keywords:
   - M.2 hat
   - dual hat
   - Raspberry Pi
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp
 slug: /raspberry_pi_5_uses_pcie_hat_dual_hat
 last_update:
-  date: 08/26/2024
-  author: ShuishengPeng
+  date: 12/24/2024
+  author: Jiahaoli
 
 ---
 
 ## Introduction
 
-This tutorial mainly introduces the hardware connection configuration of M.2 Hat/dual Hat and how to make the Raspberry Pi boot from the SSD.And introduces two installation methods, with and without casing.
+This tutorial primarily introduces the hardware connection configuration of the M.2 Hat/Dual Hat and how to boot the Raspberry Pi from an SSD. It also covers two installation methods: with and without a casing, and tests the SSD read/write speeds under different conditions.
 
 ## Getting Start
 
 ### Hardware Preparation
+
+<div class="table-center">
+	<table align="center">
+	<tr>
+		<th>Raspberry Pi5 8GB</th>
+		<th>M.2 Hat/dual Hat</th>
+	</tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:600, height:'auto'}}/></div></td>
+	  <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/3/-/3-103110064-pcie-to-m.2-dual-hat-for-raspberry-pi-5-fonmt.jpg" style={{width:600, height:'auto'}}/></div></td>
+    </tr>
+		<tr>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+		</tr>
+	</table>
+</div>
 
 For installation without a casing, you need to prepare the following materials:
 
@@ -135,9 +160,6 @@ Place the overlapping M.2 Hat and Raspberry Pi into the case, with the Raspberry
 </Tabs>
 
 
-
-
-
 ### Use SD Card Copier tool to flash OS onto the NVME SSD On Raspberry Pi OS
 
 *This method works if you have an SD card and have booted the device successfully. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
@@ -177,6 +199,7 @@ If asked to reboot, select `Yes`.
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/copy.gif" alt="pir" width="700" height="auto" /></div>
 
 ### Setting the Raspberry Pi to boot from the NVMe SSD
+
 If you have easy access to your SD card slot you could turn off your Pi, pop out the SD card and (if everything's working as expected) it should automagically boot from your NVMe drive the next time you start it up. If you want to leave the SD card where it is and still boot from NVMe though, you'll need to change the boot order.
 
 **Step 1**:Enter the following command:
@@ -207,7 +230,7 @@ You will be asked whether you want to reboot now. Click `Yes`:
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_6.png" alt="pir" width="700" height="auto" /></div>
 
 
-### Modify PCIe speed
+### Modify PCIe
 
 <Tabs>
 <TabItem value="Method 1" label="M.2 Hat">
@@ -226,9 +249,89 @@ Save the file and reboot again, you may see a speed increase!.
 </TabItem>
 
 <TabItem value="Method 2" label="M.2 dual Hat">
-M.2 dual Hat does not support PCIe speed adjustment for the time being. We are further developing it and there will be corresponding updates in the future, so stay tuned!
+
+PCIe2.0 M.2 dual Hat supports PCIe Gen 2, and PCIe3.0 M.2 dual Hat supports PCIe Gen 2 and PCIe 3.
+
+**Step 1**: Enter the following command to open the `/boot/firmware/config.txt` file
+```shell
+sudo nano /boot/firmware/config.txt
+```
+
+**Step 2**:Add the following to the [all] section at the end of the `/boot/firmware/config.txt` file:
+
+```shell
+dtparam=pciex1_gen=3
+dtoverlay=pciex1-compat-pi5,no-mip
+
+```
+
 </TabItem>
 </Tabs>
+
+### Speed Benchmark 
+
+<Tabs>
+<TabItem value="Method 1" label="M.2 hat">
+
+This test show that raspberrypi boot from the SD card and use the SSD as backup storage:
+```
+# write speed command
+sudo dd if=/dev/zero of=/mnt/nvme/testfile bs=1M count=1024 oflag=direct
+
+# read speed command
+sudo dd if=/mnt/nvme/testfile of=/dev/null bs=1M iflag=direc
+```
+
+| M.2 hat | Read Speed| Write Speed|
+|:-------------|:--------------:|--------------:|
+| PCIe 3.0       | 822MB/s       | 716MB/s         |
+| PCIe 2.0       | 431 MB/s      | 389MB/s         |
+
+
+</TabItem>
+
+<TabItem value="Method 2" label="M.2 dual Hat">
+
+This test show that raspberrypi boot from the SSD and use another SSD as backup storage:
+
+```
+# write speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 oflag=direct
+# read speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 
+```
+
+| M.2 dual Hat | Read & Read | Write & Write | Read & Write |
+|:-------------|:--------------:|--------------:|--------------:|
+| PCIe 3.0       | average 454MB/s      | average 407MB/s        |   697MB/s 663MB/s|
+| PCIe 2.0       | average 234MB/s      | average 214MB/s        |      414MB/s 324MB/s|
+
+
+</TabItem>
+
+<TabItem value="Method 3" label="M.2 dual Hat with hailo8">
+
+This test show that raspberrypi boot from the SSD and Hailo8 AI accelerator:
+
+
+```
+# write speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 oflag=direct
+# read speed command
+dd if=/dev/zero of=tempfile bs=1M count=1024 
+```
+
+| M.2 dual Hat with hailo8| Read | Read & Hailo8 | Write |Write & Hailo8|
+|:-------------|:--------------:|--------------:|--------------:|--------------:|
+| PCIe 3.0       | 812MB/S     | 416MB/S 187FPS      |   701MB/s |  340MB/s  188FPS|
+| PCIe 2.0       | 429MB/S      | 233MB/S/s 128FPS       |      372MB/S|  273MB/S 111FPS|
+
+> **Note:** To test Hailo8 please check this [link](https://github.com/hailo-ai/hailo-rpi5-examples) and prepare a video with 240 FPS.
+
+
+</TabItem>
+</Tabs>
+
 
 ## Tech Support & Product Discussion
 

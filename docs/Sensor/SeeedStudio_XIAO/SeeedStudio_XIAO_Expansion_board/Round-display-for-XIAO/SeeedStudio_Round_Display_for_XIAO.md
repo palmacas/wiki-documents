@@ -353,10 +353,6 @@ A: This may be caused by you not selecting the appropriate compile option for th
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/100.png" style={{width:1000, height:'auto'}}/></div>
 
-### Q4: I have followed the tutorial and still can't get the TFT or LVGL program to compile properly, what should I do?
-
-Updates to the TFT library and the LVGL library may cause the procedures in the tutorial to fail. We recommend that you use our [tested and stable versions of the libraries](https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/tree/main/libraries), which you can use without even having to change the configuration in them yourself.
-
 ## Resources
 
 - **[PDF]** [Charge IC datasheet](https://files.seeedstudio.com/wiki/round_display_for_xiao/charge-IC-datasheet.pdf)

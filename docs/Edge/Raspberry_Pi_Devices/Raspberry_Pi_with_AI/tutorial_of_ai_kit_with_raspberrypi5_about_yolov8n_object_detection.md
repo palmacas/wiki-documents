@@ -24,6 +24,7 @@ This wiki will guide you on how to use YOLOv8n for object detection with AI Kit 
 
 ## Prepare Hardware
 
+### For Hailo8L 13 TOPS
 <div class="table-center">
 	<table align="center">
 	<tr>
@@ -49,6 +50,25 @@ This wiki will guide you on how to use YOLOv8n for object detection with AI Kit 
 	</table>
 </div>
 
+### For Hailo8 26 TOPS
+
+<div class="table-center">
+	<table align="center">
+	<tr>
+		<th>reComputer AI R2130</th>
+	</tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:600, height:'auto'}}/></div></td>
+    </tr>
+		<tr>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-R2130-12-p-6368.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+		</tr>
+	</table>
+</div>
 
 
 ## Install Hardware
@@ -120,7 +140,7 @@ cd ~
 sudo apt install python3.8
 ```
 
-Creat hailo_env as your virtual environment
+Create hailo_env as your virtual environment
 
 ```
 python3.8 -m venv hailo_env

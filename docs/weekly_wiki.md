@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/16/2024
+  date: 01/27/2025
   author: Frank
 ---
 
@@ -17,103 +17,46 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is January 27th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [SenseCraft AI Overview](https://wiki.seeedstudio.com/sensecraft_ai_main/)
+### [Connect to Home Assistant via the Zigbee of the XIAO ESP32C6](https://wiki.seeedstudio.com/xiaoc6_zigbee_led_ha/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee_ha/1.png" style={{width:800, height:'auto'}}/></div>
 
-The Overview section provides a high-level introduction to SenseCraft AI, explaining its purpose, key features, and benefits. It serves as a starting point for users to understand the platform and its capabilities. The overview also includes links to Getting Started guides and FAQs to help users quickly get up and running with SenseCraft AI.
-
-### [Wio Terminal PC Monitor Tutorial - Cyberpunk Style](https://wiki.seeedstudio.com/CyberDeck_Wio-Terminal/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif" style={{width:600, height:'auto'}}/></div>
-
-This project uses the Wio Terminal to display real-time PC stats like CPU, RAM, and temperature in a cyberpunk style. Data is gathered with a Python script and shown on the terminal. The setup includes installing Python, VSCode, and PlatformIO, with options for customization and adding features. It also covers using Cursor AI for development and debugging.
-
-### [Guide to Configuring Low Data Consumption Mode for M2 Multi-Platform Gateway (4G Version)](https://wiki.seeedstudio.com/traffic_saving_config/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/sensecap_m2.jpg" style={{width:600, height:'auto'}}/></div>
-
-This tutorial will guide users to configure the low data consumption mode for the M2 Multi-Platform Gateway 4G version. In this mode, the traffic per month is expected to be around 60M. The specific traffic depends on the nodes packets, etc.
-
-### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mg24.jpg" style={{width:600, height:'auto'}}/></div>
-
-This document introduces the built-in sensors of the Seeed Studio XIAO MG24 Sense, including the 6-Axis IMU (LSM6DS3TR-C) for motion measurement and the MEMS Microphone (MSM381ACT001) for high-quality audio capture, with key features and functionalities outlined.
-
-### [Configuring Model Output via MQTT on SenseCraft AI for XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/sensecraft_ai_output_mqtt_xiao/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/60.png" style={{width:800, height:'auto'}}/></div>
-
-This wiki article provides a step-by-step guide on how to configure model output using MQTT (Message Queuing Telemetry Transport) for the XIAO ESP32S3 Sense board on the SenseCraft AI platform. MQTT is a lightweight messaging protocol that enables efficient communication between devices. By following these instructions, you will learn how to set up MQTT communication and retrieve model inference results from your XIAO ESP32S3 Sense.
-
-### [Getting Started with the Raspberry Pi 4G LTE HAT](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/7-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi-feature.jpg" style={{width:800, height:'auto'}}/></div>
-
-The 4G Raspberry Pi HAT is a powerful and versatile add-on designed for seamless integration with Raspberry Pi models, including A+, B+, Pi 2, Pi 3, Pi 4, Pi 5, and Zero, as well as PCs. Equipped with a 40-pin GPIO connector, it ensures easy plug-and-play compatibility. The HAT features the Quectel EG25-GL CAT4 LTE module, providing high-speed 4G communication, SMS functionality, and cloud platform integration for IoT and M2M applications.
-
-### [Getting Started with ReSpeaker 2-Mics Pi HAT v2](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/pi.png" style={{width:800, height:'auto'}}/></div>
-
-On the latest Raspberry Pi OS, the traditional method of driver installation (For v1 device) is no longer available. We have therefore re-released a new wiki on this issue, if you are using the more modern Raspberry Pi OS rather than previous releases, please follow these steps to get your ReSpeaker working.
-
-### [Using XIAO ESP32S3 Sense as an AI Sensor with SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai_output_libraries_xiao/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/uart_connection.png" style={{width:800, height:'auto'}}/></div>
-
-This wiki provides a step-by-step guide on how to configure the output of a model on SenseCraft AI and use the XIAO ESP32S3 Sense as an AI sensor. By following these instructions, you will learn how to connect the XIAO ESP32S3 Sense to your computer, select the appropriate output method, and retrieve the model data using different communication protocols such as UART, I2C, and SPI.
-
-### [Configuring Model Output on SenseCraft AI for XIAO ESP32S3 Sense using SSCMACore Library](https://wiki.seeedstudio.com/sensecraft_ai_sscmacore_library/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.png" style={{width:800, height:'auto'}}/></div>
-
-This wiki provides a step-by-step guide on how to configure the model output on SenseCraft AI for the XIAO ESP32S3 Sense board using the SSCMACore (Seeed SenseCraft Model Assistant Core) library. By following these instructions, you will be able to set up your XIAO ESP32S3 Sense to work with a pre-trained model and utilize the SSCMACore library to process the model's output.
-
-### [Convert and Quantize AI Models for reCamera](https://wiki.seeedstudio.com/recamera_model_conversion/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/013.jpg" style={{width:800, height:'auto'}}/></div>
-
-The AI model conversion tool of **reCamera** currently supports frameworks such as `PyTorch`, `ONNX`, `TFLite`, and `Caffe`. Models from other frameworks need to be converted into `ONNX` format. For instructions on how to convert models from other deep learning architectures to `ONNX`, you can refer to the official ONNX website: <https://github.com/onnx/tutorials>. This article introduces how to use reCamera's AI model conversion tool through simple examples.
-
-### [Getting Started with Raspberry Pi 4G HAT GNSS Functionalities](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_gnss_functionlities/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.png" style={{width:800, height:'auto'}}/></div>
-
-The integration of GNSS into the 4G LTE module enhances its capabilities, enabling precise real-time positioning and reliable communication for IoT applications. With support for multi-constellation GNSS systems, the module delivers accurate and dependable location tracking, even in remote or underserved areas. These features make it ideal for scenarios like asset tracking, fleet management, and real-time remote monitoring.
-
-### [Mobile Internet for Your Pi - RNDIS 4G LTE Setup](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_rndis_mobile_internet/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.jpg" style={{width:800, height:'auto'}}/></div>
-
-RNDIS (Remote Network Driver Interface Specification) is a protocol that allows USB-connected devices, like the Quectel EG25-G 4G module, to act as network interfaces. By enabling RNDIS on a Raspberry Pi, the 4G module can provide cellular internet connectivity to the Pi. The Raspberry Pi communicates with the 4G module using AT commands to configure features like RNDIS mode, GNSS, and SMS. This approach simplifies internet access in scenarios where traditional wired or Wi-Fi connections are unavailable.
-
-### [Sending and Receiving SMS Messages with Quectel 4G Raspberry pi Hat](https://wiki.seeedstudio.com/send_recive_sms_raspberry_pi_4g_lte_hat/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:800, height:'auto'}}/></div>
-
-In rural and remote areas, where 4G coverage is sparse or unavailable, SMS communication through 2G networks becomes a vital tool for ensuring uninterrupted connectivity in IoT systems. For wildlife preservation, this technology enables automated alert systems to monitor environmental conditions, track animal movements, and report critical events in real-time. By leveraging 4G modules with SMS capabilities, devices can send automated alerts and receive instructions, ensuring that even in isolated regions, conservation efforts are not hindered by lack of modern network infrastructure.
+The integration of Zigbee devices into smart home ecosystems has become increasingly popular due to Zigbee's low power consumption, reliability, and ease of use. In this wiki, we’ll guide you through connecting the **XIAO ESP32C6** to **Home Assistant** via its Zigbee functionality. By the end of this guide, you’ll have a working demo where the XIAO ESP32C6 acts as a Zigbee device that can be controlled directly from Home Assistant's dashboard.
 
 ## Existing Wiki Updated
 
-### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
+### XIAO Open-Source Materials
 
-We have refined the [SenseCAP Indicator for Meshtastic example page](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/).
+We have added examples for the following XIAO boards' open-source materials:
+
+- [XIAO nRF52840 (Sense) Plus Open-Source Materials](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus)
+- [XIAO ESP32S3 Plus Open-Source Materials](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus)
+
+### [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+
+We have added the schematic for [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/#resources).
+
+### [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/)
+
+We have added several [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/#q5-how-to-get-the-system-log-of-recomputer-j30j40).
+
+### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
+
+We have added an example for [reCamera Factory Reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset).
 
 ## The Efforts of Contributor
 
-### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
+<!-- ### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
 
 <div style={{textAlign:'center'}}>
   <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
 </div>
 
-On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images.
+On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -207,5 +150,11 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.11.25th](/Seeed_Elderly/weekly_wiki/wiki241125)
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
+- [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
+- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
+- [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
+- [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
+- [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
 
 </details>

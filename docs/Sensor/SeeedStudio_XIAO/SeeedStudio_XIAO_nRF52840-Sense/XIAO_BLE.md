@@ -17,47 +17,107 @@ import TabItem from '@theme/TabItem';
 
 <meta name="google-site-verification" content="2bq3L0F_PFVokQM-qT-al7x9FcSNJOO8TtJfAHW43lE" />
 
-<div class="table-center">
-	<table align="center">
-  <tr>
-    <th>XIAO nRF52840</th>
-    <th>XIAO nRF52840 Sense</th>
-    <th>XIAO nRF52840 Plus</th>
-    <th>XIAO nRF52840 Sense Plus</th>
-  </tr>
-  <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/1-102010469-Seeed-Studio-XIAO-nRF52840-Sense-45font.jpg" style={{width:250, height:'auto'}}/></div></td>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840sence.png" style={{width:250, height:'auto'}}/></div></td>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840plus.png" style={{width:250, height:'auto'}}/></div></td>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840senceplus.png" style={{width:250, height:'auto'}}/></div></td>
-  </tr>
-  <tr>      
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/">
-                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-    </div>
-    </td>
-  </tr>
-</table>
+<div className="w-full overflow-x-auto">
+  <table className="min-w-full">
+    <tr>
+      <th>XIAO nRF52840</th>
+      <th>XIAO nRF52840 Sense</th>
+      <th>XIAO nRF52840 Plus</th>
+      <th>XIAO nRF52840 Sense Plus</th>
+    </tr>
+    <tr>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/nrf52840_front.jpg"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840sence.png"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840plus.png"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+      <td>
+        <div style={{textAlign: 'center'}}>
+          <img 
+            src="https://files.seeedstudio.com/wiki/XIAO-BLE/xiaonrf52840senceplus.png"
+            style={{width: '100%', maxWidth: '250px', height: 'auto'}}
+          />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Plus-p-6359.html"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+      <td>
+        <div className="get_one_now_container" style={{textAlign: 'center'}}>
+          <a 
+            className="get_one_now_item" 
+            href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Plus-p-6360.html"
+          >
+            <strong>
+              <span>
+                <font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font>
+              </span>
+            </strong>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
 As the first wireless product in the Seeed Studio XIAO family, **Seeed Studio XIAO nRF52840** is equipped with a powerful **Nordic nRF52840 MCU** which integrates **Bluetooth 5.0** connectivity. Meanwhile, it has a **small and exquisite form-factor** which can be used for wearable devices and Internet of Things projects. The **single-sided surface-mountable design** and the onboard **Bluetooth antenna** can greatly facilitate the rapid deployment of IoT projects.
@@ -176,7 +236,7 @@ Seeed Studio XIAO nRF52840 Sense is compatible to the Seeed Studio XIAO expansio
 </table>
 
  </TabItem>
- <TabItem value="52840Plus" label="XIAO nRF52840 Plus" default>
+ <TabItem value="52840Plus" label="XIAO nRF52840 Plus/XIAO nRF52840 Sense Plus" default>
 
  <table align="center">
   <tr>
@@ -421,7 +481,6 @@ void loop()
   // nothing to do
 }
 ```
->>>>>>> docusaurus-version
 
 :::tip
 Here , We would like to express our special thanks to the author for providing the code  -> ***daCoder*** <-
@@ -543,9 +602,9 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 
 - **[PDF]** [Seeed Studio XIAO nRF52840 Sense Schematic](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed-Studio-XIAO-nRF52840-Sense-v1.1.pdf)
 
-- **[ZIP]** [Seeed Studio XIAO nRF52840 KiCAD file](https://files.seeedstudio.com/wiki/XIAO-BLE/SeeedStudio_XIAO_nRF52840_v1.1_SCH&PCB.zip)
+- **[ZIP]** [Seeed Studio XIAO nRF52840 KiCAD file](https://files.seeedstudio.com/wiki/XIAO-BLE/SeeedStudio_XIAO_nRF52840_v1.1_KiCAD.zip)
 
-- **[ZIP]** [Seeed Studio XIAO nRF52840 Eagle file](https://files.seeedstudio.com/wiki/XIAO-BLE/SeeedStudio_XIAO_nRF52840_v1.1_KiCAD.zip)
+- **[ZIP]** [Seeed Studio XIAO nRF52840 Eagle file](https://files.seeedstudio.com/wiki/XIAO-BLE/SeeedStudio_XIAO_nRF52840_v1.1_SCH&PCB.zip)
 
 - **[DXF]** [Seeed Studio XIAO nRF52840 Sense Dimension in DXF](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-DXF.zip)
 
@@ -558,6 +617,20 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 - **[ZIP]** [Seeed Studio XIAO nRF52840 Sense Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-Certification.zip)
 
 - 🔗 **[Kicad]** [Seeed Studio XIAO nRF52840 Sense FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
+### Seeed Studio XIAO nRF52840 (Sense) Plus
+
+- **[PDF]** [nRF52840 datasheet](https://files.seeedstudio.com/wiki/XIAO-BLE/nrf52840_datasheet.pdf)
+
+- **[ZIP]** [Seeed Studio XIAO nRF52840 (Sense) Plus Schematic ](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XIAO_nRF52840_Plus_SCH_PCB_v1.0.zip)
+
+- **[ZIP]** [Seeed Studio XIAO nRF52840 KiCAD file](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XlAO_nRF52840_KiCAD_file.zip)
+
+- **[DXF]** [Seeed Studio XIAO nRF52840 Sense Dimension in DXF](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XlA0_nRF52840_Sense_Dimension_in_DXF.dxf)
+
+- **[ZIP]** [Seeed Studio XIAO Plus Base with botton pad lead out](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_with_botton_pad_lead_out_V1.0.zip)
+
+- **[ZIP]** [Seeed Studio XIAO Plus Base without botton pad lead out](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip)
 
 ## Course Resources
 
