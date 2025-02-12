@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 12/23/2024
+  date: 02/10/2025
   author: Frank
 ---
 
@@ -17,65 +17,44 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is December 23th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is February 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [How to Update Jetson Orin Nano Developer Kit to Super Kit](https://wiki.seeedstudio.com/update_orin_nano_developer_kit_to_super_kit/)
+### [LoRaWAN Open Source Firmware](https://wiki.seeedstudio.com/open_source_lorawan/)
 
-<div align="center">
-  <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Orin-Nano-Developer-Kit/jetson-orin-nano-dev-kit.png"/>
-</div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.jpg" style={{width:800, height:'auto'}}/></div>
 
-The NVIDIA Jetson Orin Nano™ Super Developer Kit is a compact, yet powerful computer that redefines generative AI for small edge devices. It delivers up to 67 TOPS of AI performance—a 1.7X improvement over its predecessor—to seamlessly run the most popular generative AI models, like vision transformers, large language models, vision-language models, and more. Existing Jetson Orin Nano Developer Kit users can experience this performance boost with just a software upgrade, so everyone can now unlock new possibilities with generative AI.
+The [SenseCAP T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) now has an open source **LoRaWAN version** of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
 
-### [Connect and Transfer- FTP on Your Raspberry Pi 4G LTE HAT](https://wiki.seeedstudio.com/ftp_with_raspberry_pi_4g_lte_hat/)
+### [Quickly Deploy DeepSeek on reComputer Jetson](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.png" style={{width:800, height:'auto'}}/></div>
 
-FTP is useful for Raspberry Pi 4G LTE HAT applications, enabling reliable file transfers between embedded systems and remote servers. It simplifies **managing logs, configurations, or data files** in IoT and M2M communication setups. With its compatibility and straightforward commands, FTP ensures efficient integration for connected projects.
-
-### [Setting Up 4G LTE Connectivity for IIoT with MQTT](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:600, height:'auto'}}/></div>
-
-The 4G LTE HAT for Raspberry Pi provides reliable, high-speed cellular connectivity, making it essential for remote and industrial IoT (IIoT) applications. With MQTT, a lightweight messaging protocol, devices can communicate efficiently over cellular networks, even in isolated locations. Using AT commands for configuration, it simplifies the process of connecting IoT devices to the network. This combination of 4G LTE and MQTT enhances real-time data transmission, enabling scalable IIoT solutions with remote management capabilities.
-
-### [Flash open source firmware to M2 Gateway](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/)
-
-The SenseCAP M2 gateways represent a cost-effective solution for LoRa gateways, powered by the mature hardware solution MT7628 and the Semtech SX1302 baseband Long Range chip. The specific models are distinguished by the factory-set frequency band (EU868/US915/AS923/AU915), optional module (4G/GPS) and supported LoRa network (LoRaWAN®/Helium network)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/m2-white.webp" style={{width:600, height:'auto'}}/></div>
-
-This wiki will guide you on how to burn open source firmware for your M2 gateway. Based on the open source firmware, you can deeply customise your M2 gateway, such as adding additional features or changing the operating band (antennas need to be adapted to the band)
-
-### [A DIY 4-layer sandwich Meshtastic kit](https://wiki.seeedstudio.com/4_layer_sandwich_for_meshtastic/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.png" alt="pir" width={600} height="auto" /></p>
-
-A full-featured meshtastic node is developed based on XIAO ESP32S3 & Wio-SX1262 Kit. This 4-layer sandwich structure like meshtastic kit takes the xiao expansion board as its foundation. Through the grove interface and pin to pin interface, it supports a variety of expandable modules that are supported by meshtastic firmware. It also supports the I2C communication protocol, including controllable ambient lighting, telemetry sensors, ambient sensors, and GPS modules. It can be easily set up for modular design and function application via meshtastic communication technology. Moreover, it can be connected to an external 3.7V battery through the JST battery connector to realize a mobile node.
-
-### [RS485 transmission of Vision AI V2 data](https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/RS485_V2AI/photo/connectv2.jpg" style={{width:600, height:'auto'}}/></div>
-
-This guide will show you how to transfer recognition data from Vision AI V2 via RS485. By using RS485, you can efficiently transmit data over long distances.
-
-### [4G LTE HAT on Raspberry Pi- TCP/IP Networking Explained](https://wiki.seeedstudio.com/tcp_ip_raspberry_pi_4g_lte_hat/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/tcp.PNG" alt="pir" width={600} height="auto" /></p>
-
-TCP (Transmission Control Protocol) is vital for applications involving the Raspberry Pi 4G HAT because it ensures reliable, ordered, and error-checked data transmission over the internet. This is crucial for real-time applications like IoT devices, where consistent communication with cloud servers or remote systems is needed. TCP’s reliability makes it ideal for sending critical data (e.g., sensor readings, telemetry) and receiving commands, ensuring no data is lost or corrupted. It supports diverse applications such as remote monitoring, messaging systems, and file transfers with the Raspberry Pi acting as a gateway or client.
+DeepSeek is a cutting-edge AI model suite optimized for efficiency, accuracy, and real-time processing. With advanced optimization for edge computing, DeepSeek enables fast, low-latency AI inference directly on Jetson devices, reducing dependency on cloud computing while maximizing performance.
+This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) models on reComputer Jetson devices for efficient AI inference on the edge.
 
 ## Existing Wiki Updated
 
-### [Setting Up 4G LTE Connectivity for IIoT with MQTT](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/)
+### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
 
-We have added an example of the [Python Code Implementation](https://wiki.seeedstudio.com/mqtt_raspberry_pi_4g_lte_hat/#python-code-implementation).
+We have added the [Silicon Labs Demo example for XIAO MG24 Sense Microphone](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#xiao-mg24-sense-microphonesilicon-labs-demo).
 
-### [How to use rs485 and modbus with reComputer R1000](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/)
+### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
 
-We have added an example of how to [Configure minicom on reComputer R1000v1.1](https://wiki.seeedstudio.com/recomputer_r1000_use_rs485_modbus_rtu/#configure-minicom-on-recomputer-r1000v11).
+We have corrected the code for the [Install Hailo PCIe Driver operation](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-hailo-pcie-driver) and the [Install Frigate NVR section](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-frigate-nvr).
+
+### [Getting Start with R2000 Series](https://wiki.seeedstudio.com/r2000_series_getting_start/)
+
+We have added the example for [flashing Ubuntu to NVMe](https://wiki.seeedstudio.com/r2000_series_getting_start/#flash-ubuntu-to-nvme).
+
+### [Pin Multiplexing with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/)
+
+We have added the example code for [analogRead with DMA on XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/#software-implementation-2).
+
+### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
+
+We have optimized the content for the [Factory Reset operation](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) in reCamera.
 
 ## The Efforts of Contributor
 
@@ -180,5 +159,11 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
+- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
+- [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
+- [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
+- [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
+- [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
 
 </details>

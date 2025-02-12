@@ -24,7 +24,7 @@ last_update:
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1L-for-Meshtastic-p-6304.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -32,6 +32,24 @@ last_update:
 
 
 SenseCAP Indicator is a 4-inch touchscreen device designed for Meshtastic®, powered by dual MCUs, the ESP32 and RP2040, and supports Wi-Fi, BLE, and LoRa®. It is an open-source, powerful IoT development platform.
+
+
+
+:::caution note
+During the process of continuous optimization and testing of the SenseCAP Indicator for Meshtastic, we found a situation that may affect your experience. In order to ensure that you can continue to enjoy the best product performance, we are currently optimizing this feature, so shipments may be delayed.
+
+**Identified Issue**<br/>
+In the `LONGFAST`, `LONGSLOW`, and `MIDSLOW` settings, message content exceeding `50 bytes` may result in instability and CRC errors, and message sending may fail.
+
+**Special Service for Previous Purchasers**<br/>
+If you are a previous purchaser and have the same issue, we are offering a special service to assist you. Please contact us at `sensecap@seeed.cc` and include your order number for support.
+
+**Version Upgrading**
+
+We are currently upgrading the version to fix these issues. The new version is expected to be released in `mid-to-late February`.
+
+Thank you for your understanding as we work to provide the best possible user experience.
+:::
 
 ## Introduction
 
@@ -69,6 +87,9 @@ SenseCAP Indicator is a 4-inch touchscreen device designed for Meshtastic®, pow
 
 ## Flash Firmware
 
+:::tip
+The Fancy-UI firmware has not been officially released yet, it's recommended to flash the Classic-UI firmware described in this wiki.
+:::
 
 ### Flash Application Firmware
 
@@ -239,9 +260,21 @@ Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/regi
 
 Now that you have set the LoRa region on your device, you can continue with configuring any [LoRa Configs](https://meshtastic.org/docs/configuration/radio/lora/) to suit your needs.
 
-### Pages Description
+### Keyboard usage
+
+**Step 1**: Navigate to `Settings` -> `Canned Messages`, and enable it.
 
 
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/canned.png" alt="pir" width={500} height="auto" /></p>
+
+**Step 2**
+
+On the node page, slide the screen from top to bottom and the keyboard will appear.
+
+
+<div class="table-center">
+    <iframe width="500" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay> </iframe>
+</div>
 
 ### Precautions
 

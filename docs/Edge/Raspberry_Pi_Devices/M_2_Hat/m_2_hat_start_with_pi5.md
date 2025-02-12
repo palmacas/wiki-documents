@@ -5,7 +5,7 @@ keywords:
   - M.2 hat
   - dual hat
   - Raspberry Pi
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp
 slug: /raspberry_pi_5_uses_pcie_hat_dual_hat
 last_update:
   date: 12/24/2024
@@ -15,11 +15,36 @@ last_update:
 
 ## Introduction
 
-This tutorial mainly introduces the hardware connection configuration of M.2 Hat/dual Hat and how to make the Raspberry Pi boot from the SSD.And introduces two installation methods, with and without casing.
+This tutorial primarily introduces the hardware connection configuration of the M.2 Hat/Dual Hat and how to boot the Raspberry Pi from an SSD. It also covers two installation methods: with and without a casing, and tests the SSD read/write speeds under different conditions.
 
 ## Getting Start
 
 ### Hardware Preparation
+
+<div class="table-center">
+	<table align="center">
+	<tr>
+		<th>Raspberry Pi5 8GB</th>
+		<th>M.2 Hat/dual Hat</th>
+	</tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:600, height:'auto'}}/></div></td>
+	  <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/3/-/3-103110064-pcie-to-m.2-dual-hat-for-raspberry-pi-5-fonmt.jpg" style={{width:600, height:'auto'}}/></div></td>
+    </tr>
+		<tr>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+		</tr>
+	</table>
+</div>
 
 For installation without a casing, you need to prepare the following materials:
 
@@ -135,9 +160,6 @@ Place the overlapping M.2 Hat and Raspberry Pi into the case, with the Raspberry
 </Tabs>
 
 
-
-
-
 ### Use SD Card Copier tool to flash OS onto the NVME SSD On Raspberry Pi OS
 
 *This method works if you have an SD card and have booted the device successfully. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
@@ -177,6 +199,7 @@ If asked to reboot, select `Yes`.
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/copy.gif" alt="pir" width="700" height="auto" /></div>
 
 ### Setting the Raspberry Pi to boot from the NVMe SSD
+
 If you have easy access to your SD card slot you could turn off your Pi, pop out the SD card and (if everything's working as expected) it should automagically boot from your NVMe drive the next time you start it up. If you want to leave the SD card where it is and still boot from NVMe though, you'll need to change the boot order.
 
 **Step 1**:Enter the following command:

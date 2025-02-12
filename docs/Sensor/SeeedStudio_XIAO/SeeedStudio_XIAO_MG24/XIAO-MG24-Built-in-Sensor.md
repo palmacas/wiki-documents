@@ -212,7 +212,7 @@ If you want more sample code , Please Click : **"File" -> Example -> Seeed Ardui
 
 
 
-## XIAO MG24 Sense Microphone
+## XIAO MG24 Sense Microphone(Seeed Studio Demo)
 
 
 ### Overview of Built-in Sensors
@@ -387,8 +387,6 @@ static void audio_rec_callback(uint16_t *buf, uint32_t buf_len) {
 ### Function Overview
 
 
-
-
 **Microphone Configuration**
 
   ```cpp
@@ -555,6 +553,282 @@ If you want more sample code , Please Click : -> **"Example -> Seeed Arduino Mic
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/34.png" style={{width:500, height:'auto'}}/></div>
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/35.png" style={{width:500, height:'auto'}}/></div>
 
+
+## XIAO MG24 Sense Microphone(Silicon Labs Demo)
+
+
+### Software Preparation
+
+:::tip
+The current version requires users to install the library manually. It is planned that this functionality will be integrated directly into the new version, so that users can find the application in the sample programs through the automatic update function.
+:::
+
+- 📄 **[ZIP]** [silabs_arduino_core-2.2.0](https://files.seeedstudio.com/wiki/mg24_mic/silabs_arduino_core-2.2.0-20241217.zip)
+
+Replace the duplicate files in the 2.2.0 directory by following the file instructions in the image below
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/save_file.jpg" style={{width:500, height:'auto'}}/></div>
+
+
+### Code Implementation
+
+```cpp
+/*
+   Analog microphone volume example
+
+   The example showcases the usage of analog MEMS microphones and dims the
+   on-board LED based on the microphone's input volume.
+   This example is compatible with all Silicon Labs Arduino boards, however
+   it requires an analog microphone on-board or connected to the specified pin.
+
+   Author: Áron Gyapjas (Silicon Labs)
+ */
+
+#include <SilabsMicrophoneAnalog.h>
+
+// This configuration is for the MSM381ACT001 microphone on the Seeed Studio XIAO MG24
+// Change it according to your hardware
+#define MIC_DATA_PIN  PC9
+#define MIC_PWR_PIN   PC8
+#define NUM_SAMPLES   128
+#define MIC_VALUE_MIN 735
+#define MIC_VALUE_MAX 900
+
+// Buffers for storing samples
+uint32_t mic_buffer[NUM_SAMPLES];
+uint32_t mic_buffer_local[NUM_SAMPLES];
+
+volatile bool data_ready_flag = false;
+MicrophoneAnalog micAnalog(MIC_DATA_PIN, MIC_PWR_PIN);
+void mic_samples_ready_cb();
+void calculate_and_display_voice_level();
+
+void setup()
+{
+  Serial.begin(115200);
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  micAnalog.begin(mic_buffer, NUM_SAMPLES);
+  Serial.println("Microphone initialized...");
+
+  micAnalog.startSampling(mic_samples_ready_cb);
+  Serial.println("Sampling started...");
+}
+
+void loop()
+{
+  if (data_ready_flag) {
+    data_ready_flag = false;
+    calculate_and_display_voice_level();
+  }
+}
+
+// Called when the requested amount of samples are available from the microphone
+void mic_samples_ready_cb()
+{
+  // Copy data to the local buffer in order to prevent it from overwriting
+  memcpy(mic_buffer_local, mic_buffer, NUM_SAMPLES * sizeof(uint32_t));
+  data_ready_flag = true;
+}
+
+void calculate_and_display_voice_level() {
+  // Rolling average for smoothing the voice level
+  static uint32_t rolling_average = 0u;
+
+  // Stop sampling in order to prevent overwriting the current data
+  micAnalog.stopSampling();
+
+  // Get the average of the sampled values
+  uint32_t voice_level = (uint32_t)micAnalog.getAverage(mic_buffer_local, NUM_SAMPLES);
+  // Adjust the voice level relative to minimum/maximum of the microphone's output
+  voice_level = constrain(voice_level, MIC_VALUE_MIN, MIC_VALUE_MAX);
+  // Calculate the rolling average
+  rolling_average = (voice_level + rolling_average) / 2;
+
+  // Map the current average level to brightness
+  int brightness = map(rolling_average, MIC_VALUE_MIN, MIC_VALUE_MAX, 0, 255);
+  if (LED_BUILTIN_ACTIVE == LOW) {
+    analogWrite(LED_BUILTIN, 255 - brightness);
+  } else {
+    analogWrite(LED_BUILTIN, brightness);
+  }
+  // Print the average voice level (you can use the Serial Plotter to view this value on a graph)
+  Serial.println(rolling_average);
+
+  // Restart sampling
+  micAnalog.startSampling(mic_samples_ready_cb);
+}
+
+```
+
+
+### Function Overview
+
+***Header file introduction***
+
+```cpp
+#include <SilabsMicrophoneAnalog.h>
+```
+
+- Includes the `SilabsMicrophoneAnalog.h` header file, which contains the necessary library functions and definitions for using the analog microphone.
+
+
+***Hardware configuration***
+```cpp
+#define MIC_DATA_PIN  PC9
+#define MIC_PWR_PIN   PC8
+#define NUM_SAMPLES   128
+#define MIC_VALUE_MIN 735
+#define MIC_VALUE_MAX 900
+```
+
+
+- `MIC_DATA_PIN`: Defines the microphone data pin as `PC9`.
+
+- `MIC_PWR_PIN`: Defines the microphone power pin as `PC8`.
+
+- `NUM_SAMPLES`: Defines the number of samples per sampling as 128.
+
+- `MIC_VALUE_MIN` and `MIC_VALUE_MAX`: Define the minimum and maximum range of the microphone output.
+
+
+***Buffer Definition***
+```cpp
+uint32_t mic_buffer[NUM_SAMPLES];
+uint32_t mic_buffer_local[NUM_SAMPLES];
+```
+
+
+- `mic_buffer`: Used to store raw sample data collected from the microphone.
+
+- `mic_buffer_local`: Used to temporarily store sample data to prevent overwriting.
+
+
+***Flags and object definitions***
+```cpp
+volatile bool data_ready_flag = false;
+MicrophoneAnalog micAnalog(MIC_DATA_PIN, MIC_PWR_PIN);
+```
+
+
+- `data_ready_flag`: A flag to indicate whether new sample data is ready.
+
+- `micAnalog`: Creates a MicrophoneAnalog object to control the microphone.
+
+***Callback Function Declaration***
+```cpp
+void mic_samples_ready_cb();
+void calculate_and_display_voice_level();
+```
+
+- `mic_samples_ready_cb()`: A callback function called when sampling is complete.
+
+- `calculate_and_display_voice_level()`: A function to calculate the volume and control the LED brightness.
+
+
+***setup() function***
+```cpp
+void setup()
+{
+  Serial.begin(115200);
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  micAnalog.begin(mic_buffer, NUM_SAMPLES);
+  Serial.println("Microphone initialized...");
+
+  micAnalog.startSampling(mic_samples_ready_cb);
+  Serial.println("Sampling started...");
+}
+```
+
+- Initializes serial communication with a baud rate of 115200.
+
+- Sets the onboard LED pin to output mode.
+
+- Initializes the microphone and specifies the sample buffer.
+
+- Starts sampling and sets the callback function for when sampling is complete.
+
+***loop()function***
+```cpp
+void loop()
+{
+  if (data_ready_flag) {
+    data_ready_flag = false;
+    calculate_and_display_voice_level();
+  }
+}
+```
+
+
+- Checks if `data_ready_flag` is `true`, indicating that new data is ready.
+
+- If new data is available, calls the `calculate_and_display_voice_level()` function to process the data.
+
+
+
+```cpp
+
+void mic_samples_ready_cb()
+{
+  memcpy(mic_buffer_local, mic_buffer, NUM_SAMPLES * sizeof(uint32_t));
+  data_ready_flag = true;
+}
+```
+
+
+Copies sample data from `mic_buffer` to `mic_buffer_local` to prevent overwriting.
+
+Sets `data_ready_flag` to `true` to indicate that new data is ready.
+
+
+```cpp
+
+void calculate_and_display_voice_level() {
+  static uint32_t rolling_average = 0u;
+
+  micAnalog.stopSampling();
+
+  uint32_t voice_level = (uint32_t)micAnalog.getAverage(mic_buffer_local, NUM_SAMPLES);
+  voice_level = constrain(voice_level, MIC_VALUE_MIN, MIC_VALUE_MAX);
+  rolling_average = (voice_level + rolling_average) / 2;
+
+  int brightness = map(rolling_average, MIC_VALUE_MIN, MIC_VALUE_MAX, 0, 255);
+  if (LED_BUILTIN_ACTIVE == LOW) {
+    analogWrite(LED_BUILTIN, 255 - brightness);
+  } else {
+    analogWrite(LED_BUILTIN, brightness);
+  }
+  Serial.println(rolling_average);
+
+  micAnalog.startSampling(mic_samples_ready_cb);
+}
+```
+
+- Stops sampling to prevent data overwriting.
+
+- Calculates the average of the sample data and constrains it between `MIC_VALUE_MIN` and `MIC_VALUE_MAX`.
+
+- Calculates a rolling average to smooth out volume changes.
+
+- Maps the rolling average to the LED brightness range (0 to 255) and adjusts the LED brightness.
+
+- Outputs the rolling average via serial for observing volume changes.
+
+- Restarts sampling to collect new audio data.
+
+
+### Results Chart
+
+When we blow into the microphone, we can see that the led on top will lighten and darken with the sound.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mic.gif" style={{width:500, height:'auto'}}/></div>
+
+
+### Greater
+
+If you want more sample code , Please Click : -> **"Example -> SilabsMicrophoneAnalog -> MicrophoneVolume"**
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mic_arduino.jpg" style={{width:500, height:'auto'}}/></div>
 
 ## Resources
 

@@ -24,7 +24,7 @@ In this wiki , we wiil introduce how to install and run the sample code in Platf
 
 if you have not install software of PlatformIO , you can click on the link above.
 
-### Setup 2 . Creat any project in PlatformIO
+### Setup 2 . Create any project in PlatformIO
 
 Because the platform already has our XIAO ESP32S3 and XIAO ESP32C3 development board options, we can choose one of them to create our files. Of course, other files are also fine, it doesn't matter. The project name can also be chosen arbitrarily.
 
@@ -83,7 +83,7 @@ Remember save the file , ctrl+s , it will loading
   </tr>
 </table>
 
-In the end of , if you have the same result following picture , that mean you add it XIAO nRF52840 Development Board successfuly.when you creat project again , the XIAO nRF52840 operations
+In the end of , if you have the same result following picture , that mean you add it XIAO nRF52840 Development Board successfuly.when you create project again , the XIAO nRF52840 operations
 
 ## Tech Support & Product Discussion
 

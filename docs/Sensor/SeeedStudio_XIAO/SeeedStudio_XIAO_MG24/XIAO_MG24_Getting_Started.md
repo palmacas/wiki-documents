@@ -129,13 +129,13 @@ sidebar_position: 0
 	    <th>XIAO MG24 Sense indication diagram</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_Sense_indication_diagram.png" style={{width:700, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24sense_pinlist.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
   	<tr>
 	    <th>XIAO MG24 indication diagram</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_indication_diagram.png" style={{width:700, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24_pinlist.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
     <tr>
 	    <th>XIAO MG24/ XIAO MG24(Sense) Pin List</th>
@@ -274,12 +274,22 @@ The XIAO MG24 is capable of using a 3.7V lithium battery as the power supply inp
 Please be careful not to short-circuit the positive and negative terminals and burn the battery and equipment when soldering.
 :::
 
+
+
 **Instructions on the use of batteries:**
 
 1. Please use qualified batteries that meet the specifications.
 2. XIAO can be connected to your computer device via data cable while using the battery, rest assured that XIAO has a built-in circuit protection chip, which is safe.
 3. The XIAO MG24 will not have any LED on when it is battery powered (unless you have written a specific program), please do not judge whether the XIAO MG24 is working or not by the condition of the LED, please judge it reasonably by your program.
 4. Sorry, we currently have no way to help you check the remaining battery level through software (because there are no more chip pins available), you need to charge the battery regularly or use a multimeter to check the battery level.
+
+At the same time, we designed a red indicator light for battery charging, through the indicator light display to inform the user of the current state of the battery in the charge.
+
+1. When XIAO MG24 is not connected to the battery, the red light comes on when the Type-C cable is connected and goes off after 30 seconds.
+2. The red light flashes when the battery is connected and the Type-C cable is connected for charging.
+3. When connecting Type-C to charge the battery fully, the red light turns off.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/battery_mg24.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## Test voltage
 ### Software code

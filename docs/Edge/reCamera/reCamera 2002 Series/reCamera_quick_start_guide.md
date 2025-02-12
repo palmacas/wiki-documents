@@ -103,7 +103,7 @@ ifconfig wlan0
 
 We have integrated reCamera with the Node-red platform for you to develop and integrated more conveniently. With the network connected, you can visit the Node-red Dashboard by visiting the ```ip_address:1880``` in your browser. In here you can preview model, switch to other model, or even build out the application you need with all the handy nodes. Here is step by step instruction of how you can get the preview working.
 
-<div style={{textAlign:'center'}}><iframe width={1000} height={600} src="https://www.youtube.com/embed/XdgCt44UR1M" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
+<!-- <div style={{textAlign:'center'}}><iframe width={1000} height={600} src="https://www.youtube.com/embed/XdgCt44UR1M" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div> -->
 
 There are other models that you can replace:
 
@@ -124,6 +124,22 @@ person, bicycle, car, motorcycle, airplane, bus, train, truck, boat, traffic lig
 ```
 
 We also provided a build-in dashboard UI example where you can preview the video stream, change the desire models. You can freely twist and integrate with your own application. [More work in progress...]
+## Factory Reset
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
+
+If you forget your device's passcode, you can reset the device by long pressing the **User** button and then connecting the  device to power. When the red light of the device is on, release the User button.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-1.gif" /></div>
+
+:::note
+This will delete user information, including applications you have developed. Please operate with caution.
+:::
+
+If you want to restore the firmware of your device to a specific version, you can download the relevant system firmware on [GitHub](https://github.com/Seeed-Studio/reCamera-OS/releases) and follow [this tutorial](https://github.com/Seeed-Studio/reCamera-OS?tab=readme-ov-file#23-build) to manually burn the system firmware.
+:::note
+The burn tool currently only supports windows systems.
+:::
 
 ## OS Upgrade Guideline
 

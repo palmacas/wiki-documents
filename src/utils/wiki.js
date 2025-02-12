@@ -1,86 +1,86 @@
 const docList = [
   [
     {
-      "path": "/recomputer_r1000_use_rs485_modbus_rtu",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/r1000_connection_1.webp",
-      "title": "How to use rs485 and modbus with reComputer R1000",
-      "date": "12/20/2024"
+      "path": "/deploy_deepseek_on_jetson",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp",
+      "title": "Quickly Deploy DeepSeek on reComputer Jetson",
+      "date": "02/08/2025"
     },
     {
-      "path": "/update_orin_nano_developer_kit_to_super_kit",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/Orin-Nano-Developer-Kit/jetson-orin-nano-dev-kit.webp",
-      "title": "How to Update Jetson Orin Nano Developer Kit to Super Kit",
-      "date": "12/19/2024"
+      "path": "/xiaoc6_zigbee_led_ha",
+      "image": "https://files.seeedstudio.com/wiki/xiaoc6_zigbee_ha/0.webp",
+      "title": "Connect to Home Assistant via the Zigbee of the XIAO ESP32C6",
+      "date": "01/21/2025"
     }
   ],
   [
     {
-      "path": "/grove_vision_ai_v2_rs485",
-      "image": "https://files.seeedstudio.com/wiki/RS485_V2AI/photo/connectv2.webp",
-      "title": "RS485 transmission of Vision AI V2 data",
-      "date": "12/19/2024"
+      "path": "/lerobot_so100m_isaacsim",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Isaac_sim_import_success.webp",
+      "title": "How to Import and Control SO100Arm Kit in Isaac Sim",
+      "date": "01/16/2025"
     },
     {
-      "path": "/mqtt_raspberry_pi_4g_lte_hat",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mqtt_ex.webp",
-      "title": "Setting Up 4G LTE Connectivity for IIoT with MQTT",
-      "date": "12/18/2024"
+      "path": "/r2000_series_getting_start",
+      "image": "https://files.seeedstudio.com/wiki/recomputer-r2000-getting-start/1_24_1.webp",
+      "title": "Getting Start with R2000 Series",
+      "date": "1/09/2025"
     }
   ],
   [
     {
-      "path": "/ftp_with_raspberry_pi_4g_lte_hat",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp",
-      "title": "Connect and Transfer- FTP on Your Raspberry Pi 4G LTE HAT",
-      "date": "12/17/2024"
+      "path": "/frigate_nvr_with_raspberrypi_5",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/frigate.webp",
+      "title": "Frigate NVR with Raspberry Pi 5",
+      "date": "01/09/2025"
     },
     {
-      "path": "/recomputer_jetson_mini_hardware_interfaces_usage",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp",
-      "title": "reComputer Mini Hardware and Interfaces Usage",
-      "date": "12/16/2024"
+      "path": "/recomputer_r",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp",
+      "title": "reComputer R1000 Getting Started",
+      "date": "01/08/2025"
     }
   ],
   [
     {
-      "path": "/4_layer_sandwich_for_meshtastic",
-      "image": "https://files.seeedstudio.com/wiki/LoRa-E5_Development_Kit/202003261_preview-07.webp",
-      "title": "A DIY 4-layer sandwich Meshtastic kit",
-      "date": "12/13/2024"
+      "path": "/6_channel_wifi_relay",
+      "image": "https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/7-114993588_6_CH_Relay_Sensor_feature.webp",
+      "title": "Getting started with 6-Channel Wi-Fi Relay Module In Home Assistant",
+      "date": "01/04/2025"
     },
     {
-      "path": "/raspberry_pi_4g_hat_rndis_mobile_internet",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.webp",
-      "title": "Mobile Internet for Your Pi - RNDIS 4G LTE Setup",
-      "date": "12/13/2024"
+      "path": "/open_source_lorawan",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.webp",
+      "title": "LoRaWAN Open Source Firmware",
+      "date": "1/2/2025"
     }
   ],
   [
     {
-      "path": "/grove_mp3_v4",
-      "image": "https://files.seeedstudio.com/wiki/grove-mp3-v4/0.webp",
-      "title": "Grove - MP3 v4.0",
-      "date": "12/13/2024"
+      "path": "/getting_started_with_rs485_vision_ai_cam",
+      "image": "https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.webp",
+      "title": "RS485 Vision AI Camera",
+      "date": "12/26/2024"
     },
     {
-      "path": "/sensecraft_ai_sscmacore_library",
-      "image": "https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/76.webp",
-      "title": "Configuring Model Output on SenseCraft AI for XIAO ESP32S3 Sense using SSCMACore Library",
-      "date": "12/12/2024"
+      "path": "/4g_lte_hat_and_raspberry_pi_router_with_openwrt",
+      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp",
+      "title": "Setting Up OpenWrt on Raspberry Pi 5 with a 4G LTE Module",
+      "date": "12/25/2024"
     }
   ],
   [
     {
-      "path": "/raspberry_pi_4g_hat_gnss_functionlities",
-      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/gnss_setup.webp",
-      "title": "Getting Started with Raspberry Pi 4G HAT GNSS Functionalities",
-      "date": "12/12/2024"
+      "path": "/lerobot_so100m",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
+      "title": "How to use the SO-ARM100 robotic arm in Lerobot",
+      "date": "12/24/2024"
     },
     {
-      "path": "/recomputer_jetson_mini_getting_started",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp",
-      "title": "Getting Started with reComputer Mini",
-      "date": "12/11/2024"
+      "path": "/raspberry_pi_5_uses_pcie_hat_dual_hat",
+      "image": "https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp",
+      "title": "Raspberry Pi 5 uses PCIe hat/dual hat",
+      "date": "12/24/2024"
     }
   ]
 ];
