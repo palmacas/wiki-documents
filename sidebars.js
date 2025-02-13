@@ -2854,7 +2854,17 @@ const sidebars = {
     {
       type: 'category',
       label: 'Other Network Devices',
-      items: ['Network/TTN_Gateway/The-Things-Indoor-Gateway'],
+      items: [
+        'Network/TTN_Gateway/The-Things-Indoor-Gateway',
+        {
+          type: 'category',
+          label: 'Wio-WM6180 WiFi-Halow Devices',
+          items: [
+            'Network/WiFi-Halow/wifi-halow-module-for-xiao',
+            'Network/WiFi-Halow/wifi-halow-mini-pcie-module',
+          ],
+        },
+      ],
     },
 
     // {
