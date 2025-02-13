@@ -1,6 +1,6 @@
 ---
-description: reCamera Warranty
-title: OS Upgrade Guideline
+description: reCamera OS version deployment and rollback guideline
+title: OS Upgrade or Revert Guideline
 keywords:
   - Edge
   - reCamera
@@ -13,41 +13,49 @@ last_update:
   author: Parker Hu
 ---
 
-# OS Upgrade Guideline
-Connect the recamera to your computer using the type-c cable, and go to `http://192.168.42.1/#/system` in your computer's browser to configure your device's network.
-Click `System` Configuration, and if a new firmware is released, click `Apply` to upgrade the device system.
+# OS Update/Upgrade Guideline with Web
+Connect the recamera to your computer using the type-c cable, and go to `http://192.168.42.1/#/system` in your computer's browser to configure your device's network. Make sure reCamera has access to the internet.
+
+Click `System` Configuration, and if a new firmware is released, click `Apply` to update/upgrade the device system.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image.png" /></div>
 Wait for the progress bar to complete.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-1.png" /></div>
-Click `Restart` to complete the system upgrade.
+Click `Restart` to complete the system update/upgrade. Refresh the browser around 30 seconds to reconnect to the device.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-2.png" /></div>
-The system will automatically check if there is a new version of firmware that can be updated.
+The system will automatically check if there is a new version of firmware that can be updated/upgrade.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-3.png" /></div>
 
-## Switch and upgrade the system by command
+## OS Version management by command
 
+### Device management by OTA
+#### Update/Upgrade to latest OTA version
 You can check out the latest version of the [reCamera OS here.](https://github.com/Seeed-Studio/reCamera-OS)
 
-Manually update the latest OTA firmware:
+Manually update/upgrade the latest OTA firmware:
 ```bash
 #Upgrade to the latest firmware version
 /mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/latest 
-#Switch to the version of the system you want to use
+
+/mnt/system/upgrade.sh start
+```
+or
+#### Update/Upgrade or rollback to any specific OTA version
+If you have a speicific version you would like to deploy, you can use the command below.
+```bash
+#E.g. install 0.1.4 as an example
 /mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.4
 
 /mnt/system/upgrade.sh start
 ```
-
-Manually update the specified version of OTA firmware. You can also update the system version in your branch.
-
+If you are developing OS and you have your own branch in github, you can also update/upgrade the system version with your branch link.
 ```bash
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/download/0.1.3/sg2002_reccamera_emmc_md5sum.txt #Replace it with your branch link
+/mnt/system/upgrade.sh latest https://github.com/your-user-name/reCamera-OS/releases/your-version-file-address
 
 /mnt/system/upgrade.sh start
 ```
 
-Update the firmware manually using the local ota package. The ota firmware can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/).
-
+### Device Management by Local Package
+You can also update/upgrade the firmware manually using the local ota package. The ota firmwares can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/). Use tools like scp to 
 
 ```bash
 /mnt/system/upgrade.sh start sg2002_reCamera_0.1.3_emmc_ota.zip
