@@ -352,6 +352,32 @@ The reComputer R1000 edge IoT controller, powered by Raspberry Pi CM4, features 
 	</table>
 </div>
 
+<strong><span><font color={'4ec354'} size={"5"}>ThingsBoard</font></span></strong>
+
+<div class="table-center">
+	<table class="table-nobg">
+    <tr class="table-trnobg">
+      <th class="table-trnobg"><font size={"4"}>Getting Started ThingsBoard With reComputer R1000</font></th>
+      <th class="table-trnobg"><font size={"4"}>Create Dynamic IoT Dashboards with ThingsBoard and reComputer R1000</font></th>
+		</tr>
+    <tr class="table-trnobg"></tr>
+		<tr class="table-trnobg"> 
+			<td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/thingsboard_blue.png" style={{width:300, height:'auto'}}/></div></td>
+			<td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.gif" style={{width:300, height:'auto'}}/></div></td>
+		</tr>
+    <tr class="table-trnobg"></tr>
+    <tr class="table-trnobg">
+      <td className="table-trnobg" style={{ textAlign: 'justify' }}><font size={"2"}> This guide covers the installation of ThingsBoard Community Edition on a reComputer for edge deployment. It provides a step-by-step approach to setting up a robust IoT infrastructure, enabling device provisioning, data collection, visualization, and telemetry analysis.</font></td>
+      <td className="table-trnobg" style={{ textAlign: 'justify' }}><font size={"2"}> This tutorial explains how to add an MQTT device to ThingsBoard Community Edition and visualize its data on an interactive dashboard. It covers the steps to connect the device, send telemetry data, and use ThingsBoard’s graphical tools for real-time monitoring and analysis.</font></td>
+    </tr>
+    <tr class="table-trnobg"></tr>
+		<tr class="table-trnobg">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/recomputer_r1000_thingsboard_ce/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/recomputer_r1000_thingsboard_dashboard/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
+		</tr>
+	</table>
+</div>
+
 
 ### Fleet Management  
 
