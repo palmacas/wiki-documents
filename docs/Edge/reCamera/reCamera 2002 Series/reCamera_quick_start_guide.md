@@ -208,6 +208,7 @@ person, bicycle, car, motorcycle, airplane, bus, train, truck, boat, traffic lig
 ```
 
 ### Function Statement:
+<<<<<<< HEAD
 
 **Counting Selection**: So far 4 kinds of object are support to be counted. There are Person, Cat, Dog, and Bottle. Multiple objects are supported by downloading model from sensecraft model zoo or uploading your customized model.
 
@@ -322,33 +323,123 @@ ifconfig wlan0
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/last_six_digits.png" /></div>
 
 ## Factory Reset
+=======
+>>>>>>> 61d5f2003cd281a8c2ce9605ffe2a07bff7ff32e
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
+**Counting Selection**: So far 4 kinds of object are support to be counted. There are Person, Cat, Dog, and Bottle. Multiple objects are supported by downloading model from sensecraft model zoo or uploading your customized model.
 
-If you forget your device's passcode, you can reset the device by long pressing the **User** button and then connecting the  device to power. When the red light of the device is on, release the User button.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboard1.png" /></div>
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-1.gif" /></div>
+**Intersection over Union (IoU)**: IoU is a metric used to evaluate the overlap between the predicted bounding box and the ground truth bounding box. It is calculated as the ratio of the intersection area of the two boxes to the union area of the two boxes. The value of IoU is typically in the range from 0 to 1. We standardized it to a scale of 0 - 100, an IoU value of 0 represents no overlap between the predicted box and the ground - truth box. A value of 100 indicates a perfect match, meaning the two boxes completely overlap.
 
-:::note
-This will delete user information, including applications you have developed. Please operate with caution.
-:::
+**Confidence**: Confidence in the YOLO model represents the probability that a predicted bounding box contains an object and how accurate the prediction is. It is a value between 0 and 100.
 
-If you want to restore the firmware of your device to a specific version, you can download the relevant system firmware on [GitHub](https://github.com/Seeed-Studio/reCamera-OS/releases) and follow [this tutorial](https://github.com/Seeed-Studio/reCamera-OS?tab=readme-ov-file#23-build) to manually burn the system firmware.
-:::note
-The burn tool currently only supports windows systems.
-:::
+**Step 6**. You can adjust the threshold of ```IoU``` and ```Confidence``` to get a more accurate result.
+
+<<<<<<< HEAD
+
+=======
+- IoU=0,Confidence=0:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboard2.png" /></div>
+
+- IoU=25,Confidence=33:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboard3.png" /></div>
 
 
+
+## Customized your dashboard and share to Community
+
+We encourage users to share the dashboards they develop and create in the community. We have created a folder on GitHub. We hope that everyone will share their dashboards there, and we will organize and display them. Next, I will take adding a fill light function to the dashboard as an example to simply add a node and control reCamera.
+
+**Step 1**. Drag the ```button group``` node to the workspace. and edit it by the following setting.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard1.png" /></div>
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard2.png" /></div>
+
+**Step 2**. Add a new ui-group config node named "Control Button", then save it.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard3.png" /></div>
+
+**Step 3**. Go to the dashboard 2.0, and place the control button frame under the model selection.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard4.png" /></div>
+
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard5.png" /></div>
+
+**Step 4**. Deploy the flow and go to dashboard.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard6.png" /></div>
+
+**Demo**:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard5.gif" /></div>
+
+**Step 5**: Don't forget to export json file of the flow and share it to the our github.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard7.png" /></div>
+
+## OTA Upgrade from 0.1.3 to latest version
+
+If you got the first batch of reCamera, you can upgrade the OS to the latest version following this instruction.
+
+**Step 1**: Open the website and navigate to ```Sidebar -> System -> Software Update```
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade1.png" /></div>
+
+**Step 2**: Check your OS version, and click **Check** and **Apply**.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade2.png" /></div>
+
+**Step 3**: Wait for few minutes to update the system.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade3.png" /></div>
+
+**Step 4**: Restart the device and refresh the website.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade4.png" /></div>
+
+**Step 5**: You will enter the loading page to change the password.Now you can experience the newest version reCamera with Node-RED dashboard by following [this downloading instruction](https://wiki.seeedstudio.com/recamera_getting_started/#access-recamera-preview-dashboard).
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade5.png" /></div>
+
+## IP List
+
+The IP address of reCamera is ```192.168.42.1```. You can access the web interface of reCamera by typing the IP address in the browser for quickly access.
+
+- **Basic config web**: ```ip_address/#/init```
+- **Network config web**: ```ip_address/#/network```
+- **Terminal web**: ```ip_address/#/terminal```
+- **Security web**: ```ip_address/#/security```
+- **System web**: ```ip_address/#/system```
+- **Node-RED workspace**: ```ip_address/#/workspace```
+- **Dashboard**: ```ip_address/#/dashboard```
+- **Original Node-RED**: ```ip_address:1880```
+
+
+## Port List
+The following lists the ports used by reCamera:
+
+- **Port 22**: Utilized for remote SSH login and is open.
+- **Port 53**: Associated with DNS domain name resolution and is essential for web redirection. It is open by default.
+- **Port 80**: Serves as the web dashboard interface for HTTP display of the Node-RED Application.
+- **Port 554**: Employed for RTSP video streaming.
+- **Port 9090**: Intended for web terminal access, which requires a password for login.
+- **Port 1880**: Dedicated to Node-RED operations.
+
+>>>>>>> 61d5f2003cd281a8c2ce9605ffe2a07bff7ff32e
 
 ## Resources
 
-[reCamera Flyer](https://files.seeedstudio.com/wiki/reCamera/reCamera_one_pager.pdf)
+- [reCamera Flyer](https://files.seeedstudio.com/wiki/reCamera/reCamera_one_pager.pdf)
 
-[reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
+- [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
 
-[reCamera Series](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
+- [reCamera Series](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
 
-[reCamera SSCMA](https://github.com/Seeed-Studio/sscma-example-sg200x)
+- [reCamera SSCMA](https://github.com/Seeed-Studio/sscma-example-sg200x)
 
 
 ## Tech Support & Product Discussion
