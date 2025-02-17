@@ -7,8 +7,8 @@ keywords:
 image: https://wiki.seeedstudio.com/wio_gps_board/
 slug: /WM1302_module
 last_update:
-  date: 01/30/2023
-  author: hushuxu
+  date: 02/17/2025
+  author: Leo Liu
 ---
 
 <!-- ![](https://files.seeedstudio.com/wiki/WM1302_module/WM1302_3.jpeg) -->
@@ -220,7 +220,22 @@ make
 
 #### Step4. Run Semtech SX1302 packet forwarder
 
-Firstly, modify `reset pin` for SX1302 and SX1261 in `reset_lgw.sh` script, with text editor `nano`:
+:::caution Note
+In the new Linux kernel, the **sysfs interface** has been replaced by the **chardev interface**. This causes the reset_lgw.sh provided in the sx_1302 repository to not reset the module properly.
+
+To determine if the system you are running on still has the sysfs interface, you can run the following command:
+
+```shell
+ls /sys/class/gpio
+```
+
+:::
+
+**For Linux with sysfs interface:**
+
+If a series of `gpiox` folders appear in it, it means that your system kernel still has the sysfs interface, and you can use the script above to reset the module.
+
+Modify `reset pin` for SX1302 and SX1261 in `reset_lgw.sh` script, with text editor `nano`:
 
 ```
 nano tools/reset_lgw.sh
@@ -251,6 +266,58 @@ AD5338R_RESET_PIN=13    # AD5338R reset (full-duplex CN490 reference design)
 ```
 
 Save these changes by pressing `CTRL + x`, and then `y`, finally pressing `Enter` to close the text editor.
+
+**For Linux without sysfs interface:**
+
+If there is no folder named `gpiox` in it, then you need to call the GPIO using the **Libgpiod package**.
+
+The reset_lgw.sh script to control the GPIO using the Libgpiod package is as follows:
+
+<details>
+<summary>reset_lgw.sh</summary>
+
+```shell
+SX1302_RESET_PIN=17     # SX1302 reset
+SX1302_POWER_EN_PIN=18  # SX1302 power enable
+SX1261_RESET_PIN=5     # SX1261 reset (LBT / Spectral Scan)
+
+
+WAIT_GPIO() {
+    sleep 0.1
+}
+
+reset() {
+    echo "CoreCell reset through GPIO$SX1302_RESET_PIN..."
+    echo "SX1261 reset through GPIO$SX1261_RESET_PIN..."
+    echo "CoreCell power enable through GPIO$SX1302_POWER_EN_PIN..."
+
+    # write output for SX1302 CoreCell power_enable and reset
+    gpioset gpiochip0 $SX1302_POWER_EN_PIN=1; WAIT_GPIO
+    
+    gpioset gpiochip0 $SX1302_RESET_PIN=1; WAIT_GPIO
+    gpioset gpiochip0 $SX1302_RESET_PIN=0; WAIT_GPIO
+
+    gpioset gpiochip0 $SX1261_RESET_PIN=0; WAIT_GPIO
+    gpioset gpiochip0 $SX1261_RESET_PIN=1; WAIT_GPIO
+}
+
+case "$1" in
+    start)
+    reset
+    ;;
+    stop)
+    reset
+    ;;
+    *)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+```
+
+</details>
 
 Copy `reset_lgw.sh` to `packet_forwarder` folder, then run `lora_pkt_fwd`. Please note that you should select a `global_conf.json.sx1250.xxxx` config file based on the module you are using:
 
