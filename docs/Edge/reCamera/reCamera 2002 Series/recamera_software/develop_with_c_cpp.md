@@ -46,7 +46,7 @@ make
 
 You can view the file properties by typing `file helloworld`.
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/develop_with_c_cpp/1.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/develop_with_c_cpp/1.png" /></div>
 
 ```bash
 scp helloworld recamera@{recamera_IP}:/home/recamera/
@@ -54,7 +54,7 @@ scp helloworld recamera@{recamera_IP}:/home/recamera/
 
 Transfer the file to your recamera device to run, as shown in the figure below, and the cross-compile environment for your C code is configured.
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/develop_with_c_cpp/2.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/develop_with_c_cpp/2.png" /></div>
 
 ## Tech Support & Product Discussion
 
