@@ -9,6 +9,7 @@ keywords:
   - version upgrade
 image: https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.png
 slug: /recamera_os_version_control
+sidebar_position: 1
 last_update:
   date: 2/14/2025
   author: Parker Hu & Dawn Yao
