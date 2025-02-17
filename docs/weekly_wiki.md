@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 02/10/2025
+  date: 02/17/2025
   author: Frank
 ---
 
@@ -17,54 +17,61 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is February 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is February 17th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [LoRaWAN Open Source Firmware](https://wiki.seeedstudio.com/open_source_lorawan/)
+### [Deploy DeepSeek on reComputer Jetson with MLC](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson_with_mlc/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp" style={{width:800, height:'auto'}}/></div>
 
-The [SenseCAP T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) now has an open source **LoRaWAN version** of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
+This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) on reComputer Jetson devices with [MLC](https://llm.mlc.ai/) for efficient AI inference on the edge.
 
-### [Quickly Deploy DeepSeek on reComputer Jetson](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson/)
+### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/os_upgrade_guideline/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.png" style={{width:800, height:'auto'}}/></div>
 
-DeepSeek is a cutting-edge AI model suite optimized for efficiency, accuracy, and real-time processing. With advanced optimization for edge computing, DeepSeek enables fast, low-latency AI inference directly on Jetson devices, reducing dependency on cloud computing while maximizing performance.
-This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) models on reComputer Jetson devices for efficient AI inference on the edge.
+This document outlines the reCamera OS upgrade and rollback process. Users can update via the web interface or command line, supporting OTA updates, specific version installations, or local package upgrades. It also includes commands for restoring factory settings and provides contact details for technical support.
 
 ## Existing Wiki Updated
 
-### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
+### Flashing JP6.2 on A603 and A608 Boards for Jetson Update
 
-We have added the [Silicon Labs Demo example for XIAO MG24 Sense Microphone](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#xiao-mg24-sense-microphonesilicon-labs-demo).
+We have updated the flashing procedure for flashing JP6.2 on the [A603](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/#flash-to-jetson) and [A608](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/#enter-force-recovery-mode) carrier boards.
 
-### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
+### [Single Channel LoRaWAN Gateway - SenseCAP Indicator](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/)
 
-We have corrected the code for the [Install Hailo PCIe Driver operation](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-hailo-pcie-driver) and the [Install Frigate NVR section](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-frigate-nvr).
+We have added the [SenseCAP Indicator Connect to ChirpStack example](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/#connect-to-chirpstack).
 
-### [Getting Start with R2000 Series](https://wiki.seeedstudio.com/r2000_series_getting_start/)
+### [Getting started with 60GHz mmWave Fall Detection Sensor Kit with XIAO ESP32C6 (MR60FDA2)](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/)
 
-We have added the example for [flashing Ubuntu to NVMe](https://wiki.seeedstudio.com/r2000_series_getting_start/#flash-ubuntu-to-nvme).
+We have added the [Module firmware upgrade example](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/#module-firmware-upgrade).
 
-### [Pin Multiplexing with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/)
+### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
 
-We have added the example code for [analogRead with DMA on XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/#software-implementation-2).
+We have added the [XMOS Firmware update example](https://wiki.seeedstudio.com/respeaker_lite_ha/#xmos-firmware-update) and optimized the [Add XIAO ESP32S3 to ESPHome example](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
 
 ### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
 
-We have optimized the content for the [Factory Reset operation](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) in reCamera.
+We have added the [OTA Upgrade from 0.1.3 to latest version example](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version).
+
+### [Getting Started with ReSpeaker 2-Mics Pi HAT v2 on Raspberry Pi](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/)
+
+We have fixed and optimized the [Setup the driver on Raspberry Pi example](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/#2-setup-the-driver-on-raspberry-pi).
+
+### [Getting Started with Seeed Studio XIAO-RS485-Expansion-Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/)
+
+We have added the [schematic files for Seeed Studio XIAO RS485 Expansion Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/#resources).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
+### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
 
 <div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
+  <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -73,7 +80,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 
 <details><summary>Click here</summary>
 
-- [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
+<!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
 - [weekly wiki on 3.13th](/Seeed_Elderly/weekly_wiki/wiki313)
 - [weekly wiki on 3.20th](/Seeed_Elderly/weekly_wiki/wiki320)
@@ -110,7 +117,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 12.04th](/Seeed_Elderly/weekly_wiki/wiki1204)
 - [weekly wiki on 12.11th](/Seeed_Elderly/weekly_wiki/wiki1211)
 - [weekly wiki on 12.18th](/Seeed_Elderly/weekly_wiki/wiki1218)
-- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225)
+- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225) -->
 - [weekly wiki on 2024.1.08th](/Seeed_Elderly/weekly_wiki/wiki240108)
 - [weekly wiki on 2024.1.15th](/Seeed_Elderly/weekly_wiki/wiki240115)
 - [weekly wiki on 2024.1.22nd](/Seeed_Elderly/weekly_wiki/wiki240122)
@@ -165,5 +172,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
 - [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
 - [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
+- [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
 
 </details>
