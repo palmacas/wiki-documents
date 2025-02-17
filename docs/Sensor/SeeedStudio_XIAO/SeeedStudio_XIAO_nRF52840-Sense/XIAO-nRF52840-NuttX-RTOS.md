@@ -3,7 +3,7 @@ description: XIAO nRF52840(sense) With NuttX(RTOS)
 title: XIAO nRF52840(sense) With NuttX(RTOS)
 keywords:
 - xiao
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp
 slug: /xiao-nrf52840-nuttx
 last_update:
     date: 02/12/2025
