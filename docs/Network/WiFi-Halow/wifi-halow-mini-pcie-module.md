@@ -173,6 +173,12 @@ To connect the antenna to the WiFi-Halow module, you may also need to purchase t
     </table>
 </div>
 
+If you are using it for the first time, you can refer to the following video for antenna installation.
+
+<div class="table-center">
+<iframe width="600" height="350" src="https://files.seeedstudio.com/wiki/wifi_halow/pic/install_pcie_wifi_halow_module.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
 
 ## Installing WiFi Halow for OpenWrt to Raspberry Pi
 
@@ -265,6 +271,10 @@ For my device, the IP address is: <strong>192.168.1.168</strong>. Entering this 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/8.png" style={{width:1000, height:'auto'}}/></div>
 
+## Resources
+
+- **[PDF]** [UG MM6108 Eval Kit User Guide 2.6 - v18](https://files.seeedstudio.com/wiki/wifi_halow/res/UG_MM6108_Eval_Kit_User_Guide_2.6-v18.pdf)
+- **[PDF]** [Quectel_FGH100M-H_Short-Range_Module_Specification_V1.0.0](https://files.seeedstudio.com/wiki/wifi_halow/res/Quectel_FGH100M-H_Short-Range_Module_Specification_V1.0.0_Preliminary_20241018.pdf)
 
 ## Tech Support & Product Discussion
 

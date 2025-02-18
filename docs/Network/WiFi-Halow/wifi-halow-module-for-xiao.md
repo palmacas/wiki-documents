@@ -199,6 +199,12 @@ To connect the antenna to the WiFi-Halow module, you may also need to purchase t
     </table>
 </div>
 
+If you are using it for the first time, you can refer to the following video for antenna installation.
+
+<div class="table-center">
+<iframe width="600" height="350" src="https://files.seeedstudio.com/wiki/wifi_halow/pic/install_xiao_wifi_halow_module.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
 ## Install ESP-IDF v5.1.1
 
 Before we start programming, we need to install ESP-IDF v5.1.1 on your computer. ESP-IDF is the official development framework for ESP32 series chips.
@@ -736,8 +742,13 @@ Troubleshooting:
 :::
 
 
+## Resources
 
-
+- **[GITHUB]** [mm-iot-esp32 repository](https://github.com/Seeed-Studio/mm-iot-esp32.git)
+- **[GITHUB]** [mm-iot Document](https://github.com/Seeed-Studio/mm-iot-esp32/blob/main/documentation.html)
+- **[PDF]** [WI-FI_HALOW_FGH100M_EXT01_V20_SCH_PDF_240815](https://files.seeedstudio.com/wiki/wifi_halow/res/WI-FI_HALOW_FGH100M_EXT01_V20_SCH_PDF_240815.pdf)
+- **[ZIP]** [WI-FI_HALOW_FGH100M_EXT01_V20_SCH&PCB](https://files.seeedstudio.com/wiki/wifi_halow/res/WI-FI_HALOW_FGH100M_EXT01_V20_SCH&PCB.zip)
+- **[PDF]** [Quectel_FGH100M-H_Short-Range_Module_Specification_V1.0.0](https://files.seeedstudio.com/wiki/wifi_halow/res/Quectel_FGH100M-H_Short-Range_Module_Specification_V1.0.0_Preliminary_20241018.pdf)
 
 ## Tech Support & Product Discussion
 
