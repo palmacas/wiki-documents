@@ -550,7 +550,7 @@ You can observe the data being transmitted and received on SPI0 on the Extension
 - [reComputer Mini 3D Model](https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_Mini_3D.7z)
 
 
-# Tech Support & Product Discussion
+## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
