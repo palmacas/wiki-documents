@@ -6,7 +6,7 @@ keywords:
   - reCamera
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recamera_network_connection
-sidebar_position: 5
+sidebar_position: 3
 last_update:
   date: 09/29/2024
   author: Parker Hu

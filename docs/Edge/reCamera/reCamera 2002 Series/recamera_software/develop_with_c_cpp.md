@@ -8,7 +8,7 @@ keywords:
   - CPP
 image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
 slug: /recamera_develop_with_c_cpp
-sidebar_position: 4
+sidebar_position: 5
 last_update:
   date: 02/17/2025
   author: Parker Hu

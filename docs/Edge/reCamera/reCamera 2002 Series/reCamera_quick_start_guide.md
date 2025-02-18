@@ -305,7 +305,7 @@ If you would like to reset the device such as forgetting your device's passcode,
 This will delete user information, including applications you have developed, or any local storage image and video. Please operate with caution.
 :::
 
-If you want to restore the firmware of your device to a specific version, please visit [os version control](./recamera_software/os_version_control.md)
+If you want to restore the firmware of your device to a specific version, please visit [os version control](https://wiki.seeedstudio.com/recamera_os_version_control)
 
 ## Multi Devices Management 
 
