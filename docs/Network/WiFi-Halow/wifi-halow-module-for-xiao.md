@@ -1,7 +1,7 @@
 ---
 description: XIAO ESP32S3 with Wio-WM6180 Wi-Fi HaLow Module Tutorial
 title: Getting Started with Wi-Fi HaLow Module for XIAO
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/wifi_halow/pic/20.webp
 slug: /getting_started_with_wifi_halow_module_for_xiao
 last_update:
   date: 02/12/2025
@@ -11,10 +11,10 @@ last_update:
 
 # Getting Started with Wi-Fi HaLow Module for XIAO
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png" style={{width:1000, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/20.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="#">
+    <a class="get_one_now_item" href="/getting_started_with_wifi_halow_module_for_xiao">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -119,9 +119,9 @@ Here are the materials needed to run this tutorial.
         </tr>
         <tr>
             <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:250, height:'auto'}}/></div></td>
-            <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:110, height:'auto'}}/></div></td>
+            <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:90, height:'auto'}}/></div></td>
             <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
-            <td><div style={{textAlign:'center'}}><img src="/getting_started_with_wifi_halow_module_for_xiao" style={{width:250, height:'auto'}}/></div></td>
+            <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/20.jpg" style={{width:250, height:'auto'}}/></div></td>
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>

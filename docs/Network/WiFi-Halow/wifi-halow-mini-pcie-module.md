@@ -1,7 +1,7 @@
 ---
 description: Getting Started with Wi-Fi HaLow Mini PCIe Module 
 title: Getting Started with Wi-Fi HaLow Mini PCIe Module 
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/wifi_halow/pic/0.webp
 slug: /getting_started_with_wifi_halow_mini_pcie_module
 last_update:
   date: 02/12/2025
@@ -9,6 +9,14 @@ last_update:
 ---
 
 # Getting Started with Wi-Fi HaLow Mini PCIe Module
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/0.jpg" style={{width:600, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="/getting_started_with_wifi_halow_mini_pcie_module">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div><br />
 
 This guide will walk you through setting up and using the Wi-Fi HaLow Mini PCIe Module to build a Wi-Fi HaLow gateway. The Mini PCIe form factor makes it easy to integrate Wi-Fi HaLow connectivity into existing systems and create IoT gateways that can connect numerous low-power devices over long distances.
 
@@ -99,7 +107,7 @@ Here are the materials needed to run this tutorial.
         </tr>
         <tr>
             <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/raspberrypi4b.png" style={{width:250, height:'auto'}}/></div></td>
-            <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/minipcie.png" style={{width:250, height:'auto'}}/></div></td>
+            <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/0.jpg" style={{width:250, height:'auto'}}/></div></td>
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
