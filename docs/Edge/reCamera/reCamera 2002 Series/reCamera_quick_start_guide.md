@@ -8,7 +8,7 @@ image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
 slug: /recamera_getting_started
 sidebar_position: 1
 last_update:
-  date: 02/10/2025
+  date: 02/15/2025
   author: Evelyn Chen
 ---
 
@@ -189,23 +189,8 @@ You are able to deploy object counting function quickly with the provided dashbo
 
 ### Model List
 
-There are other models that you can replace:
+If you want to download more model files, you can refer to this [wiki](https://wiki.seeedstudio.com/recamera_on_device_models/).
 
-
-| Model             | Description           | Download Link            |
-| ----------------- | --------------------- | ------------------------ |
-| yolo11n_cv181x_int8.cvimodel       | [Ultralytics](https://www.ultralytics.com/) [YOLO11](https://github.com/ultralytics/ultralytics) | [Yolo11n Download](https://files.seeedstudio.com/wiki/reCamera/models/yolo11n_cv181x_int8.cvimodel) |
-| yolov8n_cv181x_int8.cvimodel       | Ultralytics YOLOv8                                           | [Yolov8n Download](https://files.seeedstudio.com/wiki/reCamera/models/yolov8n_cv181x_int8.cvimodel) |
-| person_cv181x_int8.cvimodel        | Person recognition model                                     | [Person Detect Download](https://files.seeedstudio.com/wiki/reCamera/models/person_cv181x_int8.cvimodel) |
-| gender_cv181x_int8.cvimodel        | Human Gender Identification Models                           | [Gender Detect Download](https://files.seeedstudio.com/wiki/reCamera/models/gender_cv181x_int8.cvimodel) |
-| gesture_cv181x_int8.cvimodel       | Hand gesture recognition                                     | [Gesture Detect Download](https://files.seeedstudio.com/wiki/reCamera/models/gesture_cv181x_int8.cvimodel) |
-| digital_meter_cv181x_int8.cvimodel | Digit recognition model                                      | [Digital Detect Download](https://files.seeedstudio.com/wiki/reCamera/models/digital_meter_cv181x_int8.cvimodel) |
-
-Yolo11n model classes:
-
-```json
-person, bicycle, car, motorcycle, airplane, bus, train, truck, boat, traffic light, fire hydrant, stop sign, parking meter, bench, bird, cat, dog, horse, sheep, cow, elephant, bear, zebra, giraffe, backpack, umbrella, handbag, tie, suitcase, frisbee, skis, snowboard, sports ball, kite, baseball bat, baseball glove, skateboard, surfboard, tennis racket, bottle, wine glass, cup, fork, knife, spoon, bowl, banana, apple, sandwich, orange, broccoli, carrot, hot dog, pizza, donut, cake, chair, couch, potted plant, bed, dining table, toilet, tv, laptop, mouse, remote, keyboard, cell phone, microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush
-```
 
 ### Function Statement:
 
@@ -309,6 +294,36 @@ The following lists the ports used by reCamera:
 - **Port 9090**: Intended for web terminal access, which requires a password for login.
 - **Port 1880**: Dedicated to Node-RED operations.
 
+## Factory Reset
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
+
+If you would like to reset the device such as forgetting your device's passcode, you can long pressing the **User** button and then connecting the  device to power. When the **red light** of the device is constantly on, release the User button.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-1.gif" /></div>
+
+:::note
+This will delete user information, including applications you have developed, or any local storage image and video. Please operate with caution.
+:::
+
+If you want to restore the firmware of your device to a specific version, please visit [os version control](https://wiki.seeedstudio.com/recamera_os_version_control)
+
+## Multi Devices Management 
+
+If you have more than one reCamera, you can distinguish them by the **mac address** or **S/N number** on the back of the device.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/mac_address_tag.png" /></div>
+
+Or, once you connect the device to your laptop through USB or AP, you can view the mac address by using the following command
+```
+ifconfig wlan0
+```
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/last_six_digits.png" /></div>
+
+## Camera Orientation
+The default camera view orientation is like the image below where type-c is **facing down**. Please be awared that other orientation might effect the accuracy of model based on how you trained the detection model. 
+
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/default_orientation.jpeg" /></div>
 
 ## Resources
 
