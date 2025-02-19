@@ -3583,14 +3583,15 @@ const sidebars = {
               //   id: 'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_Getting_Started',
               // },
               items: [
-                'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
-                // {
-                //   type: 'category',
-                //   label: 'reServer Industrial J30/40',
-                //   items: [
-                //   'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
-                //   ],
-                // },
+                //'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
+                {
+                  type: 'category',
+                  label: 'reServer Industrial J30/40',
+                  items: [
+                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
+                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Hardware_Interface_Usage'
+                  ],
+                },
 
                 {
                   type: 'category',
