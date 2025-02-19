@@ -1166,6 +1166,7 @@ const sidebars = {
           label: 'XIAO nRF52840 Series',
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO_BLE',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-NuttX-RTOS',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-Zephyr-RTOS',
             {
               type: 'category',
@@ -3685,7 +3686,8 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Deploy_Riva_and_Llama2_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Real_Time_Subtitle_Recoder_on_Jetson',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Deploy_Ollama_and_AnythingLLM_on_Jetson',
-                'Edge/NVIDIA_Jetson/Application/Generative_AI/Quickly_Deploy_DeepSeek_on_reComputer_Jetson'
+                'Edge/NVIDIA_Jetson/Application/Generative_AI/Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
+                'Edge/NVIDIA_Jetson/Application/Generative_AI/Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
               ]
             },
             {

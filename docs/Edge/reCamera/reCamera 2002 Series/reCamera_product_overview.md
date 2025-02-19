@@ -1,14 +1,14 @@
 ---
-description: Hardware Interface
-title: Hardware Interface
+description: This is the overview for features, specs, hardware interface and partlist.
+title: Product Overview
 keywords:
   - Edge
   - reCamera
 image: https://files.seeedstudio.com/wiki/reCamera/image.webp
-slug: /recamera_hardware_interface
-# sidebar_position: 1
+slug: /recamera_product_overview
+sidebar_position: 2
 last_update:
-  date: 11/11/2024
+  date: 02/18/2024
   author: Parker Hu
 ---
 
@@ -365,7 +365,7 @@ cat /sys/class/gpio/gpio510/value #When the key is pressed, 0 is printed
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-11.png" /></div>
 
 
-## Partlist
+## Part list
 
 | Item | Quantity |
 |--|--|
