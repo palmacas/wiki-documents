@@ -3,6 +3,7 @@ description: Getting Started with Wi-Fi HaLow Mini PCIe Module
 title: Getting Started with Wi-Fi HaLow Mini PCIe Module 
 image: https://files.seeedstudio.com/wiki/wifi_halow/pic/0.webp
 slug: /getting_started_with_wifi_halow_mini_pcie_module
+sidebar_class_name: hidden # 有文件但是不显示在左侧目录
 last_update:
   date: 02/12/2025
   author: Citric

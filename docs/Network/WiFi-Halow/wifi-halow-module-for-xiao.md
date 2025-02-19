@@ -3,6 +3,7 @@ description: XIAO ESP32S3 with Wio-WM6180 Wi-Fi HaLow Module Tutorial
 title: Getting Started with Wi-Fi HaLow Module for XIAO
 image: https://files.seeedstudio.com/wiki/wifi_halow/pic/20.webp
 slug: /getting_started_with_wifi_halow_module_for_xiao
+sidebar_class_name: hidden
 last_update:
   date: 02/12/2025
   author: Citric
