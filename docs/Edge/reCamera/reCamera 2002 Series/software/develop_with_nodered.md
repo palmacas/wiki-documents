@@ -169,7 +169,7 @@ Please also select `sscma` for the client. After selecting, the red triangle wil
 Input: Wire the `camera` node to the `stream` node to enable the streaming.
 
 Output:
-You can then use other applications such as VLC to view the RTSP stream out from reCamera. As an example in the above screenshot, you can use `rtsp://admin:admin@192.168.42.1:554/live` in VLC then you can see the streaming video.
+You can then use other applications such as VLC to view the RTSP stream out from reCamera. As an example in the above screenshot, you can use `rtsp://admin:admin@192.168.42.1:554/live` in VLC then you can see the H.264 streaming video.
 - Video parameter: 1920 * 1800 * 30fps by default.
 - Latency: This is different based on what end applications you are using. E.g, VLC is 500 ms.  
 
