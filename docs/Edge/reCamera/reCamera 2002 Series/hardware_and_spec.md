@@ -9,7 +9,7 @@ image: https://files.seeedstudio.com/wiki/reCamera/image.webp
 slug: /recamera_hardware_and_specs
 sidebar_position: 2
 last_update:
-  date: 02/18/2024
+  date: 02/18/2025
   author: Parker Hu
 ---
 
